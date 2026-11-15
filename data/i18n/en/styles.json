@@ -1,0 +1,44 @@
+{
+  "styles": {
+    "cumbia": {
+      "name": "Cumbia",
+      "origin": "Colombia",
+      "description": "Born on Colombia's Caribbean coast, cumbia has travelled all over Latin America (Mexico, Peru, Argentina…). Its engine: the guacharaca (the guiro) going \"chaa-k-k\" on every beat, a bass alternating root and fifth, and accents on the off-beats that get the hips swaying."
+    },
+    "son": {
+      "name": "Son cubano",
+      "origin": "Cuba",
+      "description": "The ancestor of salsa. Everything is built around the clave, a 5-stroke pattern over 2 bars (here \"3-2\": three strokes, then two). The \"tumbao\" bass plays ahead, on the & of 2 and on 4: it anticipates the next chord."
+    },
+    "bossa": {
+      "name": "Bossa nova",
+      "origin": "Brazil",
+      "description": "Born in Rio in the late 1950s, bossa nova is a slowed-down, intimate samba. The guitar plays two roles at once: the thumb plays the bass on beats 1 and 3, while the fingers pinch the chords off the beat, like the \"rim\" pattern (the rim of the snare drum)."
+    },
+    "reggaeton": {
+      "name": "Reggaeton",
+      "origin": "Puerto Rico / Panama",
+      "description": "Reggaeton is built on the \"dembow\": kick drum on every beat and snare in 3+3+2 (\"boom-chick… boom-chick\"). Being so steady, it's an excellent style for working on precision."
+    },
+    "chachacha": {
+      "name": "Cha-cha-chá",
+      "origin": "Cuba",
+      "description": "Invented in Havana in the 1950s by Enrique Jorrín, the cha-cha-chá is named after the sound of the dancers' feet on \"4-&-1\". The güiro plays three long scrapes then two short ones (\"chaa, chaa, chaa, cha-cha\"), and the cowbell marks every beat."
+    },
+    "bolero": {
+      "name": "Bolero",
+      "origin": "Cuba / Mexico",
+      "description": "The romantic ballad of Latin America, born in Cuba and adopted by Mexican guitar trios. Slow tempo, bongos rolling in eighth notes (the \"martillo\"), bass settled on 1 and 3: the ideal style for polishing your chord changes without being rushed."
+    },
+    "foxtrot": {
+      "name": "Guinguette foxtrot",
+      "origin": "France (musette dance halls)",
+      "description": "Arriving from the United States in the 1920s, the foxtrot became a pillar of the musette dance halls and the riverside guinguettes along the Marne, with accordion, banjo and double bass. Its engine: the \"pompe\" (boom-chick) — bass on 1 and 3, chord slapped on 2 and 4 (\"boom-chak\"). Played fast, it's one of the most infectious rhythms there is."
+    },
+    "swing": {
+      "name": "Swing",
+      "origin": "United States / France (gypsy jazz)",
+      "description": "In swing, eighth notes aren't even: the first is long, the second short (\"doo-ba, doo-ba\"). That lilt is what makes the jazz of the 1930s, and the gypsy jazz of Django Reinhardt, king of the guinguettes. The double bass \"walks\" on every beat, and the cymbal goes \"ding, ding-a-ding\"."
+    }
+  }
+}

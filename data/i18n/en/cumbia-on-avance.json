@@ -1,0 +1,60 @@
+{
+  "packs": {
+    "cumbia-on-avance": {
+      "title": "Cumbia — moving on",
+      "description": "Got the basics? Now we work on dynamics, quick changes, melody and playing \"without a net\"."
+    }
+  },
+  "exercises": {
+    "cumbia-10-nuances": {
+      "title": "Dynamics: soft down, strong up",
+      "description": "The same continuous down-up motion, but the downstrokes are light (small arrows) and the upstrokes, on the off-beats, are firm. This contrast makes your cumbia come alive, even without changing the pattern.",
+      "goal": "A real loud/soft contrast, 2 loops at 100 bpm.",
+      "tips": [
+        "Downstrokes: just brush 2 strings with the tip of your nail. Upstrokes: all the strings, with more speed.",
+        "Exaggerate the contrast at first; you'll refine it later.",
+        "Listen to the guide: the small arrows sound almost like a breath."
+      ]
+    },
+    "cumbia-11-majeur": {
+      "title": "Cumbia in C: C – F – G7",
+      "description": "The three most useful chords on the ukulele (I – IV – V), in chucu-chucu. We add F: only two fingers, and it shares the finger on the G string with Am.",
+      "goal": "All three chords in chucu-chucu, 2 loops at 95 bpm.",
+      "tips": [
+        "C → F: lift the finger off the A string and place two fingers (G and E strings). Practice it on its own, without music, 10 times.",
+        "Change chords during the chuck (✕): the strings don't ring, so nobody hears the move.",
+        "During the G7 bar, already look at where your hand will go for the C."
+      ]
+    },
+    "cumbia-12-demi-mesure": {
+      "title": "Changing every 2 beats",
+      "description": "Am and E7 alternate every two beats in the first bar, then you settle on Am. The changes come twice as fast: this is the step between \"I know my chords\" and \"I play songs\".",
+      "goal": "No late changes, 2 loops at 90 bpm.",
+      "tips": [
+        "Am → E7: the finger on the G string moves back one fret (2 → 1) and two fingers are added on fret 2 (C and A strings). Picture this move before you play.",
+        "If it's not working, set the starting tempo to 50: speed will come.",
+        "Stop looking at your fretting hand: watch the \"Next\" box on screen instead."
+      ]
+    },
+    "cumbia-13-melodie": {
+      "title": "A melody over Am – G – F – E7",
+      "description": "A short original 4-bar melody that follows the Andalusian progression. Every bar uses the same rhythm (\"ta . ta-ta . ta-ta .\") but with the notes of the current chord: you hear the melody \"draw\" the harmony.",
+      "goal": "All 4 bars back to back, 2 loops at 90 bpm.",
+      "tips": [
+        "Learn one bar at a time, with the guide on, muting the rest of the band if needed.",
+        "The rhythm is identical in all 4 bars: once it's in your hand, only the frets change.",
+        "Reminder: pink = A string, yellow = E, turquoise = C."
+      ]
+    },
+    "cumbia-14-sans-filet": {
+      "title": "Without a net: no guide, no metronome",
+      "description": "The guide ukulele and the click are off. Only the band is left, just like at a real dance: it's up to you to lock in with the guiro and the bass. This is what real playing feels like.",
+      "goal": "Stay in time for 4 loops at 105 bpm, listening only to the band.",
+      "tips": [
+        "The guiro is your best friend: its long scrape always lands on the beat.",
+        "The bass plays on 1 and 3: if you hear it \"before\" you, you're dragging.",
+        "To make it harder: turn on the silence challenge."
+      ]
+    }
+  }
+}

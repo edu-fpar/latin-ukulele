@@ -1,15 +1,22 @@
 # Ukulele Latino — entraîneur de rythme
 
-Un groupe virtuel (guiro, conga, basse, clave…) joue avec toi, accélère petit à petit, et t'affiche en temps réel l'accord, le prochain changement et le coup de main droite à jouer.
+![Interface de Ukulele Latino : accord en cours, prochain accord, tempo, grille de grattage et pistes du groupe](img/interface.png)
+
+Un groupe virtuel (guiro, conga, basse, clave, accordéon…) joue avec toi, accélère petit à petit, et t'affiche en temps réel l'accord, le prochain changement et le coup de main droite à jouer. Cumbia, son cubain, bossa nova, reggaeton, cha-cha-chá, boléro, fox-trot et swing guinguette : **50 exercices**, extensibles avec n'importe quelle IA.
+
+*English version available: the **EN** button in the top bar switches the interface and all exercises to English.*
 
 ## Lancer
 
 - **Avec UwAmp** (Apache démarré) : http://localhost/latin-ukulele/
 - **Sans UwAmp** : double-clic sur `lancer.cmd` (nécessite Node.js) → http://localhost:8642/
+- **En ligne** : c'est un site 100 % statique, il fonctionne tel quel sur GitHub Pages.
 
 > Ouvrir `index.html` directement par double-clic ne marche pas (le navigateur bloque la lecture des fichiers JSON).
 
-## Les 5 dimensions travaillées
+Sur téléphone, la liste des exercices s'ouvre avec **📚 Exercices** et une barre de lecture reste en bas de l'écran (tempo, ▶, 🐢).
+
+## Les 6 dimensions travaillées
 
 | Dimension | Comment l'outil t'aide |
 |---|---|
@@ -20,27 +27,50 @@ Un groupe virtuel (guiro, conga, basse, clave…) joue avec toi, accélère peti
 | 🎵 Mélodie | riffs en tablature simplifiée (`A3` = corde de La, case 3) |
 | 🤌 Picking | jeu aux doigts corde par corde (`C.F.G.F.` : pouce sur les temps, pincés sur les contretemps), arpèges qui suivent les accords |
 
+![Bas de l'interface : réglages d'accélération, aides, volumes, conseils et présentation du style](img/interface-bas.png)
+
+## Les parcours
+
+| Parcours | Exercices |
+|---|---|
+| Cumbia — premiers pas | 9 |
+| Cumbia — on avance | 5 |
+| Main gauche : les accords latins | 5 |
+| Finger picking cumbia | 11 |
+| Accompagner une mélodie | 5 |
+| Voyage latino (reggaeton, son, bossa, cha-cha-chá) | 5 |
+| Swing guinguette & syncopes | 10 |
+
 ## Ajouter du contenu
 
 Tout est dans des fichiers JSON (`data/`) au même format, appelé « bundle » :
 `{ "chords": {...}, "styles": [...], "packs": [ { "exercises": [...] } ] }`.
-La spécification complète est dans [docs/prompt-ia.md](docs/prompt-ia.md).
+La spécification complète est dans [docs/prompt-ia.md](docs/prompt-ia.md) ([English](docs/prompt-ia.en.md)).
 
 **Le plus simple** : bouton « ✨ Ajouter des exercices avec une IA » → décris ce que tu veux → « Copier le prompt » → colle-le dans n'importe quelle IA → colle sa réponse → « Vérifier et importer ». Le prompt contient déjà le format, la liste de ce qui existe et ta progression.
 
 **Pour rendre un import permanent** : « ⬇ fichier » dans la liste des imports, place le fichier dans `data/packs/`, ajoute son nom dans `data/manifest.json`.
 
+## Traductions
+
+- **Interface** : `js/i18n.js` (un dictionnaire par langue).
+- **Contenu** : les fichiers de `data/` sont en français ; `data/i18n/en/` contient pour chaque fichier un calque qui remplace, par id, les titres, descriptions, objectifs, conseils, noms de sections et de styles. Les rythmes, accords et tempos ne sont écrits qu'une fois.
+- **Ajouter une langue** : copier le bloc `en` de `js/i18n.js`, créer `data/i18n/<langue>/` (une IA traduit très bien ces fichiers) et les déclarer dans `data/manifest.json` → `"i18n"`.
+
 ## Organisation
 
 ```
-index.html          page
-css/style.css       apparence
-js/engine.js        synthèse audio (ukulélé Karplus-Strong, percussions, basse)
-js/player.js        compilation d'un exercice + horloge précise (Web Audio)
-js/app.js           interface, progression, import IA
-data/manifest.json  liste des fichiers chargés
-data/chords.json    dictionnaire d'accords (cases G C E A)
-data/styles/        un style = des pistes de percussions/basse
-data/packs/         parcours d'exercices
-docs/prompt-ia.md   prompt + format donné à l'IA
+index.html            page (+ balises Open Graph)
+css/style.css         apparence (bureau + vue mobile)
+js/i18n.js            textes de l'interface fr / en
+js/engine.js          synthèse audio (ukulélé Karplus-Strong, percussions, basse, mélodies)
+js/player.js          compilation d'un exercice + horloge précise (Web Audio)
+js/app.js             interface, progression, import IA
+data/manifest.json    fichiers chargés + traductions
+data/chords.json      dictionnaire d'accords (cases G C E A)
+data/styles/          un style = des pistes de percussions/basse
+data/packs/           parcours d'exercices
+data/i18n/en/         traduction anglaise du contenu
+docs/prompt-ia*.md    prompt + format donné à l'IA (fr / en)
+img/                  captures d'écran
 ```

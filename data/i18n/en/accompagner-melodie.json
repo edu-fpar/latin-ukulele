@@ -1,0 +1,71 @@
+{
+  "packs": {
+    "accompagner-melodie": {
+      "title": "Accompanying a melody",
+      "description": "Another musician (flute, accordion, trumpet) plays the tune: your job on ukulele is to carry it. Stay steady, change chords with them, and always know where you are in the song."
+    }
+  },
+  "exercises": {
+    "melodie-01-gaita": {
+      "title": "Listening to the gaita",
+      "description": "The gaita is the flute from cumbia's roots. It plays a 4-bar phrase while you play simple strums on the beats. Listen to how the melody \"announces\" the E7 and then comes back to rest on A minor.",
+      "goal": "Change chords together with the phrase, 2 loops at 90 bpm.",
+      "tips": [
+        "First loop: don't play, just listen to the flute and watch the 🎼 lane in \"The band\".",
+        "When the flute drops to G# (G#4), that's the sound of E7: your left hand should already be there.",
+        "Play softer than the flute: a good accompanist is heard without covering the melody.",
+        "Hum the melody as you play: it's the best way not to get lost."
+      ]
+    },
+    "melodie-02-bolero": {
+      "title": "Bolero: playing softly under a slow melody",
+      "description": "A slow trumpet melody with long held notes. The danger: when the melody holds a note, you tend to slow down with it. Your right hand doesn't change: it's what keeps the song moving.",
+      "goal": "Stay steady during the held notes, 2 loops at 80 bpm.",
+      "tips": [
+        "The \"–\" signs on the melody lane are held notes: during them, you're the one keeping the rhythm alive.",
+        "Turn the guide down, then off: only your ukulele accompanies the trumpet.",
+        "On the G7, the trumpet drops to B (B4): it \"calls\" you back to C."
+      ]
+    },
+    "melodie-03-couplet-refrain": {
+      "title": "Verse and chorus with accordion",
+      "description": "A real little 8-bar song: a verse in A minor, then a chorus that brightens into C major before coming back. Above the grid, the structure bar tells you where you are and what's coming. The accordion is the sound of Mexican cumbia and vallenato.",
+      "goal": "Go from verse to chorus without getting lost, 2 loops at 95 bpm.",
+      "tips": [
+        "Watch the \"Verse / Chorus\" bar: when it announces the chorus for the next bar, get ready to play a little louder.",
+        "The verse goes down toward the low A, the chorus climbs higher: by ear alone, you know where you are without looking.",
+        "The E7 at the end of the chorus leads back to the verse: it's the same E7 → Am change as usual."
+      ],
+      "sections": [
+        { "name": "Verse", "bars": 4 },
+        { "name": "Chorus", "bars": 4 }
+      ]
+    },
+    "melodie-04-son-anticipation": {
+      "title": "Son: the trumpet that comes in early",
+      "description": "In Cuban music, the melody \"anticipates\": it hits the next chord's note on the & of 4, half a beat early, then holds it over the bar line. It's unsettling: your right hand has to stay on your pattern, and your chord change stays on the 1.",
+      "goal": "Don't change chords early with the trumpet, 2 loops at 100 bpm.",
+      "tips": [
+        "Find the last step of each bar on the 🎼 lane: the note starts there and carries over (–) into the next bar.",
+        "You always change chords on the 1. Only the melody is early.",
+        "Listen to how it \"pulls\" the song forward: that's what's called Cuban swing."
+      ]
+    },
+    "melodie-05-morceau-complet": {
+      "title": "The full song: intro, verse, chorus",
+      "description": "Ten bars, just like at a real dance: a 2-bar intro where you set up the groove on your own with the band, then the accordion comes in for the verse and chorus. The guide fades away: you're the orchestra's ukulele player.",
+      "goal": "Hold the whole song, guide off, 2 loops at 105 bpm.",
+      "tips": [
+        "During the intro, you set the tone: play with confidence, the accordion will lock in with you.",
+        "At the end of the intro, the accordion plays two pickup notes (E, D): the verse starts right after.",
+        "If you get lost, look at the structure bar and jump back in at the start of the next section.",
+        "For an extra challenge: turn on the silence challenge. The melody goes quiet too: you have to find your place in the song."
+      ],
+      "sections": [
+        { "name": "Intro", "bars": 2 },
+        { "name": "Verse", "bars": 4 },
+        { "name": "Chorus", "bars": 4 }
+      ]
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "packs": {
+    "picking-cumbia": {
+      "title": "Cumbia finger picking",
+      "description": "Play with your fingers, string by string: your thumb plays the bass like the cumbia bajo, and your fingers play the \"chucu\" on the off-beats. Letters = strings: G (thumb), C (thumb), E (index finger), A (middle finger)."
+    }
+  },
+  "exercises": {
+    "picking-01-quatre-doigts": {
+      "title": "One string, one finger",
+      "description": "The Am7 chord is played… with no fingers at all (all open strings), so all your attention goes to your right hand. Pluck the 4 strings one after another in steady eighth notes: G, C, E, A, then start again.",
+      "goal": "Eight even notes per bar, 2 loops at 85 bpm.",
+      "tips": [
+        "Finger assignment: thumb for G and C, index finger for E, middle finger for A. Keep it for every exercise in this path.",
+        "Your thumb plucks downward, your fingers pull up toward your palm. Your hand stays still; only your fingers move.",
+        "Rest your pinky or the heel of your hand on the ukulele's top to steady your hand.",
+        "Listen to the guiro: each note should land on one of its \"tchk\" sounds."
+      ]
+    },
+    "picking-02-pouce-basse": {
+      "title": "Your thumb plays the bass",
+      "description": "In cumbia, the bass alternates between two notes. Your thumb does the same: C string on beats 1 and 3, G string on beats 2 and 4. Quarter notes only, so your left hand has plenty of time to change chords.",
+      "goal": "A steady thumb through the chord changes, 2 loops at 90 bpm.",
+      "tips": [
+        "Keep your thumb slightly stiff and make small movements: it \"falls\" onto the next string.",
+        "Listen to the band's bass: your thumb is having a conversation with it.",
+        "Get the G7 ready during beat 4 of the C: your thumb is the only anchor your left hand has."
+      ]
+    },
+    "picking-03-contretemps": {
+      "title": "Thumb on the beat, finger on the &",
+      "description": "The cumbia chucu-chucu, fingerstyle: your thumb plays the bass softly on the beats, and your middle finger snaps the A string on every off-beat. That accent on the & is what makes people dance.",
+      "goal": "Off-beats much louder than the bass, 2 loops at 95 bpm.",
+      "tips": [
+        "Lowercase = soft, uppercase = loud. Your thumb brushes, your middle finger plucks firmly.",
+        "Say \"boom CHA boom CHA\": the CHA is your middle finger.",
+        "Am → E7: keep your thumb moving even if your left hand isn't ready yet."
+      ]
+    },
+    "picking-04-pinces": {
+      "title": "Bass and pinches: fingerstyle cumbia",
+      "description": "Same idea, but fuller: on the off-beats, three fingers pinch the C, E and A strings together (F = pinch). Your thumb alternates C and G on the beats. This is the most useful fingerstyle accompaniment in cumbia.",
+      "goal": "Bass and pinches clearly separated, 2 loops at 95 bpm.",
+      "tips": [
+        "For the pinch: thumb on C, index finger on E, middle finger on A, and squeeze like you're grabbing a pinch of salt. Then your thumb jumps to G for the next beat.",
+        "The pinch should be short and crisp, like the chucu chuck.",
+        "Mute the conga: you'll hear better whether your pinches land right in the middle of the beats."
+      ]
+    },
+    "picking-05-arpege": {
+      "title": "The arpeggio that follows the chords",
+      "description": "A \"there and back\" arpeggio (C, E, A, E) over a 4-chord progression. The notes change on their own when you change chords: that's how an arpeggio tells the story of the harmony.",
+      "goal": "A continuous arpeggio through the changes, 2 loops at 90 bpm.",
+      "tips": [
+        "Thumb on C, index finger on E, middle finger on A, then index finger on E again.",
+        "Fret the whole chord before you start, not just the note you're about to pluck: the arpeggio should ring out.",
+        "C → Am → F → G7: the \"50s\" progression, also very common in Mexican cumbias."
+      ]
+    },
+    "picking-06-pouce-alterne": {
+      "title": "Alternating thumb, fingers on the off-beats",
+      "description": "Your thumb alternates C and G on the beats (just like in \"Your thumb plays the bass\"), and your fingers answer on the off-beats, alternating A and E. Two voices locking together: this is where finger independence begins.",
+      "goal": "Both voices without a hitch, 2 loops at 95 bpm.",
+      "tips": [
+        "First play the thumb alone (C . G . C . G .), then only the fingers (. A . E . A . E), then put them together.",
+        "Don't look at your right hand: it should find the strings by feel.",
+        "If you stumble, slow down with \"🐢 Too fast!\" instead of stopping."
+      ]
+    },
+    "picking-07-pince-exterieur": {
+      "title": "The thumb–middle finger pinch",
+      "description": "Your thumb (G string) and middle finger (A string) pinch the two outer strings together: an open sound, typical of requinto guitars. Then your index finger and thumb follow with single notes on E and C.",
+      "goal": "Well-synchronized pinches, 2 loops at 95 bpm.",
+      "tips": [
+        "On \"G+A\", both notes must start at exactly the same time: one sound, not two.",
+        "The pattern: pinch, E, C, E. Say \"CHONG, ti, to, ti\".",
+        "Am → F → G → E7: the Andalusian progression, the heart of cumbia."
+      ]
+    },
+    "picking-08-guiro": {
+      "title": "Imitating the guiro in 16th notes",
+      "description": "The cumbia guiro goes \"tchaa-k-k\" on every beat: one long, two short. Your picking takes exactly that rhythm: thumb on the beat, then index and middle fingers very fast (E, A). The grid switches to 16 steps.",
+      "goal": "A steady \"long-short-short\", 2 loops at 90 bpm.",
+      "tips": [
+        "Find the guiro lane in \"The band\": your pattern lines up with it step by step.",
+        "The two fast notes (E, A) are played like a little finger roll, almost a single motion.",
+        "Start at 55 bpm if you need to: 16th notes go fast."
+      ]
+    },
+    "picking-09-sous-la-gaita": {
+      "title": "Soft arpeggio under the gaita",
+      "description": "Finger picking is the best way to accompany a melody: it leaves room. The gaita flute plays the tune while you arpeggiate softly underneath (lowercase = soft). The guide fades after 2 loops.",
+      "goal": "A soft, steady arpeggio under the melody, 2 loops at 90 bpm.",
+      "tips": [
+        "Play noticeably softer than the flute: if you can't hear it anymore, you're playing too loud.",
+        "When the flute holds a long note, your arpeggio keeps the song moving: don't slow down.",
+        "Hum the melody as you play; it helps you feel the chord changes."
+      ]
+    },
+    "picking-10-silence": {
+      "title": "Holding the arpeggio alone",
+      "description": "The silence challenge, fingerstyle: one bar out of four, the band drops out and your picking has to carry on at exactly the same tempo. When playing with your fingers, it's easy to slow down: this exercise exposes it.",
+      "goal": "Land back in time after every silence, 4 loops at 100 bpm.",
+      "tips": [
+        "During the silence, keep tapping your foot: that's your metronome.",
+        "If you come back late, you're slowing down when you're alone: think \"forward\" during the silence.",
+        "The pattern is the one from \"Bass and pinches\": go back to it if you're not comfortable yet."
+      ]
+    },
+    "picking-11-tempo-bal": {
+      "title": "Picking at dance-hall tempo",
+      "description": "The 16th-note \"guiro\" pattern, over the Andalusian progression with the alternating C / G thumb. We build up to the tempo of a real cumbia, with the guide off after 2 loops. This is the culmination of the path.",
+      "goal": "Hold 2 loops at 105 bpm, guide off.",
+      "tips": [
+        "The faster it gets, the closer your fingers should stay to the strings: tiny movements.",
+        "Your thumb is your anchor: even if a high note slips, the bass must never drop out.",
+        "Your record is saved: aim for a few more bpm each session."
+      ]
+    }
+  }
+}

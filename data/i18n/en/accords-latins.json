@@ -1,0 +1,60 @@
+{
+  "packs": {
+    "accords-latins": {
+      "title": "Fretting hand: Latin chords",
+      "description": "Richer and richer chord changes, always with a simple rhythm so all your attention goes to your fretting hand."
+    }
+  },
+  "exercises": {
+    "accords-01-am-f": {
+      "title": "Am ↔ F: just one finger to add",
+      "description": "The easiest change there is: Am takes one finger (G string, fret 2), and F keeps that finger and adds one more (E string, fret 1). Perfect for learning NOT to lift your fingers for nothing.",
+      "goal": "Change without ever lifting the finger on the G string, 2 loops at 80 bpm.",
+      "tips": [
+        "The finger on the G string stays glued down: it's your \"pivot\".",
+        "Place the 2nd finger during beat 4, not after the 1.",
+        "Bolero is slow: make the most of it and let each chord ring all the way through."
+      ]
+    },
+    "accords-02-bolero": {
+      "title": "Bolero: C – Am – F – G7",
+      "description": "The progression behind a thousand romantic songs, over the slow bolero rhythm. The \"down, down-up, down, down-up\" pattern is soft and steady: let the chords breathe.",
+      "goal": "All 4 chords back to back with no gaps, 2 loops at 80 bpm.",
+      "tips": [
+        "C → Am: one finger leaves, another arrives. Am → F: one finger is added. F → G7: the shape shifts over.",
+        "Play more gently than for cumbia: bolero is sung close to the ear.",
+        "Listen to the bongos rolling in eighth notes: they give you the speed of your strumming hand."
+      ]
+    },
+    "accords-03-demi-mesure": {
+      "title": "Two chords per bar",
+      "description": "The same progression, but twice as tight: a new chord every two beats. The rhythm is simplified (one strum per beat) so your fretting hand has time to keep up.",
+      "goal": "All 4 changes per bar, 2 loops at 85 bpm.",
+      "tips": [
+        "You only get 2 beats per chord: start the change as early as beat 2.",
+        "Keep your fingers close to the strings: the less they wander, the faster you are.",
+        "Go back to \"Bolero: C – Am – F – G7\" if one change won't come."
+      ]
+    },
+    "accords-04-cycle-septiemes": {
+      "title": "The cycle of sevenths: A7 – D7 – G7 – C",
+      "description": "Each seventh chord \"calls\" the next one, all the way to the C that resolves everything. It's the king of progressions in Cuban music (and jazz). Listen to the tension of each 7th and the relief of the C.",
+      "goal": "The full cycle, 2 loops at 95 bpm.",
+      "tips": [
+        "A7: just one finger (C string, fret 1). D7: a barre or three fingers on fret 2. G7: the triangle shape. C: one finger.",
+        "D7 → G7: the finger on the C string (fret 2) stays put — it's your anchor point.",
+        "Listen: each 7th sounds \"suspended\", and the final C settles everything. Once you can hear it, you know where you are without looking at the screen."
+      ]
+    },
+    "accords-05-bossa-251": {
+      "title": "Jazzy chords in bossa: Dm7 – G7 – Cmaj7",
+      "description": "The famous \"II – V – I\" with that unmistakably Brazilian sound, using bossa's thumb-and-fingers technique. The shapes sit close to each other: your hand glides more than it jumps.",
+      "goal": "A steady thumb and ringing chords, 2 loops at 85 bpm.",
+      "tips": [
+        "Dm7 → G7: two fingers stay put (C string fret 2, E string fret 1); only the ones on the G and A strings move.",
+        "Cmaj7: just one finger (A string, fret 2) — enjoy it for 2 bars.",
+        "Do \"Bossa nova: thumb and fingers\" first if the pattern isn't automatic yet."
+      ]
+    }
+  }
+}

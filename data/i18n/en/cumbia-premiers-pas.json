@@ -1,0 +1,105 @@
+{
+  "packs": {
+    "cumbia-premiers-pas": {
+      "title": "Cumbia — first steps",
+      "description": "From \"I strum on the beats\" to \"I get people dancing\". Each exercise works on just one difficulty at a time."
+    }
+  },
+  "exercises": {
+    "cumbia-01-pulsation": {
+      "title": "Feel the pulse",
+      "description": "A single chord (C: just one finger, 3rd fret of the A string) and one downstroke on every beat. The goal isn't to sound pretty: it's to land EXACTLY with the kick drum and the click.",
+      "goal": "Hold 2 loops in a row at 90 bpm without stopping.",
+      "tips": [
+        "Tap your foot on every beat: your foot is your conductor.",
+        "Count out loud \"1, 2, 3, 4\". Yes, out loud, really.",
+        "If you get lost, don't stop: wait for the next \"1\" (the big orange dot) and jump back in.",
+        "Turn the guide ukulele off (\"off\" setting) once you feel comfortable: you'll hear better whether you're in time."
+      ]
+    },
+    "cumbia-02-contretemps": {
+      "title": "The off-beat, heart of cumbia",
+      "description": "In cumbia, what makes people dance falls BETWEEN the beats. Here you only play the \"&\"s, with upstrokes. It feels strange at first: that's exactly what will put groove into your playing.",
+      "goal": "Play the off-beats for 2 loops without slipping back onto the beats, at 90 bpm.",
+      "tips": [
+        "Your hand moves non-stop like a windshield wiper: it goes DOWN without touching the strings on the beats, and comes back UP strumming on the \"&\"s.",
+        "Say \"1 & 2 & 3 & 4 &\", shouting the &s.",
+        "Tap your foot on the beats: your foot and your hand never hit at the same time.",
+        "Listen to the guiro: its \"chk-chk\" gives you all the little subdivisions."
+      ]
+    },
+    "cumbia-03-chucu": {
+      "title": "The \"chucu-chucu\" (chuck)",
+      "description": "Now we combine the two previous exercises: on the beats you CHUCK (the side or palm of your hand drops onto the strings: \"chk\"), and on the off-beats you strum up. The result: cumbia's famous \"chucu-chucu\" sound.",
+      "goal": "A nice dry chuck and a clear upstroke, 2 loops at 95 bpm.",
+      "tips": [
+        "The chuck (✕): let your strumming hand fall flat onto the strings, like a little slap. There should be almost no note at all.",
+        "You can also mute with your fretting hand: just release the finger pressure at the moment of the ✕.",
+        "Keep the same continuous down-up motion as in the previous exercise: only the way you touch the strings changes.",
+        "Turn the metronome down and listen to the conga: it plays the same question-and-answer game."
+      ]
+    },
+    "cumbia-04-changement": {
+      "title": "First change: C ↔ G7",
+      "description": "A very simple rhythm (4 downstrokes) so you can put all your attention on your fretting hand. The secret of an on-time change: you prepare it BEFORE you get there.",
+      "goal": "Change with no gap and no delay, 2 loops at 85 bpm.",
+      "tips": [
+        "Watch the \"Next\" box: when it lights up orange, your fingers should already be on their way.",
+        "On beat 4, let go of the chord a little early: an open string is better than being late on the 1.",
+        "The rhythm NEVER stops to wait for your fretting hand. If the chord isn't ready, strum anyway.",
+        "Practice the change silently, without strumming, 10 times in a row before starting the music."
+      ]
+    },
+    "cumbia-05-rasgueo": {
+      "title": "The full cumbia rasgueo",
+      "description": "The \"down, down-up, (miss), up, down-up\" pattern: the go-to strum of Latin and Caribbean music. It mixes beats and off-beats, which is what gives it its sway.",
+      "goal": "The full pattern with the chord changes, 2 loops at 95 bpm.",
+      "tips": [
+        "Your hand always goes down-up-down-up in eighth notes. The empty slots are MISSED strokes: your hand never stops.",
+        "Sing the pattern: \"boom, boom-ta, (nothing), ta, boom-ta\".",
+        "Start with the guide on \"plays along\", then switch to \"fades after 2 loops\"."
+      ]
+    },
+    "cumbia-06-riff": {
+      "title": "Notes in rhythm: a cumbia riff",
+      "description": "Single notes, but with rhythm! \"A3\" means: A string (the thinnest one, at the bottom), 3rd fret. \"E0\": open E string. The riff follows the chords: A minor, then E7.",
+      "goal": "The riff with no hesitation, 2 loops at 90 bpm.",
+      "tips": [
+        "Colors = strings: pink = A, yellow = E, turquoise = C, orange = G.",
+        "Play with your thumb or index finger — always the same strumming-hand finger to start with.",
+        "Repeated notes should be perfectly even: that's what sounds \"cumbia\".",
+        "Once you're comfortable, turn the guide off: the band plays Am then E7, and your riff has to stand on its own."
+      ]
+    },
+    "cumbia-07-mineur": {
+      "title": "Cumbia in A minor",
+      "description": "Lots of cumbias are in a minor key. Four chords, the \"chucu-chucu\", and the E7 that always leads back to A minor.",
+      "goal": "All 4 chords in chucu-chucu, 2 loops at 95 bpm.",
+      "tips": [
+        "Am → Dm: add two fingers; the one on the G string stays put.",
+        "Dm → E7: this is the tricky change, so practice it on its own first, without music.",
+        "During the chuck (✕), your fretting hand can relax: use that moment to change chords!"
+      ]
+    },
+    "cumbia-08-silence": {
+      "title": "Keep it going alone: the silence challenge",
+      "description": "One bar in four, everyone goes quiet (even the metronome and the lit-up step). Keep playing and counting: when the band comes back, you must be right on the \"1\". This is THE test that shows whether the rhythm is really inside you.",
+      "goal": "Land back in time after every silence, 4 loops at 100 bpm.",
+      "tips": [
+        "During the silence, count out loud and tap your foot harder.",
+        "If you're early when the band comes back, you speed up when you're on your own (very common!).",
+        "The guide fades after 2 loops: from then on, you're the band's ukulele."
+      ]
+    },
+    "cumbia-09-vitesse": {
+      "title": "Up to real tempo",
+      "description": "The \"Andalusian\" progression Am – G – F – E7, everywhere in cumbia, with the full rasgueo. We build up to the tempo of a real dance-hall cumbia.",
+      "goal": "Hold 2 loops at 110 bpm, guide off.",
+      "tips": [
+        "Use \"🐢 Too fast!\" without shame: the app slows back down and gives you more time.",
+        "The faster it gets, the more relaxed your strumming hand must be: the motion comes from the wrist, not the arm.",
+        "Your record is saved: come back tomorrow and you'll go faster (your brain consolidates while you sleep)."
+      ]
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "packs": {
+    "swing-guinguette": {
+      "title": "Guinguette swing & syncopation",
+      "description": "The fox-trot pompe, the lilt of swing, and the syncopations jazz shares with Latin music (tresillo, Charleston). From a relaxed \"boom-chick\" all the way to a full-speed dance-hall fox-trot."
+    }
+  },
+  "exercises": {
+    "swing-01-pompe": {
+      "title": "The pompe: boom-chick",
+      "description": "The basic move behind all musette music: the pompe, the boom-chick strum. Your thumb plays the bass on 1 and 3 (\"boom\"), then a down-strum across the whole chord on 2 and 4 (\"chick\"). Just the two easiest chords, C and G7, so you can focus on that back-and-forth.",
+      "goal": "A steady boom-chick, 2 loops at 110 bpm.",
+      "tips": [
+        "\"P\" = thumb on the C string (and a bit of G). \"↓\" = the whole chord, downward.",
+        "The boom is soft and round, the chick is drier and louder: that's what makes people dance.",
+        "Listen to the snare: it hits exactly with your \"chicks\"."
+      ]
+    },
+    "swing-02-backbeat": {
+      "title": "2 and 4: where it all happens",
+      "description": "In swing, just like in Latin music, the strong beats aren't the ones you'd expect: 2 and 4 are where people clap. Here you play light strums on 1 and 3 and a snappy chuck on 2 and 4. Plus a bonus chord: C6, all open strings, the signature color of the guinguette.",
+      "goal": "Chucks right with the snare, 2 loops at 120 bpm.",
+      "tips": [
+        "C6 needs no fingers at all: all 4 strings open. Your left hand gets a rest.",
+        "Clap on 2 and 4 before you play, listening to the snare.",
+        "It's the same idea as the cumbia chucu-chucu, but the chuck lands on 2 and 4 instead of every beat."
+      ]
+    },
+    "swing-03-ternaire": {
+      "title": "Feel the swing: doo-ba, doo-ba",
+      "description": "Continuous down-up eighth notes… but \"swung\": the down is long, the up is short and arrives late. It isn't written on the grid, you hear it: listen to the guide and the cymbal, and copy that lilt.",
+      "goal": "A natural lilt, 2 loops at 120 bpm.",
+      "tips": [
+        "Sing \"doo-ba doo-ba\" or \"ti-ke ti-ke\", lingering on the first sound.",
+        "Think of a galloping horse, or of 3 triplet eighths where you only play the 1st and the 3rd.",
+        "Mute the bass and the snare: the cymbal (hihat) alone shows the swing really clearly."
+      ]
+    },
+    "swing-04-anatole": {
+      "title": "The swing progression: C6 – A7 – D7 – G7",
+      "description": "A chain of sevenths that loops around: each chord pulls toward the next (A7 to D7, D7 to G7, G7 to C). It's the progression behind hundreds of guinguette and jazz tunes. Played with the pompe, so your right hand runs on autopilot.",
+      "goal": "All 4 chords with no gaps, 2 loops at 115 bpm.",
+      "tips": [
+        "A7: one finger (C string, fret 1). D7: three fingers on fret 2 and one on fret 3. G7: the triangle.",
+        "Change chords on the \"boom\" (beat 1): during the \"chick\" on 4, your left hand can already start moving.",
+        "You'll find this A7 – D7 – G7 – C cycle again in Cuban music: the same progression travels everywhere."
+      ]
+    },
+    "swing-05-tresillo": {
+      "title": "The tresillo: 3 + 3 + 2",
+      "description": "Three strums per bar, spaced 3, 3, then 2 eighth notes apart. This rhythm from Africa is everywhere: habanera and Cuban son, reggaeton (the dembow!), but also ragtime and swing. It's THE syncopation to have in your hands, whether you're heading to Cuba or to the guinguette.",
+      "goal": "A well-placed 3 + 3 + 2, 2 loops at 100 bpm.",
+      "tips": [
+        "Count the eighths \"1 2 3 1 2 3 1 2\" and play on every \"1\".",
+        "The 2nd strum falls on the \"&\" of 2: between two beats. Tap your foot on the beats to feel it.",
+        "Listen to the clave: in the 1st bar (the \"3\" side), it plays exactly the tresillo with you."
+      ]
+    },
+    "swing-06-charleston": {
+      "title": "The Charleston: 1 and the \"&\" of 2",
+      "description": "Just two strums: on 1, and just before 3. It's the rhythm of the 1920s Charleston dance, and it's actually the start of the tresillo! The silence in the second half of the bar matters as much as the strums: don't fill it.",
+      "goal": "Two clean strums and a real silence, 2 loops at 130 bpm.",
+      "tips": [
+        "Keep the strums short: mute right after by relaxing your left hand.",
+        "During the silence, count \"3, 4\" in your head and keep your hand moving without touching the strings.",
+        "Compare with the tresillo exercise: same start, but you stop after the 2nd strum."
+      ]
+    },
+    "swing-07-diminue": {
+      "title": "The passing diminished chord",
+      "description": "Between C and Dm7, a chord that \"creaks\" makes the transition: C#dim. This little passing chord is the signature sound of musette and manouche jazz. Good news: C#dim takes only two fingers.",
+      "goal": "All 4 chords in a row, 2 loops at 120 bpm.",
+      "tips": [
+        "C#dim: fret 1 on the C and A strings. Dm7: add one finger and shift.",
+        "Listen to the bass: C, C#, D… it climbs a semitone each time, and that's what gives it momentum.",
+        "Dm7 → G7: two fingers stay put (C string fret 2, E string fret 1)."
+      ]
+    },
+    "swing-08-accordeon": {
+      "title": "Accordion fox-trot",
+      "description": "The accordion plays an original dance-hall tune over 8 bars, in two parts. You play the pompe underneath, like the banjo in a guinguette band. It reuses the two previous progressions: the swing progression, then the passing diminished chord.",
+      "goal": "Hold the 8 bars under the accordion, 2 loops at 130 bpm.",
+      "tips": [
+        "Watch the structure bar: in Part B, the C#dim shows up as early as the 2nd bar.",
+        "The accordion is the star: your pompe should be steady and discreet, like an engine.",
+        "At the end of Part B, the accordion climbs to the high D: that's the cue to go back to Part A."
+      ],
+      "sections": [
+        { "name": "Part A", "bars": 4 },
+        { "name": "Part B", "bars": 4 }
+      ]
+    },
+    "swing-09-pompe-manouche": {
+      "title": "The manouche pompe",
+      "description": "The manouche jazz version of the pompe: a down-strum on every beat, but 2 and 4 are snappy chucks, each preceded by a tiny up-strum (swung, so very close to the beat). In a minor key, like Django's waltzes and swing tunes.",
+      "goal": "A tight, punchy pompe, 2 loops at 150 bpm.",
+      "tips": [
+        "The light little \"↑\" is almost a brush: it sets up the snap on 2 and 4.",
+        "1 and 3 ring a little, 2 and 4 are very short: relax your left hand right after.",
+        "Raise the tempo in small steps: the manouche pompe is often played between 150 and 250 bpm!"
+      ]
+    },
+    "swing-10-fox-a-fond": {
+      "title": "Fox-trot flat out",
+      "description": "The finale: the pompe with an extra up-strum after each \"chick\" (boom-chick-a, boom-chick-a), on the swing progression with Dm7. You start relaxed and work up to the tempo of a wild dance-hall fox-trot. The guide fades out: you're the band's banjo now.",
+      "goal": "Hold 2 loops at 160 bpm without tensing up.",
+      "tips": [
+        "The faster it gets, the looser your thumb and wrist need to be: it's a bounce, not a hit.",
+        "If it gets messy, \"🐢 Too fast!\": a clean 140 beats a sloppy 160.",
+        "Your record is saved: try to gain 5 bpm each session."
+      ]
+    }
+  }
+}

@@ -39,7 +39,7 @@ function parsePattern(str, spb, isTokens, warn, label) {
   }
   bars.forEach((b, i) => {
     if (spb % b.length !== 0 && warn) {
-      warn(`${label} : la mesure ${i + 1} a ${b.length} cases, ce n'est pas un diviseur de ${spb} (cases par mesure du style).`);
+      warn(t('warn.pattern', { label, n: i + 1, len: b.length, spb }));
     }
   });
   return bars.length ? bars : [['.']];
@@ -64,7 +64,7 @@ function compileExercise(ex, db) {
   const warnings = [];
   const warn = m => warnings.push(m);
   const style = db.styles[ex.style];
-  if (!style) throw new Error(`Style inconnu : "${ex.style}"`);
+  if (!style) throw new Error(t('warn.unknownStyle', { id: ex.style }));
   const beats = style.beats || 4;
   const sub = style.subdivision || 4;
   const spb = beats * sub;
@@ -77,7 +77,7 @@ function compileExercise(ex, db) {
   const chordAt = new Array(loopSteps);
   let s = 0;
   for (const p of prog) {
-    if (!db.chords[p.chord]) warn(`Accord "${p.chord}" absent du dictionnaire : pas de diagramme ni de son de ukulélé.`);
+    if (!db.chords[p.chord]) warn(t('warn.chord', { chord: p.chord }));
     const n = Math.round(p.beats * sub);
     for (let i = 0; i < n && s < loopSteps; i++) chordAt[s++] = p.chord;
   }
@@ -85,31 +85,31 @@ function compileExercise(ex, db) {
 
   const tracks = {};
   for (const [name, pat] of Object.entries(style.tracks || {})) {
-    if (!(name in Engine.INSTRUMENTS)) { warn(`Instrument inconnu dans le style : "${name}"`); continue; }
-    tracks[name] = parsePattern(pat, spb, false, warn, `Piste ${name}`);
+    if (!(name in Engine.INSTRUMENTS)) { warn(t('warn.inst', { name })); continue; }
+    tracks[name] = parsePattern(pat, spb, false, warn, t('lbl.track', { name }));
   }
-  const strum = ex.strum ? parsePattern(ex.strum, spb, false, warn, 'Grattage') : null;
-  const riff = ex.riff ? parsePattern(ex.riff, spb, true, warn, 'Riff') : null;
+  const strum = ex.strum ? parsePattern(ex.strum, spb, false, warn, t('lbl.strum')) : null;
+  const riff = ex.riff ? parsePattern(ex.riff, spb, true, warn, t('lbl.riff')) : null;
 
   // Mélodie jouée par un autre instrument : notes "A4", "-" = tenue, "." = silence
   let melody = null;
   if (ex.melody) {
     const m = typeof ex.melody === 'string' ? { notes: ex.melody } : ex.melody;
     const inst = m.instrument || 'flute';
-    if (!(inst in Engine.MELODY_INSTRUMENTS)) warn(`Instrument de mélodie inconnu : "${inst}" (disponibles : ${Object.keys(Engine.MELODY_INSTRUMENTS).join(', ')})`);
-    const mbars = parsePattern(m.notes || '', spb, true, warn, 'Mélodie');
+    if (!(inst in Engine.MELODY_INSTRUMENTS)) warn(t('warn.melInst', { inst, list: Object.keys(Engine.MELODY_INSTRUMENTS).join(', ') }));
+    const mbars = parsePattern(m.notes || '', spb, true, warn, t('lbl.melody'));
     const len = mbars.length * spb;
     const toks = Array.from({ length: len }, (_, k) => cellAt(mbars, k, spb));
     const events = new Array(len).fill(null);
     toks.forEach((tok, k) => {
       if (!tok || tok === '.' || tok === '-') return;
       const midi = Engine.noteToMidi(tok);
-      if (midi == null) { warn(`Mélodie : note "${tok}" illisible (attendu par ex. A4, C#5, Bb4).`); return; }
+      if (midi == null) { warn(t('warn.melNote', { tok })); return; }
       let j = k + 1;
       while (j < len && (toks[j] == null || toks[j] === '-')) j++;
       events[k] = { midi, steps: j - k };
     });
-    if (mbars.length !== bars && loopSteps % len !== 0) warn(`Mélodie : ${mbars.length} mesures pour une grille de ${bars} mesures.`);
+    if (mbars.length !== bars && loopSteps % len !== 0) warn(t('warn.melBars', { n: mbars.length, bars }));
     melody = { inst, bars: mbars, len, events };
   }
 
@@ -118,19 +118,19 @@ function compileExercise(ex, db) {
   if (Array.isArray(ex.sections) && ex.sections.length) {
     let b = 0;
     sections = ex.sections.map(sc => { const o = { name: sc.name, bars: sc.bars || 1, start: b }; b += o.bars; return o; });
-    if (b !== bars) warn(`Sections : ${b} mesures au total, mais la grille d'accords en fait ${bars}.`);
+    if (b !== bars) warn(t('warn.sections', { n: b, bars }));
   }
 
   const chordNames = [...new Set(chordAt)];
   const notesByChord = {};
   chordNames.forEach(c => notesByChord[c] = Engine.chordNotes(db.chords[c]));
 
-  const t = ex.tempo || {};
+  const tp = ex.tempo || {};
   const tempo = {
-    start: t.start || style.defaultBpm || 80,
-    target: t.target || (t.start || style.defaultBpm || 80) + 20,
-    step: t.step || 4,
-    every: t.everyLoops || t.every || 2
+    start: tp.start || style.defaultBpm || 80,
+    target: tp.target || (tp.start || style.defaultBpm || 80) + 20,
+    step: tp.step || 4,
+    every: tp.everyLoops || tp.every || 2
   };
 
   return {

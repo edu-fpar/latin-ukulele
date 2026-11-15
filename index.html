@@ -2,19 +2,43 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1b1410">
   <title>Ukulele Latino</title>
-  <meta name="description" content="Entraîneur de rythme latino pour ukulélé : accompagnements qui accélèrent progressivement.">
+  <meta name="description" content="Entraîneur de rythme latino et swing pour ukulélé : un groupe virtuel (cumbia, son, bossa, fox-trot…) qui accélère progressivement. Latin & swing rhythm trainer for ukulele.">
+
+  <!-- Open Graph / partage sur les réseaux -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ukulele Latino">
+  <meta property="og:title" content="Ukulele Latino — entraîneur de rythme pour ukulélé">
+  <meta property="og:description" content="Un groupe virtuel (cumbia, son, bossa, fox-trot…) joue avec toi et accélère progressivement : rythme, accords, picking, écoute. 50 exercices, extensibles avec une IA.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/fxpar/latin-ukulele/main/img/interface.png">
+  <meta property="og:image:width" content="1598">
+  <meta property="og:image:height" content="1196">
+  <meta property="og:image:alt" content="Interface de Ukulele Latino : accord en cours, prochain accord, tempo, grille de grattage et pistes du groupe">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ukulele Latino — rhythm trainer for ukulele">
+  <meta name="twitter:description" content="A virtual Latin & swing band that plays along and gradually speeds up.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/fxpar/latin-ukulele/main/img/interface.png">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="top">
-    <div class="brand"><span class="logo">🪇</span><div><b>Ukulele Latino</b><small>entraîneur de rythme</small></div></div>
-    <button id="btnAI" class="accent">✨ Ajouter des exercices avec une IA</button>
+    <button id="btnList" class="ghost mobile-only" data-i18n="btn.list">📚 Exercices</button>
+    <div class="brand"><span class="logo">🪇</span><div><b>Ukulele Latino</b><small data-i18n="app.tagline">entraîneur de rythme</small></div></div>
+    <div class="topbtns">
+      <button id="langBtn" class="ghost lang" data-i18n-title="title.lang">EN</button>
+      <button id="btnAI" class="accent"><span class="desktop-only" data-i18n="btn.ai">✨ Ajouter des exercices avec une IA</span><span class="mobile-only" data-i18n="btn.aiShort">✨ IA</span></button>
+    </div>
   </header>
 
   <main class="layout">
+    <div id="backdrop" class="backdrop"></div>
     <aside id="sidebar">
+      <div class="drawerhead mobile-only"><b data-i18n="btn.list">📚 Exercices</b><button id="drawerClose" class="ghost" data-i18n-title="btn.close">✕</button></div>
       <div id="filters" class="filters"></div>
       <div id="packs"></div>
     </aside>
@@ -30,97 +54,113 @@
 
         <div class="tempobox">
           <div class="bpmline">
-            <button id="minus" class="round" title="Ralentir (flèche bas)">−</button>
+            <button id="minus" class="round" data-i18n-title="title.minus">−</button>
             <div class="bpm"><span id="bpm">80</span><small>bpm</small></div>
-            <button id="plus" class="round" title="Accélérer (flèche haut)">+</button>
+            <button id="plus" class="round" data-i18n-title="title.plus">+</button>
           </div>
-          <div class="tempotrack" title="Progression vers le tempo cible"><div id="tempoBar"></div></div>
+          <div class="tempotrack" data-i18n-title="title.tempoBar"><div id="tempoBar"></div></div>
           <div id="beats" class="beats"></div>
           <div class="transport">
-            <button id="play" class="play">▶ Jouer</button>
-            <button id="tooFast" class="warn" title="Raccourci : T">🐢 Trop vite !</button>
-            <button id="restart" class="ghost" title="Revenir au tempo de départ">↺</button>
+            <button id="play" class="play" data-i18n="btn.play">▶ Jouer</button>
+            <button id="tooFast" class="warn" data-i18n="btn.tooFast" data-i18n-title="title.tooFast">🐢 Trop vite !</button>
+            <button id="restart" class="ghost" data-i18n-title="title.restart">↺</button>
           </div>
-          <div id="status" class="status">Prêt. Espace pour jouer / arrêter.</div>
+          <div id="status" class="status"></div>
           <div id="record" class="record"></div>
         </div>
       </div>
 
       <div class="gridwrap">
-        <div class="gridhead"><span id="barInfo"></span><span class="muted small">La case allumée = maintenant. Joue sur les flèches, compte à voix haute.</span></div>
+        <div class="gridhead"><span id="barInfo"></span><span class="muted small desktop-only" data-i18n="grid.hint">La case allumée = maintenant. Joue sur les flèches, compte à voix haute.</span></div>
         <div id="form" class="form"></div>
         <div id="grid" class="grid"></div>
         <details class="bandbox" open>
-          <summary>Le groupe <span class="muted small">(clique sur un instrument pour le couper)</span></summary>
+          <summary><span data-i18n="grid.band">Le groupe</span> <span class="muted small" data-i18n="grid.bandHint">(clique sur un instrument pour le couper)</span></summary>
           <div id="band" class="grid"></div>
         </details>
       </div>
 
-      <div class="settings">
-        <fieldset>
-          <legend>⏱️ Accélération progressive</legend>
-          <label class="sw"><input type="checkbox" id="optRamp"> activée</label>
-          <div class="nums">
-            <label>départ <input type="number" id="tStart" min="30" max="240"></label>
-            <label>cible <input type="number" id="tTarget" min="30" max="240"></label>
-            <label>+ <input type="number" id="tStep" min="1" max="20"> bpm</label>
-            <label>toutes les <input type="number" id="tEvery" min="1" max="16"> boucles</label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>🎧 Aides</legend>
-          <label class="sw"><input type="checkbox" id="optCount"> décompte d'une mesure</label>
-          <label class="sw"><input type="checkbox" id="optClick"> métronome</label>
-          <label>ukulélé guide
-            <select id="optGuide">
-              <option value="on">joue avec moi</option>
-              <option value="fade">2 boucles puis s'efface</option>
-              <option value="off">coupé (je joue seul)</option>
-            </select>
-          </label>
-          <label class="sw" title="1 mesure sur 4, tout le monde se tait : tu dois tenir le rythme seul et retomber juste quand le groupe revient."><input type="checkbox" id="optSilence"> 🤫 défi silence</label>
-        </fieldset>
-        <fieldset>
-          <legend>🎚️ Volumes</legend>
-          <label>groupe <input type="range" id="vol-group" min="0" max="1.2" step="0.05"></label>
-          <label>mélodie <input type="range" id="vol-melody" min="0" max="1.2" step="0.05"></label>
-          <label>ukulélé guide <input type="range" id="vol-guide" min="0" max="1.2" step="0.05"></label>
-          <label>métronome <input type="range" id="vol-click" min="0" max="1.2" step="0.05"></label>
-        </fieldset>
-      </div>
+      <details id="settingsBox" class="settingsBox" open>
+        <summary data-i18n="set.title">⚙️ Réglages</summary>
+        <div class="settings">
+          <fieldset>
+            <legend data-i18n="set.ramp">⏱️ Accélération progressive</legend>
+            <label class="sw"><input type="checkbox" id="optRamp"> <span data-i18n="set.rampOn">activée</span></label>
+            <div class="nums">
+              <label><span data-i18n="set.start">départ</span> <input type="number" id="tStart" min="30" max="240"></label>
+              <label><span data-i18n="set.target">cible</span> <input type="number" id="tTarget" min="30" max="240"></label>
+              <label>+ <input type="number" id="tStep" min="1" max="20"> bpm</label>
+              <label><span data-i18n="set.everyA">toutes les</span> <input type="number" id="tEvery" min="1" max="16"> <span data-i18n="set.everyB">boucles</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend data-i18n="set.helps">🎧 Aides</legend>
+            <label class="sw"><input type="checkbox" id="optCount"> <span data-i18n="set.countIn">décompte d'une mesure</span></label>
+            <label class="sw"><input type="checkbox" id="optClick"> <span data-i18n="set.click">métronome</span></label>
+            <label><span data-i18n="set.guide">ukulélé guide</span>
+              <select id="optGuide">
+                <option value="on" data-i18n="set.guideOn">joue avec moi</option>
+                <option value="fade" data-i18n="set.guideFade">2 boucles puis s'efface</option>
+                <option value="off" data-i18n="set.guideOff">coupé (je joue seul)</option>
+              </select>
+            </label>
+            <label class="sw" data-i18n-title="set.silenceTitle"><input type="checkbox" id="optSilence"> <span data-i18n="set.silence">🤫 défi silence</span></label>
+          </fieldset>
+          <fieldset>
+            <legend data-i18n="set.volumes">🎚️ Volumes</legend>
+            <label><span data-i18n="set.volGroup">groupe</span> <input type="range" id="vol-group" min="0" max="1.2" step="0.05"></label>
+            <label><span data-i18n="set.volMelody">mélodie</span> <input type="range" id="vol-melody" min="0" max="1.2" step="0.05"></label>
+            <label><span data-i18n="set.volGuide">ukulélé guide</span> <input type="range" id="vol-guide" min="0" max="1.2" step="0.05"></label>
+            <label><span data-i18n="set.volClick">métronome</span> <input type="range" id="vol-click" min="0" max="1.2" step="0.05"></label>
+          </fieldset>
+        </div>
+      </details>
 
       <div id="tips" class="tips"></div>
-      <p class="keys muted small">Clavier : <kbd>Espace</kbd> jouer/arrêter · <kbd>↑</kbd><kbd>↓</kbd> tempo · <kbd>T</kbd> trop vite</p>
+      <p class="keys muted small desktop-only" data-i18n-html="keys.help"></p>
     </section>
   </main>
 
+  <!-- Barre de lecture fixe (mobile) -->
+  <nav id="mbar" class="mbar mobile-only">
+    <div class="mtitle"><span id="mTitle"></span><span id="mBeats" class="mbeats"></span></div>
+    <div class="mctrl">
+      <button id="mMinus" class="round" data-i18n-title="title.minus">−</button>
+      <div class="mbpm"><span id="mBpm">80</span><small>bpm</small></div>
+      <button id="mPlus" class="round" data-i18n-title="title.plus">+</button>
+      <button id="mPlay" class="play">▶</button>
+      <button id="mTooFast" class="warn" data-i18n="btn.tooFastShort" data-i18n-title="btn.tooFast">🐢</button>
+    </div>
+  </nav>
+
   <dialog id="aiDialog">
-    <div class="dhead"><h2>✨ Ajouter des exercices avec une IA</h2><button id="aiClose" class="ghost">✕</button></div>
+    <div class="dhead"><h2 data-i18n="ai.title">✨ Ajouter des exercices avec une IA</h2><button id="aiClose" class="ghost" data-i18n-title="btn.close">✕</button></div>
     <ol class="steps">
       <li>
-        <b>Décris ce que tu veux</b> (ou laisse vide : l'IA proposera la suite logique d'après ta progression).
-        <textarea id="aiWish" rows="3" placeholder="Ex. : « 3 exercices de cumbia en La mineur, Am / G / F / E7, avec des étouffés » ou « un nouveau style : la salsa, niveau débutant » ou « un riff de mélodie simple sur C et G7 »"></textarea>
+        <span data-i18n-html="ai.step1"></span>
+        <textarea id="aiWish" rows="3" data-i18n-ph="ai.wishPh"></textarea>
         <div class="row-btns">
-          <button id="aiCopy" class="accent">📋 Copier le prompt complet</button>
-          <button id="aiShow" class="ghost">voir le prompt</button>
+          <button id="aiCopy" class="accent" data-i18n="ai.copy">📋 Copier le prompt complet</button>
+          <button id="aiShow" class="ghost" data-i18n="ai.show">voir le prompt</button>
         </div>
         <pre id="aiPreview" class="hidden"></pre>
       </li>
-      <li><b>Colle-le</b> dans ChatGPT, Claude, Gemini, Mistral… (le prompt contient tout le format et ce qui existe déjà).</li>
+      <li><span data-i18n-html="ai.step2"></span></li>
       <li>
-        <b>Colle ici la réponse de l'IA</b> (le JSON) :
+        <span data-i18n-html="ai.step3"></span>
         <textarea id="aiPaste" rows="7" placeholder='{ "packs": [ ... ] }'></textarea>
-        <div class="row-btns"><button id="aiImport" class="accent">Vérifier et importer</button></div>
+        <div class="row-btns"><button id="aiImport" class="accent" data-i18n="ai.import">Vérifier et importer</button></div>
         <div id="aiResult"></div>
       </li>
     </ol>
-    <h3>Mes imports</h3>
-    <p class="small muted">Ils sont gardés dans ce navigateur. Pour les rendre permanents : « ⬇ fichier », place-le dans <code>data/packs/</code> et ajoute son nom dans <code>data/manifest.json</code>.</p>
+    <h3 data-i18n="ai.mine">Mes imports</h3>
+    <p class="small muted" data-i18n-html="ai.mineHelp"></p>
     <ul id="importList" class="importList"></ul>
   </dialog>
 
-  <div id="toast" class="toast"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
+  <script src="js/i18n.js"></script>
   <script src="js/engine.js"></script>
   <script src="js/player.js"></script>
   <script src="js/app.js"></script>

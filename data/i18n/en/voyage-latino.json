@@ -1,0 +1,60 @@
+{
+  "packs": {
+    "voyage-latino": {
+      "title": "Latin journey",
+      "description": "Beyond cumbia: more ways to make a ukulele groove."
+    }
+  },
+  "exercises": {
+    "reggaeton-01-dembow": {
+      "title": "Reggaeton: strumming with the snare",
+      "description": "Here the grid is in 16th notes (16 steps). You strum exactly together with the dembow snare: 3 + 3 + 2. Chords: the \"vi – IV – I – V\" progression from a thousand hits.",
+      "goal": "Stay glued to the snare, 2 loops at 95 bpm.",
+      "tips": [
+        "Find the snare lane in \"The band\": those are your strums.",
+        "Count \"1 e & a, 2 e & a…\": your strums land on the \"a\" of 1 and the & of 2, then the same on 3 and 4.",
+        "Start by muting every track except kick and snare."
+      ]
+    },
+    "son-01-clave": {
+      "title": "Son cubano: playing with the clave",
+      "description": "The clave (wooden claves, a high \"tock\" sound) plays a 2-bar pattern the whole orchestra follows. You keep a steady pattern with a chuck on 2 and 4: listen to how your playing and the clave lock together.",
+      "goal": "Don't let the clave throw you off, 2 loops at 100 bpm.",
+      "tips": [
+        "First mute everything except the clave and listen to it for 4 loops while counting: \"1 . . 2-& . 4 | . 2 3 .\".",
+        "The bass plays \"ahead\" (on the & of 2 and on 4): don't follow it, follow the click.",
+        "I – IV – V chords: C, F, G7. The F only takes two fingers."
+      ]
+    },
+    "bossa-01-pouce-doigts": {
+      "title": "Bossa nova: thumb and fingers",
+      "description": "No strumming here: your thumb (P) plucks the C string on beats 1 and 3 like a bass, and your fingers (F) pinch the C-E-A strings together, offset. The chords are easy (Am7 = all open strings!) so you can focus on coordination.",
+      "goal": "Steady thumb, offset fingers, 2 loops at 90 bpm.",
+      "tips": [
+        "First practice the thumb alone on 1 and 3, then add the fingers.",
+        "The finger pattern is similar to the \"rim\" in the band: listen to it.",
+        "Play softly: bossa is whispered."
+      ]
+    },
+    "chachacha-01-4-et-1": {
+      "title": "Cha-cha-chá: the \"4-&-1\"",
+      "description": "All of cha-cha-chá fits into three strums: the 4, the & of 4, and the next 1. That's the \"cha-cha-chá\" the dancers call out. Here you play the beats, and add that little upstroke just before the 1.",
+      "goal": "A tight \"4-&-1\", 2 loops at 100 bpm.",
+      "tips": [
+        "Say \"1, 2, 3, cha-cha\": the \"cha-cha\" lands on 4-&, then the 1 comes back.",
+        "Listen to the güiro: its two short little scrapes are exactly your \"4-&\".",
+        "Don't rush the &: it sits right in the middle, like the other off-beats."
+      ]
+    },
+    "chachacha-02-mineur": {
+      "title": "Minor cha-cha-chá with a chuck",
+      "description": "Let's build on it: a chuck on 2 (like an orchestra's snare drum), then the \"cha-cha-chá\" on 4-&-1. With a progression in A minor, very typical of orchestral cha-cha-chás.",
+      "goal": "Pattern and changes with no gaps, 2 loops at 105 bpm.",
+      "tips": [
+        "The pattern: down, chuck, down, down-up. Practice it on Am alone before starting the progression.",
+        "Use the chuck on 2 to relax your right hand.",
+        "Dm → E7 is still the tricky change: get ready for it from beat 3 of the Dm bar."
+      ]
+    }
+  }
+}

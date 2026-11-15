@@ -197,3 +197,101 @@ pre { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; 
 
 .toast { position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 30px); background: var(--panel2); border: 1px solid var(--accent); padding: .7em 1.1em; border-radius: 12px; opacity: 0; transition: .25s; pointer-events: none; max-width: calc(100vw - 32px); z-index: 10; }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+/* ---------- en-tête : boutons ---------- */
+.topbtns { display: flex; gap: .5em; align-items: center; }
+.lang { font-weight: 700; padding: .45em .7em; }
+.mobile-only { display: none !important; }
+.backdrop { display: none; }
+
+/* ---------- réglages repliables ---------- */
+.settingsBox > summary { cursor: pointer; font-weight: 600; margin-bottom: .6em; color: var(--muted); }
+.settingsBox:not([open]) > summary { margin-bottom: 0; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: .6em .9em; color: var(--text); }
+
+/* =====================================================================
+   VUE MOBILE
+   ===================================================================== */
+@media (max-width: 760px) {
+  .mobile-only { display: revert !important; }
+  .desktop-only { display: none !important; }
+  html, body { font-size: 15px; }
+
+  /* en-tête compact */
+  .top { padding: .45em 12px; gap: .5em; flex-wrap: nowrap; position: sticky; top: 0; z-index: 15; }
+  .brand { gap: .35em; min-width: 0; }
+  .brand .logo { font-size: 1.4em; }
+  .brand b { font-size: 1em; white-space: nowrap; }
+  .brand small { display: none; }
+  .top button { padding: .4em .6em; font-size: .9em; }
+
+  /* liste d'exercices = tiroir latéral */
+  .layout { display: block; padding: .6em 12px calc(130px + env(safe-area-inset-bottom)); }
+  #sidebar { position: fixed; top: 0; bottom: 0; left: 0; width: min(88vw, 380px); z-index: 30;
+    background: var(--bg); padding: .8em 12px 2em; overflow-y: auto; transform: translateX(-102%);
+    transition: transform .25s ease; box-shadow: 4px 0 24px rgba(0,0,0,.5); }
+  body.drawer #sidebar { transform: none; }
+  body.drawer .backdrop { display: block; position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 25; }
+  body.drawer { overflow: hidden; }
+  .drawerhead { display: flex !important; justify-content: space-between; align-items: center; }
+
+  /* fiche d'exercice plus compacte */
+  #practice { gap: .7em; }
+  #exHeader { padding: .6em .8em; }
+  #exHeader h2 { font-size: 1.15em; }
+  #exHeader p { font-size: .92em; }
+  .stage { grid-template-columns: 1fr; gap: .7em; }
+  .chordbox { padding: .5em; gap: .5em; }
+  .chordNow { display: flex; align-items: center; gap: .5em; }
+  .chordNow .diag { width: 58px; }
+  .cname { font-size: 2em; margin: 0; }
+  .chordNext { display: grid; grid-template-columns: auto auto; align-items: center; column-gap: .4em; min-width: 0; padding: .3em .5em; text-align: left; }
+  .chordNext .nlabel { grid-column: 1 / -1; }
+  .chordNext .diag { width: 44px; grid-row: span 2; grid-column: 2; }
+  .chordNext .cname.sm { grid-column: 1; }
+  .chordNext .countdown { grid-column: 1; margin: 0; font-size: .8em; }
+  /* description repliée : toucher pour tout lire */
+  #exHeader p:not(.goal) { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; cursor: pointer; }
+  #exHeader.full p:not(.goal) { display: block; }
+  #exHeader p:not(.goal)::after { content: ""; }
+  /* le tempo et les boutons sont dans la barre du bas */
+  .tempobox { padding: .4em .8em .6em; }
+  .tempobox .bpmline, .tempobox .transport, .tempobox .beats { display: none; }
+  .tempotrack { margin: .3em 0; }
+  .status { margin-top: .2em; font-size: .9em; }
+
+  .gridwrap { padding: .6em .5em; }
+  .gridhead { margin-bottom: .3em; font-size: .9em; }
+  .row { grid-template-columns: 3.4em 1fr; gap: .3em; }
+  .row .lbl { font-size: .7em; white-space: normal; line-height: 1.1; }
+  .cells { gap: 2px; }
+  .row.main .cell { min-height: 2.6em; font-size: 1.25em; }
+  .row.band .cell { min-height: 1.1em; }
+  .row.melrow .cell { font-size: .55em; }
+  .sec { font-size: .7em; padding: .15em .35em; }
+  .sec small { display: none; }
+
+  .settings { grid-template-columns: 1fr; gap: .6em; }
+  input[type=range] { max-width: 50%; }
+  .tips { padding: .2em .8em .6em; font-size: .93em; }
+
+  /* barre de lecture fixe */
+  .mbar { display: flex !important; flex-direction: column; gap: .35em; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+    background: var(--panel2); border-top: 1px solid var(--line); padding: .45em 12px calc(.55em + env(safe-area-inset-bottom));
+    box-shadow: 0 -6px 20px rgba(0,0,0,.35); }
+  .mtitle { display: flex; justify-content: space-between; align-items: center; gap: .5em; font-size: .8em; color: var(--muted); }
+  #mTitle { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .mbeats { display: flex; gap: 4px; flex-shrink: 0; }
+  .mbeats span { width: 1.5em; height: 1.5em; font-size: .85em; border-radius: 50%; display: grid; place-items: center; background: var(--panel); border: 1px solid var(--line); }
+  .mbeats span.on { background: var(--accent2); color: #062521; border-color: var(--accent2); }
+  .mbeats span.on.one { background: var(--accent); border-color: var(--accent); color: #241509; }
+  .mbeats span.ci.on { background: var(--yellow); color: #241509; }
+  .mctrl { display: flex; align-items: center; gap: .5em; }
+  .mctrl .round { width: 2.6em; height: 2.6em; font-size: 1.2em; flex-shrink: 0; }
+  .mbpm { text-align: center; min-width: 3em; line-height: 1; }
+  .mbpm span { font-size: 1.6em; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .mbpm small { display: block; font-size: .7em; color: var(--muted); }
+  #mPlay { flex: 1; font-size: 1.4em; padding: .35em; }
+  #mTooFast { font-size: 1.3em; padding: .35em .6em; }
+  .toast { bottom: calc(120px + env(safe-area-inset-bottom)); }
+  dialog { padding: .8em 1em; }
+}

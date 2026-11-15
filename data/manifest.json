@@ -17,5 +17,18 @@
     "packs/accompagner-melodie.json",
     "packs/voyage-latino.json",
     "packs/swing-guinguette.json"
-  ]
+  ],
+  "_aide_i18n": "Traductions du contenu par langue (le français est la langue des fichiers de base). Chaque fichier remplace titres, descriptions, objectifs, conseils, sections, noms de styles par id.",
+  "i18n": {
+    "en": [
+      "i18n/en/styles.json",
+      "i18n/en/cumbia-premiers-pas.json",
+      "i18n/en/cumbia-on-avance.json",
+      "i18n/en/accords-latins.json",
+      "i18n/en/picking-cumbia.json",
+      "i18n/en/accompagner-melodie.json",
+      "i18n/en/voyage-latino.json",
+      "i18n/en/swing-guinguette.json"
+    ]
+  }
 }
