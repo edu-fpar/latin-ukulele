@@ -1,0 +1,20 @@
+{
+  "styles": [
+    {
+      "id": "chachacha",
+      "name": "Cha-cha-chá",
+      "origin": "Cuba",
+      "beats": 4,
+      "subdivision": 2,
+      "swing": 0,
+      "defaultBpm": 100,
+      "description": "Inventé à La Havane dans les années 1950 par Enrique Jorrín, le cha-cha-chá doit son nom au bruit des pieds des danseurs sur « 4-et-1 ». Le güiro fait trois longs grattages puis deux courts (« tchaa, tchaa, tchaa, tcha-tcha »), la cloche marque chaque temps.",
+      "tracks": {
+        "guiro":   "X.X.X.xx",
+        "cowbell": "X.x.X.x.",
+        "conga":   "m.s.m.hh",
+        "bass":    "1...5..."
+      }
+    }
+  ]
+}

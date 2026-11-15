@@ -1,0 +1,206 @@
+{
+  "packs": [
+    {
+      "id": "picking-cumbia",
+      "title": "Finger picking cumbia",
+      "description": "Jouer aux doigts, corde par corde : le pouce fait la basse comme le bajo de la cumbia, les doigts font le « chucu » sur les contretemps. Lettres = cordes : G (pouce), C (pouce), E (index), A (majeur).",
+      "exercises": [
+        {
+          "id": "picking-01-quatre-doigts",
+          "title": "Une corde, un doigt",
+          "level": 1,
+          "focus": ["picking", "rythme"],
+          "style": "cumbia",
+          "description": "L'accord Am7 se joue… sans aucun doigt (toutes les cordes à vide) : toute ton attention va à la main droite. Tu pinces les 4 cordes l'une après l'autre, en croches régulières : G, C, E, A, puis on recommence.",
+          "goal": "Huit notes bien égales par mesure, 2 boucles à 85 bpm.",
+          "tips": [
+            "Répartition des doigts : pouce pour G et C, index pour E, majeur pour A. Garde-la dans tous les exercices de ce parcours.",
+            "Le pouce pince vers le bas, les doigts tirent vers le haut, vers la paume. La main ne bouge pas, seuls les doigts travaillent.",
+            "Pose l'auriculaire ou le bas de la paume sur la table du ukulélé pour stabiliser la main.",
+            "Écoute le guiro : chaque note doit tomber sur un de ses « tchk »."
+          ],
+          "chords": "Am7:8",
+          "strum": "GCEAGCEA",
+          "tempo": { "start": 55, "target": 85, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "picking-02-pouce-basse",
+          "title": "Le pouce fait la basse",
+          "level": 1,
+          "focus": ["picking", "accords"],
+          "style": "cumbia",
+          "description": "En cumbia, la basse alterne deux notes. Ton pouce fait pareil : corde de C sur les temps 1 et 3, corde de G sur les temps 2 et 4. Seulement des noires, pour que la main gauche puisse changer d'accord tranquillement.",
+          "goal": "Pouce régulier avec les changements, 2 boucles à 90 bpm.",
+          "tips": [
+            "Le pouce reste un peu tendu et fait de petits mouvements : il « tombe » sur la corde suivante.",
+            "Écoute la basse du groupe : ton pouce dialogue avec elle.",
+            "Prépare le G7 pendant le 4e temps du C : ta main gauche n'a que le pouce comme repère."
+          ],
+          "chords": "C:4 G7:4",
+          "strum": "C.G.C.G.",
+          "tempo": { "start": 60, "target": 90, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "picking-03-contretemps",
+          "title": "Pouce sur le temps, doigt sur le « et »",
+          "level": 2,
+          "focus": ["picking", "rythme"],
+          "style": "cumbia",
+          "description": "Le chucu-chucu de la cumbia, mais aux doigts : le pouce joue doucement la basse sur les temps, le majeur claque la corde de La sur chaque contretemps. C'est l'accent du « et » qui fait danser.",
+          "goal": "Contretemps bien plus forts que la basse, 2 boucles à 95 bpm.",
+          "tips": [
+            "Minuscule = doux, majuscule = fort. Le pouce caresse, le majeur pince franchement.",
+            "Dis « boum TCHA boum TCHA » : le TCHA, c'est le majeur.",
+            "Am → E7 : pense à garder le pouce en mouvement même si la main gauche n'est pas prête."
+          ],
+          "chords": "Am:4 E7:4",
+          "strum": "cAgAcAgA",
+          "tempo": { "start": 60, "target": 95, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "picking-04-pinces",
+          "title": "Basse et pincés : la cumbia aux doigts",
+          "level": 2,
+          "focus": ["picking", "rythme"],
+          "style": "cumbia",
+          "description": "Même idée, en plus plein : sur les contretemps, trois doigts pincent ensemble les cordes C, E et A (F = pincé). Le pouce alterne C et G sur les temps. C'est l'accompagnement aux doigts le plus utile en cumbia.",
+          "goal": "Basse et pincés bien séparés, 2 boucles à 95 bpm.",
+          "tips": [
+            "Pour le pincé, pouce sur C, index sur E, majeur sur A, et on serre comme pour attraper une pincée de sel. Le pouce saute ensuite sur G pour le temps suivant.",
+            "Le pincé doit être sec et court, comme le chucu étouffé.",
+            "Coupe la conga : tu entendras mieux si tes pincés tombent pile au milieu des temps."
+          ],
+          "chords": "Am:4 Dm:4 E7:4 Am:4",
+          "strum": "C.F.G.F.",
+          "tempo": { "start": 60, "target": 95, "step": 4, "everyLoops": 1 }
+        },
+        {
+          "id": "picking-05-arpege",
+          "title": "L'arpège qui suit les accords",
+          "level": 2,
+          "focus": ["picking", "accords"],
+          "style": "cumbia",
+          "description": "Un arpège « aller-retour » (C, E, A, E) sur une grille de 4 accords. Les notes changent toutes seules quand tu changes d'accord : c'est comme ça que l'arpège raconte l'harmonie.",
+          "goal": "Arpège continu pendant les changements, 2 boucles à 90 bpm.",
+          "tips": [
+            "Pouce sur C, index sur E, majeur sur A, puis index à nouveau sur E.",
+            "Pose tout l'accord avant de commencer, pas seulement la note que tu vas pincer : l'arpège doit résonner.",
+            "C → Am → F → G7 : l'accord de la boucle « années 50 », très présent aussi dans les cumbias mexicaines."
+          ],
+          "chords": "C:4 Am:4 F:4 G7:4",
+          "strum": "CEAECEAE",
+          "tempo": { "start": 55, "target": 90, "step": 4, "everyLoops": 1 }
+        },
+        {
+          "id": "picking-06-pouce-alterne",
+          "title": "Pouce alterné et doigts sur les contretemps",
+          "level": 3,
+          "focus": ["picking", "rythme"],
+          "style": "cumbia",
+          "description": "Le pouce alterne C et G sur les temps (comme dans « Le pouce fait la basse »), et les doigts répondent sur les contretemps, en alternant A et E. Deux voix qui s'emboîtent, c'est le début de l'indépendance des doigts.",
+          "goal": "Les deux voix sans accroc, 2 boucles à 95 bpm.",
+          "tips": [
+            "Joue d'abord le pouce seul (C . G . C . G .), puis seulement les doigts (. A . E . A . E), puis assemble.",
+            "Ne regarde pas ta main droite : elle doit trouver les cordes au toucher.",
+            "Si ça accroche, ralentis avec « 🐢 Trop vite ! » plutôt que de t'arrêter."
+          ],
+          "chords": "C:4 F:4 G7:4 C:4",
+          "strum": "CAGECAGE",
+          "tempo": { "start": 60, "target": 95, "step": 3, "everyLoops": 1 }
+        },
+        {
+          "id": "picking-07-pince-exterieur",
+          "title": "Le pincé pouce-majeur",
+          "level": 3,
+          "focus": ["picking", "accords"],
+          "style": "cumbia",
+          "description": "Le pouce (corde de G) et le majeur (corde de A) pincent ensemble les deux cordes extérieures : c'est un son ouvert, typique des guitares requinto. Puis l'index et le pouce complètent avec des notes seules sur E et C.",
+          "goal": "Pincés bien synchronisés, 2 boucles à 95 bpm.",
+          "tips": [
+            "Sur « G+A », les deux notes doivent partir exactement en même temps : un seul son, pas deux.",
+            "Le motif : pincé, Mi, Do, Mi. Dis « TCHONG, ti, to, ti ».",
+            "Am → F → G → E7 : la grille andalouse, cœur de la cumbia."
+          ],
+          "chords": "Am:4 F:4 G:4 E7:4",
+          "strum": "B.E.C.E.",
+          "tempo": { "start": 60, "target": 95, "step": 4, "everyLoops": 1 }
+        },
+        {
+          "id": "picking-08-guiro",
+          "title": "Imiter le guiro en doubles croches",
+          "level": 3,
+          "focus": ["picking", "rythme"],
+          "style": "cumbia",
+          "description": "Le guiro de la cumbia fait « tchaa-k-k » sur chaque temps : une longue, deux courtes. Ton picking prend exactement ce rythme : pouce sur le temps, puis index et majeur très vite (E, A). La grille passe en 16 cases.",
+          "goal": "Le « long-court-court » bien régulier, 2 boucles à 90 bpm.",
+          "tips": [
+            "Repère la ligne guiro dans « Le groupe » : ton motif s'aligne dessus case par case.",
+            "Les deux notes rapides (E, A) se jouent comme un petit roulement de doigts, presque un seul geste.",
+            "Commence à 55 bpm si besoin : les doubles croches vont vite."
+          ],
+          "chords": "C:4 G7:4",
+          "strum": "C.EAG.EAC.EAG.EA",
+          "tempo": { "start": 55, "target": 90, "step": 3, "everyLoops": 2 }
+        },
+        {
+          "id": "picking-09-sous-la-gaita",
+          "title": "Arpège doux sous la gaita",
+          "level": 3,
+          "focus": ["picking", "ecoute"],
+          "style": "cumbia",
+          "description": "Le finger picking est le meilleur accompagnement d'une mélodie : il laisse de la place. La flûte gaita joue l'air, tu arpèges doucement en dessous (minuscules = doux). Le guide s'efface après 2 boucles.",
+          "goal": "Arpège doux et régulier sous la mélodie, 2 boucles à 90 bpm.",
+          "tips": [
+            "Joue nettement moins fort que la flûte : si tu ne l'entends plus, c'est que tu joues trop fort.",
+            "Quand la flûte tient une note longue, c'est ton arpège qui fait avancer le morceau : ne ralentis pas.",
+            "Fredonne la mélodie en jouant, ça t'aide à sentir les changements d'accord."
+          ],
+          "chords": "Am:4 E7:4 E7:4 Am:4",
+          "strum": "ceaeceae",
+          "melody": {
+            "instrument": "flute",
+            "notes": "A4 . C5 . E5 - D5 C5 | B4 - - - G#4 . B4 . | D5 . C5 . B4 . G#4 . | A4 - - - - - . ."
+          },
+          "options": { "guide": "fade" },
+          "tempo": { "start": 60, "target": 90, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "picking-10-silence",
+          "title": "Tenir l'arpège seul",
+          "level": 3,
+          "focus": ["picking", "ecoute", "tempo"],
+          "style": "cumbia",
+          "description": "Le défi silence, version doigts : une mesure sur quatre, le groupe se tait et ton picking doit continuer exactement au même tempo. En jouant aux doigts, on a souvent tendance à ralentir : c'est ce que cet exercice démasque.",
+          "goal": "Retomber juste après chaque silence, 4 boucles à 100 bpm.",
+          "tips": [
+            "Pendant le silence, continue à taper du pied : c'est lui le métronome.",
+            "Si tu reviens en retard, tu ralentis quand tu es seul : pense « en avant » pendant le silence.",
+            "Le motif est celui de « Basse et pincés » : refais-le si tu n'es pas encore à l'aise."
+          ],
+          "chords": "Am:4 G:4 F:4 E7:4",
+          "strum": "C.F.G.F.",
+          "options": { "silence": true, "guide": "fade" },
+          "tempo": { "start": 70, "target": 100, "step": 3, "everyLoops": 1 }
+        },
+        {
+          "id": "picking-11-tempo-bal",
+          "title": "Le picking au tempo de bal",
+          "level": 4,
+          "focus": ["picking", "tempo", "accords"],
+          "style": "cumbia",
+          "description": "Le motif « guiro » en doubles croches, sur la grille andalouse et avec le pouce alterné C / G. On monte jusqu'au tempo d'une vraie cumbia, guide coupé après 2 boucles. C'est l'aboutissement du parcours.",
+          "goal": "Tenir 2 boucles à 105 bpm, guide coupé.",
+          "tips": [
+            "Plus ça va vite, plus les doigts doivent rester près des cordes : des gestes minuscules.",
+            "Le pouce est ton ancre : même si une note aiguë saute, la basse ne doit jamais manquer.",
+            "Ton record est sauvegardé : vise quelques bpm de plus à chaque séance."
+          ],
+          "chords": "Am:4 G:4 F:4 E7:4",
+          "strum": "C.EAG.EAC.EAG.EA",
+          "options": { "guide": "fade" },
+          "tempo": { "start": 70, "target": 105, "step": 3, "everyLoops": 1 }
+        }
+      ]
+    }
+  ]
+}

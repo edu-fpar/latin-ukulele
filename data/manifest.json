@@ -1,0 +1,21 @@
+{
+  "_aide": "Liste des fichiers chargés au démarrage (chemins relatifs au dossier data/). Ajoute ici tout nouveau fichier.",
+  "files": [
+    "chords.json",
+    "styles/cumbia.json",
+    "styles/son.json",
+    "styles/bossa.json",
+    "styles/reggaeton.json",
+    "styles/chachacha.json",
+    "styles/bolero.json",
+    "styles/foxtrot.json",
+    "styles/swing.json",
+    "packs/cumbia-premiers-pas.json",
+    "packs/cumbia-on-avance.json",
+    "packs/accords-latins.json",
+    "packs/picking-cumbia.json",
+    "packs/accompagner-melodie.json",
+    "packs/voyage-latino.json",
+    "packs/swing-guinguette.json"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "styles": [
+    {
+      "id": "bolero",
+      "name": "Boléro",
+      "origin": "Cuba / Mexique",
+      "beats": 4,
+      "subdivision": 2,
+      "swing": 0,
+      "defaultBpm": 70,
+      "description": "La ballade romantique de l'Amérique latine, née à Cuba et adoptée par les trios mexicains à guitares. Tempo lent, bongos qui roulent en croches (le « martillo »), basse posée sur 1 et 3 : c'est le style idéal pour soigner ses changements d'accords sans être pressé.",
+      "tracks": {
+        "bongo":  "hlhlHlhl",
+        "shaker": "x.x.x.x.",
+        "bass":   "1...5.5."
+      }
+    }
+  ]
+}

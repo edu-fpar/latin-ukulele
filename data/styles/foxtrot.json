@@ -1,0 +1,20 @@
+{
+  "styles": [
+    {
+      "id": "foxtrot",
+      "name": "Fox-trot guinguette",
+      "origin": "France (bals musette)",
+      "beats": 4,
+      "subdivision": 2,
+      "swing": 0.12,
+      "defaultBpm": 120,
+      "description": "Venu des États-Unis dans les années 1920, le fox-trot est devenu un pilier des bals musette et des guinguettes des bords de Marne, avec accordéon, banjo et contrebasse. Son moteur : la « pompe », basse sur 1 et 3, accord claqué sur 2 et 4 (« boum-tchak »). Joué vite, c'est l'un des rythmes les plus entraînants qui soient.",
+      "tracks": {
+        "kick":  "x...x...",
+        "bass":  "1...5...",
+        "snare": "..x...x.",
+        "hihat": "x.x.x.x."
+      }
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "packs": [
+    {
+      "id": "cumbia-premiers-pas",
+      "title": "Cumbia — premiers pas",
+      "description": "De « je gratte sur les temps » à « je fais danser ». Chaque exercice travaille une seule difficulté à la fois.",
+      "exercises": [
+        {
+          "id": "cumbia-01-pulsation",
+          "title": "Sentir la pulsation",
+          "level": 1,
+          "focus": ["rythme", "tempo"],
+          "style": "cumbia",
+          "description": "Un seul accord (C : un seul doigt, case 3 de la corde de La) et un coup vers le bas sur chaque temps. Le but n'est pas de bien sonner : c'est de tomber PILE en même temps que la grosse caisse et le clic.",
+          "goal": "Tenir 2 boucles d'affilée à 90 bpm sans t'arrêter.",
+          "tips": [
+            "Tape du pied sur chaque temps : ton pied est ton chef d'orchestre.",
+            "Compte à voix haute « 1, 2, 3, 4 ». Oui, à voix haute, vraiment.",
+            "Si tu décroches, ne t'arrête pas : attends le prochain « 1 » (le gros point orange) et repars.",
+            "Coupe le ukulélé guide (réglage « coupé ») quand tu te sens à l'aise : tu entendras mieux si tu es en place."
+          ],
+          "chords": "C:4 C:4",
+          "strum": "D.D.D.D.",
+          "tempo": { "start": 60, "target": 90, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbia-02-contretemps",
+          "title": "Le contretemps, cœur de la cumbia",
+          "level": 1,
+          "focus": ["rythme", "ecoute"],
+          "style": "cumbia",
+          "description": "En cumbia, ce qui fait danser tombe ENTRE les temps. Ici tu ne joues que les « et », vers le haut. C'est déroutant au début : c'est exactement ce qui va donner du groove à ton jeu.",
+          "goal": "Jouer les contretemps 2 boucles sans retomber sur les temps, à 90 bpm.",
+          "tips": [
+            "Ta main bouge en continu comme un essuie-glace : elle DESCEND à vide sur les temps (sans toucher les cordes) et REMONTE en grattant sur les « et ».",
+            "Dis « 1 ET 2 ET 3 ET 4 ET » en criant les ET.",
+            "Tape du pied sur les temps : ton pied et ta main ne frappent jamais en même temps.",
+            "Écoute le guiro : son « tchk-tchk » te donne toutes les petites subdivisions."
+          ],
+          "chords": "C:8",
+          "strum": ".U.U.U.U",
+          "tempo": { "start": 60, "target": 90, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbia-03-chucu",
+          "title": "Le « chucu-chucu » (étouffé)",
+          "level": 2,
+          "focus": ["rythme"],
+          "style": "cumbia",
+          "description": "On combine les deux exercices précédents : sur les temps, on ÉTOUFFE (la tranche de la main ou la paume tombe sur les cordes : « tchk ») et sur les contretemps, on gratte vers le haut. Résultat : le fameux son « chucu-chucu » de la cumbia.",
+          "goal": "Un étouffé bien sec et un haut bien clair, 2 boucles à 95 bpm.",
+          "tips": [
+            "L'étouffé (✕) : laisse tomber la main droite à plat sur les cordes, comme une petite gifle. Il ne doit presque pas y avoir de note.",
+            "Tu peux aussi étouffer de la main gauche : relâche juste la pression des doigts au moment du ✕.",
+            "Garde le même mouvement bas-haut continu que dans l'exercice précédent : seule la façon de toucher les cordes change.",
+            "Baisse le métronome et écoute la conga : elle fait le même jeu de questions-réponses."
+          ],
+          "chords": "C:8",
+          "strum": "XUXUXUXU",
+          "tempo": { "start": 65, "target": 95, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbia-04-changement",
+          "title": "Premier changement : C ↔ G7",
+          "level": 2,
+          "focus": ["accords"],
+          "style": "cumbia",
+          "description": "Rythme très simple (4 coups vers le bas) pour mettre toute ton attention sur la main gauche. Le secret d'un changement à temps : il se prépare AVANT d'arriver.",
+          "goal": "Changer sans aucun trou ni retard, 2 boucles à 85 bpm.",
+          "tips": [
+            "Regarde le cadre « ensuite » : quand il s'allume en orange, tes doigts doivent déjà partir.",
+            "Sur le 4e temps, lâche l'accord un peu en avance : mieux vaut une corde à vide qu'un retard sur le 1.",
+            "Le rythme ne s'arrête JAMAIS pour attendre la main gauche. Si l'accord n'est pas prêt, gratte quand même.",
+            "Entraîne le changement à vide, sans gratter, 10 fois de suite avant de lancer la musique."
+          ],
+          "chords": "C:4 G7:4",
+          "strum": "D.D.D.D.",
+          "tempo": { "start": 55, "target": 85, "step": 3, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbia-05-rasgueo",
+          "title": "Le rasgueo cumbia complet",
+          "level": 3,
+          "focus": ["rythme", "accords"],
+          "style": "cumbia",
+          "description": "Le motif « bas, bas-haut, (vide), haut, bas-haut » : le grattage passe-partout des musiques latines et caribéennes. Il mélange temps et contretemps, d'où son balancement.",
+          "goal": "Le motif complet avec les changements, 2 boucles à 95 bpm.",
+          "tips": [
+            "La main fait toujours bas-haut-bas-haut en croches. Les cases vides sont des passages À VIDE, la main ne s'arrête pas.",
+            "Dis le motif en chantant : « boum, boum-ta, (rien), ta, boum-ta ».",
+            "Commence avec le guide « joue avec moi », puis passe à « 2 boucles puis s'efface »."
+          ],
+          "chords": "C:4 G7:4",
+          "strum": "D.DU.UDU",
+          "tempo": { "start": 60, "target": 95, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbia-06-riff",
+          "title": "Notes en rythme : un riff de cumbia",
+          "level": 2,
+          "focus": ["melodie", "rythme"],
+          "style": "cumbia",
+          "description": "Des notes seules, mais avec du rythme ! « A3 » veut dire : corde de La (la plus fine, en bas), case 3. « E0 » : corde de Mi à vide. Le riff suit l'accord : La mineur, puis Mi7.",
+          "goal": "Le riff sans hésitation, 2 boucles à 90 bpm.",
+          "tips": [
+            "Couleurs = cordes : rose = A (La), jaune = E (Mi), turquoise = C (Do), orange = G (Sol).",
+            "Joue avec le pouce ou l'index, toujours le même doigt de main droite au début.",
+            "Les notes répétées doivent être bien égales : c'est ça qui sonne « cumbia ».",
+            "Une fois à l'aise, coupe le guide : le groupe joue Am puis E7, ton riff doit tenir tout seul."
+          ],
+          "chords": "Am:4 E7:4",
+          "riff": "A0 . A0 A3 . A0 E3 . | E4 . E4 A2 . E4 E0 .",
+          "tempo": { "start": 55, "target": 90, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbia-07-mineur",
+          "title": "Cumbia en La mineur",
+          "level": 3,
+          "focus": ["accords", "rythme"],
+          "style": "cumbia",
+          "description": "Beaucoup de cumbias sont en mineur. Quatre accords, le « chucu-chucu », et le Mi7 qui ramène toujours au La mineur.",
+          "goal": "Les 4 accords en chucu-chucu, 2 boucles à 95 bpm.",
+          "tips": [
+            "Am → Dm : ajoute deux doigts, celui de la corde de G reste en place.",
+            "Dm → E7 : c'est le changement difficile, entraîne-le seul d'abord, sans musique.",
+            "Pendant l'étouffé (✕), la main gauche peut se relâcher : profite-en pour changer d'accord !"
+          ],
+          "chords": "Am:4 Dm:4 E7:4 Am:4",
+          "strum": "XUXUXUXU",
+          "tempo": { "start": 60, "target": 95, "step": 4, "everyLoops": 1 }
+        },
+        {
+          "id": "cumbia-08-silence",
+          "title": "Tenir seul : le défi silence",
+          "level": 3,
+          "focus": ["ecoute", "tempo"],
+          "style": "cumbia",
+          "description": "Une mesure sur quatre, tout le monde se tait (même le métronome et la case allumée). Continue à jouer et à compter : quand le groupe revient, tu dois être pile sur le « 1 ». C'est LE test qui révèle si tu as le rythme en toi.",
+          "goal": "Retomber juste après chaque silence, 4 boucles à 100 bpm.",
+          "tips": [
+            "Pendant le silence, compte à voix haute et tape du pied plus fort.",
+            "Si tu arrives en avance quand le groupe revient : tu accélères quand tu es seul (très fréquent !).",
+            "Le guide s'efface après 2 boucles : à partir de là, c'est toi le ukulélé du groupe."
+          ],
+          "chords": "C:4 G7:4",
+          "strum": "XUXUXUXU",
+          "options": { "silence": true, "guide": "fade" },
+          "tempo": { "start": 70, "target": 100, "step": 3, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbia-09-vitesse",
+          "title": "Vers le tempo réel",
+          "level": 4,
+          "focus": ["tempo", "accords"],
+          "style": "cumbia",
+          "description": "La progression « andalouse » Am – G – F – E7, omniprésente en cumbia, avec le rasgueo complet. On monte jusqu'au tempo d'une vraie cumbia de bal.",
+          "goal": "Tenir 2 boucles à 110 bpm, guide coupé.",
+          "tips": [
+            "Utilise « 🐢 Trop vite ! » sans honte : l'outil redescend et te laisse plus de temps.",
+            "Plus c'est rapide, plus la main droite doit être détendue : le mouvement vient du poignet, pas du bras.",
+            "Ton record est sauvegardé : reviens demain, tu iras plus vite (le cerveau consolide pendant le sommeil)."
+          ],
+          "chords": "Am:4 G:4 F:4 E7:4",
+          "strum": "D.DU.UDU",
+          "options": { "guide": "fade" },
+          "tempo": { "start": 75, "target": 110, "step": 3, "everyLoops": 1 }
+        }
+      ]
+    }
+  ]
+}

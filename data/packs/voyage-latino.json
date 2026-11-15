@@ -1,0 +1,136 @@
+{
+  "packs": [
+    {
+      "id": "voyage-latino",
+      "title": "Voyage latino",
+      "description": "Après la cumbia : d’autres façons de faire groover un ukulélé.",
+      "exercises": [
+        {
+          "id": "reggaeton-01-dembow",
+          "title": "Reggaeton : gratter avec la caisse claire",
+          "level": 2,
+          "focus": [
+            "rythme",
+            "ecoute"
+          ],
+          "style": "reggaeton",
+          "description": "Ici la grille est en doubles croches (16 cases). Tu grattes exactement en même temps que la caisse claire du dembow : 3 + 3 + 2. Accords : la grille « vi – IV – I – V » de mille tubes.",
+          "goal": "Être collé à la caisse claire, 2 boucles à 95 bpm.",
+          "tips": [
+            "Repère dans « Le groupe » la ligne snare : ce sont tes coups.",
+            "Compte « 1 i et a, 2 i et a… » : tes coups tombent sur le « a » du 1, le « et » du 2, puis pareil sur 3 et 4.",
+            "Commence par couper toutes les pistes sauf kick et snare."
+          ],
+          "chords": "Am:4 F:4 C:4 G:4",
+          "strum": "...D..D....D..D.",
+          "tempo": {
+            "start": 70,
+            "target": 95,
+            "step": 3,
+            "everyLoops": 1
+          }
+        },
+        {
+          "id": "son-01-clave",
+          "title": "Son cubano : jouer avec la clave",
+          "level": 3,
+          "focus": [
+            "ecoute",
+            "rythme"
+          ],
+          "style": "son",
+          "description": "La clave (claves en bois, son aigu « toc ») fait un motif sur 2 mesures que tout l'orchestre respecte. Toi, tu gardes un motif régulier avec un étouffé sur 2 et 4 : écoute comment ton jeu et la clave s'emboîtent.",
+          "goal": "Ne pas te laisser déstabiliser par la clave, 2 boucles à 100 bpm.",
+          "tips": [
+            "Coupe d'abord tout sauf la clave et écoute-la 4 boucles en comptant : « 1 . . 2-et . 4 | . 2 3 . ».",
+            "La basse joue « en avance » (sur le et du 2 et sur le 4) : ne la suis pas, suis le clic.",
+            "Accords I – IV – V : C, F, G7. Le F se fait avec deux doigts."
+          ],
+          "chords": "C:4 F:4 G7:4 C:4",
+          "strum": "D.XU.UXU",
+          "tempo": {
+            "start": 70,
+            "target": 100,
+            "step": 4,
+            "everyLoops": 1
+          }
+        },
+        {
+          "id": "bossa-01-pouce-doigts",
+          "title": "Bossa nova : pouce et doigts",
+          "level": 3,
+          "focus": [
+            "rythme",
+            "accords"
+          ],
+          "style": "bossa",
+          "description": "Pas de grattage ici : le pouce (P) pince la corde de C sur les temps 1 et 3 comme une basse, et les doigts (F) pincent ensemble les cordes C-E-A, en décalé. Les accords sont faciles (Am7 = tout à vide !) pour te concentrer sur la coordination.",
+          "goal": "Pouce régulier, doigts décalés, 2 boucles à 90 bpm.",
+          "tips": [
+            "Entraîne d'abord le pouce seul sur 1 et 3, puis ajoute les doigts.",
+            "Le motif des doigts ressemble à celui du « rim » dans le groupe : écoute-le.",
+            "Joue doucement, la bossa se murmure."
+          ],
+          "chords": "Am7:4 D7:4 Gmaj7:8",
+          "strum": "P..F..F.P..F..F.",
+          "tempo": {
+            "start": 60,
+            "target": 90,
+            "step": 3,
+            "everyLoops": 1
+          }
+        },
+        {
+          "id": "chachacha-01-4-et-1",
+          "title": "Cha-cha-chá : le « 4-et-1 »",
+          "level": 2,
+          "focus": [
+            "rythme",
+            "ecoute"
+          ],
+          "style": "chachacha",
+          "description": "Tout le cha-cha-chá tient dans trois coups : le 4, le « et » du 4, et le 1 suivant. C’est le « cha-cha-chá » que crient les danseurs. Ici tu joues les temps, et tu ajoutes ce petit coup vers le haut juste avant le 1.",
+          "goal": "Un « 4-et-1 » bien serré, 2 boucles à 100 bpm.",
+          "tips": [
+            "Dis « 1, 2, 3, cha-cha » : le « cha-cha » tombe sur 4-et, puis le 1 revient.",
+            "Écoute le güiro : ses deux petits grattages courts sont exactement ton « 4-et ».",
+            "Ne te précipite pas sur le « et » : il est pile au milieu, comme les autres contretemps."
+          ],
+          "chords": "C:4 G7:4",
+          "strum": "D.D.D.DU",
+          "tempo": {
+            "start": 65,
+            "target": 100,
+            "step": 4,
+            "everyLoops": 2
+          }
+        },
+        {
+          "id": "chachacha-02-mineur",
+          "title": "Cha-cha-chá en mineur avec étouffé",
+          "level": 3,
+          "focus": [
+            "rythme",
+            "accords"
+          ],
+          "style": "chachacha",
+          "description": "On enrichit : un étouffé sur le 2 (comme la caisse claire d’un orchestre), puis le « cha-cha-chá » sur 4-et-1. Avec une grille en La mineur, très typique des cha-cha-chás d’orchestre.",
+          "goal": "Motif et changements sans trou, 2 boucles à 105 bpm.",
+          "tips": [
+            "Le motif : bas, étouffé, bas, bas-haut. Entraîne-le sur Am seul avant de lancer la grille.",
+            "Profite de l’étouffé du 2 pour te détendre la main droite.",
+            "Dm → E7 reste le changement difficile : prépare-le dès le temps 3 de la mesure de Dm."
+          ],
+          "chords": "Am:4 Dm:4 E7:4 Am:4",
+          "strum": "D.X.D.DU",
+          "tempo": {
+            "start": 65,
+            "target": 105,
+            "step": 4,
+            "everyLoops": 1
+          }
+        }
+      ]
+    }
+  ]
+}

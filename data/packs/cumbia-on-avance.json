@@ -1,0 +1,97 @@
+{
+  "packs": [
+    {
+      "id": "cumbia-on-avance",
+      "title": "Cumbia — on avance",
+      "description": "Tu as les bases ? On travaille les nuances, les changements rapides, la mélodie et le jeu « sans filet ».",
+      "exercises": [
+        {
+          "id": "cumbia-10-nuances",
+          "title": "Les nuances : bas doux, haut fort",
+          "level": 3,
+          "focus": ["rythme"],
+          "style": "cumbia",
+          "description": "Le même mouvement bas-haut en continu, mais les coups vers le bas sont légers (petites flèches) et les coups vers le haut, sur les contretemps, sont francs. Ce contraste fait sonner ta cumbia, même sans changer de motif.",
+          "goal": "Un vrai contraste fort/doux, 2 boucles à 100 bpm.",
+          "tips": [
+            "Vers le bas : effleure seulement 2 cordes, du bout de l'ongle. Vers le haut : toutes les cordes, avec plus de vitesse.",
+            "Exagère le contraste au début, tu l'affineras ensuite.",
+            "Écoute le guide : les petites flèches sonnent presque comme un souffle."
+          ],
+          "chords": "Am:8",
+          "strum": "dUdUdUdU",
+          "tempo": { "start": 70, "target": 100, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbia-11-majeur",
+          "title": "Cumbia en Do : C – F – G7",
+          "level": 3,
+          "focus": ["accords", "rythme"],
+          "style": "cumbia",
+          "description": "Les trois accords les plus utiles du ukulélé (I – IV – V), en chucu-chucu. On ajoute le F : deux doigts seulement, et il partage avec Am le doigt sur la corde de G.",
+          "goal": "Les trois accords en chucu-chucu, 2 boucles à 95 bpm.",
+          "tips": [
+            "C → F : lève le doigt de la corde de La et pose deux doigts (cordes G et E). Entraîne-le seul, sans musique, 10 fois.",
+            "Change d'accord pendant l'étouffé (✕) : les cordes ne sonnent pas, personne n'entend le déplacement.",
+            "Pendant la mesure de G7, regarde déjà où ira ta main pour le C."
+          ],
+          "chords": "C:4 F:4 G7:4 C:4",
+          "strum": "XUXUXUXU",
+          "tempo": { "start": 65, "target": 95, "step": 3, "everyLoops": 1 }
+        },
+        {
+          "id": "cumbia-12-demi-mesure",
+          "title": "Changer tous les 2 temps",
+          "level": 4,
+          "focus": ["accords", "tempo"],
+          "style": "cumbia",
+          "description": "Am et E7 alternent toutes les deux temps sur la première mesure, puis tu te poses sur Am. Les changements arrivent deux fois plus vite : c'est l'étape qui sépare « je connais mes accords » de « je joue des morceaux ».",
+          "goal": "Aucun changement en retard, 2 boucles à 90 bpm.",
+          "tips": [
+            "Am → E7 : le doigt de la corde de G recule d’une case (2 → 1) et deux doigts s’ajoutent case 2 (cordes C et A). Visualise ce mouvement avant de jouer.",
+            "Si ça coince, mets le tempo de départ à 50 : la vitesse viendra.",
+            "Ne regarde plus ta main gauche : regarde le cadre « ensuite » à l'écran."
+          ],
+          "chords": "Am:2 E7:2 Am:4",
+          "strum": "D.DUD.DU",
+          "tempo": { "start": 55, "target": 90, "step": 3, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbia-13-melodie",
+          "title": "Une mélodie sur Am – G – F – E7",
+          "level": 3,
+          "focus": ["melodie", "accords"],
+          "style": "cumbia",
+          "description": "Une petite mélodie originale de 4 mesures qui suit la grille andalouse. Chaque mesure reprend le même rythme (« ta . ta-ta . ta-ta . ») mais avec les notes de l'accord du moment : tu entends la mélodie « dessiner » l'harmonie.",
+          "goal": "Les 4 mesures enchaînées, 2 boucles à 90 bpm.",
+          "tips": [
+            "Apprends une mesure à la fois, guide activé, en coupant le reste du groupe si besoin.",
+            "Le rythme est identique sur les 4 mesures : une fois qu'il est dans la main, seules les cases changent.",
+            "Rappel : rose = corde A, jaune = E, turquoise = C."
+          ],
+          "chords": "Am:4 G:4 F:4 E7:4",
+          "riff": "A0 . A0 A3 . A0 E3 . | E3 . E3 A2 . E3 C2 . | E1 . E1 A0 . E1 A3 . | E4 . E4 A2 . E0 C2 .",
+          "tempo": { "start": 55, "target": 90, "step": 4, "everyLoops": 1 }
+        },
+        {
+          "id": "cumbia-14-sans-filet",
+          "title": "Sans filet : ni guide, ni métronome",
+          "level": 4,
+          "focus": ["ecoute", "tempo"],
+          "style": "cumbia",
+          "description": "Le ukulélé guide et le clic sont coupés. Il ne reste que le groupe, comme dans un vrai bal : à toi de te caler sur le guiro et la basse. C'est la situation réelle de jeu.",
+          "goal": "Tenir 4 boucles en place à 105 bpm, en écoutant seulement le groupe.",
+          "tips": [
+            "Le guiro est ton meilleur ami : son grattage long tombe toujours sur le temps.",
+            "La basse joue sur 1 et 3 : si tu l'entends « avant » toi, tu traînes.",
+            "Pour corser : active le défi silence."
+          ],
+          "chords": "Am:4 G:4 F:4 E7:4",
+          "strum": "D.DU.UDU",
+          "options": { "guide": "off", "click": false },
+          "tempo": { "start": 80, "target": 105, "step": 3, "everyLoops": 1 }
+        }
+      ]
+    }
+  ]
+}

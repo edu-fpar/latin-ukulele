@@ -1,0 +1,20 @@
+{
+  "styles": [
+    {
+      "id": "son",
+      "name": "Son cubano",
+      "origin": "Cuba",
+      "beats": 4,
+      "subdivision": 2,
+      "swing": 0,
+      "defaultBpm": 90,
+      "description": "L'ancêtre de la salsa. Tout s'organise autour de la clave, un motif de 5 coups sur 2 mesures (ici « 3-2 » : trois coups puis deux). La basse « tumbao » joue en avance, sur le « et » du 2 et sur le 4 : elle anticipe l'accord suivant.",
+      "tracks": {
+        "clave":   "x..x..x. | ..x.x...",
+        "bass":    "...5..1.",
+        "conga":   "m.s.m.hh",
+        "cowbell": "X.x.X.x."
+      }
+    }
+  ]
+}

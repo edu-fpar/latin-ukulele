@@ -1,0 +1,20 @@
+{
+  "styles": [
+    {
+      "id": "swing",
+      "name": "Swing",
+      "origin": "États-Unis / France (jazz manouche)",
+      "beats": 4,
+      "subdivision": 2,
+      "swing": 0.33,
+      "defaultBpm": 130,
+      "description": "Dans le swing, les croches ne sont pas égales : la première est longue, la seconde courte (« dou-ba, dou-ba »). C'est ce balancement qui fait le jazz des années 30, et le jazz manouche de Django Reinhardt, roi des guinguettes. La contrebasse « marche » sur chaque temps, la cymbale fait « ding, ding-a-ding ».",
+      "tracks": {
+        "bass":  "1.3.5.3.",
+        "hihat": "x.xxx.xx",
+        "snare": "..x...x.",
+        "kick":  "x...x..."
+      }
+    }
+  ]
+}

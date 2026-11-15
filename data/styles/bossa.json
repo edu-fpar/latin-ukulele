@@ -1,0 +1,20 @@
+{
+  "styles": [
+    {
+      "id": "bossa",
+      "name": "Bossa nova",
+      "origin": "Brésil",
+      "beats": 4,
+      "subdivision": 4,
+      "swing": 0,
+      "defaultBpm": 75,
+      "description": "Née à Rio à la fin des années 1950, la bossa nova est une samba ralentie et intimiste. La guitare y joue deux rôles à la fois : le pouce fait la basse sur les temps 1 et 3, les doigts pincent les accords en décalé, comme le motif du « rim » (bord de caisse claire).",
+      "tracks": {
+        "kick":   "x.....x.x.....x.",
+        "bass":   "1.....5.5.....1.",
+        "rim":    "x..x..x...x..x..",
+        "shaker": "x.x.x.x.x.x.x.x."
+      }
+    }
+  ]
+}

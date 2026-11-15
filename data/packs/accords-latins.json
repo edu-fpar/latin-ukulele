@@ -1,0 +1,96 @@
+{
+  "packs": [
+    {
+      "id": "accords-latins",
+      "title": "Main gauche : les accords latins",
+      "description": "Des changements d'accords de plus en plus riches, toujours avec un rythme simple pour que toute ton attention aille à la main gauche.",
+      "exercises": [
+        {
+          "id": "accords-01-am-f",
+          "title": "Am ↔ F : un seul doigt à ajouter",
+          "level": 1,
+          "focus": ["accords"],
+          "style": "bolero",
+          "description": "Le changement le plus facile qui soit : Am se fait avec un doigt (corde de G, case 2), F garde ce doigt et en ajoute un (corde de E, case 1). Parfait pour apprendre à NE PAS lever les doigts inutilement.",
+          "goal": "Changer sans jamais lever le doigt de la corde de G, 2 boucles à 80 bpm.",
+          "tips": [
+            "Le doigt de la corde de G reste collé : c'est ton « pivot ».",
+            "Pose le 2e doigt pendant le 4e temps, pas après le 1.",
+            "Le boléro est lent : profite-en pour faire sonner chaque accord jusqu'au bout."
+          ],
+          "chords": "Am:4 F:4",
+          "strum": "D.D.D.D.",
+          "tempo": { "start": 55, "target": 80, "step": 3, "everyLoops": 2 }
+        },
+        {
+          "id": "accords-02-bolero",
+          "title": "Boléro : C – Am – F – G7",
+          "level": 2,
+          "focus": ["accords", "rythme"],
+          "style": "bolero",
+          "description": "La grille de mille chansons romantiques, sur le rythme lent du boléro. Le motif « bas, bas-haut, bas, bas-haut » est doux et régulier : laisse les accords respirer.",
+          "goal": "Les 4 accords enchaînés sans trou, 2 boucles à 80 bpm.",
+          "tips": [
+            "C → Am : un doigt part, un autre arrive. Am → F : un doigt s'ajoute. F → G7 : la forme se décale.",
+            "Joue plus doucement que pour la cumbia : le boléro se chante à l'oreille.",
+            "Écoute les bongos qui roulent en croches : ils te donnent la vitesse de ta main droite."
+          ],
+          "chords": "C:4 Am:4 F:4 G7:4",
+          "strum": "D.DUD.DU",
+          "tempo": { "start": 55, "target": 80, "step": 3, "everyLoops": 1 }
+        },
+        {
+          "id": "accords-03-demi-mesure",
+          "title": "Deux accords par mesure",
+          "level": 3,
+          "focus": ["accords", "tempo"],
+          "style": "bolero",
+          "description": "La même grille, mais deux fois plus serrée : un accord tous les deux temps. Le rythme est simplifié (un coup par temps) pour que la main gauche ait le temps de suivre.",
+          "goal": "Les 4 changements par mesure, 2 boucles à 85 bpm.",
+          "tips": [
+            "Tu n'as que 2 temps par accord : le changement commence dès le 2e temps.",
+            "Garde les doigts près des cordes : moins ils s'éloignent, plus tu es rapide.",
+            "Repasse sur « Boléro : C – Am – F – G7 » si un changement résiste."
+          ],
+          "chords": "C:2 Am:2 F:2 G7:2",
+          "strum": "D.D.D.D.",
+          "tempo": { "start": 50, "target": 85, "step": 3, "everyLoops": 2 }
+        },
+        {
+          "id": "accords-04-cycle-septiemes",
+          "title": "Le cycle des septièmes : A7 – D7 – G7 – C",
+          "level": 3,
+          "focus": ["accords", "ecoute"],
+          "style": "son",
+          "description": "Chaque accord de septième « appelle » le suivant, jusqu'au C qui résout tout. C'est l'enchaînement roi de la musique cubaine (et du jazz). Écoute la tension de chaque 7e et le soulagement du C.",
+          "goal": "Le cycle complet, 2 boucles à 95 bpm.",
+          "tips": [
+            "A7 : un seul doigt (corde de C, case 1). D7 : un barré ou trois doigts sur la case 2. G7 : la forme triangle. C : un doigt.",
+            "D7 → G7 : le doigt de la corde de C (case 2) reste en place, c’est ton point d’appui.",
+            "Écoute : chaque 7e sonne « en suspens », et le C final repose tout. Quand tu l’entends, tu sais où tu en es sans regarder l’écran."
+          ],
+          "chords": "A7:4 D7:4 G7:4 C:4",
+          "strum": "D.XU.UXU",
+          "tempo": { "start": 60, "target": 95, "step": 4, "everyLoops": 1 }
+        },
+        {
+          "id": "accords-05-bossa-251",
+          "title": "Accords jazzy en bossa : Dm7 – G7 – Cmaj7",
+          "level": 4,
+          "focus": ["accords", "rythme"],
+          "style": "bossa",
+          "description": "Le fameux « II – V – I » au son si brésilien, avec le jeu pouce-doigts de la bossa. Les formes sont proches les unes des autres : la main glisse plus qu'elle ne saute.",
+          "goal": "Pouce régulier et accords qui sonnent, 2 boucles à 85 bpm.",
+          "tips": [
+            "Dm7 → G7 : deux doigts restent en place (corde C case 2, corde E case 1) ; seuls ceux des cordes G et A bougent.",
+            "Cmaj7 : un seul doigt (corde de A, case 2) : savoure-le pendant 2 mesures.",
+            "Refais d'abord « Bossa nova : pouce et doigts » si le motif n'est pas encore automatique."
+          ],
+          "chords": "Dm7:4 G7:4 Cmaj7:8",
+          "strum": "P..F..F.P..F..F.",
+          "tempo": { "start": 55, "target": 85, "step": 3, "everyLoops": 1 }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "styles": [
+    {
+      "id": "cumbia",
+      "name": "Cumbia",
+      "origin": "Colombie",
+      "beats": 4,
+      "subdivision": 4,
+      "swing": 0,
+      "defaultBpm": 90,
+      "description": "Née sur la côte caraïbe de Colombie, la cumbia a voyagé dans toute l'Amérique latine (Mexique, Pérou, Argentine…). Son moteur : la guacharaca (le guiro) qui fait « tchaa-k-k » sur chaque temps, une basse qui alterne fondamentale et quinte, et des accents sur les contretemps qui font balancer les hanches.",
+      "tracks": {
+        "kick":  "x.......x.......",
+        "bass":  "1.......5.......",
+        "guiro": "X.xxX.xxX.xxX.xx",
+        "conga": "m.h.s.h.m.h.s.hh"
+      }
+    }
+  ]
+}

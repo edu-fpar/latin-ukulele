@@ -1,0 +1,129 @@
+{
+  "packs": [
+    {
+      "id": "accompagner-melodie",
+      "title": "Accompagner une mélodie",
+      "description": "Un autre musicien (flûte, accordéon, trompette) joue l'air : ton rôle de ukulélé, c'est de le porter. Rester régulier, changer d'accord avec lui, savoir où on en est dans le morceau.",
+      "exercises": [
+        {
+          "id": "melodie-01-gaita",
+          "title": "Écouter la gaita",
+          "level": 2,
+          "focus": ["ecoute", "accords"],
+          "style": "cumbia",
+          "description": "La gaita est la flûte des origines de la cumbia. Elle joue une phrase de 4 mesures pendant que tu fais des coups simples sur les temps. Écoute comment la mélodie « annonce » le Mi7 puis revient se poser sur le La mineur.",
+          "goal": "Changer d'accord en même temps que la phrase, 2 boucles à 90 bpm.",
+          "tips": [
+            "Première boucle : ne joue pas, écoute seulement la flûte et regarde la ligne 🎼 dans « Le groupe ».",
+            "Quand la flûte descend vers le Sol# (G#4), c'est le son du Mi7 : ta main gauche doit déjà y être.",
+            "Joue moins fort que la flûte : un accompagnateur se fait entendre sans couvrir la mélodie.",
+            "Fredonne la mélodie en jouant : c'est le meilleur moyen de ne pas te perdre."
+          ],
+          "chords": "Am:4 E7:4 E7:4 Am:4",
+          "strum": "D.D.D.D.",
+          "melody": {
+            "instrument": "flute",
+            "notes": "A4 . C5 . E5 - D5 C5 | B4 - - - G#4 . B4 . | D5 . C5 . B4 . G#4 . | A4 - - - - - . ."
+          },
+          "tempo": { "start": 60, "target": 90, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "melodie-02-bolero",
+          "title": "Boléro : jouer doux sous une mélodie lente",
+          "level": 2,
+          "focus": ["ecoute", "accords"],
+          "style": "bolero",
+          "description": "Une mélodie de trompette, lente, avec de longues notes tenues. Le danger : quand la mélodie tient une note, on a tendance à ralentir avec elle. Ta main droite, elle, ne change pas : c'est elle qui fait avancer le morceau.",
+          "goal": "Rester régulier pendant les notes tenues, 2 boucles à 80 bpm.",
+          "tips": [
+            "Les « – » sur la ligne de mélodie sont des notes tenues : pendant ce temps, c'est toi qui fais vivre le rythme.",
+            "Baisse le volume du guide, puis coupe-le : seul ton ukulélé accompagne la trompette.",
+            "Sur le G7, la trompette descend vers le Si (B4) : ça « appelle » le retour au C."
+          ],
+          "chords": "C:4 Am:4 F:4 G7:4",
+          "strum": "D.DUD.DU",
+          "melody": {
+            "instrument": "trumpet",
+            "notes": "E5 - - - D5 - C5 - | C5 - E5 - A5 - - - | A5 - G5 - F5 - C5 - | D5 - - - B4 - - -"
+          },
+          "options": { "guide": "fade" },
+          "tempo": { "start": 55, "target": 80, "step": 3, "everyLoops": 1 }
+        },
+        {
+          "id": "melodie-03-couplet-refrain",
+          "title": "Couplet et refrain à l'accordéon",
+          "level": 3,
+          "focus": ["ecoute", "accords"],
+          "style": "cumbia",
+          "description": "Un vrai petit morceau de 8 mesures : un couplet en La mineur, puis un refrain qui s'éclaire en Do majeur avant de revenir. Au-dessus de la grille, la barre de structure te dit où tu es et ce qui arrive. L'accordéon, c'est le son de la cumbia mexicaine et du vallenato.",
+          "goal": "Enchaîner couplet et refrain sans te perdre, 2 boucles à 95 bpm.",
+          "tips": [
+            "Regarde la barre « Couplet / Refrain » : quand elle annonce le refrain à la prochaine mesure, prépare-toi à jouer un peu plus fort.",
+            "Le couplet descend vers le La grave, le refrain monte vers les aigus : à l'oreille, tu sais où tu es même sans regarder.",
+            "Le E7 de la fin du refrain ramène au couplet : c'est le même changement E7 → Am que d'habitude."
+          ],
+          "chords": "Am:4 Dm:4 E7:4 Am:4 C:4 G7:4 C:4 E7:4",
+          "sections": [
+            { "name": "Couplet", "bars": 4 },
+            { "name": "Refrain", "bars": 4 }
+          ],
+          "strum": "XUXUXUXU",
+          "melody": {
+            "instrument": "accordion",
+            "notes": "E5 . E5 . E5 D5 C5 . | D5 - F5 - A5 - F5 . | E5 . D5 . B4 . G#4 . | A4 - - - - - . . | G5 . G5 . E5 - C5 . | F5 . F5 . D5 - B4 . | E5 . G5 . C6 - G5 . | G#5 - E5 - D5 - B4 ."
+          },
+          "tempo": { "start": 65, "target": 95, "step": 4, "everyLoops": 1 }
+        },
+        {
+          "id": "melodie-04-son-anticipation",
+          "title": "Son : la trompette qui arrive en avance",
+          "level": 3,
+          "focus": ["ecoute", "rythme"],
+          "style": "son",
+          "description": "Dans la musique cubaine, la mélodie « anticipe » : elle attaque la note de l'accord suivant sur le « et » du 4, un demi-temps trop tôt, puis la tient par-dessus la barre de mesure. C'est déstabilisant : ta main droite doit rester sur ton motif et ton changement d'accord, lui, reste sur le 1.",
+          "goal": "Ne pas changer d'accord en avance avec la trompette, 2 boucles à 100 bpm.",
+          "tips": [
+            "Repère la dernière case de chaque mesure sur la ligne 🎼 : la note démarre là et se prolonge (–) dans la mesure suivante.",
+            "Toi, tu changes toujours d'accord sur le 1. Seule la mélodie est en avance.",
+            "Écoute comme ça « tire » le morceau vers l'avant : c'est ce qu'on appelle le swing cubain."
+          ],
+          "chords": "C:4 F:4 G7:4 C:4",
+          "strum": "D.XU.UXU",
+          "melody": {
+            "instrument": "trumpet",
+            "notes": "G4 . C5 . E5 . . G5 | - - F5 . A5 . . D6 | - - B5 . G5 . . E5 | - - C5 . . . . ."
+          },
+          "tempo": { "start": 70, "target": 100, "step": 4, "everyLoops": 1 }
+        },
+        {
+          "id": "melodie-05-morceau-complet",
+          "title": "Le morceau complet : intro, couplet, refrain",
+          "level": 4,
+          "focus": ["ecoute", "tempo", "accords"],
+          "style": "cumbia",
+          "description": "Dix mesures comme dans un vrai bal : 2 mesures d'intro où tu installes le groove tout seul avec le groupe, puis l'accordéon entre pour le couplet et le refrain. Le guide s'efface : tu es le ukulélé de l'orchestre.",
+          "goal": "Tenir tout le morceau, guide coupé, 2 boucles à 105 bpm.",
+          "tips": [
+            "Pendant l'intro, c'est toi qui donnes le ton : joue franchement, l'accordéon va se caler sur toi.",
+            "À la fin de l'intro, l'accordéon fait deux notes d'appel (Mi, Ré) : le couplet commence juste après.",
+            "Si tu te perds, regarde la barre de structure et raccroche-toi au prochain début de section.",
+            "Pour corser : active le défi silence. La mélodie se tait aussi : tu dois retrouver ta place dans le morceau."
+          ],
+          "chords": "Am:4 E7:4 Am:4 G:4 F:4 E7:4 Am:4 Dm:4 E7:4 Am:4",
+          "sections": [
+            { "name": "Intro", "bars": 2 },
+            { "name": "Couplet", "bars": 4 },
+            { "name": "Refrain", "bars": 4 }
+          ],
+          "strum": "D.DU.UDU",
+          "melody": {
+            "instrument": "accordion",
+            "notes": ". . . . . . . . | . . . . . . E5 D5 | C5 . C5 . A4 - E5 D5 | B4 . B4 . G4 - D5 C5 | A4 . A4 . F4 - C5 B4 | G#4 - - - B4 - - - | E5 - E5 . E5 - A5 - | F5 - F5 . F5 - D5 - | E5 . D5 . B4 . G#4 . | A4 - - - . . . ."
+          },
+          "options": { "guide": "fade" },
+          "tempo": { "start": 75, "target": 105, "step": 3, "everyLoops": 1 }
+        }
+      ]
+    }
+  ]
+}

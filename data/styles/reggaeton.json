@@ -1,0 +1,20 @@
+{
+  "styles": [
+    {
+      "id": "reggaeton",
+      "name": "Reggaeton",
+      "origin": "Porto Rico / Panama",
+      "beats": 4,
+      "subdivision": 4,
+      "swing": 0,
+      "defaultBpm": 90,
+      "description": "Le reggaeton repose sur le « dembow » : grosse caisse sur chaque temps et caisse claire en 3+3+2 (« boum-tchik… boum-tchik »). Très régulier, c'est un excellent style pour travailler la précision.",
+      "tracks": {
+        "kick":  "x...x...x...x...",
+        "snare": "...x..x....x..x.",
+        "hihat": "x.x.x.x.x.x.x.x.",
+        "bass":  "1.......1......."
+      }
+    }
+  ]
+}

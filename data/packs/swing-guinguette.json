@@ -1,0 +1,191 @@
+{
+  "packs": [
+    {
+      "id": "swing-guinguette",
+      "title": "Swing guinguette & syncopes",
+      "description": "La pompe du fox-trot, le balancement du swing et les syncopes communes au jazz et aux musiques latines (tresillo, charleston). Du « boum-tchak » tranquille jusqu'au fox-trot de bal à toute allure.",
+      "exercises": [
+        {
+          "id": "swing-01-pompe",
+          "title": "La pompe : boum-tchak",
+          "level": 1,
+          "focus": ["rythme"],
+          "style": "foxtrot",
+          "description": "Le geste de base de tout le musette : le pouce joue la basse sur 1 et 3 (« boum »), un coup vers le bas sur tout l'accord sur 2 et 4 (« tchak »). Les deux accords les plus simples, C et G7, pour te concentrer sur ce va-et-vient.",
+          "goal": "Un boum-tchak bien régulier, 2 boucles à 110 bpm.",
+          "tips": [
+            "« P » = pouce sur la corde de C (et un peu de G). « ↓ » = tout l'accord, vers le bas.",
+            "Le boum est doux et rond, le tchak est plus sec et plus fort : c'est lui qui fait danser.",
+            "Écoute la caisse claire : elle tape exactement avec tes « tchak »."
+          ],
+          "chords": "C:4 G7:4",
+          "strum": "P.D.P.D.",
+          "tempo": { "start": 70, "target": 110, "step": 5, "everyLoops": 2 }
+        },
+        {
+          "id": "swing-02-backbeat",
+          "title": "Le 2 et 4 : là où tout se passe",
+          "level": 1,
+          "focus": ["rythme", "ecoute"],
+          "style": "foxtrot",
+          "description": "En swing comme en musique latine, les temps forts ne sont pas ceux qu'on croit : c'est sur 2 et 4 que les gens claquent des mains. Ici, coups légers sur 1 et 3, étouffé claqué sur 2 et 4. Et un accord bonus : C6, tout à vide, la couleur typique de la guinguette.",
+          "goal": "Les étouffés pile avec la caisse claire, 2 boucles à 120 bpm.",
+          "tips": [
+            "C6 se joue sans aucun doigt : les 4 cordes à vide. Ta main gauche se repose.",
+            "Claque des mains sur 2 et 4 avant de jouer, en écoutant la caisse claire.",
+            "C'est le même principe que le chucu-chucu de la cumbia, mais l'étouffé est sur 2 et 4 au lieu de chaque temps."
+          ],
+          "chords": "C6:8",
+          "strum": "d.X.d.X.",
+          "tempo": { "start": 75, "target": 120, "step": 5, "everyLoops": 2 }
+        },
+        {
+          "id": "swing-03-ternaire",
+          "title": "Sentir le swing : dou-ba, dou-ba",
+          "level": 2,
+          "focus": ["rythme", "ecoute"],
+          "style": "swing",
+          "description": "Grattage continu bas-haut en croches… mais « swinguées » : le bas est long, le haut est court et arrive en retard. Ce n'est pas écrit sur la grille, ça s'entend : écoute le guide et la cymbale, et imite ce balancement.",
+          "goal": "Un balancement naturel, 2 boucles à 120 bpm.",
+          "tips": [
+            "Chante « dou-ba dou-ba » ou « ti-ke ti-ke » en traînant sur le premier son.",
+            "Pense au galop d'un cheval, ou à 3 croches de triolet dont tu ne joues que la 1re et la 3e.",
+            "Coupe la contrebasse et la caisse claire : la cymbale (hihat) seule montre très bien le swing."
+          ],
+          "chords": "C6:8",
+          "strum": "DUDUDUDU",
+          "tempo": { "start": 70, "target": 120, "step": 5, "everyLoops": 2 }
+        },
+        {
+          "id": "swing-04-anatole",
+          "title": "La grille swing : C6 – A7 – D7 – G7",
+          "level": 2,
+          "focus": ["accords"],
+          "style": "foxtrot",
+          "description": "Une suite de septièmes qui tourne en boucle : chaque accord tire vers le suivant (A7 vers D7, D7 vers G7, G7 vers C). C'est la grille de centaines de morceaux de guinguette et de jazz. Avec la pompe, pour que la main droite soit automatique.",
+          "goal": "Les 4 accords sans trou, 2 boucles à 115 bpm.",
+          "tips": [
+            "A7 : un doigt (corde de C, case 1). D7 : trois doigts case 2 et un case 3. G7 : le triangle.",
+            "Change d'accord sur le « boum » (temps 1) : pendant le « tchak » du 4, la main gauche peut déjà partir.",
+            "Tu retrouveras ce cycle A7 – D7 – G7 – C dans la musique cubaine : le même enchaînement voyage partout."
+          ],
+          "chords": "C6:4 A7:4 D7:4 G7:4",
+          "strum": "P.D.P.D.",
+          "tempo": { "start": 65, "target": 115, "step": 5, "everyLoops": 1 }
+        },
+        {
+          "id": "swing-05-tresillo",
+          "title": "Le tresillo : 3 + 3 + 2",
+          "level": 2,
+          "focus": ["rythme", "ecoute"],
+          "style": "son",
+          "description": "Trois coups par mesure, espacés de 3, 3 puis 2 croches. Ce rythme venu d'Afrique est partout : habanera et son cubain, reggaeton (le dembow !), mais aussi ragtime et swing. C'est LA syncope à avoir dans la main, qu'on aille vers Cuba ou vers la guinguette.",
+          "goal": "Le 3 + 3 + 2 bien placé, 2 boucles à 100 bpm.",
+          "tips": [
+            "Compte les croches « 1 2 3 1 2 3 1 2 » et joue sur chaque « 1 ».",
+            "Le 2e coup tombe sur le « et » du 2 : entre deux temps. Tape du pied sur les temps pour le sentir.",
+            "Écoute la clave : sur la 1re mesure (le côté « 3 »), elle joue exactement le tresillo avec toi."
+          ],
+          "chords": "Am:4 E7:4",
+          "strum": "D..D..D.",
+          "tempo": { "start": 65, "target": 100, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "swing-06-charleston",
+          "title": "Le Charleston : 1 et le « et » du 2",
+          "level": 3,
+          "focus": ["rythme"],
+          "style": "swing",
+          "description": "Deux coups seulement : sur le 1, et juste avant le 3. C'est le rythme de la danse Charleston des années 20, et c'est en fait le début du tresillo ! Le silence de la 2e moitié de mesure est aussi important que les coups : ne le remplis pas.",
+          "goal": "Deux coups nets et un vrai silence, 2 boucles à 130 bpm.",
+          "tips": [
+            "Fais les coups courts : étouffe juste après en relâchant la main gauche.",
+            "Pendant le silence, compte « 3, 4 » dans ta tête et garde la main qui bouge à vide.",
+            "Compare avec l'exercice du tresillo : même départ, mais on s'arrête après le 2e coup."
+          ],
+          "chords": "C6:4 A7:4 D7:4 G7:4",
+          "strum": "D..D....",
+          "tempo": { "start": 80, "target": 130, "step": 5, "everyLoops": 1 }
+        },
+        {
+          "id": "swing-07-diminue",
+          "title": "L'accord diminué de passage",
+          "level": 3,
+          "focus": ["accords"],
+          "style": "foxtrot",
+          "description": "Entre C et Dm7, un accord « qui grince » fait la transition : C#dim. Ce petit accord de passage est la signature sonore du musette et du jazz manouche. Bonne nouvelle : C#dim se fait avec seulement deux doigts.",
+          "goal": "Les 4 accords enchaînés, 2 boucles à 120 bpm.",
+          "tips": [
+            "C#dim : case 1 sur les cordes de C et de A. Dm7 : un doigt en plus et on décale.",
+            "Écoute la basse : C, C#, D… elle monte d'un demi-ton à chaque fois, c'est ce qui donne cet élan.",
+            "Dm7 → G7 : deux doigts restent en place (corde C case 2, corde E case 1)."
+          ],
+          "chords": "C:4 C#dim:4 Dm7:4 G7:4",
+          "strum": "P.D.P.D.",
+          "tempo": { "start": 70, "target": 120, "step": 5, "everyLoops": 1 }
+        },
+        {
+          "id": "swing-08-accordeon",
+          "title": "Fox-trot à l'accordéon",
+          "level": 3,
+          "focus": ["ecoute", "accords"],
+          "style": "foxtrot",
+          "description": "L'accordéon joue un air de bal original sur 8 mesures, en deux parties. Tu fais la pompe en dessous, comme le banjo d'un orchestre de guinguette. On réutilise les deux grilles précédentes : la grille swing, puis le diminué de passage.",
+          "goal": "Tenir les 8 mesures sous l'accordéon, 2 boucles à 130 bpm.",
+          "tips": [
+            "Regarde la barre de structure : dans la partie B, le C#dim arrive dès la 2e mesure.",
+            "L'accordéon est la vedette : ta pompe doit être régulière et discrète, comme un moteur.",
+            "À la fin de la partie B, l'accordéon monte vers le Ré aigu : c'est le signal du retour à la partie A."
+          ],
+          "chords": "C:4 A7:4 D7:4 G7:4 C:4 C#dim:4 Dm7:4 G7:4",
+          "sections": [
+            { "name": "Partie A", "bars": 4 },
+            { "name": "Partie B", "bars": 4 }
+          ],
+          "strum": "P.D.P.D.",
+          "melody": {
+            "instrument": "accordion",
+            "notes": "E5 - G5 - C6 - G5 - | A5 - G5 - E5 - C#5 - | D5 - F#5 - A5 - C6 - | B5 - - - G5 - F5 - | E5 . E5 . G5 - E5 . | G5 . G5 . E5 - C#5 . | D5 . F5 . A5 - C6 . | B5 - - - D6 - - -"
+          },
+          "options": { "guide": "fade" },
+          "tempo": { "start": 80, "target": 130, "step": 5, "everyLoops": 1 }
+        },
+        {
+          "id": "swing-09-pompe-manouche",
+          "title": "La pompe manouche",
+          "level": 4,
+          "focus": ["rythme", "tempo"],
+          "style": "swing",
+          "description": "La version jazz manouche de la pompe : un coup vers le bas sur chaque temps, mais le 2 et le 4 sont étouffés et claqués, précédés d'un tout petit coup vers le haut (swingué, donc très près du temps). En mineur, comme les valses et swings de Django.",
+          "goal": "Une pompe serrée et percutante, 2 boucles à 150 bpm.",
+          "tips": [
+            "Le petit « ↑ » léger est presque un frottement : il prépare le claquement du 2 et du 4.",
+            "Le 1 et le 3 sonnent un peu, le 2 et le 4 sont très courts : on relâche la main gauche juste après.",
+            "Monte le tempo par petites étapes : la pompe manouche se joue souvent entre 150 et 250 bpm !"
+          ],
+          "chords": "Am:4 Dm:4 E7:4 Am:4",
+          "strum": "DuX.DuX.",
+          "tempo": { "start": 80, "target": 150, "step": 5, "everyLoops": 1 }
+        },
+        {
+          "id": "swing-10-fox-a-fond",
+          "title": "Le fox-trot à fond",
+          "level": 5,
+          "focus": ["tempo", "rythme"],
+          "style": "foxtrot",
+          "description": "Le final : la pompe enrichie d'un coup vers le haut après chaque « tchak » (boum-tchak-a, boum-tchak-a), sur la grille swing avec Dm7. On part tranquille et on monte jusqu'au tempo d'un fox-trot de bal endiablé. Le guide s'efface : c'est toi le banjo de l'orchestre.",
+          "goal": "Tenir 2 boucles à 160 bpm sans te crisper.",
+          "tips": [
+            "Plus c'est rapide, plus le pouce et le poignet doivent être souples : c'est un rebond, pas une frappe.",
+            "Si ça devient brouillon, « 🐢 Trop vite ! » : mieux vaut 140 propre que 160 en vrac.",
+            "Ton record est sauvegardé : à chaque séance, essaie de gagner 5 bpm."
+          ],
+          "chords": "C6:4 A7:4 Dm7:4 G7:4",
+          "strum": "P.DUP.DU",
+          "options": { "guide": "fade" },
+          "tempo": { "start": 90, "target": 160, "step": 5, "everyLoops": 1 }
+        }
+      ]
+    }
+  ]
+}
