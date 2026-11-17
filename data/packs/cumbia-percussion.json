@@ -1,0 +1,190 @@
+{
+  "packs": [
+    {
+      "id": "cumbia-percussion",
+      "title": "Cumbia : le ukulélé percussionniste",
+      "description": "Imiter les percussions du groupe avec la main droite : la grosse caisse au pouce, le claqué de la conga en étouffé, le « tchaa-k-k » du guiro en doubles croches. À chaque étape, tu coupes l'instrument que tu imites pour prendre sa place.",
+      "exercises": [
+        {
+          "id": "cumbiaperc-01-grosse-caisse",
+          "title": "Le pouce est la grosse caisse",
+          "level": 1,
+          "focus": ["rythme", "ecoute"],
+          "style": "cumbia",
+          "description": "La grosse caisse de la cumbia frappe sur 1 et 3. Elle est coupée : c'est ton pouce qui la remplace, sur les cordes graves. Am7 se joue sans aucun doigt de la main gauche : toute ton attention va à la main droite.",
+          "goal": "Un pouce régulier sur 1 et 3, 2 boucles à 90 bpm.",
+          "tips": [
+            "P = pouce sur les cordes de C et de G, avec du poids, comme un coup de pied dans la grosse caisse.",
+            "Ton pouce tombe en même temps que la basse du groupe : écoute-la.",
+            "Clique sur « kick » pour remettre la grosse caisse et vérifier que vous tombez ensemble, puis recoupe-la."
+          ],
+          "chords": "Am7:4",
+          "strum": "P.......P.......",
+          "mute": ["kick"],
+          "tempo": { "start": 60, "target": 90, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbiaperc-02-claque",
+          "title": "L'étouffé est le claqué de la conga",
+          "level": 1,
+          "focus": ["rythme", "ecoute"],
+          "style": "cumbia",
+          "description": "Sur 2 et 4, le conguero fait un « claqué », un son sec et aigu. Au ukulélé, c'est l'étouffé : la paume tombe sur les cordes en même temps que tu grattes. Une seule voix, encore : seulement les claqués.",
+          "goal": "Les étouffés pile avec le claqué de la conga, 2 boucles à 90 bpm.",
+          "tips": [
+            "Repère la ligne conga dans « Le groupe » : le claqué est la case qui s'allume sur 2 et 4.",
+            "Entre deux claqués, laisse la main se balancer à vide, en rythme.",
+            "Dis « . TCHAK . TCHAK » en jouant."
+          ],
+          "chords": "Am7:4",
+          "strum": "....X.......X...",
+          "tempo": { "start": 60, "target": 90, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbiaperc-03-va-et-vient",
+          "title": "La main qui ne s'arrête jamais",
+          "level": 2,
+          "focus": ["rythme", "tempo"],
+          "style": "cumbia",
+          "description": "Pour jouer comme une percussion, la main droite doit bouger en doubles croches sans jamais s'arrêter : bas-haut-bas-haut, quatre gestes par temps. Ici tu touches toutes les cordes, en accentuant le bas du temps. C'est le moteur des exercices suivants.",
+          "goal": "Seize coups bien égaux par mesure, 2 boucles à 85 bpm.",
+          "tips": [
+            "Des gestes tout petits, à partir du poignet, la main tout près des cordes.",
+            "Seul le premier coup de chaque temps est fort : « UN-i-et-a, DEUX-i-et-a ».",
+            "Les doubles croches vont vite : reste à 55-65 bpm tant que la main se crispe."
+          ],
+          "chords": "Am7:4",
+          "strum": "DuduDuduDuduDudu",
+          "tempo": { "start": 55, "target": 85, "step": 3, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbiaperc-04-guiro",
+          "title": "Le guiro : tchaa-k-k",
+          "level": 2,
+          "focus": ["rythme", "ecoute"],
+          "style": "cumbia",
+          "description": "Le guiro (la guacharaca) fait sur chaque temps un long grattement puis deux courts. Ta main garde son va-et-vient en doubles croches, mais elle saute la deuxième case : un bas fort, une case à vide, puis un bas et un haut légers.",
+          "goal": "Le « long-court-court » aligné sur le guiro, 2 boucles à 90 bpm.",
+          "tips": [
+            "La case vide est un haut qui ne touche pas les cordes : la main continue de bouger.",
+            "Compare ta grille à la ligne guiro du groupe : elles sont identiques case par case.",
+            "Dis « TCHAA-k-k » sur chaque temps."
+          ],
+          "chords": "Am7:4",
+          "strum": "D.duD.duD.duD.du",
+          "tempo": { "start": 55, "target": 90, "step": 3, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbiaperc-05-remplacer-guiro",
+          "title": "Prendre la place du guiro",
+          "level": 2,
+          "focus": ["rythme", "ecoute"],
+          "style": "cumbia",
+          "description": "Même motif, mais le guiro est coupé et le guide s'efface après 2 boucles : c'est toi le guiro du groupe. Si tu t'arrêtes, ça s'entend tout de suite, la cumbia perd son moteur.",
+          "goal": "Tenir le guiro seul, guide coupé, 2 boucles à 95 bpm.",
+          "tips": [
+            "Écoute la conga et la basse : ce sont maintenant tes repères.",
+            "Garde exactement le même volume d'un bout à l'autre : un guiro ne fatigue jamais.",
+            "Remets le guiro (clic sur « guiro ») pour vérifier, puis recoupe-le."
+          ],
+          "chords": "Am7:4",
+          "strum": "D.duD.duD.duD.du",
+          "mute": ["guiro"],
+          "options": { "guide": "fade" },
+          "tempo": { "start": 65, "target": 95, "step": 3, "everyLoops": 1 }
+        },
+        {
+          "id": "cumbiaperc-06-kick-guiro",
+          "title": "Deux voix : grosse caisse et guiro",
+          "level": 3,
+          "focus": ["rythme"],
+          "style": "cumbia",
+          "description": "Tu assembles deux instruments : sur 1 et 3, le long du guiro devient un coup de pouce (la grosse caisse) ; sur 2 et 4, il reste un bas gratté. Les deux petits coups légers du guiro ne changent pas. La grosse caisse est coupée.",
+          "goal": "Pouce et guiro bien emboîtés, 2 boucles à 95 bpm.",
+          "tips": [
+            "Le pouce frappe plus bas sur les cordes graves, les doigts grattent toutes les cordes : deux gestes, une seule main.",
+            "« BOUM-k-k TCHAA-k-k BOUM-k-k TCHAA-k-k ».",
+            "Si ça accroche, reviens à « Le guiro : tchaa-k-k » et remplace seulement le premier temps par P."
+          ],
+          "chords": "Am7:4",
+          "strum": "P.duD.duP.duD.du",
+          "mute": ["kick"],
+          "tempo": { "start": 60, "target": 95, "step": 3, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbiaperc-07-conga",
+          "title": "La conga au ukulélé",
+          "level": 3,
+          "focus": ["rythme", "ecoute"],
+          "style": "cumbia",
+          "description": "Le tumbao de la conga : un étouffé sur le temps, une note ouverte sur le « et », un claqué sur 2 et 4. Au ukulélé : étouffé léger, haut, étouffé fort, haut… et deux hauts rapides à la fin pour relancer. La conga est coupée : tu la remplaces.",
+          "goal": "Le tumbao complet, 2 boucles à 95 bpm.",
+          "tips": [
+            "x = étouffé léger (« tou »), X = étouffé fort (« TCHAK »), u = coup ouvert vers le haut (« ta »).",
+            "Dis « tou-ta-TCHAK-ta tou-ta-TCHAK-tata ».",
+            "Les deux hauts de la fin sont une petite relance : ils tirent la mesure suivante."
+          ],
+          "chords": "Am7:4",
+          "strum": "x.u.X.u.x.u.X.uu",
+          "mute": ["conga"],
+          "tempo": { "start": 60, "target": 95, "step": 3, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbiaperc-08-trois-voix",
+          "title": "Trois voix : basse, guiro et claqué",
+          "level": 3,
+          "focus": ["rythme"],
+          "style": "cumbia",
+          "description": "Le motif complet du ukulélé percussionniste : pouce sur 1 et 3 (grosse caisse), étouffé sur 2 et 4 (claqué de la conga), et les petits coups du guiro entre les deux. Grosse caisse et guiro sont coupés : tu fais toute la rythmique.",
+          "goal": "Le motif à trois voix, 2 boucles à 95 bpm.",
+          "tips": [
+            "« BOUM-k-k TCHAK-k-k » : c'est le motif de l'exercice 6, avec un étouffé à la place du bas sur 2 et 4.",
+            "Les petits coups restent légers : ce sont eux qui donnent l'impression de vitesse.",
+            "Écoute ce qui reste du groupe (basse, conga) : ton motif doit le compléter exactement."
+          ],
+          "chords": "Am7:4",
+          "strum": "P.duX.duP.duX.du",
+          "mute": ["kick", "guiro"],
+          "tempo": { "start": 60, "target": 95, "step": 3, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbiaperc-09-accords",
+          "title": "La rythmique percussive avec des accords",
+          "level": 4,
+          "focus": ["rythme", "accords"],
+          "style": "cumbia",
+          "description": "La main gauche entre en jeu : le motif à trois voix, sur C et G7. Les étouffés aident beaucoup : ils laissent une fraction de seconde où la main gauche peut bouger sans que ça s'entende.",
+          "goal": "Le motif sans accroc pendant les changements, 2 boucles à 95 bpm.",
+          "tips": [
+            "Change d'accord sur les deux derniers petits coups de la mesure : ils sont légers et pardonnent tout.",
+            "Le pouce du temps 1 doit tomber sur le nouvel accord, c'est lui qui fait entendre le changement.",
+            "C → G7 : l'annulaire part de la corde de La, les trois doigts du G7 se posent ensemble."
+          ],
+          "chords": "C:4 G7:4",
+          "strum": "P.duX.duP.duX.du",
+          "mute": ["kick", "guiro"],
+          "tempo": { "start": 60, "target": 95, "step": 3, "everyLoops": 1 }
+        },
+        {
+          "id": "cumbiaperc-10-tempo-bal",
+          "title": "Seul avec la basse, au tempo de bal",
+          "level": 5,
+          "focus": ["rythme", "accords", "tempo", "ecoute"],
+          "style": "cumbia",
+          "description": "Le défi final : la grille andalouse (Am, G, F, E7), grosse caisse, guiro et conga coupés, guide effacé après 2 boucles, et une mesure sur quatre sans personne. Il ne reste que la basse et toi : ton ukulélé est toute la section rythmique.",
+          "goal": "Tenir 2 boucles à 100 bpm, guide coupé.",
+          "tips": [
+            "Pendant les silences, ton pied et ta voix (« BOUM-k-k TCHAK-k-k ») sont le métronome.",
+            "Si une main se perd, garde l'autre : le pouce sur 1 et 3 ne doit jamais manquer.",
+            "Ton record est sauvegardé : quelques bpm de plus à chaque séance."
+          ],
+          "chords": "Am:4 G:4 F:4 E7:4",
+          "strum": "P.duX.duP.duX.du",
+          "mute": ["kick", "guiro", "conga"],
+          "options": { "guide": "fade", "silence": true },
+          "tempo": { "start": 70, "target": 100, "step": 3, "everyLoops": 1 }
+        }
+      ]
+    }
+  ]
+}

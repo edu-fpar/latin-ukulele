@@ -69,6 +69,21 @@
       "name": "Bulerías",
       "origin": "Jerez de la Frontera (Andalusia)",
       "description": "The 12-beat compás played very fast, with humour and virtuosity: the rhythm of the gitano fiestas of Jerez. The accents stay on 3, 6, 8, 10 and 12, but the palmas and cajón play around them with off-beats. To follow it, you have to feel the accents rather than count every beat."
+    },
+    "cumbia-mexicana": {
+      "name": "Mexican cumbia",
+      "origin": "Mexico (Monterrey, Mexico City)",
+      "description": "Arriving from Colombia in the 1950s, cumbia became the music of Mexico's popular dances: accordion-led cumbia norteña, and the cumbia sonidera of the sound systems. More laid-back than the original, it rests on the guiro, a bass alternating root and fifth, and a keyboard stabbing the off-beats."
+    },
+    "cumbia-peruana": {
+      "name": "Chicha (Peruvian cumbia)",
+      "origin": "Peru (Lima, Amazon)",
+      "description": "In 1960s-70s Peru, cumbia met psychedelic rock and Andean melodies: that's chicha. The electric guitar sings the melody, a second guitar plays a tight 16th-note \"chucu\", and the timbales and bongos roll over the guiro."
+    },
+    "cumbia-villera": {
+      "name": "Cumbia villera",
+      "origin": "Argentina (Buenos Aires suburbs)",
+      "description": "Born in the late 1990s in the working-class neighbourhoods (\"villas\") of Buenos Aires, cumbia villera is faster and rawer: guiro, kick drum on 1 and 3, cracking timbales and a keyboard marking every off-beat."
     }
   }
 }

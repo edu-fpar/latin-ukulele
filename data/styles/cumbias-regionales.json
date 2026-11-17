@@ -1,0 +1,53 @@
+{
+  "styles": [
+    {
+      "id": "cumbia-mexicana",
+      "name": "Cumbia mexicaine",
+      "origin": "Mexique (Monterrey, Mexico)",
+      "beats": 4,
+      "subdivision": 4,
+      "swing": 0,
+      "defaultBpm": 92,
+      "description": "Arrivée de Colombie dans les années 1950, la cumbia est devenue au Mexique la musique des bals populaires : cumbia norteña à l'accordéon, cumbia sonidera des sound systems. Plus posée que l'originale, elle repose sur le guiro, une basse qui alterne fondamentale et quinte, et un clavier qui pique les contretemps.",
+      "tracks": {
+        "guiro": "X.xxX.xxX.xxX.xx",
+        "conga": "m.h.s.hhm.h.s.h.",
+        "keys":  "..x...x...x...x.",
+        "bass":  "1.......5...5..."
+      }
+    },
+    {
+      "id": "cumbia-peruana",
+      "name": "Chicha (cumbia péruvienne)",
+      "origin": "Pérou (Lima, Amazonie)",
+      "beats": 4,
+      "subdivision": 4,
+      "swing": 0,
+      "defaultBpm": 100,
+      "description": "Dans les années 1960-70, au Pérou, la cumbia rencontre le rock psychédélique et les mélodies andines : c'est la chicha. La guitare électrique y chante la mélodie, une deuxième guitare fait un « chucu » serré en doubles croches, et les timbales et bongos roulent par-dessus le guiro.",
+      "tracks": {
+        "guiro":   "X.xxX.xxX.xxX.xx",
+        "bongo":   "h.lhh.lhh.lhh.lh",
+        "cowbell": "X...x...X...x...",
+        "bass":    "1..5..1.1..5..5."
+      }
+    },
+    {
+      "id": "cumbia-villera",
+      "name": "Cumbia villera",
+      "origin": "Argentine (banlieues de Buenos Aires)",
+      "beats": 4,
+      "subdivision": 4,
+      "swing": 0,
+      "defaultBpm": 100,
+      "description": "Née à la fin des années 1990 dans les quartiers populaires (« villas ») de Buenos Aires, la cumbia villera est plus rapide et plus brute : guiro, grosse caisse sur 1 et 3, timbales qui claquent et clavier qui marque tous les contretemps.",
+      "tracks": {
+        "guiro": "X.xxX.xxX.xxX.xx",
+        "kick":  "x.......x.......",
+        "rim":   "....X..x....X.xx",
+        "keys":  "..x...x...x...x.",
+        "bass":  "1.......5......."
+      }
+    }
+  ]
+}

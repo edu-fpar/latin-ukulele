@@ -1,0 +1,110 @@
+{
+  "packs": {
+    "cumbia-percussion": {
+      "title": "Cumbia: the percussionist ukulele",
+      "description": "Imitate the band's percussion with your strumming hand: the kick drum with your thumb, the conga slap with a chuck, the guiro's \"chaa-k-k\" in 16th notes. At each step, you mute the instrument you're imitating and take its place."
+    }
+  },
+  "exercises": {
+    "cumbiaperc-01-grosse-caisse": {
+      "title": "Your thumb is the kick drum",
+      "description": "The cumbia kick drum hits on 1 and 3. It's muted: your thumb replaces it, on the low strings. Am7 needs no left-hand fingers at all, so all your attention goes to your strumming hand.",
+      "goal": "A steady thumb on 1 and 3, 2 loops at 90 bpm.",
+      "tips": [
+        "P = thumb on the C and G strings, with weight, like a foot on the kick pedal.",
+        "Your thumb lands together with the band's bass: listen to it.",
+        "Click \"kick\" to bring the kick drum back and check you land together, then mute it again."
+      ]
+    },
+    "cumbiaperc-02-claque": {
+      "title": "Your chuck is the conga slap",
+      "description": "On 2 and 4, the conga player plays a \"slap\", a dry, high sound. On ukulele, that's the chuck: your palm drops onto the strings as you strum. Still a single voice: only the slaps.",
+      "goal": "Your chucks right with the conga slap, 2 loops at 90 bpm.",
+      "tips": [
+        "Find the conga lane in \"The band\": the slap is the step that lights up on 2 and 4.",
+        "Between two slaps, let your hand swing in time without touching the strings.",
+        "Say \". CHAK . CHAK\" while you play."
+      ]
+    },
+    "cumbiaperc-03-va-et-vient": {
+      "title": "The hand that never stops",
+      "description": "To play like a percussionist, your strumming hand must move in 16th notes without ever stopping: down-up-down-up, four motions per beat. Here you hit all the strings, accenting the down on each beat. This is the engine for the following exercises.",
+      "goal": "Sixteen even strokes per bar, 2 loops at 85 bpm.",
+      "tips": [
+        "Tiny motions from the wrist, hand right next to the strings.",
+        "Only the first stroke of each beat is loud: \"ONE-e-&-a, TWO-e-&-a\".",
+        "16th notes go fast: stay at 55-65 bpm as long as your hand tenses up."
+      ]
+    },
+    "cumbiaperc-04-guiro": {
+      "title": "The guiro: chaa-k-k",
+      "description": "The guiro (the guacharaca) plays one long scrape then two short ones on every beat. Your hand keeps its 16th-note back-and-forth, but skips the second step: a loud down, an empty step, then a light down and up.",
+      "goal": "The \"long-short-short\" aligned with the guiro, 2 loops at 90 bpm.",
+      "tips": [
+        "The empty step is an upstroke that misses the strings: your hand keeps moving.",
+        "Compare your grid with the band's guiro lane: they match step by step.",
+        "Say \"CHAA-k-k\" on every beat."
+      ]
+    },
+    "cumbiaperc-05-remplacer-guiro": {
+      "title": "Taking the guiro's place",
+      "description": "Same pattern, but the guiro is muted and the guide fades after 2 loops: you are the band's guiro. If you stop, you hear it straight away: the cumbia loses its engine.",
+      "goal": "Hold the guiro alone, guide off, 2 loops at 95 bpm.",
+      "tips": [
+        "Listen to the conga and the bass: they're your landmarks now.",
+        "Keep exactly the same volume all the way through: a guiro never gets tired.",
+        "Bring the guiro back (click \"guiro\") to check, then mute it again."
+      ]
+    },
+    "cumbiaperc-06-kick-guiro": {
+      "title": "Two voices: kick drum and guiro",
+      "description": "You combine two instruments: on 1 and 3, the guiro's long stroke becomes a thumb stroke (the kick drum); on 2 and 4, it stays a strummed down. The guiro's two light strokes don't change. The kick drum is muted.",
+      "goal": "Thumb and guiro well locked together, 2 loops at 95 bpm.",
+      "tips": [
+        "Your thumb hits lower, on the low strings; your fingers strum all the strings: two motions, one hand.",
+        "\"BOOM-k-k CHAA-k-k BOOM-k-k CHAA-k-k\".",
+        "If you stumble, go back to \"The guiro: chaa-k-k\" and replace only beat 1 with P."
+      ]
+    },
+    "cumbiaperc-07-conga": {
+      "title": "The conga on ukulele",
+      "description": "The conga tumbao: a muted stroke on the beat, an open note on the \"&\", a slap on 2 and 4. On ukulele: light chuck, up, strong chuck, up… and two quick ups at the end to push forward. The conga is muted: you replace it.",
+      "goal": "The full tumbao, 2 loops at 95 bpm.",
+      "tips": [
+        "x = light chuck (\"too\"), X = strong chuck (\"CHAK\"), u = open upstroke (\"ta\").",
+        "Say \"too-ta-CHAK-ta too-ta-CHAK-tata\".",
+        "The two ups at the end are a little push: they pull you into the next bar."
+      ]
+    },
+    "cumbiaperc-08-trois-voix": {
+      "title": "Three voices: bass, guiro and slap",
+      "description": "The full percussionist-ukulele pattern: thumb on 1 and 3 (kick drum), chuck on 2 and 4 (conga slap), and the guiro's little strokes in between. Kick drum and guiro are muted: you play the whole rhythm section.",
+      "goal": "The three-voice pattern, 2 loops at 95 bpm.",
+      "tips": [
+        "\"BOOM-k-k CHAK-k-k\": it's the pattern from exercise 6, with a chuck instead of the down on 2 and 4.",
+        "The little strokes stay light: they're what gives the impression of speed.",
+        "Listen to what's left of the band (bass, conga): your pattern should complete it exactly."
+      ]
+    },
+    "cumbiaperc-09-accords": {
+      "title": "Percussive rhythm with chords",
+      "description": "Your left hand joins in: the three-voice pattern, over C and G7. The chucks help a lot: they leave a split second where your left hand can move without it being heard.",
+      "goal": "The pattern without a hitch through the changes, 2 loops at 95 bpm.",
+      "tips": [
+        "Change chords on the last two little strokes of the bar: they're light and forgive everything.",
+        "The thumb on beat 1 must land on the new chord: it's what makes the change heard.",
+        "C → G7: your ring finger leaves the A string, and the three G7 fingers land together."
+      ]
+    },
+    "cumbiaperc-10-tempo-bal": {
+      "title": "Alone with the bass, at dance-hall tempo",
+      "description": "The final challenge: the Andalusian progression (Am, G, F, E7), with kick drum, guiro and conga muted, the guide fading after 2 loops, and one bar in four with nobody at all. Only the bass and you are left: your ukulele is the whole rhythm section.",
+      "goal": "Hold 2 loops at 100 bpm, guide off.",
+      "tips": [
+        "During the silences, your foot and your voice (\"BOOM-k-k CHAK-k-k\") are the metronome.",
+        "If one hand gets lost, keep the other going: the thumb on 1 and 3 must never drop out.",
+        "Your record is saved: a few more bpm each session."
+      ]
+    }
+  }
+}

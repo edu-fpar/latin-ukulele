@@ -1,0 +1,115 @@
+{
+  "packs": {
+    "cumbia-accompagnements": {
+      "title": "Cumbia: accompaniment styles",
+      "description": "One cumbia, many ways to accompany it depending on the country: the Mexican boom-chick, the alternating bass, the \"choon-choon\", anticipation, the tight chucu of Peruvian chicha, Argentine cumbia villera and cumbia rebajada."
+    }
+  },
+  "exercises": {
+    "cumbiacc-01-boum-tcha": {
+      "title": "Boom-chick: cumbia norteña",
+      "description": "In northern Mexico, cumbia is played with accordion and bass like a polka: your thumb plays the bass on 1 and 3 (boom), and you strum the chord on 2 and 4 (chick). It's the simplest and most solid accompaniment.",
+      "goal": "Boom and chick clearly separated, 2 loops at 90 bpm.",
+      "tips": [
+        "P = thumb on the low strings (C and G), like a bass. D = the whole chord, downward.",
+        "Say \"BOOM chick BOOM chick\": the boom is round, the chick short and crisp.",
+        "Listen to the band's bass: your thumb lands together with it."
+      ]
+    },
+    "cumbiacc-02-basse-alternee": {
+      "title": "The alternating bass",
+      "description": "Same boom-chick, but your thumb alternates two strings: C string on 1, G string on 3. The bass \"walks\", like the bajo sexto of norteño bands, and the accompaniment comes alive.",
+      "goal": "A steady alternating bass over the 4 chords, 2 loops at 92 bpm.",
+      "tips": [
+        "First play the thumb alone (C . . . G . . .), then add the chords.",
+        "Your thumb hits a single string, your index finger strums the rest: two different motions.",
+        "C → F → G7 → C: Mexican cumbia's favourite chords."
+      ]
+    },
+    "cumbiacc-03-tchun-tchun": {
+      "title": "The choon-choon: bass on the beat, chord on the \"&\"",
+      "description": "The most widespread guitar accompaniment in Mexican cumbia: your thumb on every beat, and an upstroke on every off-beat, right with the keyboard. The two hands of cumbia, combined in a single strumming hand.",
+      "goal": "Upstrokes locked with the keyboard, 2 loops at 95 bpm.",
+      "tips": [
+        "Your thumb goes down on the beat, your index finger comes up on the \"&\": a single back-and-forth.",
+        "Mute the keyboard (click \"keys\"): your Us should replace it exactly.",
+        "The upstroke is louder than the thumb: the off-beat is what makes people dance."
+      ]
+    },
+    "cumbiacc-04-chicha-chucu": {
+      "title": "Chicha: the tight chucu",
+      "description": "In Peruvian chicha, the rhythm guitar plays a 16th-note \"chucu\": nothing on the beat, then a chuck and an upstroke right after, on every beat. It leaves the beat free for the bass and gives that special bounce.",
+      "goal": "A steady \".. chu-cu\", 2 loops at 100 bpm.",
+      "tips": [
+        "Count \"1 e AND a\": you play on AND (chuck) and on a (up).",
+        "Your hand moves in 16th notes non-stop, but only touches the strings twice per beat.",
+        "Start at 60 bpm: 16th notes go fast.",
+        "Listen to the bongos: they roll in the same steps as you."
+      ]
+    },
+    "cumbiacc-05-chicha-guitare": {
+      "title": "Chicha: the singing guitar",
+      "description": "The lead guitar is the star of chicha: short phrases in the minor pentatonic scale, dancing over the rhythm. You take that role with a short original riff over Am and G.",
+      "goal": "The riff without hesitating, 2 loops at 100 bpm.",
+      "tips": [
+        "A3 = A string fret 3, E0 = open E string. All the notes are in the A minor pentatonic scale.",
+        "Play the notes well detached, like an electric guitar with a bit of echo.",
+        "If a note slips, keep the rhythm and land on the next one."
+      ]
+    },
+    "cumbiacc-06-anticipation": {
+      "title": "The chord that arrives early",
+      "description": "In many cumbias, the next chord arrives half a beat early, on the last \"&\" of the bar. That's anticipation: it pushes the music forward. Here, every change lands on the last U of the pattern.",
+      "goal": "Changes on the last \"&\", 2 loops at 92 bpm.",
+      "tips": [
+        "Watch the \"next\" box: it lights up half a beat earlier than usual.",
+        "The last U of the bar is already played with the new chord.",
+        "Think \"ahead\": get your left hand ready during beat 4."
+      ]
+    },
+    "cumbiacc-07-villera": {
+      "title": "Cumbia villera: bass, chak and off-beats",
+      "description": "Argentine cumbia combines everything: thumb on 1 and 3 (with the kick drum), a chuck on 2 and 4 (with the timbales), and an upstroke on every off-beat (with the keyboard). Faster and rawer than the Mexican version.",
+      "goal": "The full pattern, 2 loops at 100 bpm.",
+      "tips": [
+        "\"BOOM-ta CHAK-ta BOOM-ta CHAK-ta\": the \"ta\"s are the upstrokes.",
+        "Thumb and chuck alternate on the beats; the Us never change.",
+        "You've already played the choon-choon: here, every other beat, the thumb becomes a chuck."
+      ]
+    },
+    "cumbiacc-08-rebajada": {
+      "title": "Cumbia rebajada: play slow without dragging",
+      "description": "In Monterrey, the sonideros invented cumbia rebajada by slowing down the records: everything becomes heavy and hypnotic. Playing slowly is harder than it looks: you tend to speed up. Here the tempo stays low, and one bar in four you're on your own.",
+      "goal": "Stay in time through the silences, 4 loops at 72 bpm.",
+      "tips": [
+        "Fill the gaps in your head: count the 16th notes \"1 e & a\".",
+        "Strum wider and heavier, let the chords ring.",
+        "If you come back early after the silence, you've sped up: breathe."
+      ]
+    },
+    "cumbiacc-09-morceau": {
+      "title": "One song, three accompaniments",
+      "description": "Like a real dance-band guitarist, you switch accompaniment depending on the part of the song: boom-chick for the intro, choon-choon for the verse, full rasgueo for the chorus. The guide fades after 2 loops.",
+      "goal": "All 12 bars and the pattern changes, guide off, at 95 bpm.",
+      "tips": [
+        "The structure bar announces the next part: get your pattern ready during the last bar.",
+        "The chorus is the busiest: that's where the song should \"lift\".",
+        "If you get lost in a pattern, play simple Ds on the beats until the next part."
+      ],
+      "sections": [
+        {
+          "name": "Intro",
+          "bars": 4
+        },
+        {
+          "name": "Verse",
+          "bars": 4
+        },
+        {
+          "name": "Chorus",
+          "bars": 4
+        }
+      ]
+    }
+  }
+}

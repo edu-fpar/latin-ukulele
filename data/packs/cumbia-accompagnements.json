@@ -1,0 +1,168 @@
+{
+  "packs": [
+    {
+      "id": "cumbia-accompagnements",
+      "title": "Cumbia : les accompagnements",
+      "description": "Une même cumbia, plusieurs façons de l'accompagner selon les pays : le boum-tcha mexicain, la basse alternée, le tchun-tchun, l'anticipation, le chucu serré de la chicha péruvienne, la cumbia villera argentine et la cumbia rebajada.",
+      "exercises": [
+        {
+          "id": "cumbiacc-01-boum-tcha",
+          "title": "Boum-tcha : la cumbia norteña",
+          "level": 1,
+          "focus": ["rythme", "accords"],
+          "style": "cumbia-mexicana",
+          "description": "Dans le nord du Mexique, la cumbia se joue avec l'accordéon et la basse comme une polka : le pouce joue la basse sur 1 et 3 (boum), et tu grattes l'accord sur 2 et 4 (tcha). C'est l'accompagnement le plus simple et le plus solide.",
+          "goal": "Boum et tcha bien séparés, 2 boucles à 90 bpm.",
+          "tips": [
+            "P = pouce sur les cordes graves (C et G), comme une basse. D = l'accord entier vers le bas.",
+            "Dis « BOUM tcha BOUM tcha » : le boum est rond, le tcha court et sec.",
+            "Écoute la basse du groupe : ton pouce tombe en même temps qu'elle."
+          ],
+          "chords": "C:4 G7:4",
+          "strum": "P.D.P.D.",
+          "tempo": { "start": 60, "target": 90, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbiacc-02-basse-alternee",
+          "title": "La basse alternée",
+          "level": 2,
+          "focus": ["rythme", "picking"],
+          "style": "cumbia-mexicana",
+          "description": "Même boum-tcha, mais le pouce alterne deux cordes : corde de C sur le 1, corde de G sur le 3. La basse « marche », comme celle du bajo sexto des groupes norteños, et l'accompagnement devient plus vivant.",
+          "goal": "Basse alternée régulière sur les 4 accords, 2 boucles à 92 bpm.",
+          "tips": [
+            "Joue d'abord seulement le pouce (C . . . G . . .), puis ajoute les accords.",
+            "Le pouce frappe une seule corde, l'index gratte le reste : deux gestes différents.",
+            "C → F → G7 → C : les accords préférés de la cumbia mexicaine."
+          ],
+          "chords": "C:4 F:4 G7:4 C:4",
+          "strum": "C.D.G.D.",
+          "tempo": { "start": 60, "target": 92, "step": 4, "everyLoops": 1 }
+        },
+        {
+          "id": "cumbiacc-03-tchun-tchun",
+          "title": "Le tchun-tchun : basse sur le temps, accord sur le « et »",
+          "level": 2,
+          "focus": ["rythme"],
+          "style": "cumbia-mexicana",
+          "description": "L'accompagnement de guitare le plus répandu dans la cumbia mexicaine : le pouce sur chaque temps, et un coup vers le haut sur chaque contretemps, pile avec le clavier. Les deux mains de la cumbia, réunies dans une seule main droite.",
+          "goal": "Les coups vers le haut bien calés sur le clavier, 2 boucles à 95 bpm.",
+          "tips": [
+            "Le pouce descend sur le temps, l'index remonte sur le « et » : un seul va-et-vient.",
+            "Coupe le clavier (clic sur « keys ») : tes U doivent le remplacer exactement.",
+            "Le haut est plus fort que le pouce : c'est le contretemps qui fait danser."
+          ],
+          "chords": "Am:4 Dm:4 E7:4 Am:4",
+          "strum": "PUPUPUPU",
+          "tempo": { "start": 62, "target": 95, "step": 4, "everyLoops": 1 }
+        },
+        {
+          "id": "cumbiacc-04-chicha-chucu",
+          "title": "Chicha : le chucu serré",
+          "level": 2,
+          "focus": ["rythme"],
+          "style": "cumbia-peruana",
+          "description": "Dans la chicha péruvienne, la guitare rythmique joue un « chucu » en doubles croches : rien sur le temps, puis un étouffé et un haut juste après, sur chaque temps. Ça laisse le temps libre pour la basse et donne ce rebond si particulier.",
+          "goal": "Le « .. tchu-cu » régulier, 2 boucles à 100 bpm.",
+          "tips": [
+            "Compte « 1 i ET a » : tu joues sur ET (étouffé) et sur a (haut).",
+            "La main bouge en doubles croches sans arrêt, mais ne touche les cordes que deux fois par temps.",
+            "Commence à 60 bpm : les doubles croches vont vite.",
+            "Écoute les bongos : ils roulent dans les mêmes cases que toi."
+          ],
+          "chords": "Am:4 G:4",
+          "strum": "..XU..XU..XU..XU",
+          "tempo": { "start": 60, "target": 100, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbiacc-05-chicha-guitare",
+          "title": "Chicha : la guitare qui chante",
+          "level": 3,
+          "focus": ["melodie"],
+          "style": "cumbia-peruana",
+          "description": "La guitare solo est la star de la chicha : des phrases courtes, en gamme pentatonique mineure, qui dansent sur le rythme. Tu joues ce rôle avec un petit riff original sur Am et G.",
+          "goal": "Le riff sans hésiter, 2 boucles à 100 bpm.",
+          "tips": [
+            "A3 = corde de La case 3, E0 = corde de Mi à vide. Toutes les notes sont dans la gamme de La mineur pentatonique.",
+            "Joue les notes bien détachées, comme une guitare électrique avec un peu d'écho.",
+            "Si une note t'échappe, garde le rythme et retombe sur la suivante."
+          ],
+          "chords": "Am:4 G:4",
+          "riff": "A0 . A3 A0 E3 . E0 . | E3 . E0 C2 E3 . A2 .",
+          "tempo": { "start": 65, "target": 100, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbiacc-06-anticipation",
+          "title": "L'accord qui arrive en avance",
+          "level": 3,
+          "focus": ["accords", "rythme"],
+          "style": "cumbia-mexicana",
+          "description": "Dans beaucoup de cumbias, l'accord suivant arrive un demi-temps en avance, sur le dernier « et » de la mesure. C'est l'anticipation : elle pousse la musique vers l'avant. Ici, chaque changement tombe sur le dernier U du motif.",
+          "goal": "Changements sur le dernier « et », 2 boucles à 92 bpm.",
+          "tips": [
+            "Regarde le cadre « ensuite » : il s'allume un demi-temps plus tôt que d'habitude.",
+            "Le dernier U de la mesure se joue déjà avec le nouvel accord.",
+            "Pense « en avance » : prépare la main gauche pendant le temps 4."
+          ],
+          "chords": "Am:3.5 G:4 F:4 E7:4 Am:0.5",
+          "strum": "D.DU.UDU",
+          "tempo": { "start": 60, "target": 92, "step": 4, "everyLoops": 1 }
+        },
+        {
+          "id": "cumbiacc-07-villera",
+          "title": "Cumbia villera : basse, tchak et contretemps",
+          "level": 3,
+          "focus": ["rythme", "tempo"],
+          "style": "cumbia-villera",
+          "description": "La cumbia argentine combine tout : pouce sur 1 et 3 (avec la grosse caisse), étouffé sur 2 et 4 (avec les timbales), et un coup vers le haut sur chaque contretemps (avec le clavier). Plus rapide et plus brute que la version mexicaine.",
+          "goal": "Le motif complet, 2 boucles à 100 bpm.",
+          "tips": [
+            "« BOUM-ta TCHAK-ta BOUM-ta TCHAK-ta » : les « ta » sont les coups vers le haut.",
+            "Le pouce et l'étouffé alternent sur les temps, les U ne changent jamais.",
+            "Tu as déjà joué le tchun-tchun : ici, un temps sur deux, le pouce devient un étouffé."
+          ],
+          "chords": "Am:4 G:4 F:4 E7:4",
+          "strum": "PUXUPUXU",
+          "tempo": { "start": 65, "target": 100, "step": 4, "everyLoops": 1 }
+        },
+        {
+          "id": "cumbiacc-08-rebajada",
+          "title": "Cumbia rebajada : jouer lent sans traîner",
+          "level": 3,
+          "focus": ["tempo", "ecoute"],
+          "style": "cumbia-mexicana",
+          "description": "À Monterrey, les sonideros ont inventé la cumbia rebajada en ralentissant les disques : tout devient lourd et hypnotique. Jouer lent est plus difficile qu'il n'y paraît : on a tendance à accélérer. Ici, le tempo reste bas et une mesure sur quatre, tu es seul.",
+          "goal": "Rester au tempo pendant les silences, 4 boucles à 72 bpm.",
+          "tips": [
+            "Remplis les espaces dans ta tête : compte les doubles croches « 1 i et a ».",
+            "Gratte plus large et plus lourd, laisse sonner les accords.",
+            "Si tu reviens en avance après le silence, c'est que tu as accéléré : respire."
+          ],
+          "chords": "Am:4 G:4 F:4 E7:4",
+          "strum": "D.DU.UDU",
+          "options": { "silence": true },
+          "tempo": { "start": 64, "target": 72, "step": 2, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbiacc-09-morceau",
+          "title": "Un morceau, trois accompagnements",
+          "level": 4,
+          "focus": ["rythme", "accords", "ecoute"],
+          "style": "cumbia",
+          "description": "Comme un vrai guitariste de bal, tu changes d'accompagnement selon la partie du morceau : boum-tcha pour l'intro, tchun-tchun pour le couplet, rasgueo complet pour le refrain. Le guide s'efface après 2 boucles.",
+          "goal": "Les 12 mesures et les changements de motif, guide coupé, à 95 bpm.",
+          "tips": [
+            "La barre de structure annonce la partie suivante : prépare ton motif pendant la dernière mesure.",
+            "Le refrain est le plus chargé : c'est là que le morceau doit « monter ».",
+            "Si tu te perds dans un motif, joue de simples D sur les temps jusqu'à la partie suivante."
+          ],
+          "chords": "C:4 G7:4 C:4 G7:4 Am:4 Dm:4 E7:4 Am:4 C:4 F:4 G7:4 C:4",
+          "strum": "P.D.P.D. | P.D.P.D. | P.D.P.D. | P.D.P.D. | PUPUPUPU | PUPUPUPU | PUPUPUPU | PUPUPUPU | D.DU.UDU | D.DU.UDU | D.DU.UDU | D.DU.UDU",
+          "sections": [ { "name": "Intro", "bars": 4 }, { "name": "Couplet", "bars": 4 }, { "name": "Refrain", "bars": 4 } ],
+          "options": { "guide": "fade" },
+          "tempo": { "start": 70, "target": 95, "step": 3, "everyLoops": 1 }
+        }
+      ]
+    }
+  ]
+}
