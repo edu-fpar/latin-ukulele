@@ -1,0 +1,20 @@
+{
+  "styles": [
+    {
+      "id": "solea",
+      "name": "Soleá",
+      "origin": "Andalousie (Triana, Utrera, Jerez)",
+      "beats": 12,
+      "subdivision": 2,
+      "swing": 0,
+      "accents": [3, 6, 8, 10, 12],
+      "defaultBpm": 120,
+      "description": "La « mère » du flamenco, grave et profonde. Son compás fait 12 temps, accentués sur 3, 6, 8, 10 et 12 : on le sent comme deux groupes de 3 (1-2-3, 4-5-6) suivis de trois groupes de 2 (7-8, 9-10, 11-12). Les flamencos comptent souvent à partir du 12 ; ici, on part de 1 pour commencer simplement.",
+      "tracks": {
+        "palmas": "x.x.X.x.x.X.x.X.x.X.x.X.",
+        "cajon":  "g...B.....B...S...B...S.",
+        "bass":   "....1.........1...1....."
+      }
+    }
+  ]
+}

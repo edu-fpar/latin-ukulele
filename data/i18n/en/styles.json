@@ -39,6 +39,36 @@
       "name": "Swing",
       "origin": "United States / France (gypsy jazz)",
       "description": "In swing, eighth notes aren't even: the first is long, the second short (\"doo-ba, doo-ba\"). That lilt is what makes the jazz of the 1930s, and the gypsy jazz of Django Reinhardt, king of the guinguettes. The double bass \"walks\" on every beat, and the cymbal goes \"ding, ding-a-ding\"."
+    },
+    "rumba": {
+      "name": "Flamenco rumba",
+      "origin": "Spain (Catalonia, Andalusia)",
+      "description": "Born where flamenco met the Cuban rumba, the rumba flamenca is flamenco's most festive rhythm (the one the Gipsy Kings made famous). The cajón hits the bass on 1 and 3 and slaps on 2 and 4, the palmas clap \"a contratiempo\" on the off-beats, and the guitar alternates strums and muted hits."
+    },
+    "tangos": {
+      "name": "Flamenco tangos",
+      "origin": "Andalusia (Cádiz, Triana)",
+      "description": "Nothing to do with the Argentine tango: flamenco tangos are an energetic, danceable 4-beat compás. Their signature: the palmas stay silent on beat 1 and clap 2, 3, 4. The guitar \"fills\" that first beat. Rumba is their lighter cousin."
+    },
+    "sevillanas": {
+      "name": "Sevillanas",
+      "origin": "Seville (Andalusia)",
+      "description": "The folk dance of the Seville Fair, which everyone dances in pairs. A lively 3-beat rhythm with a strong accent on 1. The castanets play a roll (\"carretilla\") on 1 then two crisp clicks, and the palmas mark every beat."
+    },
+    "solea": {
+      "name": "Soleá",
+      "origin": "Andalusia (Triana, Utrera, Jerez)",
+      "description": "The \"mother\" of flamenco, deep and solemn. Its compás is 12 beats long, accented on 3, 6, 8, 10 and 12: you feel it as two groups of 3 (1-2-3, 4-5-6) followed by three groups of 2 (7-8, 9-10, 11-12). Flamenco musicians often count from 12; here we start from 1 to keep it simple."
+    },
+    "alegrias": {
+      "name": "Alegrías",
+      "origin": "Cádiz (Andalusia)",
+      "description": "The same 12-beat compás as soleá, but in major, faster and brighter: the song of joy, born in the port of Cádiz. The palmas clap on every off-beat (\"a contratiempo\") and the guitar changes chords on accents 3 and 10."
+    },
+    "bulerias": {
+      "name": "Bulerías",
+      "origin": "Jerez de la Frontera (Andalusia)",
+      "description": "The 12-beat compás played very fast, with humour and virtuosity: the rhythm of the gitano fiestas of Jerez. The accents stay on 3, 6, 8, 10 and 12, but the palmas and cajón play around them with off-beats. To follow it, you have to feel the accents rather than count every beat."
     }
   }
 }

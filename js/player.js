@@ -135,7 +135,8 @@ function compileExercise(ex, db) {
 
   return {
     ex, style, beats, sub, spb, prog, bars, loopSteps, chordAt, tracks, strum, riff, melody, sections,
-    notesByChord, tempo, swing: style.swing || 0, warnings
+    notesByChord, tempo, swing: style.swing || 0, warnings,
+    accents: Array.isArray(style.accents) && style.accents.length ? style.accents : null
   };
 }
 
@@ -222,7 +223,7 @@ const Player = (() => {
     const guide = guideActive(loopIdx);
 
     if (!silent) {
-      if (P.opts.click && pos % C.sub === 0) Engine.click(t, pos === 0);
+      if (P.opts.click && pos % C.sub === 0) Engine.click(t, C.accents ? C.accents.includes(pos / C.sub + 1) : pos === 0);
       for (const [name, pat] of Object.entries(C.tracks)) {
         if (P.muted.has(name)) continue;
         const ch = cellAt(pat, g, C.spb);

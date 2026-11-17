@@ -1,0 +1,20 @@
+{
+  "styles": [
+    {
+      "id": "bulerias",
+      "name": "Bulerías",
+      "origin": "Jerez de la Frontera (Andalousie)",
+      "beats": 12,
+      "subdivision": 2,
+      "swing": 0,
+      "accents": [3, 6, 8, 10, 12],
+      "defaultBpm": 180,
+      "description": "Le compás de 12 joué très vite, avec humour et virtuosité : c'est le rythme des fêtes gitanes de Jerez. Les accents restent sur 3, 6, 8, 10 et 12, mais les palmas et le cajón s'amusent autour avec des contretemps. Pour le suivre, il faut sentir les accents sans plus compter tous les temps.",
+      "tracks": {
+        "palmas": ".x.xX..x.xX..xX..xX..xX.",
+        "cajon":  ".g..B..g..S..gS...S..gB.",
+        "bass":   "....1.........5...1....."
+      }
+    }
+  ]
+}

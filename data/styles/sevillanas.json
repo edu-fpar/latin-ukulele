@@ -1,0 +1,19 @@
+{
+  "styles": [
+    {
+      "id": "sevillanas",
+      "name": "Sevillanas",
+      "origin": "Séville (Andalousie)",
+      "beats": 3,
+      "subdivision": 2,
+      "swing": 0,
+      "defaultBpm": 140,
+      "description": "La danse populaire de la Feria de Séville, que tout le monde danse en couple. C'est un rythme à 3 temps, vif, avec un fort accent sur le 1. Les castagnettes font un roulement (« carretilla ») sur le 1 puis deux coups secs, les palmas marquent chaque temps.",
+      "tracks": {
+        "castanets": "r.x.x.",
+        "palmas":    "X.x.x.",
+        "bass":      "1...5."
+      }
+    }
+  ]
+}

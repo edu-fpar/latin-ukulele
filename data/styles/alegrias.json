@@ -1,0 +1,20 @@
+{
+  "styles": [
+    {
+      "id": "alegrias",
+      "name": "Alegrías",
+      "origin": "Cadix (Andalousie)",
+      "beats": 12,
+      "subdivision": 2,
+      "swing": 0,
+      "accents": [3, 6, 8, 10, 12],
+      "defaultBpm": 150,
+      "description": "Le même compás de 12 temps que la soleá, mais en majeur, plus rapide et lumineux : c'est le chant de la joie, né dans le port de Cadix. Les palmas jouent sur tous les contretemps (« a contratiempo ») et la guitare change d'accord sur les accents 3 et 10.",
+      "tracks": {
+        "palmas": ".x.xXx.x.xXx.xXx.xXx.xXx",
+        "cajon":  "g.g.B.g.g.S.g.B.g.S.g.S.",
+        "bass":   "1...1.....5...1...1...5."
+      }
+    }
+  ]
+}

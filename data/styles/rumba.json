@@ -1,0 +1,19 @@
+{
+  "styles": [
+    {
+      "id": "rumba",
+      "name": "Rumba flamenca",
+      "origin": "Espagne (Catalogne, Andalousie)",
+      "beats": 4,
+      "subdivision": 4,
+      "swing": 0,
+      "defaultBpm": 100,
+      "description": "Née de la rencontre entre le flamenco et la rumba cubaine, la rumba flamenca est le rythme le plus festif du flamenco (et celui des Gipsy Kings). Le cajón frappe la basse sur 1 et 3 et claque sur 2 et 4, les palmas jouent « a contratiempo » sur les contretemps, et la guitare alterne grattés et coups étouffés.",
+      "tracks": {
+        "cajon":  "B..gS..gB..gS.gg",
+        "palmas": "x.X.x.X.x.X.x.X.",
+        "bass":   "1.......5......."
+      }
+    }
+  ]
+}

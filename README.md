@@ -2,7 +2,7 @@
 
 ![Interface de Ukulele Latino : accord en cours, prochain accord, tempo, grille de grattage et pistes du groupe](img/interface.png)
 
-Un groupe virtuel (guiro, conga, basse, clave, accordéon…) joue avec toi, accélère petit à petit, et t'affiche en temps réel l'accord, le prochain changement et le coup de main droite à jouer. Cumbia, son cubain, bossa nova, reggaeton, cha-cha-chá, boléro, fox-trot et swing guinguette : **50 exercices**, extensibles avec n'importe quelle IA.
+Un groupe virtuel (guiro, conga, basse, clave, accordéon, palmas, cajón…) joue avec toi, accélère petit à petit, et t'affiche en temps réel l'accord, le prochain changement et le coup de main droite à jouer. Cumbia, son cubain, bossa nova, reggaeton, cha-cha-chá, boléro, fox-trot, swing guinguette et flamenco (rumba, tangos, sevillanas, soleá, alegrías, bulerías) : **76 exercices**, extensibles avec n'importe quelle IA.
 
 *English version available: the **EN** button in the top bar switches the interface and all exercises to English.*
 
@@ -40,6 +40,8 @@ Sur téléphone, la liste des exercices s'ouvre avec **📚 Exercices** et une b
 | Accompagner une mélodie | 5 |
 | Voyage latino (reggaeton, son, bossa, cha-cha-chá) | 5 |
 | Swing guinguette & syncopes | 10 |
+| Flamenco : rasgueo (grattage) | 15 |
+| Flamenco : arpèges et picado | 11 |
 
 ## Ajouter du contenu
 

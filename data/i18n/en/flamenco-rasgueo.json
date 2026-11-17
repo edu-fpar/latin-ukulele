@@ -1,0 +1,165 @@
+{
+  "packs": {
+    "flamenco-rasgueo": {
+      "title": "Flamenco: rasgueo (strumming)",
+      "description": "The flamenco strumming hand, step by step: from rumba to bulerías, through tangos, sevillanas and the 12-beat compás of soleá. New symbol: ⇊ = rasgueado (your fingers unfold one after the other)."
+    }
+  },
+  "exercises": {
+    "flamenco-r01-rumba-noires": {
+      "title": "Rumba: four solid beats",
+      "description": "Your first meeting with the flamenco band: cajón, palmas and bass. Just strum the four beats on a single chord (Am), to get used to the palmas clapping off the beat, between your strums.",
+      "goal": "Four steady strums per bar, 2 loops at 95 bpm.",
+      "tips": [
+        "Tap your foot on every beat: your strum lands with your foot, the palmas land in between.",
+        "Listen to the low cajón hit on 1 and 3: it's your most reliable landmark.",
+        "Strum with your index finger flicking open downward (the nail hits the strings): that's already a flamenco gesture."
+      ]
+    },
+    "flamenco-r02-golpe": {
+      "title": "The muted hit on 2 and 4",
+      "description": "In rumba, the guitar imitates the cajón: a strum on 1 and 3, a muted, percussive hit on 2 and 4, together with the cajón slap. That \"chak\" is where all the energy comes from.",
+      "goal": "Your ✕ right with the cajón slap, 2 loops at 100 bpm.",
+      "tips": [
+        "To mute: let your palm (the edge of your hand) drop onto the strings as you strum. You hear \"chak\", no notes.",
+        "Say \"boom CHAK boom CHAK\" while you play.",
+        "Mute the palmas (click \"palmas\") to hear only the cajón, then bring them back."
+      ]
+    },
+    "flamenco-r03-rumba-base": {
+      "title": "The rumba rhythm",
+      "description": "The most famous rumba pattern: down, chuck-up, up, chuck-up. Your hand swings non-stop in eighth notes and only touches the strings on some steps. Still on Am, so you can focus on your strumming hand.",
+      "goal": "The pattern without stopping your hand, 2 loops at 100 bpm.",
+      "tips": [
+        "Your hand never stops: down on the beats, up on the \"&\"s, even when it doesn't touch the strings.",
+        "Say \"BOOM . CHAK-a . a CHAK-a\": the \"a\"s are the upstrokes.",
+        "The ✕s land on 2 and 4, just like in the previous exercise: hold on to that.",
+        "If you stumble, first play it without the ✕s (replace them with a normal down)."
+      ]
+    },
+    "flamenco-r04-rumba-cadence": {
+      "title": "Rumba over the Andalusian cadence",
+      "description": "The Andalusian cadence (Am, G, F, E7) is the progression that instantly \"sounds flamenco\": it walks down to a tense E7. Same rumba pattern, one chord per bar.",
+      "goal": "Changes on time without breaking the pattern, 2 loops at 100 bpm.",
+      "tips": [
+        "Change chords during the last upstroke of the bar: it's a light stroke and forgives small slips.",
+        "Am → G → F → E7: the bass walks down A, G, F, E. Listen to it and sing it.",
+        "Get the E7 (1202) ready early: keep your index finger on fret 1 of the G string."
+      ]
+    },
+    "flamenco-r05-tangos-premier-temps": {
+      "title": "Tangos: the guitar fills beat 1",
+      "description": "In tangos, the palmas stay silent on beat 1 and clap 2, 3, 4. Your guitar plays loud on 1, then softer on the other beats: you share the work with the palmas.",
+      "goal": "A strong 1 in the palmas' silence, 2 loops at 100 bpm.",
+      "tips": [
+        "Uppercase = loud, lowercase = soft: only one big strum per bar, on 1.",
+        "Listen to the \"hole\" in the palmas: your 1 must land right in it.",
+        "Count \"ONE two three four\" out loud, almost shouting the ONE."
+      ]
+    },
+    "flamenco-r06-rasgueado": {
+      "title": "The fan rasgueado",
+      "description": "The king of flamenco gestures: instead of a single downstroke, your fingers unfold one after the other (pinky, ring, middle, index) to make a \"trrrra\". Here it replaces the big strum on beat 1 of the tangos.",
+      "goal": "A clean rasgueado that ends right on the beat, 2 loops at 100 bpm.",
+      "tips": [
+        "Close your fist gently, thumb resting on the G string. Then open your fingers one by one, starting with the pinky, like a fan.",
+        "Practise it first without the band, slowly: four well-separated \"clicks\", then closer and closer together.",
+        "The last finger (the index) is the loudest: it's the one that lands on the beat.",
+        "The motion comes from the fingers, not the wrist: your hand stays almost still."
+      ]
+    },
+    "flamenco-r07-tangos-golpe": {
+      "title": "Tangos: rasgueado and golpe",
+      "description": "A real tangos accompaniment: rasgueado on 1, small down-up strokes, and a muted hit (the \"golpe\") on 3, with the cajón slap. Over the Andalusian cadence you already know.",
+      "goal": "The full pattern over the 4 chords, 2 loops at 105 bpm.",
+      "tips": [
+        "Break it down: \"TRRRA . ti-ta CHAK . ti-ta\".",
+        "On guitar, the flamenco golpe is a tap on the top with the ring finger; on ukulele, a palm mute does the job nicely.",
+        "If the rasgueado makes you late, replace it with a simple D while you settle the pattern."
+      ]
+    },
+    "flamenco-r08-tangos-por-arriba": {
+      "title": "Tangos \"por arriba\": E, F, G, F",
+      "description": "Flamenco loves the E mode (Phrygian mode): the home chord is E (here E7), and the F just above gives that typical Arabic-Andalusian colour. Same pattern as before, new progression, and the guide fades after 2 loops.",
+      "goal": "The progression by heart, guide off, 2 loops at 110 bpm.",
+      "tips": [
+        "E7 → F: only your fingers move, keep your hand close to the neck.",
+        "Listen to the E → F half step in the bass: it's THE sound of flamenco.",
+        "The progression returns to E7 every time round: that's \"home\", you always come back to it."
+      ]
+    },
+    "flamenco-r09-sevillanas-trois": {
+      "title": "Sevillanas: counting in 3",
+      "description": "New time signature: sevillanas are in 3. Three downstrokes per bar, the first one louder, and one chord per bar. The castanets roll on beat 1: that's your landmark.",
+      "goal": "A clearly marked 1, 2 loops at 130 bpm.",
+      "tips": [
+        "Count \"ONE two three, ONE two three\": like a waltz, but with more drive.",
+        "The castanet roll always announces beat 1.",
+        "Am ↔ E7: practise this change without strumming before you start."
+      ]
+    },
+    "flamenco-r10-sevillanas-rasgueado": {
+      "title": "Sevillanas: rasgueado on 1",
+      "description": "The rasgueado arrives on beat 1 of the sevillanas, followed by a down on 2 and a down-up on 3. The progression is 8 bars long, like a phrase of the dance: Am-E7 twice, then the Andalusian cadence.",
+      "goal": "All 8 bars without stopping, 2 loops at 135 bpm.",
+      "tips": [
+        "\"TRRRA . ta . ta-ti\": the rasgueado fills the whole of beat 1.",
+        "The little upstroke at the end of the bar is the perfect moment to change chords.",
+        "Two-thirds of the way through come G then F: watch the \"next\" box so you're not caught out."
+      ]
+    },
+    "flamenco-r11-solea-accents": {
+      "title": "Soleá: accents only",
+      "description": "The 12-beat compás! To discover it, strum only on the accents: 3, 6, 8, 10 and 12 (the circled dots). In between, count silently. The chord moves to F on beat 7 and back to E7 on beat 10.",
+      "goal": "All 5 accents in place, 2 loops at 110 bpm.",
+      "tips": [
+        "Count out loud: \"one two THREE four five SIX seven EIGHT nine TEN eleven TWELVE\".",
+        "Feel the groups: 1-2-3, 4-5-6, then 7-8, 9-10, 11-12. Two groups of three, three groups of two.",
+        "The change to F comes on 7, a beat you don't play: make the most of it.",
+        "The metronome click is higher-pitched on the accents."
+      ]
+    },
+    "flamenco-r12-solea-tous-les-temps": {
+      "title": "Soleá: every beat, strong accents",
+      "description": "Now you play all 12 beats: light strums on the weak beats, strong strums on the accents. The difference in volume is what draws the compás: if everything is at the same level, the soleá disappears.",
+      "goal": "A real loud/soft difference, 2 loops at 115 bpm.",
+      "tips": [
+        "Light strums: just your index finger, close to the strings. Strong strums: all your fingers, with a bit more swing.",
+        "Not faster on the accents: only louder.",
+        "Listen to the bright palmas: they clap exactly on your accents."
+      ]
+    },
+    "flamenco-r13-solea-rasgueados": {
+      "title": "Soleá: rasgueados on the accents",
+      "description": "Accents 3, 6 and 10 become rasgueados, 8 stays a clean strum, and 12 ends with a golpe (muted hit) that closes the compás. This is what a soleá accompaniment sounds like.",
+      "goal": "The full compás without losing your place, 2 loops at 120 bpm.",
+      "tips": [
+        "The rasgueado must end ON the accent: start the motion a tiny bit early.",
+        "The golpe on 12 closes the phrase, like a full stop at the end of a sentence.",
+        "If you get lost, don't panic: wait for the next 1 while counting, and start again.",
+        "Use \"🐢 Too fast!\" as soon as the rasgueados get messy."
+      ]
+    },
+    "flamenco-r14-alegrias": {
+      "title": "Alegrías: the compás in major",
+      "description": "The same 12-beat compás, but in A major and more joyful. Over two compases: A on 1-2, then E7 from accent 3; the next compás stays on E7 and returns to A on accent 10. Chords change on the accents: that's the flamenco rule.",
+      "goal": "Both changes right on 3 and on 10, 2 loops at 130 bpm.",
+      "tips": [
+        "First find the two changes without strumming: left hand only, counting.",
+        "A (2100) → E7 (1202): your index finger slides from the C string to the G string.",
+        "The palmas clap off the beat: don't get dragged along, your foot stays on the beats."
+      ]
+    },
+    "flamenco-r15-bulerias": {
+      "title": "Bulerías: the compás that flies",
+      "description": "The soleá pattern (rasgueados on 3, 6, 10, golpe on 12) at bulería tempo. At this speed, you no longer count the 12 beats: you feel the accents. The guide fades after 2 loops. This is the culmination of the path.",
+      "goal": "Hold 2 loops at 170 bpm, guide off.",
+      "tips": [
+        "Fast = small motions: your fingers stay right next to the strings.",
+        "Count only the accents: \"THREE . . SIX . EIGHT . TEN . TWELVE\".",
+        "The palmas and cajón play around the accents: listen to them as a conversation, not a metronome.",
+        "Your record is saved: a few more bpm each session."
+      ]
+    }
+  }
+}

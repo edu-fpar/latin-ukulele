@@ -111,6 +111,9 @@ kbd { border: 1px solid var(--line); border-radius: 4px; padding: 0 .35em; backg
 .beats span.on { background: var(--accent2); color: #062521; border-color: var(--accent2); }
 .beats span.on.one { background: var(--accent); border-color: var(--accent); color: #241509; }
 .beats span.ci.on { background: var(--yellow); color: #241509; }
+.beats span.acc { border: 2px solid var(--accent); color: var(--text); }
+.beats.many { display: grid; grid-template-columns: repeat(6, auto); justify-content: center; gap: .35em; }
+.beats.many span { width: 1.85em; height: 1.85em; font-size: .85em; }
 .transport { display: flex; gap: .5em; justify-content: center; flex-wrap: wrap; }
 .play { font-size: 1.15em; font-weight: 700; padding: .55em 1.6em; background: var(--accent2); color: #062521; border-color: var(--accent2); }
 .play.on { background: var(--pink); border-color: var(--pink); color: #2a0712; }
@@ -142,6 +145,9 @@ kbd { border: 1px solid var(--line); border-radius: 4px; padding: 0 .35em; backg
 .st-p, .st-f { color: var(--yellow); }
 .st-g { color: var(--accent); } .st-c { color: var(--accent2); } .st-e { color: var(--yellow); } .st-a { color: var(--pink); }
 .st-b { color: var(--text); font-size: .9em !important; }
+.st-r { color: var(--accent); }
+.cells.dense { gap: 2px; }
+.row.main .cells.dense .cell { font-size: 1.15em; }
 .cell.light { font-size: 1em !important; opacity: .75; }
 .cell.riff { font-size: 1em !important; }
 .riff.s-A { color: var(--pink); } .riff.s-E { color: var(--yellow); } .riff.s-C { color: var(--accent2); } .riff.s-G { color: var(--accent); }
@@ -285,6 +291,12 @@ pre { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; 
   .mbeats span.on { background: var(--accent2); color: #062521; border-color: var(--accent2); }
   .mbeats span.on.one { background: var(--accent); border-color: var(--accent); color: #241509; }
   .mbeats span.ci.on { background: var(--yellow); color: #241509; }
+  .mbeats span.acc { border: 2px solid var(--accent); }
+  .mbeats.many { gap: 2px; }
+  .mbeats.many span { width: 1.25em; height: 1.25em; font-size: .7em; }
+  .row.main .cells.dense .cell { font-size: .85em; min-height: 2.4em; }
+  .row[data-key=count] .cells.dense .cell { font-size: .75em; }
+  .row[data-key=count] .cells.dense .cell.sub { visibility: hidden; }
   .mctrl { display: flex; align-items: center; gap: .5em; }
   .mctrl .round { width: 2.6em; height: 2.6em; font-size: 1.2em; flex-shrink: 0; }
   .mbpm { text-align: center; min-width: 3em; line-height: 1; }

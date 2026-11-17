@@ -1,0 +1,124 @@
+{
+  "packs": {
+    "flamenco-arpeges": {
+      "title": "Flamenco: arpeggios and picado",
+      "description": "Fingerstyle flamenco, very gradually: thumb, p-i-m arpeggios, picado, alzapúa, tremolo, then the 12-beat compás. Letters = strings: G and C (thumb), E (index finger), A (middle finger)."
+    }
+  },
+  "exercises": {
+    "flamenco-a01-pouce": {
+      "title": "The flamenco thumb",
+      "description": "Everything starts with the thumb. In flamenco it plays \"apoyando\" (rest stroke): it plucks the string and comes to rest on the next one. The sound is rounder and louder. Here it alternates the C string (beats 1 and 3) and the G string (beats 2 and 4), on Am.",
+      "goal": "A steady, ringing thumb, 2 loops at 95 bpm.",
+      "tips": [
+        "Apoyando on the C string: after plucking it, your thumb lands on the E string and stops there.",
+        "For the G string, your thumb comes from above: a small motion, without lifting your hand.",
+        "Your fingers (index, middle) can rest on the E and A strings to steady your hand."
+      ]
+    },
+    "flamenco-a02-pim": {
+      "title": "p-i-m: the basic arpeggio",
+      "description": "Flamenco guitarists name the fingers p (thumb), i (index), m (middle), a (ring). The basic arpeggio goes up and back down: p on C, i on E, m on A, i on E. In steady eighth notes, on a single chord.",
+      "goal": "Eight even notes per bar, 2 loops at 100 bpm.",
+      "tips": [
+        "Your fingers pull toward your palm without yanking the string: the sound should stay round.",
+        "Your thumb always lands on a beat: it's your inner metronome.",
+        "Say \"p-i-m-i\" as you play, then switch to \"1 & 2 &\"."
+      ]
+    },
+    "flamenco-a03-pim-cadence": {
+      "title": "Arpeggio over the Andalusian cadence",
+      "description": "The same p-i-m-i arpeggio, over Am, G, F, E7. The notes change on their own with the chords: the arpeggio lets you hear the Andalusian descent.",
+      "goal": "A continuous arpeggio through the changes, 2 loops at 100 bpm.",
+      "tips": [
+        "Fret the whole chord before plucking: the notes should ring together.",
+        "Change chords on the last \"i\" of the bar, the least important note.",
+        "Listen to the C-string note: it goes down or stays put, and it's what guides your ear."
+      ]
+    },
+    "flamenco-a04-sevillanas-arpege": {
+      "title": "Sevillanas arpeggio",
+      "description": "The arpeggio switches to 3 beats: p-i-m-i-m-i, six notes per bar. Your thumb now lands only once per bar, on 1, with the castanet roll.",
+      "goal": "Thumb right on every 1, 2 loops at 130 bpm.",
+      "tips": [
+        "Count \"ONE & two & three &\": thumb on ONE, fingers on everything else.",
+        "Your i and m fingers alternate like two little legs walking.",
+        "Am ↔ E7: change during the last two notes of the bar."
+      ]
+    },
+    "flamenco-a05-picado": {
+      "title": "Picado: the Andalusian descent",
+      "description": "Picado means playing single notes while alternating index and middle fingers (i-m-i-m), very crisp, like a little hammer. You play a line that walks down the Andalusian cadence and ends on the E-F trill, the signature of flamenco.",
+      "goal": "Crisp, even notes, 2 loops at 100 bpm.",
+      "tips": [
+        "Always alternate i-m-i-m, even when you change strings: never the same finger twice.",
+        "Play apoyando: your finger plucks and comes to rest on the neighbouring string.",
+        "Frets: A3 = A string, fret 3. Put your left-hand finger just behind the fret.",
+        "The 3 rests at the end of each bar give you time to prepare the next phrase."
+      ]
+    },
+    "flamenco-a06-alzapua": {
+      "title": "Alzapúa: the thumb that goes back and forth",
+      "description": "A spectacular flamenco technique: the thumb alone does everything. A rest-stroke note on the C string, then it strums down across the strings, then strums back up. \"Doh, dzing, dzang\".",
+      "goal": "A steady note-down-up cycle, 2 loops at 95 bpm.",
+      "tips": [
+        "Keep your thumb stiff; your wrist rotates slightly, like turning a key.",
+        "The C note is loud, the strums (lowercase) are light.",
+        "On the way back up, your thumb only catches 2 or 3 strings: that's normal.",
+        "Am → E7: the C-string note moves from C to D."
+      ]
+    },
+    "flamenco-a07-solea-pouce": {
+      "title": "Soleá: thumb on the accents",
+      "description": "The 12-beat compás, fingerstyle. To start, only your thumb plays, apoyando, on accents 3, 6, 8, 10 and 12. Count the other beats silently. E7 from 1 to 6, F from 7 to 9, E7 from 10 to 12.",
+      "goal": "All 5 accents in place, 2 loops at 110 bpm.",
+      "tips": [
+        "Count out loud: \"one two THREE four five SIX seven EIGHT nine TEN eleven TWELVE\".",
+        "Feel the groups 3 + 3 + 2 + 2 + 2.",
+        "The metronome click is higher-pitched on the accents, and the circled dots show them."
+      ]
+    },
+    "flamenco-a08-solea-arpege": {
+      "title": "Soleá: arpeggio and pinches",
+      "description": "Between the accents, a soft arpeggio (c-e-a-e); on each accent, a strong three-finger pinch (F = C+E+A together). The arpeggio flows, the pinches draw the compás.",
+      "goal": "Pinches much louder than the arpeggio, 2 loops at 115 bpm.",
+      "tips": [
+        "Lowercase = soft, uppercase F = loud: exaggerate the difference.",
+        "After a pinch, the arpeggio starts again right away: no pause.",
+        "If you get lost, play only the pinches (like the previous exercise) until the next 1, then bring the arpeggio back."
+      ]
+    },
+    "flamenco-a09-alegrias-arpege": {
+      "title": "Alegrías: the singing arpeggio",
+      "description": "A continuous p-i-m-i arpeggio in eighth notes over the alegrías compás, in A major. Just a small accent on each strong beat of the compás (uppercase letter). The chords change on accents 3 and 10, over two compases.",
+      "goal": "A continuous arpeggio and changes on 3 and 10, 2 loops at 130 bpm.",
+      "tips": [
+        "The accent is subtle: just a little more weight on the note, not a punch.",
+        "A → E7 on 3 of the first compás, E7 → A on 10 of the second.",
+        "If the arpeggio gets uneven, mute the guide and listen only to the cajón."
+      ]
+    },
+    "flamenco-a10-tremolo": {
+      "title": "The flamenco tremolo",
+      "description": "The tremolo creates the illusion of a sustained note singing above the bass: your thumb plays a bass note, then three fingers repeat the same note very fast on the A string. In 16th notes, slowly at first.",
+      "goal": "Three even repeated notes, 2 loops at 75 bpm.",
+      "tips": [
+        "On the A string, chain ring, middle, index (a-m-i): three different fingers for three notes.",
+        "Your thumb alternates C and G and always lands on the beat.",
+        "Go for evenness before speed: the three notes should have the same volume.",
+        "Start really slowly (45 bpm): this is a long-term technique."
+      ]
+    },
+    "flamenco-a11-bulerias-doigts": {
+      "title": "Fingerstyle bulerías",
+      "description": "The bulería compás played fingerstyle: a light thumb on the weak beats, a strong pinch on the accents. The guide fades after 2 loops and the tempo climbs to that of a real fiesta. The culmination of the path.",
+      "goal": "Hold 2 loops at 170 bpm, guide off.",
+      "tips": [
+        "At this tempo, thumb and pinch are almost a single motion: your hand stays put.",
+        "Count only the accents: \"THREE . . SIX . EIGHT . TEN . TWELVE\".",
+        "If you lose it, wait for 12 (the last pinch) and come back in on 1.",
+        "Your record is saved: aim for a few more bpm each session."
+      ]
+    }
+  }
+}

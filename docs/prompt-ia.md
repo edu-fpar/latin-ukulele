@@ -41,7 +41,7 @@ Toutes les clés sont optionnelles sauf ce qui est nécessaire. N'inclus dans "c
 ### Le motif "strum" (main droite)
 Une case = un caractère. Le motif décrit UNE mesure (ou plusieurs séparées par `|`).
 - Le nombre de cases d'une mesure doit DIVISER le nombre de cases par mesure du style (indiqué plus bas) : pour un style à 16 cases, une mesure peut avoir 4 cases (noires), 8 (croches) ou 16 (doubles croches). Pour un style à 8 cases : 4 ou 8.
-- `D` bas · `U` haut · `d` / `u` versions légères · `X` étouffé (chuck) · `x` étouffé léger
+- `D` bas · `U` haut · `d` / `u` versions légères · `X` étouffé (chuck) · `x` étouffé léger · `R` rasgueado flamenco (4 doigts en éventail) · `r` rasgueado léger
 - `P` pouce (corde de C, comme une basse) · `F` pincé des doigts (C+E+A ensemble) · minuscules = léger
 - Finger picking (une seule corde, la note suit l’accord joué) : `G` corde de Sol (pouce) · `C` corde de Do (pouce) · `E` corde de Mi (index) · `A` corde de La (majeur) · `B` pincé G+A ensemble (pouce + majeur) · minuscules = doux. Ex. : `C.F.G.F.` (basse + pincés), `CAGECAGE` (pouce alterné), `C.EAG.EAC.EAG.EA` (rythme du guiro, 16 cases).
 - `.` rien (la main passe à vide) · les espaces sont ignorés
@@ -75,6 +75,7 @@ Liste de sections dont la somme des `bars` = nombre total de mesures de la grill
   "beats": 4,                 // temps par mesure
   "subdivision": 4,           // cases par temps (2 = croches, 4 = doubles croches, 3 = triolets)
   "swing": 0,                 // 0 à 0.4 : retarde les cases impaires
+  "accents": [3, 6, 8, 10, 12], // optionnel : temps accentués (clic aigu + ronds entourés), ex. compás flamenco de 12 temps
   "defaultBpm": 90,
   "description": "2-3 phrases sur l'origine et ce qui fait le groove.",
   "tracks": { "clave": "x..x..x. | ..x.x..." }
@@ -88,6 +89,9 @@ Chaque piste est un motif comme "strum" (un caractère par case, `|` entre mesur
 - `bongo` : h (aigu) l (grave)
 - `bass` : 1 (fondamentale de l'accord) 3 (tierce) 5 (quinte) 7 (septième) 8 (octave) — suit automatiquement les accords
 - `keys` : x X (piano qui plaque l'accord)
+- `palmas` : x (sorda, mate) X (sonora, claquée)
+- `cajon` : b (grave) s (claqué) g (fantôme) — majuscule = accent
+- `castanets` : x X (coup) r (roulement)
 `.` = silence. Majuscule = accent quand l'instrument n'a qu'un caractère.
 
 ## ACCORD (seulement si nouveau)

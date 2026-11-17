@@ -115,8 +115,8 @@ function countLabels(len, beats) {
   }
   return out;
 }
-const STRUM_GLYPH = { D: '↓', d: '↓', U: '↑', u: '↑', X: '✕', x: '✕', P: 'P', p: 'p', F: 'F', f: 'f', G: 'G', g: 'g', C: 'C', c: 'c', E: 'E', e: 'e', A: 'A', a: 'a', B: 'G+A', b: 'g+a', '.': '', '-': '–' };
-const STRUM_NAME = Object.fromEntries('DdUuXxPpFfGgCcEeAaBb'.split('').map(c => [c, t('strum.' + c)]));
+const STRUM_GLYPH = { D: '↓', d: '↓', U: '↑', u: '↑', X: '✕', x: '✕', P: 'P', p: 'p', F: 'F', f: 'f', G: 'G', g: 'g', C: 'C', c: 'c', E: 'E', e: 'e', A: 'A', a: 'a', B: 'G+A', b: 'g+a', R: '⇊', r: '⇊', '.': '', '-': '–' };
+const STRUM_NAME = Object.fromEntries('DdUuXxPpFfGgCcEeAaBbRr'.split('').map(c => [c, t('strum.' + c)]));
 
 /* ======================================================================
    Liste des exercices
@@ -265,7 +265,7 @@ function renderLanes(s, g) {
   }
   const html = r => `<div class="row ${r.main ? 'main' : ''} ${r.mel ? 'melrow' : ''} ${r.band ? 'band' : ''} ${r.muted ? 'muted' : ''}" data-key="${r.key}">
       <div class="lbl" ${r.band ? `title="${esc(t('grid.muteTitle'))}" data-mute="${r.key}"` : ''}>${esc(r.name)}${r.band && r.muted ? ' 🔇' : ''}</div>
-      <div class="cells" style="--n:${r.cells.length}">${r.cells.map(c => `<div class="cell ${c.cls}" ${c.title ? `title="${esc(c.title)}"` : ''}>${c.html}</div>`).join('')}</div>
+      <div class="cells${r.cells.length > 16 ? ' dense' : ''}" style="--n:${r.cells.length}">${r.cells.map(c => `<div class="cell ${c.cls}" ${c.title ? `title="${esc(c.title)}"` : ''}>${c.html}</div>`).join('')}</div>
     </div>`;
   $('#grid').innerHTML = rows.map(html).join('');
   $('#band').innerHTML = band.map(html).join('');
@@ -326,7 +326,11 @@ function renderChords(s) {
 
 function renderBeatDots(pos, countIn) {
   for (const el of [$('#beats'), $('#mBeats')]) {
-    if (el.children.length !== C.beats) el.innerHTML = Array.from({ length: C.beats }, (_, i) => `<span>${i + 1}</span>`).join('');
+    if (el.children.length !== C.beats || el.dataset.acc !== String(C.accents)) {
+      el.innerHTML = Array.from({ length: C.beats }, (_, i) => `<span class="${C.accents?.includes(i + 1) ? 'acc' : ''}">${i + 1}</span>`).join('');
+      el.dataset.acc = String(C.accents);
+      el.classList.toggle('many', C.beats > 6);
+    }
     const beat = Math.floor(pos / C.sub);
     [...el.children].forEach((d, i) => { d.classList.toggle('on', i === beat); d.classList.toggle('one', i === 0 && beat === 0); d.classList.toggle('ci', !!countIn); });
   }
@@ -537,7 +541,7 @@ function validateBundle(b) {
     if (!ex.id || !ex.title) { errors.push(t('val.exId')); continue; }
     if (!tmp.styles[ex.style]) { errors.push(t('val.style', { id: ex.id, style: ex.style })); continue; }
     if (!ex.strum && !ex.riff) warnings.push(t('val.noStrum', { id: ex.id }));
-    if (ex.strum && /[^DdUuXxPpFfGgCcEeAaBb.\-|\s]/.test(ex.strum)) errors.push(t('val.badStrum', { id: ex.id, strum: ex.strum }));
+    if (ex.strum && /[^DdUuXxPpFfGgCcEeAaBbRr.\-|\s]/.test(ex.strum)) errors.push(t('val.badStrum', { id: ex.id, strum: ex.strum }));
     try {
       const c = compileExercise(ex, tmp);
       c.warnings.forEach(w => warnings.push(`${ex.id} : ${w}`));

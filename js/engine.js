@@ -29,7 +29,10 @@ const Engine = (() => {
     cowbell: 'x X',
     snare:   'x X',
     hihat:   'x (fermée) o (ouverte)',
-    keys:    'x X (accord plaqué au piano)'
+    keys:    'x X (accord plaqué au piano)',
+    palmas:  'x (sorda : paumes creuses, sourd) X (sonora : claquée, brillante)',
+    cajon:   'b (grave) s (claqué) g (fantôme) — majuscule = accent',
+    castanets: 'x X (coup) r (roulement, carretilla)'
   };
 
   function init() {
@@ -143,6 +146,14 @@ const Engine = (() => {
       case 'B': case 'b': { // pincé extérieur : G + A ensemble (pouce + majeur)
         const v = ch === 'B' ? 0.36 : 0.2;
         pluck(notes[0], t, v, Math.max(dur, 0.7)); pluck(notes[3], t, v, Math.max(dur, 0.7));
+        break;
+      }
+      case 'R': case 'r': { // rasgueado : 4 doigts qui se déplient l'un après l'autre (a, m, i… en éventail)
+        const v = ch === 'R' ? 0.3 : 0.16, span = Math.min(stepDur * 0.8, 0.13);
+        for (let k = 0; k < 4; k++) {
+          const tt = t + k * span / 4;
+          notes.forEach((m, i) => pluck(m, tt + i * 0.005, v * (k === 3 ? 1.15 : 0.7), dur));
+        }
         break;
       }
       case 'F': case 'f': // pincé des doigts : C E A en même temps
@@ -262,6 +273,36 @@ const Engine = (() => {
     hihat(t, ch) {
       const open = ch.toLowerCase() === 'o';
       noise(t, open ? 0.28 : 0.05, envGain(buses.group, t, isAcc(ch) ? 0.25 : 0.15, 0.001, open ? 0.25 : 0.03), 'highpass', 8000, 0.7);
+    },
+    palmas(t, ch) {
+      if (ch === 'X') { // sonora : doigts claqués dans la paume, plusieurs micro-impacts brillants
+        [0, 0.006, 0.013].forEach((d, i) => noise(t + d, 0.02, envGain(buses.group, t + d, i === 2 ? 0.55 : 0.32, 0.0005, 0.014), 'bandpass', 2300, 1.3));
+        noise(t + 0.013, 0.13, envGain(buses.group, t + 0.013, 0.3, 0.001, 0.1), 'bandpass', 1900, 0.9);
+      } else { // sorda : paumes creuses, son mat
+        noise(t, 0.07, envGain(buses.group, t, 0.4, 0.001, 0.05), 'bandpass', 850, 1.1);
+      }
+    },
+    cajon(t, ch) {
+      const l = ch.toLowerCase(), acc = isAcc(ch);
+      if (l === 'b') {
+        osc('sine', 125, t, 0.22, envGain(buses.group, t, acc ? 0.95 : 0.7, 0.002, 0.2), 58);
+        noise(t, 0.03, envGain(buses.group, t, 0.18, 0.001, 0.02), 'lowpass', 900, 0.7);
+      } else if (l === 's') {
+        noise(t, 0.13, envGain(buses.group, t, acc ? 0.6 : 0.42, 0.001, 0.11), 'bandpass', 2600, 0.8);
+        osc('triangle', 240, t, 0.06, envGain(buses.group, t, 0.3, 0.001, 0.05));
+      } else {
+        noise(t, 0.04, envGain(buses.group, t, 0.14, 0.001, 0.03), 'bandpass', 1800, 0.8);
+      }
+    },
+    castanets(t, ch, info) {
+      const hit = (tt, v) => {
+        osc('sine', 3100, tt, 0.03, envGain(buses.group, tt, v, 0.0005, 0.02));
+        noise(tt, 0.02, envGain(buses.group, tt, v * 0.6, 0.0005, 0.015), 'bandpass', 4600, 2);
+      };
+      if (ch.toLowerCase() === 'r') {
+        const sp = Math.min(info.stepDur / 4, 0.045);
+        for (let i = 0; i < 4; i++) hit(t + i * sp, 0.2 + i * 0.07);
+      } else hit(t, isAcc(ch) ? 0.5 : 0.35);
     },
     keys(t, ch, info) {
       const f = ctx.createBiquadFilter(); f.type = 'lowpass'; f.frequency.value = 2400;

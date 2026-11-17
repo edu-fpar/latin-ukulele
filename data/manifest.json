@@ -10,13 +10,21 @@
     "styles/bolero.json",
     "styles/foxtrot.json",
     "styles/swing.json",
+    "styles/rumba.json",
+    "styles/tangos.json",
+    "styles/sevillanas.json",
+    "styles/solea.json",
+    "styles/alegrias.json",
+    "styles/bulerias.json",
     "packs/cumbia-premiers-pas.json",
     "packs/cumbia-on-avance.json",
     "packs/accords-latins.json",
     "packs/picking-cumbia.json",
     "packs/accompagner-melodie.json",
     "packs/voyage-latino.json",
-    "packs/swing-guinguette.json"
+    "packs/swing-guinguette.json",
+    "packs/flamenco-rasgueo.json",
+    "packs/flamenco-arpeges.json"
   ],
   "_aide_i18n": "Traductions du contenu par langue (le français est la langue des fichiers de base). Chaque fichier remplace titres, descriptions, objectifs, conseils, sections, noms de styles par id.",
   "i18n": {
@@ -28,7 +36,9 @@
       "i18n/en/picking-cumbia.json",
       "i18n/en/accompagner-melodie.json",
       "i18n/en/voyage-latino.json",
-      "i18n/en/swing-guinguette.json"
+      "i18n/en/swing-guinguette.json",
+      "i18n/en/flamenco-rasgueo.json",
+      "i18n/en/flamenco-arpeges.json"
     ]
   }
 }

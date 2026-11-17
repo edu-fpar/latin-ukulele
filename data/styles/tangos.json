@@ -1,0 +1,19 @@
+{
+  "styles": [
+    {
+      "id": "tangos",
+      "name": "Tangos flamencos",
+      "origin": "Andalousie (Cadix, Triana)",
+      "beats": 4,
+      "subdivision": 2,
+      "swing": 0,
+      "defaultBpm": 110,
+      "description": "Rien à voir avec le tango argentin : les tangos flamencos sont un compás binaire à 4 temps, énergique et dansant. Signe distinctif : les palmas se taisent sur le temps 1 et frappent 2, 3, 4. C'est la guitare qui « remplit » ce premier temps. La rumba en est la cousine plus légère.",
+      "tracks": {
+        "palmas": "..X.X.X.",
+        "cajon":  "B..gS..g",
+        "bass":   "1...5..."
+      }
+    }
+  ]
+}

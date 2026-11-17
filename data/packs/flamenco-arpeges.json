@@ -1,0 +1,203 @@
+{
+  "packs": [
+    {
+      "id": "flamenco-arpeges",
+      "title": "Flamenco : arpèges et picado",
+      "description": "Le flamenco aux doigts, très progressivement : pouce, arpèges p-i-m, picado, alzapúa, trémolo, puis le compás de 12. Lettres = cordes : G et C (pouce), E (index), A (majeur).",
+      "exercises": [
+        {
+          "id": "flamenco-a01-pouce",
+          "title": "Le pouce flamenco",
+          "level": 1,
+          "focus": ["picking", "rythme"],
+          "style": "rumba",
+          "description": "Tout commence par le pouce. En flamenco, il joue « apoyando » : il pince la corde et vient s'appuyer sur la corde suivante. Le son est plus rond et plus fort. Ici, il alterne la corde de C (temps 1 et 3) et la corde de G (temps 2 et 4), sur Am.",
+          "goal": "Un pouce régulier et sonore, 2 boucles à 95 bpm.",
+          "tips": [
+            "Apoyando sur la corde de C : après l'avoir pincée, le pouce se pose sur la corde de Mi et s'y arrête.",
+            "Pour la corde de G, le pouce part d'en haut : petit mouvement, sans lever la main.",
+            "Les doigts (index, majeur) peuvent se poser sur les cordes E et A pour stabiliser la main."
+          ],
+          "chords": "Am:4",
+          "strum": "CGCG",
+          "tempo": { "start": 60, "target": 95, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "flamenco-a02-pim",
+          "title": "p-i-m : l'arpège de base",
+          "level": 1,
+          "focus": ["picking"],
+          "style": "tangos",
+          "description": "Les guitaristes flamencos nomment les doigts p (pouce), i (index), m (majeur), a (annulaire). L'arpège de base monte et redescend : p sur C, i sur E, m sur A, i sur E. En croches régulières, sur un seul accord.",
+          "goal": "Huit notes bien égales par mesure, 2 boucles à 100 bpm.",
+          "tips": [
+            "Les doigts tirent vers la paume, sans arracher la corde : le son doit rester rond.",
+            "Le pouce tombe toujours sur un temps : c'est ton métronome intérieur.",
+            "Dis « p-i-m-i » en jouant, puis remplace par « 1 et 2 et »."
+          ],
+          "chords": "Am:4",
+          "strum": "CEAECEAE",
+          "tempo": { "start": 60, "target": 100, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "flamenco-a03-pim-cadence",
+          "title": "Arpège sur la cadence andalouse",
+          "level": 2,
+          "focus": ["picking", "accords"],
+          "style": "tangos",
+          "description": "Le même arpège p-i-m-i, sur Am, G, F, E7. Les notes changent toutes seules avec les accords : l'arpège fait entendre la descente andalouse.",
+          "goal": "Arpège continu pendant les changements, 2 boucles à 100 bpm.",
+          "tips": [
+            "Pose l'accord entier avant de pincer : les notes doivent résonner ensemble.",
+            "Change d'accord sur le dernier « i » de la mesure, le moins important.",
+            "Écoute la note de la corde de C : elle descend ou reste en place, c'est elle qui guide l'oreille."
+          ],
+          "chords": "Am:4 G:4 F:4 E7:4",
+          "strum": "CEAECEAE",
+          "tempo": { "start": 60, "target": 100, "step": 4, "everyLoops": 1 }
+        },
+        {
+          "id": "flamenco-a04-sevillanas-arpege",
+          "title": "Sevillanas en arpège",
+          "level": 2,
+          "focus": ["picking", "rythme"],
+          "style": "sevillanas",
+          "description": "L'arpège passe à 3 temps : p-i-m-i-m-i, six notes par mesure. Le pouce ne tombe plus qu'une fois par mesure, sur le 1, avec le roulement des castagnettes.",
+          "goal": "Le pouce bien posé sur chaque 1, 2 boucles à 130 bpm.",
+          "tips": [
+            "Compte « UN et deux et trois et » : le pouce est sur UN, les doigts sur tout le reste.",
+            "Les doigts i et m alternent comme deux petites jambes qui marchent.",
+            "Am ↔ E7 : change pendant les deux dernières notes de la mesure."
+          ],
+          "chords": "Am:3 E7:3",
+          "strum": "CEAEAE",
+          "tempo": { "start": 80, "target": 130, "step": 5, "everyLoops": 2 }
+        },
+        {
+          "id": "flamenco-a05-picado",
+          "title": "Picado : la descente andalouse",
+          "level": 3,
+          "focus": ["melodie", "picking"],
+          "style": "tangos",
+          "description": "Le picado, c'est jouer des notes une par une en alternant index et majeur (i-m-i-m), très net, comme un petit marteau. Tu joues une ligne qui descend sur la cadence andalouse et finit par le trille Mi-Fa, signature du flamenco.",
+          "goal": "Des notes nettes et égales, 2 boucles à 100 bpm.",
+          "tips": [
+            "Alterne toujours i-m-i-m, même quand tu changes de corde : jamais deux fois le même doigt.",
+            "Joue apoyando : le doigt pince et vient se poser sur la corde voisine.",
+            "Les cases : A3 = corde de La, case 3. Pose le doigt de la main gauche juste derrière la frette.",
+            "Les 3 silences en fin de mesure te laissent le temps de préparer la phrase suivante."
+          ],
+          "chords": "Am:4 G:4 F:4 E7:4",
+          "riff": "A3 A2 A0 E3 A0 . . . | E3 E1 E0 C2 E3 . . . | A0 E3 E1 E0 E1 . . . | E0 E1 E0 E1 E0 . . .",
+          "tempo": { "start": 60, "target": 100, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "flamenco-a06-alzapua",
+          "title": "L'alzapúa : le pouce qui va et vient",
+          "level": 3,
+          "focus": ["picking", "rythme"],
+          "style": "rumba",
+          "description": "Technique spectaculaire du flamenco : le pouce seul fait tout. Une note apoyando sur la corde de C, puis il gratte les cordes vers le bas, puis remonte en les grattant vers le haut. « Do, dzing, dzang ».",
+          "goal": "Le cycle note-bas-haut bien régulier, 2 boucles à 95 bpm.",
+          "tips": [
+            "Le pouce reste raide, c'est le poignet qui tourne légèrement, comme pour tourner une clé.",
+            "La note C est forte, les grattés (minuscules) sont légers.",
+            "Au retour vers le haut, le pouce ne touche que 2 ou 3 cordes : c'est normal.",
+            "Am → E7 : la note de la corde de C passe de Do à Ré."
+          ],
+          "chords": "Am:4 E7:4",
+          "strum": "C.duC.du",
+          "tempo": { "start": 60, "target": 95, "step": 3, "everyLoops": 2 }
+        },
+        {
+          "id": "flamenco-a07-solea-pouce",
+          "title": "Soleá : le pouce sur les accents",
+          "level": 3,
+          "focus": ["picking", "ecoute"],
+          "style": "solea",
+          "description": "Le compás de 12, aux doigts. Pour commencer, seul le pouce joue, apoyando, sur les accents 3, 6, 8, 10 et 12. Tu comptes les autres temps en silence. E7 de 1 à 6, F de 7 à 9, E7 de 10 à 12.",
+          "goal": "Les 5 accents à leur place, 2 boucles à 110 bpm.",
+          "tips": [
+            "Compte à voix haute : « un deux TROIS quatre cinq SIX sept HUIT neuf DIX onze DOUZE ».",
+            "Sens les groupes 3 + 3 + 2 + 2 + 2.",
+            "Le clic du métronome est plus aigu sur les accents, et les ronds entourés te les montrent."
+          ],
+          "chords": "E7:6 F:3 E7:3",
+          "strum": "..C..C.C.C.C",
+          "tempo": { "start": 70, "target": 110, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "flamenco-a08-solea-arpege",
+          "title": "Soleá : arpège et pincés",
+          "level": 4,
+          "focus": ["picking", "rythme"],
+          "style": "solea",
+          "description": "Entre les accents, un arpège doux (c-e-a-e) ; sur chaque accent, un pincé fort des trois doigts (F = C+E+A ensemble). L'arpège coule, les pincés dessinent le compás.",
+          "goal": "Pincés bien plus forts que l'arpège, 2 boucles à 115 bpm.",
+          "tips": [
+            "Minuscules = doux, F majuscule = fort : exagère la différence.",
+            "Après un pincé, l'arpège repart aussitôt : pas de pause.",
+            "Si tu te perds, joue seulement les pincés (comme l'exercice précédent) jusqu'au prochain 1, puis remets l'arpège."
+          ],
+          "chords": "E7:6 F:3 E7:3",
+          "strum": "ceaeF.ceaeF.ceF.aeF.ceF.",
+          "tempo": { "start": 70, "target": 115, "step": 3, "everyLoops": 1 }
+        },
+        {
+          "id": "flamenco-a09-alegrias-arpege",
+          "title": "Alegrías : l'arpège qui chante",
+          "level": 4,
+          "focus": ["picking", "accords"],
+          "style": "alegrias",
+          "description": "Arpège continu p-i-m-i en croches sur le compás des alegrías, en La majeur. Un seul petit accent sur chaque temps fort du compás (lettre majuscule). Les accords changent sur les accents 3 et 10, sur deux compases.",
+          "goal": "Arpège continu et changements sur 3 et 10, 2 boucles à 130 bpm.",
+          "tips": [
+            "L'accent est discret : juste un peu plus de poids sur la note, pas un coup de poing.",
+            "A → E7 sur le 3 du premier compás, E7 → A sur le 10 du second.",
+            "Si l'arpège devient irrégulier, coupe le guide et écoute seulement le cajón."
+          ],
+          "chords": "A:2 E7:10 E7:9 A:3",
+          "strum": "ceaeCeaeceAeceAeceAeceAe",
+          "tempo": { "start": 80, "target": 130, "step": 5, "everyLoops": 1 }
+        },
+        {
+          "id": "flamenco-a10-tremolo",
+          "title": "Le trémolo flamenco",
+          "level": 4,
+          "focus": ["picking"],
+          "style": "rumba",
+          "description": "Le trémolo donne l'illusion d'une note tenue qui chante au-dessus de la basse : le pouce joue une basse, puis trois doigts répètent très vite la même note sur la corde de La. En doubles croches, lentement d'abord.",
+          "goal": "Trois notes répétées bien égales, 2 boucles à 75 bpm.",
+          "tips": [
+            "Sur la corde de La, enchaîne annulaire, majeur, index (a-m-i) : trois doigts différents pour trois notes.",
+            "Le pouce alterne C et G et tombe toujours sur le temps.",
+            "Cherche l'égalité avant la vitesse : les trois notes doivent avoir le même volume.",
+            "Commence vraiment lentement (45 bpm) : c'est une technique de longue haleine."
+          ],
+          "chords": "Am:4 E7:4",
+          "strum": "CAAAGAAACAAAGAAA",
+          "tempo": { "start": 45, "target": 75, "step": 3, "everyLoops": 2 }
+        },
+        {
+          "id": "flamenco-a11-bulerias-doigts",
+          "title": "Bulerías aux doigts",
+          "level": 5,
+          "focus": ["picking", "tempo"],
+          "style": "bulerias",
+          "description": "Le compás de bulería joué aux doigts : pouce léger sur les temps faibles, pincé fort sur les accents. Le guide s'efface après 2 boucles et le tempo monte jusqu'à celui d'une vraie fête. L'aboutissement du parcours.",
+          "goal": "Tenir 2 boucles à 170 bpm, guide coupé.",
+          "tips": [
+            "À ce tempo, le pouce et le pincé sont presque un seul mouvement : la main reste posée.",
+            "Ne compte que les accents : « TROIS . . SIX . HUIT . DIX . DOUZE ».",
+            "Si tu décroches, attends le 12 (le dernier pincé) et repars sur le 1.",
+            "Ton record est sauvegardé : vise quelques bpm de plus à chaque séance."
+          ],
+          "chords": "E7:6 F:3 E7:3",
+          "strum": "ppFppFpFpFpF",
+          "options": { "guide": "fade" },
+          "tempo": { "start": 100, "target": 170, "step": 5, "everyLoops": 1 }
+        }
+      ]
+    }
+  ]
+}

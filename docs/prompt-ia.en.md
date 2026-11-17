@@ -41,7 +41,7 @@ All keys are optional except what is needed. In "chords" and "styles", include O
 ### The "strum" pattern (right hand)
 One slot = one character. The pattern describes ONE bar (or several, separated by `|`).
 - The number of slots in a bar must DIVIDE the style's number of slots per bar (given further down): for a 16-slot style, a bar can have 4 slots (quarter notes), 8 (eighth notes) or 16 (sixteenth notes). For an 8-slot style: 4 or 8.
-- `D` down · `U` up · `d` / `u` light versions · `X` chuck (muted strum) · `x` light chuck
+- `D` down · `U` up · `d` / `u` light versions · `X` chuck (muted strum) · `x` light chuck · `R` flamenco rasgueado (4-finger fan) · `r` light rasgueado
 - `P` thumb (C string, like a bass) · `F` finger pinch (C+E+A together) · lowercase = light
 - Finger picking (a single string, the note follows the chord being played): `G` G string (thumb) · `C` C string (thumb) · `E` E string (index) · `A` A string (middle finger) · `B` G+A pinched together (thumb + middle finger) · lowercase = soft. E.g.: `C.F.G.F.` (bass + pinches), `CAGECAGE` (alternating thumb), `C.EAG.EAC.EAG.EA` (guiro rhythm, 16 slots).
 - `.` nothing (the hand moves without touching the strings) · spaces are ignored
@@ -75,6 +75,7 @@ A list of sections whose `bars` add up to the total number of bars in the progre
   "beats": 4,                 // beats per bar
   "subdivision": 4,           // slots per beat (2 = eighth notes, 4 = sixteenth notes, 3 = triplets)
   "swing": 0,                 // 0 to 0.4: delays the odd-numbered slots
+  "accents": [3, 6, 8, 10, 12], // optional: accented beats (high click + circled dots), e.g. 12-beat flamenco compás
   "defaultBpm": 90,
   "description": "2-3 sentences on the origin and what makes the groove.",
   "tracks": { "clave": "x..x..x. | ..x.x..." }
@@ -88,6 +89,9 @@ Each track is a pattern like "strum" (one character per slot, `|` between bars; 
 - `bongo`: h (high) l (low)
 - `bass`: 1 (chord root) 3 (third) 5 (fifth) 7 (seventh) 8 (octave) — follows the chords automatically
 - `keys`: x X (piano hitting the chord)
+- `palmas`: x (sorda, muffled) X (sonora, bright clap)
+- `cajon`: b (bass) s (slap) g (ghost) — uppercase = accented
+- `castanets`: x X (click) r (roll)
 `.` = silence. Uppercase = accent when the instrument has only one character.
 
 ## CHORD (only if new)

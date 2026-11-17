@@ -1,0 +1,273 @@
+{
+  "packs": [
+    {
+      "id": "flamenco-rasgueo",
+      "title": "Flamenco : rasgueo (grattage)",
+      "description": "La main droite flamenca, pas à pas : de la rumba aux bulerías, en passant par les tangos, les sevillanas et le compás de 12 de la soleá. Nouveau signe : ⇊ = rasgueado (les doigts se déplient l'un après l'autre).",
+      "exercises": [
+        {
+          "id": "flamenco-r01-rumba-noires",
+          "title": "Rumba : quatre temps bien posés",
+          "level": 1,
+          "focus": ["rythme", "ecoute"],
+          "style": "rumba",
+          "description": "Premier contact avec le groupe flamenco : cajón, palmas et basse. Tu grattes simplement les quatre temps sur un seul accord (Am), pour t'habituer au son des palmas qui jouent à contretemps, entre tes coups.",
+          "goal": "Quatre coups réguliers par mesure, 2 boucles à 95 bpm.",
+          "tips": [
+            "Tape du pied sur chaque temps : ton grattage tombe en même temps que ton pied, les palmas tombent entre deux.",
+            "Écoute le grave du cajón sur 1 et 3 : c'est ton repère le plus solide.",
+            "Gratte avec l'index qui s'ouvre vers le bas (l'ongle touche les cordes) : c'est déjà un geste flamenco."
+          ],
+          "chords": "Am:4",
+          "strum": "DDDD",
+          "tempo": { "start": 60, "target": 95, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "flamenco-r02-golpe",
+          "title": "Le coup étouffé sur 2 et 4",
+          "level": 1,
+          "focus": ["rythme"],
+          "style": "rumba",
+          "description": "En rumba, la guitare imite le cajón : un gratté sur 1 et 3, un coup étouffé et percussif sur 2 et 4, en même temps que le claqué du cajón. C'est le « tchak » qui donne toute l'énergie.",
+          "goal": "Les ✕ pile avec le claqué du cajón, 2 boucles à 100 bpm.",
+          "tips": [
+            "Pour étouffer : laisse retomber la paume (le tranchant de la main) sur les cordes au moment où tu grattes. On entend « tchak », pas de note.",
+            "Dis « boum TCHAK boum TCHAK » en jouant.",
+            "Coupe les palmas (clic sur « palmas ») pour n'entendre que le cajón, puis remets-les."
+          ],
+          "chords": "Am:4",
+          "strum": "DXDX",
+          "tempo": { "start": 60, "target": 100, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "flamenco-r03-rumba-base",
+          "title": "Le rythme de la rumba",
+          "level": 2,
+          "focus": ["rythme"],
+          "style": "rumba",
+          "description": "Le motif de rumba le plus célèbre : bas, étouffé-haut, haut, étouffé-haut. La main fait un va-et-vient continu en croches, et ne touche les cordes que sur certaines cases. Toujours sur Am, pour se concentrer sur la main droite.",
+          "goal": "Le motif sans arrêter la main, 2 boucles à 100 bpm.",
+          "tips": [
+            "La main ne s'arrête jamais : bas sur les temps, haut sur les « et », même quand elle ne touche pas les cordes.",
+            "Dis « BOUM . TCHAK-a . a TCHAK-a » : les « a » sont les coups vers le haut.",
+            "Les ✕ tombent sur 2 et 4, comme dans l'exercice précédent : garde ce repère.",
+            "Si ça accroche, joue d'abord sans les ✕ (remplace-les par un bas normal)."
+          ],
+          "chords": "Am:4",
+          "strum": "D.XU.UXU",
+          "tempo": { "start": 60, "target": 100, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "flamenco-r04-rumba-cadence",
+          "title": "Rumba sur la cadence andalouse",
+          "level": 2,
+          "focus": ["rythme", "accords"],
+          "style": "rumba",
+          "description": "La cadence andalouse (Am, G, F, E7), c'est la grille qui fait « sonner flamenco » immédiatement : elle descend vers un E7 plein de tension. Même motif de rumba, mais un accord par mesure.",
+          "goal": "Changements à temps sans casser le motif, 2 boucles à 100 bpm.",
+          "tips": [
+            "Change d'accord pendant le dernier « haut » de la mesure : c'est un coup léger, il pardonne les petites imprécisions.",
+            "Am → G → F → E7 : la basse descend La, Sol, Fa, Mi. Écoute-la et chante-la.",
+            "Le E7 (1202) se prépare tôt : garde l'index sur la case 1 de la corde de Sol."
+          ],
+          "chords": "Am:4 G:4 F:4 E7:4",
+          "strum": "D.XU.UXU",
+          "tempo": { "start": 60, "target": 100, "step": 4, "everyLoops": 1 }
+        },
+        {
+          "id": "flamenco-r05-tangos-premier-temps",
+          "title": "Tangos : la guitare remplit le 1",
+          "level": 2,
+          "focus": ["rythme", "ecoute"],
+          "style": "tangos",
+          "description": "Dans les tangos, les palmas se taisent sur le temps 1 et frappent 2, 3, 4. C'est ta guitare qui joue fort sur le 1, puis plus doucement sur les autres temps : on se partage le travail avec les palmas.",
+          "goal": "Un 1 bien fort au milieu du silence des palmas, 2 boucles à 100 bpm.",
+          "tips": [
+            "Majuscule = fort, minuscule = léger : un seul gros coup par mesure, sur le 1.",
+            "Écoute le « trou » des palmas : ton 1 doit tomber pile dedans.",
+            "Compte « UN deux trois quatre » à voix haute, en criant presque le UN."
+          ],
+          "chords": "Am:4",
+          "strum": "D.d.d.d.",
+          "tempo": { "start": 65, "target": 105, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "flamenco-r06-rasgueado",
+          "title": "Le rasgueado en éventail",
+          "level": 3,
+          "focus": ["rythme"],
+          "style": "tangos",
+          "description": "Le geste roi du flamenco : au lieu d'un seul coup vers le bas, les doigts se déplient l'un après l'autre (auriculaire, annulaire, majeur, index) pour faire un « trrrra ». Ici, il remplace le gros coup du 1 des tangos.",
+          "goal": "Un rasgueado net qui finit bien sur le temps, 2 boucles à 100 bpm.",
+          "tips": [
+            "Ferme le poing doucement, pouce posé sur la corde de Sol. Puis ouvre les doigts un par un, en commençant par le petit doigt, comme un éventail.",
+            "Travaille-le d'abord sans le groupe, lentement : quatre « clics » bien séparés, puis de plus en plus rapprochés.",
+            "Le dernier doigt (l'index) est le plus fort : c'est lui qui tombe sur le temps.",
+            "Le geste vient des doigts, pas du poignet : la main reste presque immobile."
+          ],
+          "chords": "Am:4",
+          "strum": "R.d.d.d.",
+          "tempo": { "start": 60, "target": 100, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "flamenco-r07-tangos-golpe",
+          "title": "Tangos : rasgueado et golpe",
+          "level": 3,
+          "focus": ["rythme", "accords"],
+          "style": "tangos",
+          "description": "Un vrai accompagnement de tangos : rasgueado sur le 1, petits coups bas-haut, et un coup étouffé (le « golpe ») sur le 3, avec le claqué du cajón. Sur la cadence andalouse que tu connais déjà.",
+          "goal": "Le motif complet sur les 4 accords, 2 boucles à 105 bpm.",
+          "tips": [
+            "Découpe : « TRRRA . ti-ta TCHAK . ti-ta ».",
+            "Le golpe flamenco se joue en tapant la table avec l'annulaire ; au ukulélé, un étouffé de la paume fait très bien l'affaire.",
+            "Si le rasgueado te met en retard, remplace-le par un simple D le temps d'installer le motif."
+          ],
+          "chords": "Am:4 G:4 F:4 E7:4",
+          "strum": "R.dUX.dU",
+          "tempo": { "start": 60, "target": 105, "step": 4, "everyLoops": 1 }
+        },
+        {
+          "id": "flamenco-r08-tangos-por-arriba",
+          "title": "Tangos « por arriba » : Mi, Fa, Sol, Fa",
+          "level": 3,
+          "focus": ["accords", "tempo"],
+          "style": "tangos",
+          "description": "Le flamenco adore le mode de Mi (mode phrygien) : l'accord de repos est E (ici E7), et le Fa juste au-dessus donne cette couleur arabo-andalouse si typique. Même motif qu'avant, nouvelle grille, et le guide s'efface après 2 boucles.",
+          "goal": "La grille par cœur, guide coupé, 2 boucles à 110 bpm.",
+          "tips": [
+            "E7 → F : seuls les doigts changent de place, garde la main proche du manche.",
+            "Écoute le demi-ton Mi → Fa dans la basse : c'est LE son du flamenco.",
+            "La grille revient sur E7 à chaque tour : c'est la « maison », on y revient toujours."
+          ],
+          "chords": "E7:4 F:4 G:4 F:4",
+          "strum": "R.dUX.dU",
+          "options": { "guide": "fade" },
+          "tempo": { "start": 70, "target": 110, "step": 4, "everyLoops": 1 }
+        },
+        {
+          "id": "flamenco-r09-sevillanas-trois",
+          "title": "Sevillanas : compter en 3",
+          "level": 2,
+          "focus": ["rythme", "accords"],
+          "style": "sevillanas",
+          "description": "Changement de mesure : les sevillanas sont à 3 temps. Trois coups vers le bas par mesure, le premier plus fort, et un accord par mesure. Les castagnettes font un roulement sur le 1 : c'est ton repère.",
+          "goal": "Le 1 bien marqué, 2 boucles à 130 bpm.",
+          "tips": [
+            "Compte « UN deux trois, UN deux trois » : comme une valse, mais plus énergique.",
+            "Le roulement des castagnettes annonce toujours le 1.",
+            "Am ↔ E7 : seul l'index reste à peu près au même endroit, entraîne ce changement à vide avant de lancer."
+          ],
+          "chords": "Am:3 E7:3",
+          "strum": "Ddd",
+          "tempo": { "start": 80, "target": 130, "step": 5, "everyLoops": 2 }
+        },
+        {
+          "id": "flamenco-r10-sevillanas-rasgueado",
+          "title": "Sevillanas : le rasgueado sur le 1",
+          "level": 3,
+          "focus": ["rythme", "accords"],
+          "style": "sevillanas",
+          "description": "Le rasgueado arrive sur le 1 des sevillanas, suivi d'un bas sur le 2 et d'un bas-haut sur le 3. La grille fait 8 mesures, comme une phrase de la danse : deux fois Am-E7, puis la cadence andalouse.",
+          "goal": "Les 8 mesures sans t'arrêter, 2 boucles à 135 bpm.",
+          "tips": [
+            "« TRRRA . ta . ta-ti » : le rasgueado prend toute la place du 1.",
+            "Le petit haut à la fin de la mesure est le moment idéal pour changer d'accord.",
+            "Aux deux tiers de la grille arrive G puis F : regarde le cadre « ensuite » pour ne pas être surpris."
+          ],
+          "chords": "Am:3 E7:3 E7:3 Am:3 Am:3 G:3 F:3 E7:3",
+          "strum": "R.D.DU",
+          "tempo": { "start": 80, "target": 135, "step": 5, "everyLoops": 1 }
+        },
+        {
+          "id": "flamenco-r11-solea-accents",
+          "title": "Soleá : seulement les accents",
+          "level": 3,
+          "focus": ["rythme", "ecoute"],
+          "style": "solea",
+          "description": "Le compás de 12 temps ! Pour le découvrir, tu ne grattes que sur les accents : 3, 6, 8, 10 et 12 (les ronds entourés). Entre les deux, tu comptes en silence. L'accord passe sur F au temps 7 et revient sur E7 au temps 10.",
+          "goal": "Les 5 accents à leur place, 2 boucles à 110 bpm.",
+          "tips": [
+            "Compte à voix haute : « un deux TROIS quatre cinq SIX sept HUIT neuf DIX onze DOUZE ».",
+            "Sens les groupes : 1-2-3, 4-5-6, puis 7-8, 9-10, 11-12. Deux groupes de trois, trois groupes de deux.",
+            "Le changement vers F arrive sur le 7, un temps où tu ne joues pas : profites-en.",
+            "Le clic du métronome est plus aigu sur les accents."
+          ],
+          "chords": "E7:6 F:3 E7:3",
+          "strum": "..D..D.D.D.D",
+          "tempo": { "start": 70, "target": 110, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "flamenco-r12-solea-tous-les-temps",
+          "title": "Soleá : tous les temps, accents forts",
+          "level": 3,
+          "focus": ["rythme"],
+          "style": "solea",
+          "description": "Maintenant tu joues les 12 temps : coups légers sur les temps faibles, coups forts sur les accents. C'est la différence de volume qui dessine le compás : si tout est au même niveau, on n'entend plus la soleá.",
+          "goal": "Une vraie différence fort/léger, 2 boucles à 115 bpm.",
+          "tips": [
+            "Les coups légers : juste l'index, de très près. Les coups forts : tous les doigts, avec un peu plus d'élan.",
+            "Pas plus vite sur les accents : seulement plus fort.",
+            "Écoute les palmas sonores (aiguës) : elles frappent exactement tes accents."
+          ],
+          "chords": "E7:6 F:3 E7:3",
+          "strum": "ddDddDdDdDdD",
+          "tempo": { "start": 70, "target": 115, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "flamenco-r13-solea-rasgueados",
+          "title": "Soleá : rasgueados sur les accents",
+          "level": 4,
+          "focus": ["rythme", "tempo"],
+          "style": "solea",
+          "description": "Les accents 3, 6 et 10 deviennent des rasgueados, le 8 reste un coup franc, et le 12 se termine sur un golpe (étouffé) qui ferme le compás. C'est ainsi que sonne un accompagnement de soleá.",
+          "goal": "Le compás complet sans perdre le fil, 2 boucles à 120 bpm.",
+          "tips": [
+            "Le rasgueado doit finir SUR l'accent : commence le geste un tout petit peu avant.",
+            "Le golpe du 12 ferme la phrase, comme un point à la fin d'une phrase.",
+            "Si tu te perds, pas de panique : attends le prochain 1 en comptant, et repars.",
+            "Utilise « 🐢 Trop vite ! » dès que les rasgueados deviennent brouillons."
+          ],
+          "chords": "E7:6 F:3 E7:3",
+          "strum": "ddRddRdDdRdX",
+          "tempo": { "start": 75, "target": 120, "step": 3, "everyLoops": 1 }
+        },
+        {
+          "id": "flamenco-r14-alegrias",
+          "title": "Alegrías : le compás en majeur",
+          "level": 4,
+          "focus": ["accords", "rythme"],
+          "style": "alegrias",
+          "description": "Même compás de 12, mais en La majeur et plus joyeux. Sur deux compases : A sur 1-2 puis E7 dès l'accent 3 ; le compás suivant reste sur E7 et revient sur A à l'accent 10. Les accords changent sur les accents : c'est la règle du flamenco.",
+          "goal": "Les deux changements pile sur 3 et sur 10, 2 boucles à 130 bpm.",
+          "tips": [
+            "Repère d'abord les deux changements sans gratter : main gauche seule, en comptant.",
+            "A (2100) → E7 (1202) : l'index glisse de la corde de C à la corde de Sol.",
+            "Les palmas jouent à contretemps : ne te laisse pas entraîner, ton pied reste sur les temps."
+          ],
+          "chords": "A:2 E7:10 E7:9 A:3",
+          "strum": "ddDddDdDdDdD",
+          "tempo": { "start": 80, "target": 130, "step": 5, "everyLoops": 1 }
+        },
+        {
+          "id": "flamenco-r15-bulerias",
+          "title": "Bulerías : le compás qui file",
+          "level": 5,
+          "focus": ["tempo", "rythme", "ecoute"],
+          "style": "bulerias",
+          "description": "Le motif de la soleá (rasgueados sur 3, 6, 10, golpe sur 12), au tempo de la bulería. À cette vitesse, on ne compte plus les 12 temps : on sent les accents. Le guide s'efface après 2 boucles. C'est l'aboutissement du parcours.",
+          "goal": "Tenir 2 boucles à 170 bpm, guide coupé.",
+          "tips": [
+            "Vite = petits gestes : les doigts restent tout près des cordes.",
+            "Ne compte plus que les accents : « TROIS . . SIX . HUIT . DIX . DOUZE ».",
+            "Les palmas et le cajón jouent autour des accents : écoute-les comme un dialogue, pas comme un métronome.",
+            "Ton record est sauvegardé : quelques bpm de plus à chaque séance."
+          ],
+          "chords": "E7:6 F:3 E7:3",
+          "strum": "ddRddRdDdRdX",
+          "options": { "guide": "fade" },
+          "tempo": { "start": 100, "target": 170, "step": 5, "everyLoops": 1 }
+        }
+      ]
+    }
+  ]
+}
