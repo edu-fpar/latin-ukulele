@@ -47,6 +47,11 @@ kbd { border: 1px solid var(--line); border-radius: 4px; padding: 0 .35em; backg
 
 /* ---------- sidebar ---------- */
 #sidebar { display: flex; flex-direction: column; gap: .8em; }
+/* ordinateur : la liste défile seule, l'écran de jeu reste visible */
+@media (min-width: 901px) {
+  #sidebar { position: sticky; top: 1em; align-self: start; max-height: calc(100vh - 2em); overflow-y: auto;
+    padding-right: .4em; scrollbar-width: thin; scrollbar-color: var(--line) transparent; overscroll-behavior: contain; }
+}
 .filters { display: flex; flex-wrap: wrap; gap: .35em; }
 .chip { padding: .25em .7em; border-radius: 99px; font-size: .9em; }
 .chip.on { background: var(--accent2); color: #062521; border-color: var(--accent2); font-weight: 600; }

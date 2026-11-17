@@ -454,7 +454,10 @@ function bindControls() {
     $('#play').classList.toggle('on', playing);
     $('#mPlay').textContent = playing ? '■' : '▶';
     $('#mPlay').classList.toggle('on', playing);
-    if (!playing) {
+    if (playing) {
+      // la lecture repart du début : afficher la 1re mesure dès le décompte
+      renderLanes(0, 0); renderChords(0);
+    } else {
       $('#status').textContent = readyText();
       $('#practice').classList.remove('silent');
       ui.cells && ui.cells.forEach(r => r.cells.forEach(c => c.classList.remove('now')));
