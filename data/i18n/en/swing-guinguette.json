@@ -2,7 +2,7 @@
   "packs": {
     "swing-guinguette": {
       "title": "Guinguette swing & syncopation",
-      "description": "The fox-trot pompe, the lilt of swing, and the syncopations jazz shares with Latin music (tresillo, Charleston). From a relaxed \"boom-chick\" all the way to a full-speed dance-hall fox-trot."
+      "description": "The fox-trot pompe, the lilt of swing, and the syncopations jazz shares with Latin music (tresillo, Charleston). From a relaxed \"boom-chick\" all the way to the four-beat dance-hall fox-trot and the Charleston at 200 bpm."
     }
   },
   "exercises": {
@@ -86,8 +86,14 @@
         "At the end of Part B, the accordion climbs to the high D: that's the cue to go back to Part A."
       ],
       "sections": [
-        { "name": "Part A", "bars": 4 },
-        { "name": "Part B", "bars": 4 }
+        {
+          "name": "Part A",
+          "bars": 4
+        },
+        {
+          "name": "Part B",
+          "bars": 4
+        }
       ]
     },
     "swing-09-pompe-manouche": {
@@ -108,6 +114,60 @@
         "The faster it gets, the looser your thumb and wrist need to be: it's a bounce, not a hit.",
         "If it gets messy, \"🐢 Too fast!\": a clean 140 beats a sloppy 160.",
         "Your record is saved: try to gain 5 bpm each session."
+      ]
+    },
+    "swing-11-quatre-temps": {
+      "title": "The four-beat pompe",
+      "description": "The real engine of a dance band: a downstroke on EVERY beat, with 2 and 4 louder. And the swing changes go twice as fast: a chord every two beats. With the walking bass and the drums pushing, it's nothing like a slow dance any more.",
+      "goal": "Four strokes and two chords per bar, 2 loops at 180 bpm.",
+      "tips": [
+        "Short strokes: release your fretting hand right after each stroke, like a banjo.",
+        "1 and 3 are light: use them to change chords. 2 and 4 must snap.",
+        "A7 → Dm7: the finger on the C string slides from fret 1 to fret 2. Dm7 → G7: two fingers stay put (C fret 2, E fret 1).",
+        "Stuck on a change? Click that bar in \"The whole loop\" to repeat it on its own."
+      ]
+    },
+    "swing-12-charleston-cycle": {
+      "title": "Charleston: the cycle of sevenths",
+      "description": "The Charleston at its real tempo, over the cycle E7 → A7 → D7 → G7 → C: each chord pulls towards the next. Two sharp hits with the whole band (1 and the \"&\" of 2), a gap, then a small upstroke on the \"&\" of 4… which ALREADY plays the next chord. That anticipation is the signature of jazz: it launches every bar.",
+      "goal": "Hits locked with the band and the anticipation on every chord, 2 loops at 190 bpm.",
+      "tips": [
+        "The last stroke (↑ on the \"&\" of 4) belongs to the next bar: change chords during the gap, just before it.",
+        "After each hit, release your fretting hand: the Charleston is played short, almost muted.",
+        "Recite the cycle out loud: \"E, A, D, G, C\".",
+        "E7 → A7: only one finger stays, fret 1 on the C string. A7 → D7: barre fret 2 and add fret 3 on the A string."
+      ]
+    },
+    "swing-13-trompette": {
+      "title": "Charleston: the trumpet leads",
+      "description": "The trumpet plays a fast eighth-note line, with the Charleston hits. You play the tight pompe of the 1925 bands: boom (1), chak-a (2 and its \"&\"), on every half bar. Part A on the swing changes, part B with the passing diminished chord. Your pompe must stay straight while the trumpet flies around above it.",
+      "goal": "Hold the 8 bars under the trumpet, 2 loops at 190 bpm, guide off.",
+      "tips": [
+        "\"✕\" is a muted, slapped chak; the small \"↑\" right after relaunches it.",
+        "Don't follow the trumpet's notes: follow the drums. The trumpet plays AROUND the beat.",
+        "In part B, C#dim arrives in the 2nd bar, then Dm7: the bass climbs C, C#, D.",
+        "Mute the trumpet (click its name) if it distracts you, then bring it back."
+      ],
+      "sections": [
+        {
+          "name": "Part A",
+          "bars": 4
+        },
+        {
+          "name": "Part B",
+          "bars": 4
+        }
+      ]
+    },
+    "swing-14-banjo": {
+      "title": "The banjo roll",
+      "description": "The dance-band banjo never stops: continuous down-up, 2 and 4 snapped, and two chords per bar. First the C6 – A7 – Dm7 – G7 turnaround, then the E7 – A7 – D7 – G7 cycle. The grand finale, at the speed of a wild dance hall.",
+      "goal": "Hold 2 loops at 200 bpm without tensing up, guide off.",
+      "tips": [
+        "The motion comes from the wrist, the forearm stays almost still: at 200 bpm it's a shiver.",
+        "Upstrokes are light: just the two or three highest strings.",
+        "Change chords on 1 and 3 (the light beats), never on 2 or 4.",
+        "If it gets muddy, \"🐢 Too fast!\": a clean roll at 170 beats a blurry one at 200."
       ]
     }
   }

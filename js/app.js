@@ -82,7 +82,7 @@ const prog = id => progress[id] || (progress[id] = { best: 0, loops: 0, seconds:
 const saveProgress = () => Store.set('progress', progress);
 
 /* ---------- diagrammes d'accords (SVG) ---------- */
-function chordSVG(name, small) {
+function chordSVG(name, small, riffNotes) {
   const frets = DB.chords[name];
   const w = small ? 64 : 96;
   if (!frets) return `<div class="nodiag" style="width:${w}px">?</div>`;
@@ -99,6 +99,11 @@ function chordSVG(name, small) {
     if (n === -1) s += `<text x="${xs[i]}" y="13" class="mute">×</text>`;
     else if (n === 0) s += `<circle cx="${xs[i]}" cy="10" r="4" class="open"/>`;
     else s += `<circle cx="${xs[i]}" cy="${y0 + (n - base + 0.5) * fh}" r="6.5" class="dot"/>`;
+  });
+  // notes du riff de la mesure (anneaux) : on voit où elles tombent par rapport à l'accord
+  (riffNotes || []).forEach(({ i, n }) => {
+    if (n === 0) s += `<circle cx="${xs[i]}" cy="10" r="5.5" class="rnote"/>`;
+    else if (n >= base && n < base + rows) s += `<circle cx="${xs[i]}" cy="${y0 + (n - base + 0.5) * fh}" r="8" class="rnote"/>`;
   });
   ['G', 'C', 'E', 'A'].forEach((l, i) => s += `<text x="${xs[i]}" y="112" class="sl">${l}</text>`);
   return s + '</svg>';
@@ -166,14 +171,16 @@ function renderList() {
 /* ======================================================================
    Exercice courant
    ====================================================================== */
-let C = null;
-const ui = { lastBar: null, lastChord: null, cells: null };
+let C = null;        // ce qui est joué (l'exercice entier, ou une seule mesure)
+let FULL = null;     // l'exercice entier compilé
+const ui = { lastBar: null, lastChord: null, cells: null, focus: null };
 
 function selectExercise(id) {
   const ex = DB.exercises[id];
   if (!ex) return;
-  try { C = compileExercise(ex, DB); }
+  try { C = FULL = compileExercise(ex, DB); }
   catch (e) { alert(t('ex.loadError', { msg: e.message })); return; }
+  ui.focus = null;
   currentId = id;
   Store.set('current', id);
   Player.load(C);
@@ -185,7 +192,7 @@ function selectExercise(id) {
   syncOptionInputs();
   ui.lastChord = null;
   $('#chordNext').dataset.chord = '';
-  renderHeader(); renderTempoInputs(); renderLanes(0, 0); renderChords(0); renderList();
+  renderHeader(); renderTempoInputs(); renderLoop(); renderLanes(0, 0); renderChords(0); renderList();
   $('#practice').classList.remove('empty');
   $('#mTitle').textContent = ex.title;
   document.body.classList.remove('drawer');
@@ -270,12 +277,14 @@ function renderLanes(s, g) {
   $('#grid').innerHTML = rows.map(html).join('');
   $('#band').innerHTML = band.map(html).join('');
   renderForm(loopBar);
+  markLoopBar(ui.focus ?? loopBar);
   ui.cells = [...document.querySelectorAll('#grid .row, #band .row')].map(r => ({ key: r.dataset.key, cells: [...r.querySelectorAll('.cell')] }));
 }
 
 /** Structure du morceau : où suis-je, que vient-il ensuite ? */
 function renderForm(loopBar) {
   const info = $('#barInfo'), form = $('#form');
+  if (ui.focus != null) { info.innerHTML = '🔁 ' + esc(t('loop.focusInfo', { n: ui.focus + 1, total: FULL.bars })); form.innerHTML = ''; return; }
   if (!C.sections) { info.textContent = t('grid.bar', { n: loopBar + 1, total: C.bars }); form.innerHTML = ''; return; }
   const i = C.sections.findIndex(sc => loopBar >= sc.start && loopBar < sc.start + sc.bars);
   const cur = C.sections[Math.max(0, i)], nxt = C.sections[(i + 1) % C.sections.length];
@@ -286,6 +295,72 @@ function renderForm(loopBar) {
       : esc(t('grid.nextSectionIn', { name: nxt.name, n: left }))}</span>` : '');
   // les noms de section viennent du contenu (traduits par data/i18n)
   form.innerHTML = C.sections.map((sc, k) => `<span class="sec ${k === i ? 'on' : ''}" style="flex:${sc.bars}">${esc(sc.name)}<small>${esc(t('grid.barsShort', { n: sc.bars }))}</small></span>`).join('');
+}
+
+/* ---------- toute la boucle : vue d'ensemble et mesure isolée ---------- */
+function barChords(F, k) {
+  const out = [];
+  for (let s = k * F.spb; s < (k + 1) * F.spb; s++) {
+    const c = F.chordAt[s];
+    if (!out.length || out[out.length - 1].chord !== c) out.push({ chord: c, steps: 0 });
+    out[out.length - 1].steps++;
+  }
+  return out;
+}
+
+/** Tablature d'une mesure de riff : corde de La en haut, comme sur une tablature imprimée */
+function tabHTML(bar) {
+  return `<div class="tab">${['A', 'E', 'C', 'G'].map(st => `<div class="tabline s-${st}" style="--n:${bar.length}"><i>${st}</i>${bar.map(tk => {
+    const m = /^([GCEA])(\d{1,2})$/i.exec(tk);
+    return `<span>${m && m[1].toUpperCase() === st ? m[2] : ''}</span>`;
+  }).join('')}</div>`).join('')}</div>`;
+}
+function miniStrum(bar) {
+  return `<div class="mini" style="--n:${bar.length}">${bar.map(c => `<span class="st-${c === '.' ? 'rest' : c.toLowerCase()}">${STRUM_GLYPH[c] ?? esc(c)}</span>`).join('')}</div>`;
+}
+
+function renderLoop() {
+  const box = $('#loopBox'), F = FULL;
+  if (!F || F.bars < 2 || !(F.riff || F.strum)) { box.classList.add('hidden'); return; }
+  box.classList.remove('hidden');
+  $('#loopBars').innerHTML = Array.from({ length: F.bars }, (_, k) => {
+    const chords = barChords(F, k).map(c => esc(c.chord)).join(' → ');
+    const body = F.riff ? tabHTML(barOf(F.riff, k * F.spb, F.spb)) : miniStrum(barOf(F.strum, k * F.spb, F.spb));
+    return `<button class="lbar ${ui.focus === k ? 'focus' : ''}" data-bar="${k}" title="${esc(t('loop.focusTitle', { n: k + 1 }))}">
+      <span class="lhead"><b>${k + 1}</b> ${chords}</span>${body}</button>`;
+  }).join('');
+  $('#loopBack').classList.toggle('hidden', ui.focus == null);
+}
+function markLoopBar(k) {
+  document.querySelectorAll('#loopBars .lbar').forEach((b, i) => b.classList.toggle('on', i === k));
+}
+
+/** Travailler une seule mesure en boucle (k = null : revenir à l'exercice entier) */
+function focusBar(k) {
+  const F = FULL;
+  if (!F) return;
+  const bpm = Player.bpm, was = Player.playing, muted = new Set(Player.muted);
+  if (k == null || k === ui.focus) { ui.focus = null; C = F; }
+  else {
+    const bar = p => barOf(p, k * F.spb, F.spb);
+    const ex = {
+      ...F.ex, sections: undefined,
+      chords: barChords(F, k).map(c => `${c.chord}:${c.steps / F.sub}`).join(' '),
+      strum: F.strum ? bar(F.strum).join('') : undefined,
+      riff: F.riff ? bar(F.riff).join(' ') : undefined,
+      melody: F.melody ? { instrument: F.melody.inst, notes: bar(F.melody.bars).join(' ') } : undefined
+    };
+    try { C = compileExercise(ex, DB); } catch { return; }
+    // une mesure = une boucle très courte : on accélère au même rythme que sur l'exercice entier
+    C.tempo = { ...F.tempo, every: F.tempo.every * F.bars };
+    ui.focus = k;
+  }
+  Player.load(C);
+  Player.muted.clear(); muted.forEach(m => Player.muted.add(m));
+  Player.setBpm(bpm);
+  ui.lastChord = null; $('#chordNext').dataset.chord = '';
+  renderLoop(); renderLanes(0, 0); renderChords(0);
+  if (was) Player.start();
 }
 
 function highlight(s, g, silent) {
@@ -312,9 +387,17 @@ function nextChange(s) {
 function renderChords(s) {
   const cur = C.chordAt[s];
   const nx = nextChange(s);
-  if (cur !== ui.lastChord) {
-    $('#chordNow').innerHTML = `<div class="cname">${esc(cur)}</div>${chordSVG(cur)}`;
-    ui.lastChord = cur;
+  let riffNotes = null, key = cur;
+  if (C.riff) {
+    const seen = new Set();
+    riffNotes = barOf(C.riff, s, C.spb).map(tk => /^([GCEA])(\d{1,2})$/i.exec(tk)).filter(Boolean)
+      .map(m => ({ i: 'GCEA'.indexOf(m[1].toUpperCase()), n: +m[2] }))
+      .filter(r => { const k = r.i + ':' + r.n; return !seen.has(k) && seen.add(k); });
+    key += '|' + Math.floor(s / C.spb);
+  }
+  if (key !== ui.lastChord) {
+    $('#chordNow').innerHTML = `<div class="cname">${esc(cur)}</div>${chordSVG(cur, false, riffNotes)}${riffNotes ? `<div class="rlegend">${esc(t('chord.riffLegend'))}</div>` : ''}`;
+    ui.lastChord = key;
     $('#chordNow').classList.remove('pop'); void $('#chordNow').offsetWidth; $('#chordNow').classList.add('pop');
   }
   const el = $('#chordNext');
@@ -414,10 +497,12 @@ function bindControls() {
 
   const tIn = () => {
     if (!C) return;
-    C.tempo.start = +$('#tStart').value || C.tempo.start;
-    C.tempo.target = +$('#tTarget').value || C.tempo.target;
-    C.tempo.step = Math.max(1, +$('#tStep').value || 1);
-    C.tempo.every = Math.max(1, +$('#tEvery').value || 1);
+    const tp = FULL.tempo;
+    tp.start = +$('#tStart').value || tp.start;
+    tp.target = +$('#tTarget').value || tp.target;
+    tp.step = Math.max(1, +$('#tStep').value || 1);
+    tp.every = Math.max(1, +$('#tEvery').value || 1);
+    if (C !== FULL) Object.assign(C.tempo, tp, { every: tp.every * FULL.bars });
     if (!Player.playing) Player.setBpm(C.tempo.start);
     updateRecord();
   };
@@ -433,6 +518,8 @@ function bindControls() {
     Engine.setVolume(k, +vols[k]);
     el.oninput = () => { vols[k] = +el.value; Engine.setVolume(k, vols[k]); Store.set('vols', vols); };
   }
+  $('#loopBars').onclick = e => { const b = e.target.closest('[data-bar]'); if (b) focusBar(+b.dataset.bar); };
+  $('#loopBack').onclick = () => focusBar(null);
   $('#band').onclick = e => {
     const l = e.target.closest('[data-mute]'); if (!l) return;
     const k = l.dataset.mute;
@@ -465,6 +552,7 @@ function bindControls() {
     }
   });
   Player.on('loop', ({ bpm, clean }) => {
+    if (ui.focus != null) return; // une mesure isolée ne compte pas pour la maîtrise de l'exercice
     const p = prog(currentId);
     p.loops++;
     if (clean && bpm > p.best) p.best = bpm;

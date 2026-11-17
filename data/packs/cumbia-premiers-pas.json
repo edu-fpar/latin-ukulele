@@ -78,6 +78,75 @@
           "tempo": { "start": 55, "target": 85, "step": 3, "everyLoops": 2 }
         },
         {
+          "id": "cumbia-05a-balancier",
+          "title": "Rasgueo, étape 1 : le balancier",
+          "level": 2,
+          "focus": ["rythme"],
+          "style": "cumbia",
+          "description": "Avant le rasgueo, le mouvement qui le porte : la main fait bas-haut sans jamais s'arrêter, deux fois par temps, comme un balancier. Bas sur les temps (plus fort), haut sur les « et » (plus léger). Un seul accord, C, pour ne penser qu'à la main droite.",
+          "goal": "Un balancier bien régulier, 2 boucles à 100 bpm.",
+          "tips": [
+            "Le mouvement vient du poignet, détendu, comme si tu secouais de l'eau de ta main.",
+            "Le bas est appuyé, le haut effleure seulement les cordes aiguës.",
+            "Tape du pied sur les temps : le pied et le « bas » tombent ensemble.",
+            "Ce balancier ne s'arrêtera plus dans les étapes suivantes : seules certaines cordes seront « ratées » exprès."
+          ],
+          "chords": "C:8",
+          "strum": "DuDuDuDu",
+          "tempo": { "start": 60, "target": 100, "step": 5, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbia-05b-boum-boumta",
+          "title": "Rasgueo, étape 2 : « boum, boum-ta »",
+          "level": 2,
+          "focus": ["rythme"],
+          "style": "cumbia",
+          "description": "La première moitié du rasgueo, deux fois par mesure : bas sur le 1, puis bas-haut sur le 2 et son « et ». Sur le « et » du 1, la main remonte À VIDE, sans toucher les cordes : c'est le balancier de l'étape 1 avec un coup raté exprès.",
+          "goal": "« Boum, boum-ta » bien en place, 2 boucles à 95 bpm.",
+          "tips": [
+            "Chante « boum (vide) boum-ta, boum (vide) boum-ta ».",
+            "Garde le balancier : pour la remontée à vide, éloigne juste un peu la main des cordes.",
+            "Si tu t'arrêtes pendant le vide, reviens à l'étape 1 quelques boucles."
+          ],
+          "chords": "C:8",
+          "strum": "D.DUD.DU",
+          "tempo": { "start": 60, "target": 95, "step": 5, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbia-05c-rasgueo-un-accord",
+          "title": "Rasgueo, étape 3 : le trou du 3",
+          "level": 2,
+          "focus": ["rythme"],
+          "style": "cumbia",
+          "description": "Le motif complet, toujours sur un seul accord. Nouveauté : sur le 3, la main descend À VIDE (le « trou »), puis gratte en remontant sur le « et » du 3, et termine par bas-haut sur le 4. C'est ce trou qui fait balancer la cumbia.",
+          "goal": "Le motif complet sur C, 2 boucles à 95 bpm.",
+          "tips": [
+            "Chante « boum, boum-ta, (rien) ta, boum-ta ».",
+            "Le « haut » après le trou est souvent en avance : attends vraiment le « et » du 3.",
+            "Compare avec l'étape 2 : seule la 2e moitié de mesure change."
+          ],
+          "chords": "C:8",
+          "strum": "D.DU.UDU",
+          "tempo": { "start": 60, "target": 95, "step": 5, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbia-05d-rasgueo-deux-mesures",
+          "title": "Rasgueo, étape 4 : changer toutes les 2 mesures",
+          "level": 3,
+          "focus": ["rythme", "accords"],
+          "style": "cumbia",
+          "description": "Le rasgueo complet, avec un changement d'accord toutes les deux mesures : tu as une mesure entière pour voir arriver le changement. Dernière étape avant le rasgueo avec un changement à chaque mesure.",
+          "goal": "Changer sans casser le motif, 2 boucles à 95 bpm.",
+          "tips": [
+            "Change d'accord pendant le dernier « haut » du 4 : une corde à vide qui sonne, ce n'est pas grave.",
+            "La main droite ne s'arrête jamais pour attendre la main gauche.",
+            "C → G7 : entraîne-le d'abord sans musique, 10 fois de suite."
+          ],
+          "chords": "C:8 G7:8",
+          "strum": "D.DU.UDU",
+          "tempo": { "start": 60, "target": 95, "step": 4, "everyLoops": 2 }
+        },
+        {
           "id": "cumbia-05-rasgueo",
           "title": "Le rasgueo cumbia complet",
           "level": 3,
@@ -88,11 +157,64 @@
           "tips": [
             "La main fait toujours bas-haut-bas-haut en croches. Les cases vides sont des passages À VIDE, la main ne s'arrête pas.",
             "Dis le motif en chantant : « boum, boum-ta, (rien), ta, boum-ta ».",
-            "Commence avec le guide « joue avec moi », puis passe à « 2 boucles puis s'efface »."
+            "Commence avec le guide « joue avec moi », puis passe à « 2 boucles puis s'efface ».",
+            "Encore trop dur ? Reprends les étapes 1 à 4 du rasgueo : un seul accord d'abord, puis un changement toutes les 2 mesures."
           ],
           "chords": "C:4 G7:4",
           "strum": "D.DU.UDU",
           "tempo": { "start": 60, "target": 95, "step": 4, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbia-06a-riff-notes",
+          "title": "Riff, étape 1 : trouver les notes",
+          "level": 2,
+          "focus": ["melodie"],
+          "style": "cumbia",
+          "description": "Avant de jouer le riff en rythme, on apprend où sont ses notes. Il n'y en a que trois par mesure. Sur Am : A0 (corde de La à vide), A3 (La, case 3) et E3 (Mi, case 3). Sur E7 : E4, A2 et E0. Une note par temps, le 4e temps sert à préparer la suite. Ce ne sont pas les notes de l'accord : c'est une petite mélodie jouée par-dessus. Les anneaux turquoise sur le diagramme montrent où poser les doigts.",
+          "goal": "Les six notes sans hésiter, 2 boucles à 80 bpm.",
+          "tips": [
+            "Lis la tablature de « Toute la boucle » : chaque ligne est une corde (A en haut), le chiffre est la case.",
+            "Doigtés : case 2 = majeur, case 3 = annulaire, case 4 = auriculaire.",
+            "Dis le nom des notes en jouant : « La, Do, Sol » puis « Sol#, Si, Mi ».",
+            "Pas besoin de faire l'accord avec la main gauche : c'est le groupe qui le joue."
+          ],
+          "chords": "Am:4 E7:4",
+          "riff": "A0 A3 E3 . | E4 A2 E0 .",
+          "tempo": { "start": 50, "target": 80, "step": 5, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbia-06b-riff-mesure1",
+          "title": "Riff, étape 2 : la mesure de Am",
+          "level": 2,
+          "focus": ["melodie", "rythme"],
+          "style": "cumbia",
+          "description": "La première mesure du riff, en rythme, en boucle sur La mineur. Les notes tombent sur le 1, le 2, le « et » du 2, le « et » du 3 et le 4. Les deux notes du milieu sont ENTRE les temps : c'est là que le riff balance.",
+          "goal": "La mesure de Am bien en place, 2 boucles à 90 bpm.",
+          "tips": [
+            "Chante le rythme : « La . La-Do . La Sol . ».",
+            "Tape du pied sur les temps : le Do (A3) et le 2e La tombent quand le pied remonte.",
+            "Si une note t'échappe, reviens à l'étape 1 un moment."
+          ],
+          "chords": "Am:4",
+          "riff": "A0 . A0 A3 . A0 E3 .",
+          "tempo": { "start": 55, "target": 90, "step": 5, "everyLoops": 2 }
+        },
+        {
+          "id": "cumbia-06c-riff-mesure2",
+          "title": "Riff, étape 3 : la mesure de E7",
+          "level": 2,
+          "focus": ["melodie", "rythme"],
+          "style": "cumbia",
+          "description": "La deuxième mesure du riff, en boucle sur Mi7. Même rythme que la mesure de Am : seules les notes changent (E4, A2, E0). Une fois à l'aise, l'exercice suivant enchaîne les deux mesures.",
+          "goal": "La mesure de E7 bien en place, 2 boucles à 90 bpm.",
+          "tips": [
+            "E4 : auriculaire, case 4 de la corde de Mi. A2 : majeur, case 2 de la corde de La. Garde les deux doigts prêts.",
+            "Le E0 final ramène vers le début : enchaîne-le sans trou.",
+            "Même rythme qu'à l'étape 2 : « Sol# . Sol#-Si . Sol# Mi . »."
+          ],
+          "chords": "E7:4",
+          "riff": "E4 . E4 A2 . E4 E0 .",
+          "tempo": { "start": 55, "target": 90, "step": 5, "everyLoops": 2 }
         },
         {
           "id": "cumbia-06-riff",
@@ -106,6 +228,7 @@
             "Couleurs = cordes : rose = A (La), jaune = E (Mi), turquoise = C (Do), orange = G (Sol).",
             "Joue avec le pouce ou l'index, toujours le même doigt de main droite au début.",
             "Les notes répétées doivent être bien égales : c'est ça qui sonne « cumbia ».",
+            "Bloqué sur une mesure ? Clique-la dans « Toute la boucle » pour la travailler seule.",
             "Une fois à l'aise, coupe le guide : le groupe joue Am puis E7, ton riff doit tenir tout seul."
           ],
           "chords": "Am:4 E7:4",

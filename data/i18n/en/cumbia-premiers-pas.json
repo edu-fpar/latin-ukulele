@@ -57,7 +57,8 @@
       "tips": [
         "Your hand always goes down-up-down-up in eighth notes. The empty slots are MISSED strokes: your hand never stops.",
         "Sing the pattern: \"boom, boom-ta, (nothing), ta, boom-ta\".",
-        "Start with the guide on \"plays along\", then switch to \"fades after 2 loops\"."
+        "Start with the guide on \"plays along\", then switch to \"fades after 2 loops\".",
+        "Still too hard? Go back to rasgueo steps 1 to 4: one chord first, then a change every 2 bars."
       ]
     },
     "cumbia-06-riff": {
@@ -68,6 +69,7 @@
         "Colors = strings: pink = A, yellow = E, turquoise = C, orange = G.",
         "Play with your thumb or index finger — always the same strumming-hand finger to start with.",
         "Repeated notes should be perfectly even: that's what sounds \"cumbia\".",
+        "Stuck on one bar? Click it in \"The whole loop\" to practise it on its own.",
         "Once you're comfortable, turn the guide off: the band plays Am then E7, and your riff has to stand on its own."
       ]
     },
@@ -99,6 +101,78 @@
         "Use \"🐢 Too fast!\" without shame: the app slows back down and gives you more time.",
         "The faster it gets, the more relaxed your strumming hand must be: the motion comes from the wrist, not the arm.",
         "Your record is saved: come back tomorrow and you'll go faster (your brain consolidates while you sleep)."
+      ]
+    },
+    "cumbia-05a-balancier": {
+      "title": "Rasgueo, step 1: the pendulum",
+      "description": "Before the rasgueo, the motion that carries it: your hand goes down-up without ever stopping, twice per beat, like a pendulum. Down on the beats (stronger), up on the \"&\"s (lighter). A single chord, C, so you only think about your strumming hand.",
+      "goal": "A steady pendulum, 2 loops at 100 bpm.",
+      "tips": [
+        "The motion comes from a relaxed wrist, as if you were shaking water off your hand.",
+        "The downstroke is firm, the upstroke just brushes the high strings.",
+        "Tap your foot on the beats: your foot and the \"down\" land together.",
+        "This pendulum never stops in the next steps: some strokes will simply miss the strings on purpose."
+      ]
+    },
+    "cumbia-05b-boum-boumta": {
+      "title": "Rasgueo, step 2: \"boom, boom-ta\"",
+      "description": "The first half of the rasgueo, twice per bar: down on 1, then down-up on 2 and its \"&\". On the \"&\" of 1, your hand comes back up EMPTY, without touching the strings: it's the step 1 pendulum with one stroke missed on purpose.",
+      "goal": "\"Boom, boom-ta\" right in time, 2 loops at 95 bpm.",
+      "tips": [
+        "Sing \"boom (empty) boom-ta, boom (empty) boom-ta\".",
+        "Keep the pendulum going: for the empty upstroke, just move your hand slightly away from the strings.",
+        "If you stop during the gap, go back to step 1 for a few loops."
+      ]
+    },
+    "cumbia-05c-rasgueo-un-accord": {
+      "title": "Rasgueo, step 3: the gap on 3",
+      "description": "The full pattern, still on a single chord. What's new: on 3, your hand goes down EMPTY (the \"gap\"), then strums on the way up on the \"&\" of 3, and ends with down-up on 4. That gap is what makes cumbia sway.",
+      "goal": "The full pattern on C, 2 loops at 95 bpm.",
+      "tips": [
+        "Sing \"boom, boom-ta, (nothing) ta, boom-ta\".",
+        "The upstroke after the gap often comes too early: really wait for the \"&\" of 3.",
+        "Compare with step 2: only the second half of the bar changes."
+      ]
+    },
+    "cumbia-05d-rasgueo-deux-mesures": {
+      "title": "Rasgueo, step 4: change every 2 bars",
+      "description": "The full rasgueo, with a chord change every two bars: you get a whole bar to see the change coming. The last step before the rasgueo with a change on every bar.",
+      "goal": "Change without breaking the pattern, 2 loops at 95 bpm.",
+      "tips": [
+        "Change chords during the last \"up\" on 4: an open string ringing is no big deal.",
+        "Your strumming hand never stops to wait for your fretting hand.",
+        "C → G7: practise it without music first, 10 times in a row."
+      ]
+    },
+    "cumbia-06a-riff-notes": {
+      "title": "Riff, step 1: find the notes",
+      "description": "Before playing the riff in rhythm, learn where its notes are. There are only three per bar. Over Am: A0 (open A string), A3 (A string, 3rd fret) and E3 (E string, 3rd fret). Over E7: E4, A2 and E0. One note per beat; beat 4 is there to get ready for what's next. These aren't the chord's notes: it's a little melody played on top. The turquoise rings on the chord diagram show where to put your fingers.",
+      "goal": "All six notes without hesitating, 2 loops at 80 bpm.",
+      "tips": [
+        "Read the tab in \"The whole loop\": each line is a string (A at the top), the number is the fret.",
+        "Fingering: fret 2 = middle finger, fret 3 = ring finger, fret 4 = little finger.",
+        "Say the note names as you play: \"A, C, G\" then \"G#, B, E\".",
+        "No need to hold the chord with your fretting hand: the band plays it."
+      ]
+    },
+    "cumbia-06b-riff-mesure1": {
+      "title": "Riff, step 2: the Am bar",
+      "description": "The first bar of the riff, in rhythm, looped over A minor. The notes land on 1, 2, the \"&\" of 2, the \"&\" of 3 and 4. The two middle notes fall BETWEEN the beats: that's where the riff swings.",
+      "goal": "The Am bar right in time, 2 loops at 90 bpm.",
+      "tips": [
+        "Sing the rhythm: \"A . A-C . A G .\".",
+        "Tap your foot on the beats: the C (A3) and the second A land as your foot comes up.",
+        "If a note slips away, go back to step 1 for a while."
+      ]
+    },
+    "cumbia-06c-riff-mesure2": {
+      "title": "Riff, step 3: the E7 bar",
+      "description": "The second bar of the riff, looped over E7. Same rhythm as the Am bar: only the notes change (E4, A2, E0). Once you're comfortable, the next exercise joins the two bars.",
+      "goal": "The E7 bar right in time, 2 loops at 90 bpm.",
+      "tips": [
+        "E4: little finger, 4th fret of the E string. A2: middle finger, 2nd fret of the A string. Keep both fingers ready.",
+        "The final E0 leads back to the start: link it with no gap.",
+        "Same rhythm as step 2: \"G# . G#-B . G# E .\"."
       ]
     }
   }

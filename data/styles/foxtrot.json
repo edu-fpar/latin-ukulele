@@ -13,7 +13,41 @@
         "kick":  "x...x...",
         "bass":  "1...5...",
         "snare": "..x...x.",
-        "hihat": "x.x.x.x."
+        "hihat": "x.xxx.xx"
+      }
+    },
+    {
+      "id": "foxtrot-bal",
+      "name": "Fox-trot de bal (quatre temps)",
+      "origin": "France / États-Unis",
+      "beats": 4,
+      "subdivision": 2,
+      "swing": 0.15,
+      "defaultBpm": 180,
+      "description": "Le fox-trot tel qu'on le jouait pour faire danser : la contrebasse marche sur les quatre temps, la grosse caisse pousse chaque temps, le piano claque le 2 et le 4. Entre 180 et 220 bpm, c'est une locomotive : le ukulélé (ou le banjo) doit jouer serré, court, sans jamais ralentir.",
+      "tracks": {
+        "kick":  "x.x.x.x.",
+        "bass":  "1.5.8.5.",
+        "snare": "..X...X.",
+        "hihat": "x.xxx.xx",
+        "keys":  "..x...x."
+      }
+    },
+    {
+      "id": "charleston",
+      "name": "Charleston",
+      "origin": "États-Unis (années 1920)",
+      "beats": 4,
+      "subdivision": 2,
+      "swing": 0.1,
+      "defaultBpm": 200,
+      "description": "La danse folle des années 20 : tout l'orchestre frappe ensemble sur le 1 et juste avant le 3 (« Charles-ton ! »), puis laisse un trou. Tempo très vif, 200 bpm et plus. Pour le ukulélé, c'est un exercice de précision : des coups courts, étouffés aussitôt, et des syncopes sans peur.",
+      "tracks": {
+        "kick":  "x..x....",
+        "bass":  "1..5..8.",
+        "snare": "..X...X.",
+        "hihat": "x.x.x.x.",
+        "keys":  "X..X...."
       }
     }
   ]

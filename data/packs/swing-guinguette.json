@@ -3,7 +3,7 @@
     {
       "id": "swing-guinguette",
       "title": "Swing guinguette & syncopes",
-      "description": "La pompe du fox-trot, le balancement du swing et les syncopes communes au jazz et aux musiques latines (tresillo, charleston). Du « boum-tchak » tranquille jusqu'au fox-trot de bal à toute allure.",
+      "description": "La pompe du fox-trot, le balancement du swing et les syncopes communes au jazz et aux musiques latines (tresillo, charleston). Du « boum-tchak » tranquille jusqu'au fox-trot de bal à quatre temps et au Charleston à 200 bpm.",
       "exercises": [
         {
           "id": "swing-01-pompe",
@@ -184,6 +184,88 @@
           "strum": "P.DUP.DU",
           "options": { "guide": "fade" },
           "tempo": { "start": 90, "target": 160, "step": 5, "everyLoops": 1 }
+        },
+        {
+          "id": "swing-11-quatre-temps",
+          "title": "La pompe à quatre temps",
+          "level": 3,
+          "focus": ["rythme", "accords"],
+          "style": "foxtrot-bal",
+          "description": "Le vrai moteur d'un orchestre de bal : un coup vers le bas sur CHAQUE temps, le 2 et le 4 plus forts. Et la grille swing va deux fois plus vite : un accord tous les deux temps. Avec la contrebasse qui marche et la batterie qui pousse, ça n'a plus rien d'un slow.",
+          "goal": "Quatre coups et deux accords par mesure, 2 boucles à 180 bpm.",
+          "tips": [
+            "Coups courts : relâche la main gauche juste après chaque coup, comme un banjo.",
+            "Le 1 et le 3 sont légers : profite-en pour changer d'accord. Le 2 et le 4 doivent claquer.",
+            "A7 → Dm7 : le doigt de la corde de C glisse de la case 1 à la case 2. Dm7 → G7 : deux doigts restent en place (C case 2, E case 1).",
+            "Bloqué sur un enchaînement ? Clique la mesure dans « Toute la boucle » pour la répéter seule."
+          ],
+          "chords": "C6:2 A7:2 Dm7:2 G7:2 C6:2 A7:2 Dm7:2 G7:2",
+          "strum": "d.D.d.D.",
+          "tempo": { "start": 100, "target": 180, "step": 5, "everyLoops": 1 }
+        },
+        {
+          "id": "swing-12-charleston-cycle",
+          "title": "Charleston : le cycle des septièmes",
+          "level": 4,
+          "focus": ["rythme", "accords"],
+          "style": "charleston",
+          "description": "Le Charleston à son vrai tempo, sur le cycle E7 → A7 → D7 → G7 → C : chaque accord tire vers le suivant. Deux coups secs avec tout l'orchestre (le 1 et le « et » du 2), un trou, puis un petit coup vers le haut sur le « et » du 4… qui joue DÉJÀ l'accord suivant. Cette anticipation est la signature du jazz : elle lance chaque mesure.",
+          "goal": "Les coups pile avec l'orchestre et l'anticipation sur chaque accord, 2 boucles à 190 bpm.",
+          "tips": [
+            "Le dernier coup (↑ sur le « et » du 4) appartient à la mesure suivante : change d'accord pendant le trou, juste avant.",
+            "Après chaque coup, relâche la main gauche : le Charleston se joue court, presque étouffé.",
+            "Récite le cycle à voix haute : « Mi, La, Ré, Sol, Do ».",
+            "E7 → A7 : il ne reste qu'un doigt, case 1 de la corde de C. A7 → D7 : barre la case 2 et ajoute la case 3 sur la corde de La."
+          ],
+          "chords": "E7:3.5 A7:4 D7:4 G7:4 C6:4 A7:4 D7:4 G7:4 E7:0.5",
+          "strum": "D..D...u",
+          "tempo": { "start": 110, "target": 190, "step": 5, "everyLoops": 1 }
+        },
+        {
+          "id": "swing-13-trompette",
+          "title": "Charleston : la trompette mène",
+          "level": 4,
+          "focus": ["ecoute", "rythme"],
+          "style": "charleston",
+          "description": "La trompette joue une ligne rapide en croches, avec les coups du Charleston. Toi, tu fais la pompe serrée des orchestres de 1925 : boum (1), tchak-a (2 et son « et »), sur chaque demi-mesure. Partie A sur la grille swing, partie B avec le diminué de passage. Ta pompe doit rester droite pendant que la trompette virevolte au-dessus.",
+          "goal": "Tenir les 8 mesures sous la trompette, 2 boucles à 190 bpm, guide coupé.",
+          "tips": [
+            "« ✕ » est un tchak étouffé et claqué, le petit « ↑ » qui suit le relance aussitôt.",
+            "Ne suis pas les notes de la trompette : suis la batterie. La trompette joue AUTOUR du temps.",
+            "Dans la partie B, le C#dim arrive dès la 2e mesure, puis Dm7 : la basse monte C, C#, D.",
+            "Coupe la trompette (clic sur son nom) si elle te déconcentre, puis remets-la."
+          ],
+          "chords": "C6:4 A7:4 D7:4 G7:4 C6:4 C#dim:4 Dm7:4 G7:4",
+          "sections": [
+            {"name": "Partie A", "bars": 4},
+            {"name": "Partie B", "bars": 4}
+          ],
+          "strum": "D.XuD.Xu",
+          "melody": {
+            "instrument": "trumpet",
+            "notes": "G5 . . E5 - . G5 A5 | A5 C#6 A5 G5 E5 G5 A5 C#6 | D6 . . A5 - . F#5 A5 | G5 F5 D5 B4 D5 F5 A5 B5 | C6 . . G5 - . E5 G5 | A#5 G5 E5 C#5 E5 G5 A#5 G5 | A5 . F5 D5 F5 A5 C6 A5 | B5 - - G5 F5 D5 B4 D5"
+          },
+          "options": { "guide": "fade" },
+          "tempo": { "start": 110, "target": 190, "step": 5, "everyLoops": 1 }
+        },
+        {
+          "id": "swing-14-banjo",
+          "title": "Le roulé du banjo",
+          "level": 5,
+          "focus": ["tempo", "rythme", "accords"],
+          "style": "foxtrot-bal",
+          "description": "Le banjo des orchestres de bal ne s'arrête jamais : bas-haut en continu, le 2 et le 4 claqués, et deux accords par mesure. D'abord le tour C6 – A7 – Dm7 – G7, puis le cycle E7 – A7 – D7 – G7. Le final du parcours, à la vitesse d'un bal endiablé.",
+          "goal": "Tenir 2 boucles à 200 bpm sans te crisper, guide coupé.",
+          "tips": [
+            "Le mouvement vient du poignet, l'avant-bras reste presque immobile : à 200 bpm, c'est un frémissement.",
+            "Les « haut » sont légers : seules les deux ou trois cordes aiguës.",
+            "Change d'accord sur le 1 et le 3 (les temps légers), jamais sur le 2 ou le 4.",
+            "Si ça se brouille, « 🐢 Trop vite ! » : un roulé propre à 170 vaut mieux qu'un roulé flou à 200."
+          ],
+          "chords": "C6:2 A7:2 Dm7:2 G7:2 E7:2 A7:2 D7:2 G7:2",
+          "strum": "duDuduDu",
+          "options": { "guide": "fade" },
+          "tempo": { "start": 120, "target": 200, "step": 5, "everyLoops": 1 }
         }
       ]
     }

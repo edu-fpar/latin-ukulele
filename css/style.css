@@ -101,6 +101,8 @@ kbd { border: 1px solid var(--line); border-radius: 4px; padding: 0 .35em; backg
 .diag .str { stroke: var(--text); stroke-width: 1.4; }
 .diag .dot { fill: var(--accent); }
 .diag .open { fill: none; stroke: var(--text); stroke-width: 1.4; }
+.diag .rnote { fill: none; stroke: var(--accent2); stroke-width: 2.2; }
+.rlegend { font-size: .72em; color: var(--accent2); text-align: center; margin-top: .2em; }
 .diag .mute, .diag .fr, .diag .sl { fill: var(--muted); font-size: 10px; text-anchor: middle; }
 .diag .mute { font-size: 13px; }
 
@@ -176,6 +178,26 @@ kbd { border: 1px solid var(--line); border-radius: 4px; padding: 0 .35em; backg
 .soonTxt { color: var(--accent); }
 #practice.silent .gridwrap { border-color: var(--yellow); box-shadow: 0 0 0 2px var(--yellow) inset; }
 .bandbox summary { cursor: pointer; margin: .8em 0 .4em; font-weight: 600; }
+
+/* ---------- toute la boucle ---------- */
+.loopbox summary { cursor: pointer; margin: .8em 0 .4em; font-weight: 600; }
+#loopBack { margin: 0 0 .5em; }
+.loopbars { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: .5em; }
+.lbar { display: flex; flex-direction: column; gap: .3em; padding: .4em .5em .5em; text-align: left; background: var(--panel2); min-width: 0; }
+.lbar .lhead { font-size: .85em; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.lbar .lhead b { color: var(--text); margin-right: .3em; }
+.lbar.on { border-color: var(--accent2); box-shadow: 0 0 0 1px var(--accent2) inset; }
+.lbar.focus { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent) inset; background: #3b2312; }
+.mini { display: grid; grid-template-columns: repeat(var(--n), 1fr); gap: 1px; font-weight: 700; text-align: center; font-size: .95em; }
+.mini span.st-b { font-size: .6em !important; }
+.tab { display: flex; flex-direction: column; }
+.tabline { display: grid; grid-template-columns: 1em repeat(var(--n), 1fr); align-items: center; height: 1.3em; font-size: .95em; font-weight: 700;
+  background: linear-gradient(var(--line), var(--line)) 1em 50% / calc(100% - 1em) 1px no-repeat; }
+.tabline i { font-style: normal; font-size: .75em; color: var(--muted); }
+.tabline span { text-align: center; line-height: 1; }
+.tabline span:not(:empty) { background: var(--panel2); justify-self: center; padding: 0 .15em; border-radius: 3px; }
+.tabline.s-A span { color: var(--pink); } .tabline.s-E span { color: var(--yellow); }
+.tabline.s-C span { color: var(--accent2); } .tabline.s-G span { color: var(--accent); }
 
 /* ---------- réglages ---------- */
 .settings { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1em; }

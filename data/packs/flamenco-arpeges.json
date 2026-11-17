@@ -170,12 +170,12 @@
           "goal": "Trois notes répétées bien égales, 2 boucles à 75 bpm.",
           "tips": [
             "Sur la corde de La, enchaîne annulaire, majeur, index (a-m-i) : trois doigts différents pour trois notes.",
-            "Le pouce alterne C et G et tombe toujours sur le temps.",
+            "Le pouce alterne C et E et tombe toujours sur le temps (sur Am, la corde de G est à la case 2 : elle donnerait le même La que la mélodie, on l'évite).",
             "Cherche l'égalité avant la vitesse : les trois notes doivent avoir le même volume.",
             "Commence vraiment lentement (45 bpm) : c'est une technique de longue haleine."
           ],
           "chords": "Am:4 E7:4",
-          "strum": "CAAAGAAACAAAGAAA",
+          "strum": "CAAAEAAACAAAEAAA",
           "tempo": { "start": 45, "target": 75, "step": 3, "everyLoops": 2 }
         },
         {

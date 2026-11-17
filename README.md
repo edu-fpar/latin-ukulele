@@ -2,7 +2,7 @@
 
 ![Interface de Ukulele Latino : accord en cours, prochain accord, tempo, grille de grattage et pistes du groupe](img/interface.png)
 
-Un groupe virtuel (guiro, conga, basse, clave, accordéon, palmas, cajón…) joue avec toi, accélère petit à petit, et t'affiche en temps réel l'accord, le prochain changement et le coup de main droite à jouer. Cumbia, son cubain, bossa nova, reggaeton, cha-cha-chá, boléro, fox-trot, swing guinguette et flamenco (rumba, tangos, sevillanas, soleá, alegrías, bulerías) : **95 exercices**, extensibles avec n'importe quelle IA.
+Un groupe virtuel (guiro, conga, basse, clave, accordéon, palmas, cajón…) joue avec toi, accélère petit à petit, et t'affiche en temps réel l'accord, le prochain changement et le coup de main droite à jouer. Cumbia, son cubain, bossa nova, reggaeton, cha-cha-chá, boléro, fox-trot, swing guinguette et flamenco (rumba, tangos, sevillanas, soleá, alegrías, bulerías) : **106 exercices**, extensibles avec n'importe quelle IA.
 
 *English version available: the **EN** button in the top bar switches the interface and all exercises to English.*
 
@@ -20,11 +20,11 @@ Sur téléphone, la liste des exercices s'ouvre avec **📚 Exercices** et une b
 
 | Dimension | Comment l'outil t'aide |
 |---|---|
-| 🥁 Rythme | grille de grattage avec la case « maintenant » allumée, comptage « 1 et 2 et » |
+| 🥁 Rythme | grille de grattage avec la case « maintenant » allumée, comptage « 1 et 2 et », **toute la boucle** écrite (tablature pour les riffs) avec une mesure à travailler seule d'un clic |
 | ✋ Accords | diagramme de l'accord en cours + cadre « ensuite » qui s'allume avant le changement |
 | ⏱️ Tempo | accélération automatique (+N bpm toutes les N boucles), bouton « 🐢 Trop vite ! », record sauvegardé |
 | 👂 Écoute | pistes du groupe visibles et coupables, guide ukulélé qui s'efface, **défi silence** (1 mesure sur 4 sans rien), **accompagner une mélodie** jouée par une flûte, un accordéon ou une trompette, avec structure couplet/refrain |
-| 🎵 Mélodie | riffs en tablature simplifiée (`A3` = corde de La, case 3) |
+| 🎵 Mélodie | riffs en tablature simplifiée (`A3` = corde de La, case 3), notes du riff entourées sur le diagramme d'accord |
 | 🤌 Picking | jeu aux doigts corde par corde (`C.F.G.F.` : pouce sur les temps, pincés sur les contretemps), arpèges qui suivent les accords |
 
 ![Bas de l'interface : réglages d'accélération, aides, volumes, conseils et présentation du style](img/interface-bas.png)
@@ -33,7 +33,7 @@ Sur téléphone, la liste des exercices s'ouvre avec **📚 Exercices** et une b
 
 | Parcours | Exercices |
 |---|---|
-| Cumbia — premiers pas | 9 |
+| Cumbia — premiers pas | 16 |
 | Cumbia — on avance | 5 |
 | Cumbia : les accompagnements (mexicaine, chicha, villera…) | 9 |
 | Cumbia : le ukulélé percussionniste | 10 |
@@ -41,7 +41,7 @@ Sur téléphone, la liste des exercices s'ouvre avec **📚 Exercices** et une b
 | Finger picking cumbia | 11 |
 | Accompagner une mélodie | 5 |
 | Voyage latino (reggaeton, son, bossa, cha-cha-chá) | 5 |
-| Swing guinguette & syncopes | 10 |
+| Swing guinguette & syncopes (fox-trot de bal, Charleston) | 14 |
 | Flamenco : rasgueo (grattage) | 15 |
 | Flamenco : arpèges et picado | 11 |
 

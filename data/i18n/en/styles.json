@@ -84,6 +84,16 @@
       "name": "Cumbia villera",
       "origin": "Argentina (Buenos Aires suburbs)",
       "description": "Born in the late 1990s in the working-class neighbourhoods (\"villas\") of Buenos Aires, cumbia villera is faster and rawer: guiro, kick drum on 1 and 3, cracking timbales and a keyboard marking every off-beat."
+    },
+    "foxtrot-bal": {
+      "name": "Dance-hall foxtrot (four-beat)",
+      "origin": "France / United States",
+      "description": "The foxtrot as it was played to get people dancing: the double bass walks on all four beats, the kick drum pushes every beat, the piano slaps 2 and 4. Between 180 and 220 bpm it's a steam train: the ukulele (or banjo) has to play tight, short and never slow down."
+    },
+    "charleston": {
+      "name": "Charleston",
+      "origin": "United States (1920s)",
+      "description": "The wild dance of the 1920s: the whole band hits together on 1 and just before 3 (\"Charles-ton!\"), then leaves a gap. Very fast tempo, 200 bpm and up. For the ukulele it's a precision exercise: short strokes, muted right away, and fearless syncopations."
     }
   }
 }
