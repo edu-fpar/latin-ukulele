@@ -34,7 +34,8 @@ Toutes les clés sont optionnelles sauf ce qui est nécessaire. N'inclus dans "c
   "sections": [ { "name": "Couplet", "bars": 4 }, { "name": "Refrain", "bars": 4 } ],  // structure du morceau (optionnel)
   "tempo": { "start": 60, "target": 90, "step": 4, "everyLoops": 2 },
   "options": { "guide": "on", "silence": false },   // optionnel
-  "mute": ["conga"]                        // optionnel : pistes du style coupées au départ
+  "mute": ["conga"],                       // optionnel : pistes du style coupées au départ
+  "variants": [ { "id": "silence", "title": "🤫 Défi silence", "options": { "silence": true } } ]  // optionnel, voir « Variantes »
 }
 ```
 
@@ -65,6 +66,9 @@ Liste de sections dont la somme des `bars` = nombre total de mesures de la grill
 ### Options
 - `guide` : `"on"` (le ukulélé guide joue avec moi), `"fade"` (il joue 2 boucles puis se tait), `"off"`.
 - `silence` : `true` → 1 mesure sur 4, tout se tait et je dois tenir seul.
+
+### Variantes (optionnel)
+`variants` : quelques étapes d'approfondissement du MÊME exercice, quand le concept le mérite (pas partout). Chaque variante a un `id` court et un `title`, et ne précise que ce qui change (`chords`, `strum`, `tempo`, `options`, `mute`, `description`, `goal`, `tips`…) : le reste est hérité de l'exercice. Ordonne-les de la plus proche à la plus exigeante. Exemples : ajouter un accord, changer d'accord plus souvent, couper une percussion qui aide, `"options": { "silence": true }` (défi silence), `"guide": "fade"`, un tempo plus élevé.
 
 ## STYLE (seulement si tu crées un nouveau style)
 ```json

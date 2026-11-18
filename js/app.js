@@ -40,19 +40,58 @@ function mergeBundle(b, source) {
     if (!pack) { pack = { ...p, exercises: [], source }; DB.packs.push(pack); }
     for (const ex of p.exercises || []) {
       if (!ex.id) continue;
-      if (DB.exercises[ex.id]) pack.exercises = pack.exercises.filter(e => e.id !== ex.id);
+      const old = DB.exercises[ex.id];
+      if (old) {
+        pack.exercises = pack.exercises.filter(e => e.id !== ex.id);
+        (old.variantIds || []).forEach(v => delete DB.exercises[v]);
+      }
       const e = { ...ex, pack: pack.id, source };
       DB.exercises[ex.id] = e;
       pack.exercises.push(e);
+      makeVariants(e);
     }
   }
   DB.packs.forEach(p => p.exercises = p.exercises.filter(e => DB.exercises[e.id] === e));
 }
 
+/**
+ * Variantes d'un exercice : étapes d'approfondissement qui ne précisent que ce qui change
+ * (accords, rythme, options…). Le reste est hérité de l'exercice parent.
+ * id d'une variante : "<parent>~<id de la variante>" (ou son numéro).
+ */
+function variantsOf(parent) {
+  return (Array.isArray(parent.variants) ? parent.variants : []).filter(v => v && typeof v === 'object').map((v, k) => {
+    const { id, ...spec } = v;
+    const e = {
+      ...parent, ...spec, id: parent.id + '~' + (id || k + 1), variantOf: parent.id, variantNum: k + 1,
+      options: { ...(parent.options || {}), ...(v.options || {}) },
+      tempo: v.tempo ? { ...(parent.tempo || {}), ...v.tempo } : parent.tempo,
+      _own: new Set(Object.keys(spec))
+    };
+    delete e.variants; delete e.variantIds;
+    return e;
+  });
+}
+function makeVariants(parent) {
+  const vs = variantsOf(parent);
+  parent.variantIds = vs.map(v => v.id);
+  vs.forEach(v => DB.exercises[v.id] = v);
+}
+
 /** Traduction du contenu : remplace titres, descriptions, conseils… par id */
 function applyOverlay(o) {
   for (const [id, f] of Object.entries(o.packs || {})) { const p = DB.packs.find(x => x.id === id); if (p) Object.assign(p, f); }
-  for (const [id, f] of Object.entries(o.exercises || {})) if (DB.exercises[id]) Object.assign(DB.exercises[id], f);
+  for (const [id, f] of Object.entries(o.exercises || {})) {
+    const ex = DB.exercises[id];
+    if (!ex) continue;
+    Object.assign(ex, f);
+    if (ex._own) Object.keys(f).forEach(k => ex._own.add(k));
+    // les variantes héritent de la traduction du parent pour ce qu'elles ne redéfinissent pas
+    for (const vid of ex.variantIds || []) {
+      const v = DB.exercises[vid];
+      if (v) for (const [k, val] of Object.entries(f)) if (!v._own.has(k)) v[k] = val;
+    }
+  }
   for (const [id, f] of Object.entries(o.styles || {})) if (DB.styles[id]) Object.assign(DB.styles[id], f);
 }
 
@@ -143,11 +182,34 @@ function exMatches(ex) {
   return filter === 'all' || (ex.focus || []).some(f => norm(f) === filter);
 }
 
+const packExercises = pack => [...pack.exercises].sort((a, b) => (a.level || 1) - (b.level || 1)).filter(exMatches);
+
+/* variantes dépliées dans la liste (repliées par défaut) */
+let openVariants = new Set(Store.get('openVariants', []));
+function toggleVariants(id) {
+  openVariants.has(id) ? openVariants.delete(id) : openVariants.add(id);
+  Store.set('openVariants', [...openVariants]);
+  renderList();
+}
+
+const variantsLabel = n => n === 1 ? t('ex.variants1') : t('ex.variants', { n });
+
+function exButton(ex, variant) {
+  const p = prog(ex.id), tg = ex.tempo?.target;
+  return `<button class="ex ${variant ? 'var' : ''} ${ex.id === currentId ? 'cur' : ''} ${p.mastered ? 'ok' : ''}" data-id="${esc(ex.id)}">
+    <span class="lvl" ${variant ? '' : `title="${esc(t('ex.levelTitle', { n: ex.level || 1 }))}"`}>${variant ? ex.variantNum : '●'.repeat(ex.level || 1)}</span>
+    <span class="t">${esc(ex.title)}</span>
+    <span class="meta">${variant ? '' : (ex.focus || []).map(f => DIMENSIONS.find(d => d.id === norm(f))?.icon || '').join('')}
+      ${p.best ? `<b>${p.best}</b>${tg ? '/' + tg : ''} bpm` : ''} ${p.mastered ? '✅' : ''}</span>
+  </button>`;
+}
+
 function renderList() {
   const el = $('#packs');
   el.innerHTML = DB.loadErrors.length ? `<div class="alert">${DB.loadErrors.map(esc).join('<br>')}</div>` : '';
+  const curParent = DB.exercises[currentId]?.variantOf;
   for (const pack of DB.packs) {
-    const exs = [...pack.exercises].sort((a, b) => (a.level || 1) - (b.level || 1)).filter(exMatches);
+    const exs = packExercises(pack);
     if (!exs.length) continue;
     const done = pack.exercises.filter(e => prog(e.id).mastered).length;
     const sec = document.createElement('section');
@@ -155,17 +217,88 @@ function renderList() {
     sec.innerHTML = `<h3>${esc(pack.title)} <small>${done}/${pack.exercises.length}</small></h3>
       ${pack.description ? `<p class="muted">${esc(pack.description)}</p>` : ''}
       <ul>${exs.map(ex => {
-        const p = prog(ex.id), tg = ex.tempo?.target;
-        return `<li><button class="ex ${ex.id === currentId ? 'cur' : ''} ${p.mastered ? 'ok' : ''}" data-id="${esc(ex.id)}">
-          <span class="lvl" title="${esc(t('ex.levelTitle', { n: ex.level || 1 }))}">${'●'.repeat(ex.level || 1)}</span>
-          <span class="t">${esc(ex.title)}</span>
-          <span class="meta">${(ex.focus || []).map(f => DIMENSIONS.find(d => d.id === norm(f))?.icon || '').join('')}
-            ${p.best ? `<b>${p.best}</b>${tg ? '/' + tg : ''} bpm` : ''} ${p.mastered ? '✅' : ''}</span>
-        </button></li>`;
+        const vids = (ex.variantIds || []).filter(v => DB.exercises[v]);
+        if (!vids.length) return `<li>${exButton(ex)}</li>`;
+        const open = openVariants.has(ex.id) || curParent === ex.id;
+        const vdone = vids.filter(v => prog(v).mastered).length;
+        return `<li class="hasvar">${exButton(ex)}
+          <button class="vtoggle ${open ? 'open' : ''}" data-vt="${esc(ex.id)}" aria-expanded="${open}">
+            <span class="arrow">▸</span> ${esc(variantsLabel(vids.length))}${vdone ? ` <small>${vdone}/${vids.length} ✅</small>` : ''}</button>
+          ${open ? `<ul class="variants">${vids.map(v => `<li>${exButton(DB.exercises[v], true)}</li>`).join('')}</ul>` : ''}
+        </li>`;
       }).join('')}</ul>`;
     el.appendChild(sec);
   }
-  el.onclick = e => { const b = e.target.closest('.ex'); if (b) selectExercise(b.dataset.id); };
+  el.onclick = e => {
+    const vt = e.target.closest('[data-vt]');
+    if (vt) return toggleVariants(vt.dataset.vt);
+    const b = e.target.closest('.ex');
+    if (b) { cancelChain(); selectExercise(b.dataset.id); }
+  };
+}
+
+/* ======================================================================
+   Enchaînement : les exercices se suivent sans cliquer
+   ====================================================================== */
+const chain = Object.assign({ on: false, after: 8, variants: true }, Store.get('chain', {}));
+const saveChain = () => Store.set('chain', chain);
+let chainTimer = null;
+
+/** Ordre de passage : celui de la liste (filtre compris), variantes juste après leur exercice */
+function playOrder() {
+  const out = [];
+  for (const pack of DB.packs) for (const ex of packExercises(pack)) {
+    out.push(ex.id);
+    if (chain.variants) out.push(...(ex.variantIds || []).filter(v => DB.exercises[v]));
+  }
+  return out;
+}
+function nextExerciseId() {
+  const order = playOrder(), cur = DB.exercises[currentId];
+  let i = order.indexOf(currentId);
+  if (i < 0 && cur?.variantOf) { // variante alors que les variantes ne sont pas enchaînées
+    const sibs = DB.exercises[cur.variantOf]?.variantIds || [];
+    i = order.indexOf(cur.variantOf);
+    if (sibs.indexOf(currentId) < sibs.length - 1 && i >= 0) return sibs[sibs.indexOf(currentId) + 1];
+  }
+  return i >= 0 ? order[i + 1] || null : null;
+}
+
+function cancelChain() { clearTimeout(chainTimer); chainTimer = null; }
+
+/** Passe à l'exercice suivant ; `play` : relance la lecture après une courte pause */
+function goNext(play) {
+  cancelChain();
+  const id = nextExerciseId();
+  if (!id) { Player.stop(); flash(t('chain.end')); return; }
+  if (!play) { const was = Player.playing; selectExercise(id); if (was) Player.start(); return; }
+  Player.stop();
+  const from = currentId;
+  $('#status').innerHTML = `<b>${esc(t('chain.next', { title: DB.exercises[id].title }))}</b>`;
+  flash(t('chain.next', { title: DB.exercises[id].title }));
+  chainTimer = setTimeout(() => {
+    chainTimer = null;
+    if (Player.playing || currentId !== from) return; // l'utilisateur a repris la main
+    selectExercise(id);
+    Player.start();
+  }, 1800);
+}
+
+/** Fin de boucle en mode enchaînement : est-ce le moment de passer au suivant ? */
+function chainCheck({ bpm, clean, completed }) {
+  if (!chain.on || ui.focus != null) return;
+  const done = chain.after === 'target'
+    ? (clean && bpm >= C.tempo.target) || completed >= 24
+    : completed >= +chain.after;
+  if (done) goNext(true);
+}
+
+function renderChainInputs() {
+  $('#chainBtn').classList.toggle('on', chain.on);
+  $('#chainBtn').setAttribute('aria-pressed', chain.on);
+  $('#optChain').checked = chain.on;
+  $('#optChainAfter').value = String(chain.after);
+  $('#optChainVar').checked = chain.variants;
 }
 
 /* ======================================================================
@@ -194,13 +327,14 @@ function selectExercise(id) {
   $('#chordNext').dataset.chord = '';
   renderHeader(); renderTempoInputs(); renderLoop(); renderLanes(0, 0); renderChords(0); renderList();
   $('#practice').classList.remove('empty');
-  $('#mTitle').textContent = ex.title;
+  $('#mTitle').textContent = ex.variantOf ? `${DB.exercises[ex.variantOf].title} · ${ex.title}` : ex.title;
   document.body.classList.remove('drawer');
   if (window.innerWidth < 900) window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function renderHeader() {
   const ex = C.ex, st = C.style;
+  const parent = ex.variantOf && DB.exercises[ex.variantOf];
   const dims = (ex.focus || []).map(f => DIMENSIONS.find(d => d.id === norm(f))).filter(Boolean);
   $('#exHeader').innerHTML = `
     <div class="exTitle">
@@ -209,9 +343,12 @@ function renderHeader() {
         <span class="tag style">${esc(st.name)}${st.origin ? ' · ' + esc(st.origin) : ''}</span>
         <span class="tag">${esc(t('ex.level', { n: ex.level || 1 }))}</span>
         ${dims.map(d => `<span class="tag dim">${d.icon} ${esc(d.label)}</span>`).join('')}
+        ${parent ? `<span class="tag var">${esc(t('ex.variantTag', { k: ex.variantNum, n: parent.variantIds.length }))}</span>` : ''}
+        ${!parent && ex.variantIds?.length ? `<span class="tag var">${esc(variantsLabel(ex.variantIds.length))}</span>` : ''}
         ${C.melody ? `<span class="tag mel">${esc(t('ex.melodyTag', { inst: instName(C.melody.inst) }))}</span>` : ''}
       </div>
     </div>
+    ${parent ? `<p class="varof">${esc(t('ex.variantOf', { title: parent.title }))}</p>` : ''}
     ${ex.description ? `<p>${esc(ex.description)}</p>` : ''}
     ${ex.goal ? `<p class="goal">🎯 <b>${t('ex.goal')}</b> ${esc(ex.goal)}</p>` : ''}
     ${C.warnings.length ? `<div class="alert small">${C.warnings.map(esc).join('<br>')}</div>` : ''}`;
@@ -438,7 +575,9 @@ function frame(now) {
     $('#practice').classList.toggle('silent', !!ev.silent);
     $('#status').innerHTML = ev.silent
       ? t('status.silent')
-      : esc(t('status.loop', { n: ev.loopIdx + 1 })) + (ev.guide ? '' : t('status.guideOff'));
+      : esc(chain.on && chain.after !== 'target' && ui.focus == null
+        ? t('status.loopOf', { n: ev.loopIdx + 1, total: chain.after })
+        : t('status.loop', { n: ev.loopIdx + 1 })) + (ev.guide ? '' : t('status.guideOff'));
   }
   if (Player.playing && currentId) prog(currentId).seconds += (now - lastTick) / 1000;
   lastTick = now;
@@ -463,6 +602,7 @@ function syncOptionInputs() {
 
 function togglePlay() {
   if (!C) return;
+  if (chainTimer) { cancelChain(); $('#status').textContent = readyText(); return; }
   if (Player.playing) Player.stop(); else Player.start();
 }
 
@@ -479,7 +619,15 @@ function bindControls() {
   $('#minus').onclick = slower;
   $('#plus').onclick = faster;
   $('#tooFast').onclick = () => { Player.tooFast(); flash(t('flash.tooFast')); };
-  $('#restart').onclick = () => { if (!C) return; Player.stop(); Player.setBpm(C.tempo.start); };
+  $('#restart').onclick = () => { if (!C) return; cancelChain(); Player.stop(); Player.setBpm(C.tempo.start); };
+  $('#next').onclick = () => goNext(false);
+  $('#mNext').onclick = () => goNext(false);
+  const setChain = on => { chain.on = on; saveChain(); renderChainInputs(); if (!on) cancelChain(); flash(t(on ? 'chain.onFlash' : 'chain.offFlash')); };
+  $('#chainBtn').onclick = () => setChain(!chain.on);
+  $('#optChain').onchange = e => setChain(e.target.checked);
+  $('#optChainAfter').onchange = e => { chain.after = e.target.value === 'target' ? 'target' : +e.target.value; saveChain(); };
+  $('#optChainVar').onchange = e => { chain.variants = e.target.checked; saveChain(); };
+  renderChainInputs();
 
   // barre de transport mobile + tiroir des exercices
   $('#mPlay').onclick = togglePlay;
@@ -532,6 +680,7 @@ function bindControls() {
     else if (e.key === 'ArrowUp') { e.preventDefault(); faster(); }
     else if (e.key === 'ArrowDown') { e.preventDefault(); slower(); }
     else if (e.key === 't' || e.key === 'T') $('#tooFast').click();
+    else if (e.key === 'n' || e.key === 'N') goNext(false);
     else if (e.key === 'Escape') document.body.classList.remove('drawer');
   });
 
@@ -551,7 +700,7 @@ function bindControls() {
       saveProgress(); renderList();
     }
   });
-  Player.on('loop', ({ bpm, clean }) => {
+  Player.on('loop', ({ bpm, clean, completed }) => {
     if (ui.focus != null) return; // une mesure isolée ne compte pas pour la maîtrise de l'exercice
     const p = prog(currentId);
     p.loops++;
@@ -561,6 +710,7 @@ function bindControls() {
       setTimeout(() => flash(t('flash.mastered')), 150);
     }
     saveProgress(); updateRecord();
+    chainCheck({ bpm, clean, completed });
   });
   Player.on('ramp', bpm => setTimeout(() => flash(t('flash.ramp', { bpm })), 120));
   window.addEventListener('beforeunload', saveProgress);
@@ -633,10 +783,12 @@ function validateBundle(b) {
     if (!tmp.styles[ex.style]) { errors.push(t('val.style', { id: ex.id, style: ex.style })); continue; }
     if (!ex.strum && !ex.riff) warnings.push(t('val.noStrum', { id: ex.id }));
     if (ex.strum && /[^DdUuXxPpFfGgCcEeAaBbRr.\-|\s]/.test(ex.strum)) errors.push(t('val.badStrum', { id: ex.id, strum: ex.strum }));
-    try {
-      const c = compileExercise(ex, tmp);
-      c.warnings.forEach(w => warnings.push(`${ex.id} : ${w}`));
-    } catch (e) { errors.push(`${ex.id} : ${e.message}`); }
+    for (const x of [ex, ...variantsOf(ex)]) {
+      try {
+        const c = compileExercise(x, tmp);
+        c.warnings.forEach(w => warnings.push(`${x.id} : ${w}`));
+      } catch (e) { errors.push(`${x.id} : ${e.message}`); }
+    }
     if (DB.exercises[ex.id]) warnings.push(t('val.exists', { id: ex.id }));
   }
   return { errors, warnings, count: exs.length, styles: styles.length };

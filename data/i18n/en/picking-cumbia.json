@@ -116,6 +116,11 @@
         "Your thumb is your anchor: even if a high note slips, the bass must never drop out.",
         "Your record is saved: aim for a few more bpm each session."
       ]
+    },
+    "picking-03-contretemps~silence": {
+      "title": "🤫 Silence challenge",
+      "description": "Same rhythm, but one bar in four the whole band stops (the guide ukulele too). Keep going alone, counting out loud, and land right on the 1 when the music comes back.",
+      "goal": "Land exactly with the band after every silence, 2 loops in a row."
     }
   }
 }

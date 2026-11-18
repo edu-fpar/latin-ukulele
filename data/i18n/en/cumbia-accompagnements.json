@@ -110,6 +110,16 @@
           "bars": 4
         }
       ]
+    },
+    "cumbiacc-01-boum-tcha~silence": {
+      "title": "🤫 Silence challenge",
+      "description": "Same rhythm, but one bar in four the whole band stops (the guide ukulele too). Keep going alone, counting out loud, and land right on the 1 when the music comes back.",
+      "goal": "Land exactly with the band after every silence, 2 loops in a row."
+    },
+    "cumbiacc-03-tchun-tchun~silence": {
+      "title": "🤫 Silence challenge",
+      "description": "Same rhythm, but one bar in four the whole band stops (the guide ukulele too). Keep going alone, counting out loud, and land right on the 1 when the music comes back.",
+      "goal": "Land exactly with the band after every silence, 2 loops in a row."
     }
   }
 }

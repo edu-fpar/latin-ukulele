@@ -28,7 +28,16 @@
             "target": 95,
             "step": 3,
             "everyLoops": 1
-          }
+          },
+          "variants": [
+            {
+              "id": "silence",
+              "title": "🤫 Défi silence",
+              "description": "Même rythme, mais une mesure sur quatre tout le groupe se tait (le ukulélé guide aussi). Continue seul en comptant à voix haute, et retombe pile sur le 1 quand la musique revient.",
+              "goal": "Retomber exactement avec le groupe après chaque silence, 2 boucles de suite.",
+              "options": { "silence": true }
+            }
+          ]
         },
         {
           "id": "son-01-clave",
@@ -103,7 +112,16 @@
             "target": 100,
             "step": 4,
             "everyLoops": 2
-          }
+          },
+          "variants": [
+            {
+              "id": "silence",
+              "title": "🤫 Défi silence",
+              "description": "Même rythme, mais une mesure sur quatre tout le groupe se tait (le ukulélé guide aussi). Continue seul en comptant à voix haute, et retombe pile sur le 1 quand la musique revient.",
+              "goal": "Retomber exactement avec le groupe après chaque silence, 2 boucles de suite.",
+              "options": { "silence": true }
+            }
+          ]
         },
         {
           "id": "chachacha-02-mineur",

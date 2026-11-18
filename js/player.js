@@ -189,7 +189,7 @@ const Player = (() => {
 
   function schedule() {
     const ctx = Engine.ctx;
-    while (P.nextTime < ctx.currentTime + 0.12) {
+    while (P.playing && P.nextTime < ctx.currentTime + 0.12) {
       scheduleStep(P.g, P.nextTime);
       P.nextTime += stepDur();
       P.g++;

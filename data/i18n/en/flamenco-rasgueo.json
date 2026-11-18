@@ -160,6 +160,16 @@
         "The palmas and cajón play around the accents: listen to them as a conversation, not a metronome.",
         "Your record is saved: a few more bpm each session."
       ]
+    },
+    "flamenco-r03-rumba-base~silence": {
+      "title": "🤫 Silence challenge",
+      "description": "Same rhythm, but one bar in four the whole band stops (the guide ukulele too). Keep going alone, counting out loud, and land right on the 1 when the music comes back.",
+      "goal": "Land exactly with the band after every silence, 2 loops in a row."
+    },
+    "flamenco-r09-sevillanas-trois~silence": {
+      "title": "🤫 Silence challenge",
+      "description": "Same rhythm, but one bar in four the whole band stops (the guide ukulele too). Keep going alone, counting out loud, and land right on the 1 when the music comes back.",
+      "goal": "Land exactly with the band after every silence, 2 loops in a row."
     }
   }
 }

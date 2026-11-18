@@ -169,6 +169,16 @@
         "Change chords on 1 and 3 (the light beats), never on 2 or 4.",
         "If it gets muddy, \"🐢 Too fast!\": a clean roll at 170 beats a blurry one at 200."
       ]
+    },
+    "swing-01-pompe~silence": {
+      "title": "🤫 Silence challenge",
+      "description": "Same rhythm, but one bar in four the whole band stops (the guide ukulele too). Keep going alone, counting out loud, and land right on the 1 when the music comes back.",
+      "goal": "Land exactly with the band after every silence, 2 loops in a row."
+    },
+    "swing-03-ternaire~silence": {
+      "title": "🤫 Silence challenge",
+      "description": "Same rhythm, but one bar in four the whole band stops (the guide ukulele too). Keep going alone, counting out loud, and land right on the 1 when the music comes back.",
+      "goal": "Land exactly with the band after every silence, 2 loops in a row."
     }
   }
 }

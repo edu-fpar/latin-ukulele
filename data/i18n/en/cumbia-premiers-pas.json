@@ -174,6 +174,128 @@
         "The final E0 leads back to the start: link it with no gap.",
         "Same rhythm as step 2: \"G# . G#-B . G# E .\"."
       ]
+    },
+    "cumbia-02-contretemps~essuie-glace": {
+      "title": "Remedy: the windshield wiper you can hear",
+      "description": "If the off-beat keeps slipping away, make your motion audible: the hand brushes the strings on the way down on the beats (very softly) and strums clearly on the way up on the \"&\"s. The down is your landmark, the up makes the music.",
+      "goal": "An almost silent down, a crisp up, 2 loops at 80 bpm.",
+      "tips": [
+        "The down is just a brush: barely one or two strings.",
+        "Think \"soft / LOUD / soft / LOUD\".",
+        "Once it's steady, go down further and further from the strings: you're back to the original exercise."
+      ]
+    },
+    "cumbia-02-contretemps~ancre": {
+      "title": "Anchored on the 1",
+      "description": "A single downstroke on the 1, so you know where you are, then off-beats only. The 1 is your foothold: the rest of the bar is played \"in between\".",
+      "goal": "Keep a solid 1 and three steady \"&\"s, 2 loops at 85 bpm.",
+      "tips": [
+        "Say \"ONE and (2) and (3) and (4) and\": only the words you say out loud are played.",
+        "The downstroke on the 1 and the following up make a round trip: don't stop after the 1.",
+        "Listen to the kick drum: it lands with your downstroke."
+      ]
+    },
+    "cumbia-02-contretemps~seul": {
+      "title": "The guide leaves you alone",
+      "description": "The guide ukulele plays two loops and then goes quiet: nobody plays your off-beats for you anymore. Only the band remains, playing ON the beats. Your job is to stay in between.",
+      "goal": "4 loops without the guide, never slipping onto the beats, at 90 bpm.",
+      "tips": [
+        "Tap your foot: your foot lands with the kick drum, your hand never does.",
+        "If you find yourself on the beats, stop for one bar, listen to the guiro, and come back in on an \"&\"."
+      ]
+    },
+    "cumbia-02-contretemps~sans-guiro": {
+      "title": "Without the guiro",
+      "description": "The guiro was giving you every subdivision. We cut it: only the bass and the kick drum on 1 and 3 remain. The \"&\"s now exist only in your head… and in your hand.",
+      "goal": "Steady off-beats without the guiro, 2 loops at 90 bpm.",
+      "tips": [
+        "Hum the guiro's \"chk-chk\" while you play.",
+        "Click \"guiro\" in the band to bring it back if needed, then cut it again."
+      ]
+    },
+    "cumbia-02-contretemps~silence": {
+      "title": "🤫 Silence challenge",
+      "description": "One bar in four, everything stops. The real off-beat test: keep playing BETWEEN beats that nobody marks anymore, and land right when the band comes back.",
+      "goal": "Land on the right \"&\" after every silence, 2 loops in a row.",
+      "tips": [
+        "During the silence, count louder and keep your foot on the beats.",
+        "Your hand keeps swinging up and down in the air: it's what keeps the tempo."
+      ]
+    },
+    "cumbia-02-contretemps~changement": {
+      "title": "Off-beats and a chord change",
+      "description": "The off-beat has a hidden gift: on the 1, your strumming hand passes in the air… the perfect moment to change chords. C and G7 alternate every bar.",
+      "goal": "Change chords during the empty beat, without being late on the first \"&\", 2 loops at 85 bpm.",
+      "tips": [
+        "Change chords while the hand goes down in the air on the 1: you have half a beat to spare.",
+        "If the first \"&\" of the bar slips, no big deal: catch the next one."
+      ]
+    },
+    "cumbia-02-contretemps~tempo-bal": {
+      "title": "Towards dance-hall tempo",
+      "description": "Real cumbia is danced around 100 bpm and up. The faster it gets, the smaller and looser the motion must be: the wrist does the work, not the arm.",
+      "goal": "Light, steady off-beats at 110 bpm.",
+      "tips": [
+        "Make the motion smaller: the hand hardly moves away from the strings.",
+        "If you tense up, press \"Too fast!\": you'll stay longer at the previous tempo."
+      ]
+    },
+    "cumbia-04-changement~deux-mesures": {
+      "title": "More time: 2 bars per chord",
+      "description": "To start gently: each chord lasts two bars. You have plenty of time to see the change coming in the \"next\" box.",
+      "goal": "Change right on the 1, 2 loops at 85 bpm."
+    },
+    "cumbia-04-changement~trois-accords": {
+      "title": "A third chord: F",
+      "description": "We add a bar of F to the loop: C – F – C – G7. F takes two fingers (G string fret 2, E string fret 1): get it ready during the C bar.",
+      "goal": "All three chords with no gaps, 2 loops at 80 bpm.",
+      "tips": [
+        "From C to F: lift the C finger and place both F fingers at once, in a single move.",
+        "Practise C → F → C → G7 silently, without strumming, before starting the music."
+      ]
+    },
+    "cumbia-04-changement~cadence": {
+      "title": "The full cadence: C – F – G7 – C",
+      "description": "The most played chord sequence in popular music. This time F and G7 follow each other directly: two changes in a row.",
+      "goal": "The whole cadence on time, 2 loops at 85 bpm.",
+      "tips": [
+        "From F to G7, the finger on the E string (fret 1) stays put: keep it down and pivot the others around it.",
+        "Look one chord ahead: while you play F, already think G7."
+      ]
+    },
+    "cumbia-04-changement~main-qui-bouge": {
+      "title": "Change without stopping the hand",
+      "description": "Same cadence, but now the strumming hand swings in eighth notes (strong down, light up). It never stops, even during the change: the fretting hand has to keep up.",
+      "goal": "A continuous swing through the changes, 2 loops at 85 bpm.",
+      "tips": [
+        "The last \"&\" before the change may ring open (open strings): that's normal and barely noticeable.",
+        "Never slow the strumming hand to wait for the fretting hand."
+      ]
+    },
+    "cumbia-04-changement~silence": {
+      "title": "🤫 Silence challenge",
+      "description": "The C – F – G7 – C cadence, and one bar in four the band goes quiet. During the silence you play alone… and that's exactly where the return to C happens: place it with no help.",
+      "goal": "Land with the band on the right chord after every silence, 2 loops in a row."
+    },
+    "cumbia-01-pulsation~silence": {
+      "title": "🤫 Silence challenge",
+      "description": "Same rhythm, but one bar in four the whole band stops (the guide ukulele too). Keep going alone, counting out loud, and land right on the 1 when the music comes back.",
+      "goal": "Land exactly with the band after every silence, 2 loops in a row."
+    },
+    "cumbia-03-chucu~silence": {
+      "title": "🤫 Silence challenge",
+      "description": "Same rhythm, but one bar in four the whole band stops (the guide ukulele too). Keep going alone, counting out loud, and land right on the 1 when the music comes back.",
+      "goal": "Land exactly with the band after every silence, 2 loops in a row."
+    },
+    "cumbia-05c-rasgueo-un-accord~silence": {
+      "title": "🤫 Silence challenge",
+      "description": "Same rhythm, but one bar in four the whole band stops (the guide ukulele too). Keep going alone, counting out loud, and land right on the 1 when the music comes back.",
+      "goal": "Land exactly with the band after every silence, 2 loops in a row."
+    },
+    "cumbia-05-rasgueo~silence": {
+      "title": "🤫 Silence challenge",
+      "description": "Same rhythm, but one bar in four the whole band stops (the guide ukulele too). Keep going alone, counting out loud, and land right on the 1 when the music comes back.",
+      "goal": "Land exactly with the band after every silence, 2 loops in a row."
     }
   }
 }

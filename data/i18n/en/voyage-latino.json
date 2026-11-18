@@ -55,6 +55,16 @@
         "Use the chuck on 2 to relax your right hand.",
         "Dm → E7 is still the tricky change: get ready for it from beat 3 of the Dm bar."
       ]
+    },
+    "reggaeton-01-dembow~silence": {
+      "title": "🤫 Silence challenge",
+      "description": "Same rhythm, but one bar in four the whole band stops (the guide ukulele too). Keep going alone, counting out loud, and land right on the 1 when the music comes back.",
+      "goal": "Land exactly with the band after every silence, 2 loops in a row."
+    },
+    "chachacha-01-4-et-1~silence": {
+      "title": "🤫 Silence challenge",
+      "description": "Same rhythm, but one bar in four the whole band stops (the guide ukulele too). Keep going alone, counting out loud, and land right on the 1 when the music comes back.",
+      "goal": "Land exactly with the band after every silence, 2 loops in a row."
     }
   }
 }

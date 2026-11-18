@@ -21,7 +21,16 @@
           ],
           "chords": "C:4 C:4",
           "strum": "D.D.D.D.",
-          "tempo": { "start": 60, "target": 90, "step": 4, "everyLoops": 2 }
+          "tempo": { "start": 60, "target": 90, "step": 4, "everyLoops": 2 },
+          "variants": [
+            {
+              "id": "silence",
+              "title": "🤫 Défi silence",
+              "description": "Même rythme, mais une mesure sur quatre tout le groupe se tait (le ukulélé guide aussi). Continue seul en comptant à voix haute, et retombe pile sur le 1 quand la musique revient.",
+              "goal": "Retomber exactement avec le groupe après chaque silence, 2 boucles de suite.",
+              "options": { "silence": true }
+            }
+          ]
         },
         {
           "id": "cumbia-02-contretemps",
@@ -39,7 +48,93 @@
           ],
           "chords": "C:8",
           "strum": ".U.U.U.U",
-          "tempo": { "start": 60, "target": 90, "step": 4, "everyLoops": 2 }
+          "tempo": { "start": 60, "target": 90, "step": 4, "everyLoops": 2 },
+          "variants": [
+            {
+              "id": "essuie-glace",
+              "title": "Remède : l'essuie-glace qu'on entend",
+              "description": "Si le contretemps t'échappe, rends ton mouvement audible : la main frôle les cordes en descendant sur les temps (tout doux) et gratte franchement en remontant sur les « et ». Le bas sert de repère, le haut fait la musique.",
+              "goal": "Un bas presque inaudible, un haut bien net, 2 boucles à 80 bpm.",
+              "tips": [
+                "Le bas est un simple effleurement : à peine une ou deux cordes.",
+                "Pense « pas fort / FORT / pas fort / FORT ».",
+                "Quand c'est régulier, descends de plus en plus loin des cordes : tu retrouves l'exercice de départ."
+              ],
+              "strum": "dUdUdUdU",
+              "tempo": { "start": 60, "target": 80 }
+            },
+            {
+              "id": "ancre",
+              "title": "Ancré sur le 1",
+              "description": "Un seul coup vers le bas sur le 1, pour savoir où tu es, puis uniquement des contretemps. Le 1 est ton point d'appui : tout le reste de la mesure se joue « entre ».",
+              "goal": "Garder le 1 bien posé et les trois « et » réguliers, 2 boucles à 85 bpm.",
+              "tips": [
+                "Dis « UN et (2) et (3) et (4) et » : seuls les mots prononcés sont joués.",
+                "Le coup du 1 et le haut qui suit forment un aller-retour : ne t'arrête pas après le 1.",
+                "Écoute la grosse caisse : elle tombe avec ton coup vers le bas."
+              ],
+              "strum": "DU.U.U.U",
+              "tempo": { "start": 60, "target": 85 }
+            },
+            {
+              "id": "seul",
+              "title": "Le guide te laisse seul",
+              "description": "Le ukulélé guide joue deux boucles puis se tait : plus personne ne joue tes contretemps à ta place. Il ne reste que le groupe, qui joue SUR les temps. À toi de rester entre.",
+              "goal": "4 boucles sans guide, sans retomber sur les temps, à 90 bpm.",
+              "tips": [
+                "Tape du pied : ton pied tombe avec la grosse caisse, ta main jamais.",
+                "Si tu te retrouves sur les temps, arrête de jouer une mesure, écoute le guiro, et reprends sur un « et »."
+              ],
+              "options": { "guide": "fade" }
+            },
+            {
+              "id": "sans-guiro",
+              "title": "Sans le guiro",
+              "description": "Le guiro te donnait toutes les subdivisions. On le coupe : il ne reste que la basse et la grosse caisse sur 1 et 3. Les « et » n'existent plus que dans ta tête… et dans ta main.",
+              "goal": "Des contretemps réguliers sans le guiro, 2 boucles à 90 bpm.",
+              "tips": [
+                "Fredonne le « tchk-tchk » du guiro pendant que tu joues.",
+                "Clique sur « guiro » dans le groupe pour le remettre si besoin, puis recoupe-le."
+              ],
+              "mute": ["guiro"],
+              "options": { "guide": "fade" }
+            },
+            {
+              "id": "silence",
+              "title": "🤫 Défi silence",
+              "description": "Une mesure sur quatre, tout se tait. Le vrai test du contretemps : continuer à jouer ENTRE des temps que plus personne ne marque, et retomber juste quand le groupe revient.",
+              "goal": "Retomber sur le bon « et » après chaque silence, 2 boucles de suite.",
+              "tips": [
+                "Pendant le silence, compte plus fort, et garde ton pied sur les temps.",
+                "Ta main continue son va-et-vient à vide : c'est elle qui garde le tempo."
+              ],
+              "options": { "silence": true, "guide": "fade" }
+            },
+            {
+              "id": "changement",
+              "title": "Contretemps et changement d'accord",
+              "description": "Le contretemps a un cadeau caché : sur le 1, ta main droite passe à vide… c'est le moment idéal pour changer d'accord. C et G7 alternent à chaque mesure.",
+              "goal": "Changer d'accord pendant le temps vide, sans retard sur le premier « et », 2 boucles à 85 bpm.",
+              "tips": [
+                "Change d'accord pendant que la main descend à vide sur le 1 : tu as un demi-temps d'avance.",
+                "Si le premier « et » de la mesure saute, ce n'est pas grave : retombe sur le suivant."
+              ],
+              "chords": "C:4 G7:4",
+              "tempo": { "start": 60, "target": 85 }
+            },
+            {
+              "id": "tempo-bal",
+              "title": "Vers le tempo de bal",
+              "description": "Une vraie cumbia se danse autour de 100 bpm et plus. Plus c'est rapide, plus le mouvement doit être petit et relâché : c'est le poignet qui travaille, pas le bras.",
+              "goal": "Des contretemps légers et réguliers à 110 bpm.",
+              "tips": [
+                "Réduis l'amplitude : la main ne s'éloigne presque plus des cordes.",
+                "Si ça se crispe, appuie sur « Trop vite ! » : on reste plus longtemps au tempo d'avant."
+              ],
+              "chords": "Am:4 G:4 F:4 E7:4",
+              "tempo": { "start": 84, "target": 110, "step": 3 }
+            }
+          ]
         },
         {
           "id": "cumbia-03-chucu",
@@ -57,7 +152,16 @@
           ],
           "chords": "C:8",
           "strum": "XUXUXUXU",
-          "tempo": { "start": 65, "target": 95, "step": 4, "everyLoops": 2 }
+          "tempo": { "start": 65, "target": 95, "step": 4, "everyLoops": 2 },
+          "variants": [
+            {
+              "id": "silence",
+              "title": "🤫 Défi silence",
+              "description": "Même rythme, mais une mesure sur quatre tout le groupe se tait (le ukulélé guide aussi). Continue seul en comptant à voix haute, et retombe pile sur le 1 quand la musique revient.",
+              "goal": "Retomber exactement avec le groupe après chaque silence, 2 boucles de suite.",
+              "options": { "silence": true }
+            }
+          ]
         },
         {
           "id": "cumbia-04-changement",
@@ -75,7 +179,59 @@
           ],
           "chords": "C:4 G7:4",
           "strum": "D.D.D.D.",
-          "tempo": { "start": 55, "target": 85, "step": 3, "everyLoops": 2 }
+          "tempo": { "start": 55, "target": 85, "step": 3, "everyLoops": 2 },
+          "variants": [
+            {
+              "id": "deux-mesures",
+              "title": "Plus de temps : 2 mesures par accord",
+              "description": "Pour démarrer en douceur : chaque accord dure deux mesures. Tu as tout le temps de voir venir le changement dans le cadre « ensuite ».",
+              "goal": "Changer pile sur le 1, 2 boucles à 85 bpm.",
+              "chords": "C:8 G7:8"
+            },
+            {
+              "id": "trois-accords",
+              "title": "Un troisième accord : F",
+              "description": "On ajoute une mesure de F dans la boucle : C – F – C – G7. F se fait avec deux doigts (corde de Sol case 2, corde de Mi case 1) : prépare-le pendant la mesure de C.",
+              "goal": "Les trois accords sans trou, 2 boucles à 80 bpm.",
+              "tips": [
+                "De C à F : lâche le doigt de C et pose les deux doigts de F en même temps, en un seul geste.",
+                "Entraîne C → F → C → G7 à vide, sans gratter, avant de lancer la musique."
+              ],
+              "chords": "C:4 F:4 C:4 G7:4",
+              "tempo": { "start": 55, "target": 80 }
+            },
+            {
+              "id": "cadence",
+              "title": "La cadence complète : C – F – G7 – C",
+              "description": "La suite d'accords la plus jouée de la musique populaire. Cette fois, F et G7 s'enchaînent directement : deux changements de suite.",
+              "goal": "Toute la cadence sans retard, 2 boucles à 85 bpm.",
+              "tips": [
+                "De F à G7, le doigt de la corde de Mi (case 1) ne bouge pas : garde-le posé et fais pivoter les autres autour.",
+                "Regarde un accord d'avance : quand tu joues F, pense déjà G7."
+              ],
+              "chords": "C:4 F:4 G7:4 C:4"
+            },
+            {
+              "id": "main-qui-bouge",
+              "title": "Changer sans arrêter la main",
+              "description": "Même cadence, mais la main droite fait maintenant le balancier en croches (bas fort, haut léger). Elle ne s'arrête jamais, même pendant le changement : la main gauche doit suivre.",
+              "goal": "Un balancier continu pendant les changements, 2 boucles à 85 bpm.",
+              "tips": [
+                "Le dernier « et » avant le changement peut sonner à vide (cordes à l'air) : c'est normal, et ça s'entend à peine.",
+                "Ne ralentis jamais la main droite pour attendre la gauche."
+              ],
+              "chords": "C:4 F:4 G7:4 C:4",
+              "strum": "DuDuDuDu"
+            },
+            {
+              "id": "silence",
+              "title": "🤫 Défi silence",
+              "description": "La cadence C – F – G7 – C, et une mesure sur quatre le groupe se tait. Pendant le silence tu joues seul… et c'est justement là que tombe le retour à C : à toi de le placer sans aide.",
+              "goal": "Retomber avec le groupe sur le bon accord après chaque silence, 2 boucles de suite.",
+              "chords": "C:4 F:4 G7:4 C:4",
+              "options": { "silence": true }
+            }
+          ]
         },
         {
           "id": "cumbia-05a-balancier",
@@ -127,7 +283,16 @@
           ],
           "chords": "C:8",
           "strum": "D.DU.UDU",
-          "tempo": { "start": 60, "target": 95, "step": 5, "everyLoops": 2 }
+          "tempo": { "start": 60, "target": 95, "step": 5, "everyLoops": 2 },
+          "variants": [
+            {
+              "id": "silence",
+              "title": "🤫 Défi silence",
+              "description": "Même rythme, mais une mesure sur quatre tout le groupe se tait (le ukulélé guide aussi). Continue seul en comptant à voix haute, et retombe pile sur le 1 quand la musique revient.",
+              "goal": "Retomber exactement avec le groupe après chaque silence, 2 boucles de suite.",
+              "options": { "silence": true }
+            }
+          ]
         },
         {
           "id": "cumbia-05d-rasgueo-deux-mesures",
@@ -162,7 +327,16 @@
           ],
           "chords": "C:4 G7:4",
           "strum": "D.DU.UDU",
-          "tempo": { "start": 60, "target": 95, "step": 4, "everyLoops": 2 }
+          "tempo": { "start": 60, "target": 95, "step": 4, "everyLoops": 2 },
+          "variants": [
+            {
+              "id": "silence",
+              "title": "🤫 Défi silence",
+              "description": "Même rythme, mais une mesure sur quatre tout le groupe se tait (le ukulélé guide aussi). Continue seul en comptant à voix haute, et retombe pile sur le 1 quand la musique revient.",
+              "goal": "Retomber exactement avec le groupe après chaque silence, 2 boucles de suite.",
+              "options": { "silence": true }
+            }
+          ]
         },
         {
           "id": "cumbia-06a-riff-notes",

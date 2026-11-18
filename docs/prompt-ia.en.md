@@ -34,7 +34,8 @@ All keys are optional except what is needed. In "chords" and "styles", include O
   "sections": [ { "name": "Verse", "bars": 4 }, { "name": "Chorus", "bars": 4 } ],  // song structure (optional)
   "tempo": { "start": 60, "target": 90, "step": 4, "everyLoops": 2 },
   "options": { "guide": "on", "silence": false },   // optional
-  "mute": ["conga"]                        // optional: style tracks muted at the start
+  "mute": ["conga"],                       // optional: style tracks muted at the start
+  "variants": [ { "id": "silence", "title": "🤫 Silence challenge", "options": { "silence": true } } ]  // optional, see "Variations"
 }
 ```
 
@@ -65,6 +66,9 @@ A list of sections whose `bars` add up to the total number of bars in the progre
 ### Options
 - `guide`: `"on"` (the guide ukulele plays along with me), `"fade"` (it plays 2 loops then goes quiet), `"off"`.
 - `silence`: `true` → 1 bar out of 4, everything goes quiet and I have to keep going on my own (silence challenge).
+
+### Variations (optional)
+`variants`: a few steps that take the SAME exercise deeper, when the concept deserves it (not everywhere). Each variation has a short `id` and a `title`, and only states what changes (`chords`, `strum`, `tempo`, `options`, `mute`, `description`, `goal`, `tips`…): everything else is inherited from the exercise. Order them from closest to most demanding. Examples: add a chord, change chords more often, mute a helpful percussion, `"options": { "silence": true }` (silence challenge), `"guide": "fade"`, a higher tempo.
 
 ## STYLE (only if you create a new style)
 ```json

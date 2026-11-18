@@ -27,6 +27,10 @@ Sur téléphone, la liste des exercices s'ouvre avec **📚 Exercices** et une b
 | 🎵 Mélodie | riffs en tablature simplifiée (`A3` = corde de La, case 3), notes du riff entourées sur le diagramme d'accord |
 | 🤌 Picking | jeu aux doigts corde par corde (`C.F.G.F.` : pouce sur les temps, pincés sur les contretemps), arpèges qui suivent les accords |
 
+**🪜 Variantes** : certains exercices (le contretemps, le premier changement d'accords, les rythmes de base) ont des étapes d'approfondissement, cachées derrière « 🪜 N variantes pour approfondir » dans la liste : un accord de plus, un instrument qui aide en moins, le guide qui s'efface, le défi silence, un tempo plus élevé…
+
+**🔗 Enchaîner** : les exercices (et leurs variantes) se suivent tout seuls, sans cliquer ni sur l'exercice suivant ni sur Jouer, après 4, 8 ou 16 boucles ou une fois le tempo cible atteint. ⏭ (ou la touche N) passe à l'exercice suivant.
+
 ![Bas de l'interface : réglages d'accélération, aides, volumes, conseils et présentation du style](img/interface-bas.png)
 
 ## Les parcours

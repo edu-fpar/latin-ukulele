@@ -65,6 +65,10 @@
             <button id="tooFast" class="warn" data-i18n="btn.tooFast" data-i18n-title="title.tooFast">🐢 Trop vite !</button>
             <button id="restart" class="ghost" data-i18n-title="title.restart">↺</button>
           </div>
+          <div class="transport sub">
+            <button id="chainBtn" class="ghost chain" aria-pressed="false" data-i18n="btn.chain" data-i18n-title="title.chain">🔗 Enchaîner</button>
+            <button id="next" class="ghost" data-i18n="btn.next" data-i18n-title="title.next">⏭ Suivant</button>
+          </div>
           <div id="status" class="status"></div>
           <div id="record" class="record"></div>
         </div>
@@ -112,6 +116,19 @@
             <label class="sw" data-i18n-title="set.silenceTitle"><input type="checkbox" id="optSilence"> <span data-i18n="set.silence">🤫 défi silence</span></label>
           </fieldset>
           <fieldset>
+            <legend data-i18n="set.chain">🔗 Enchaînement</legend>
+            <label class="sw" data-i18n-title="title.chain"><input type="checkbox" id="optChain"> <span data-i18n="set.chainOn">enchaîner les exercices tout seul</span></label>
+            <label><span data-i18n="set.chainAfter">passer au suivant après</span>
+              <select id="optChainAfter">
+                <option value="4" data-i18n="set.chain4">4 boucles</option>
+                <option value="8" data-i18n="set.chain8">8 boucles</option>
+                <option value="16" data-i18n="set.chain16">16 boucles</option>
+                <option value="target" data-i18n="set.chainTarget">le tempo cible</option>
+              </select>
+            </label>
+            <label class="sw"><input type="checkbox" id="optChainVar"> <span data-i18n="set.chainVar">inclure les variantes</span></label>
+          </fieldset>
+          <fieldset>
             <legend data-i18n="set.volumes">🎚️ Volumes</legend>
             <label><span data-i18n="set.volGroup">groupe</span> <input type="range" id="vol-group" min="0" max="1.2" step="0.05"></label>
             <label><span data-i18n="set.volMelody">mélodie</span> <input type="range" id="vol-melody" min="0" max="1.2" step="0.05"></label>
@@ -135,6 +152,7 @@
       <button id="mPlus" class="round" data-i18n-title="title.plus">+</button>
       <button id="mPlay" class="play">▶</button>
       <button id="mTooFast" class="warn" data-i18n="btn.tooFastShort" data-i18n-title="btn.tooFast">🐢</button>
+      <button id="mNext" class="ghost" data-i18n-title="title.next">⏭</button>
     </div>
   </nav>
 

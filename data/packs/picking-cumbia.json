@@ -55,7 +55,16 @@
           ],
           "chords": "Am:4 E7:4",
           "strum": "cAgAcAgA",
-          "tempo": { "start": 60, "target": 95, "step": 4, "everyLoops": 2 }
+          "tempo": { "start": 60, "target": 95, "step": 4, "everyLoops": 2 },
+          "variants": [
+            {
+              "id": "silence",
+              "title": "🤫 Défi silence",
+              "description": "Même rythme, mais une mesure sur quatre tout le groupe se tait (le ukulélé guide aussi). Continue seul en comptant à voix haute, et retombe pile sur le 1 quand la musique revient.",
+              "goal": "Retomber exactement avec le groupe après chaque silence, 2 boucles de suite.",
+              "options": { "silence": true }
+            }
+          ]
         },
         {
           "id": "picking-04-pinces",

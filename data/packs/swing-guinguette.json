@@ -20,7 +20,16 @@
           ],
           "chords": "C:4 G7:4",
           "strum": "P.D.P.D.",
-          "tempo": { "start": 70, "target": 110, "step": 5, "everyLoops": 2 }
+          "tempo": { "start": 70, "target": 110, "step": 5, "everyLoops": 2 },
+          "variants": [
+            {
+              "id": "silence",
+              "title": "🤫 Défi silence",
+              "description": "Même rythme, mais une mesure sur quatre tout le groupe se tait (le ukulélé guide aussi). Continue seul en comptant à voix haute, et retombe pile sur le 1 quand la musique revient.",
+              "goal": "Retomber exactement avec le groupe après chaque silence, 2 boucles de suite.",
+              "options": { "silence": true }
+            }
+          ]
         },
         {
           "id": "swing-02-backbeat",
@@ -54,7 +63,16 @@
           ],
           "chords": "C6:8",
           "strum": "DUDUDUDU",
-          "tempo": { "start": 70, "target": 120, "step": 5, "everyLoops": 2 }
+          "tempo": { "start": 70, "target": 120, "step": 5, "everyLoops": 2 },
+          "variants": [
+            {
+              "id": "silence",
+              "title": "🤫 Défi silence",
+              "description": "Même rythme, mais une mesure sur quatre tout le groupe se tait (le ukulélé guide aussi). Continue seul en comptant à voix haute, et retombe pile sur le 1 quand la musique revient.",
+              "goal": "Retomber exactement avec le groupe après chaque silence, 2 boucles de suite.",
+              "options": { "silence": true }
+            }
+          ]
         },
         {
           "id": "swing-04-anatole",
