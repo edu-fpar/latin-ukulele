@@ -739,16 +739,20 @@ function bindControls() {
 /* ======================================================================
    Ajouter du contenu avec une IA
    ====================================================================== */
-let promptTemplate = '';
+let promptLoading = null;
 
-async function openAI() {
-  if (!promptTemplate) {
-    try { promptTemplate = await (await fetch(t('ai.promptFile'), { cache: 'no-cache' })).text(); }
-    catch { promptTemplate = '(' + t('ai.promptFile') + ' ?)\n\n{{EXISTANT}}\n\n{{DEMANDE}}'; }
-  }
+/** Modèle du prompt, chargé une seule fois (et en arrière-plan : la boîte de dialogue ne l'attend pas) */
+function loadPrompt() {
+  return promptLoading ||= fetch(t('ai.promptFile'))
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
+    .catch(() => { promptLoading = null; return '(' + t('ai.promptFile') + ' ?)\n\n{{EXISTANT}}\n\n{{DEMANDE}}'; });
+}
+
+function openAI() {
   renderImports();
   $('#aiResult').innerHTML = '';
   $('#aiDialog').showModal();
+  loadPrompt();
 }
 
 function existingSummary() {
@@ -763,9 +767,9 @@ function existingSummary() {
   return `${t('sum.styles')}:\n${st}\n\n${t('sum.chords')}:\n${ch}\n\n${t('sum.exercises')}:\n${exs}\n\n${t('sum.progress')}:\n${done || t('sum.noRecord')}`;
 }
 
-function buildPrompt() {
+async function buildPrompt() {
   const wish = $('#aiWish').value.trim() || t('ai.defaultWish');
-  return promptTemplate.replace('{{EXISTANT}}', existingSummary()).replace('{{DEMANDE}}', wish);
+  return (await loadPrompt()).replace('{{EXISTANT}}', existingSummary()).replace('{{DEMANDE}}', wish);
 }
 
 function extractJSON(text) {
@@ -847,13 +851,14 @@ function renderImports() {
 
 function bindAI() {
   $('#btnAI').onclick = openAI;
+  setTimeout(loadPrompt, 2000); // préchargé une fois l'appli démarrée
   $('#aiClose').onclick = () => $('#aiDialog').close();
   $('#aiCopy').onclick = async () => {
-    const p = buildPrompt();
+    const p = await buildPrompt();
     try { await navigator.clipboard.writeText(p); flash(t('flash.copied')); }
     catch { $('#aiPaste').value = p; flash(t('flash.copyFail')); }
   };
-  $('#aiShow').onclick = () => { $('#aiPreview').textContent = buildPrompt(); $('#aiPreview').classList.toggle('hidden'); };
+  $('#aiShow').onclick = async () => { $('#aiPreview').textContent = await buildPrompt(); $('#aiPreview').classList.toggle('hidden'); };
   $('#aiImport').onclick = importFromText;
   $('#importList').onclick = e => {
     const del = e.target.closest('[data-del]'), dl = e.target.closest('[data-dl]');
