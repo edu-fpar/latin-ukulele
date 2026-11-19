@@ -173,28 +173,39 @@ function noteWhere(token) {
   const m = NOTE_RE.exec(token), s = t('note.strings').split(',')['GCEA'.indexOf(m[1].toUpperCase())];
   return +m[2] === 0 ? t('note.open', { s }) : t('note.fret', { s, n: +m[2] });
 }
-/** Note jouée au pas s, sinon la prochaine ; puis celle d'après */
+/**
+ * Note jouée au pas s (sinon la prochaine), puis la prochaine note DIFFÉRENTE :
+ * c'est elle qui demande de déplacer le doigt, comme un changement d'accord.
+ */
 function riffNotesFrom(s) {
-  const found = [];
-  for (let k = 0; k < C.loopSteps && found.length < 2; k++) {
+  let cur = null;
+  for (let k = 0; k < C.loopSteps; k++) {
     const j = (s + k) % C.loopSteps, tok = cellAt(C.riff, j, C.spb);
-    if (tok && NOTE_RE.test(tok) && !(found.length && found[0].j === j)) found.push({ j, tok, k });
+    if (!tok || !NOTE_RE.test(tok)) continue;
+    if (!cur) cur = { j, tok, k };
+    else if (tok.toUpperCase() !== cur.tok.toUpperCase()) return [cur, { j, tok, k, beats: Math.ceil(k / C.sub) }];
   }
-  return found;
+  return [cur, null];
 }
 function renderRiffNote(s) {
   const [cur, nx] = riffNotesFrom(s);
   if (!cur) return false;
-  if (ui.lastChord !== 'n' + cur.j) {
+  if (ui.lastChord !== 'n' + cur.tok + cur.j) {
     $('#chordNow').innerHTML = `<div class="cname">${esc(noteName(cur.tok))} <small>${esc(cur.tok.toUpperCase())}</small></div>
       <div class="nwhere">${esc(noteWhere(cur.tok))}</div>${noteSVG(cur.tok)}
       <div class="rlegend">${esc(t('note.over', { chord: C.chordAt[cur.j] }))}</div>`;
-    ui.lastChord = 'n' + cur.j;
-    $('#chordNow').classList.remove('pop'); void $('#chordNow').offsetWidth; $('#chordNow').classList.add('pop');
-    const el = $('#chordNext');
-    el.classList.remove('soon'); el.dataset.chord = '';
-    el.innerHTML = nx ? `<div class="nlabel">${esc(t('chord.next'))}</div><div class="cname sm">${esc(noteName(nx.tok))} <small>${esc(nx.tok.toUpperCase())}</small></div>${noteSVG(nx.tok, true)}<div class="countdown">${esc(noteWhere(nx.tok))}</div>` : '';
+    // une note répétée ne relance pas l'animation : seul un déplacement du doigt compte
+    if (ui.lastNote !== cur.tok) { $('#chordNow').classList.remove('pop'); void $('#chordNow').offsetWidth; $('#chordNow').classList.add('pop'); }
+    ui.lastChord = 'n' + cur.tok + cur.j; ui.lastNote = cur.tok;
   }
+  const el = $('#chordNext');
+  if (!nx) { el.innerHTML = `<div class="muted small">${esc(t('note.single'))}</div>`; el.dataset.chord = ''; el.classList.remove('soon'); return true; }
+  if (el.dataset.chord !== 'n' + nx.tok) {
+    el.innerHTML = `<div class="nlabel">${esc(t('chord.next'))}</div><div class="cname sm">${esc(noteName(nx.tok))} <small>${esc(nx.tok.toUpperCase())}</small></div>${noteSVG(nx.tok, true)}<div class="nwhere small">${esc(noteWhere(nx.tok))}</div><div class="countdown"></div>`;
+    el.dataset.chord = 'n' + nx.tok;
+  }
+  $('.countdown', el).textContent = nx.beats <= 1 ? t('chord.now') : t('chord.inBeats', { n: nx.beats });
+  el.classList.toggle('soon', nx.beats <= 1);
   return true;
 }
 

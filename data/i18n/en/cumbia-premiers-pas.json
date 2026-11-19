@@ -134,20 +134,20 @@
     },
     "cumbia-06-riff": {
       "title": "A cumbia riff",
-      "firstStep": "Three notes, slowly",
-      "description": "The riff fits in three notes per bar. We start with the ones of the Am bar, slowly: one note every two beats. The fretboard only shows the note to play, on its string and at its fret; the \"next\" box shows the one after. A0 = open A string, A3 = A string fret 3, E3 = E string fret 3.",
-      "goal": "All three notes without hesitating, 2 loops at 70 bpm.",
+      "firstStep": "Anchor the Am notes",
+      "description": "The riff fits in three notes per bar. First of all, we anchor the ones of the Am bar, one at a time: four times A0 (open A string), then four times A3 (A string, fret 3), then four times E3 (E string, fret 3). One note per beat, the same one for a whole bar: you have time to look at the fretboard, place your finger and listen to the sound. The \"next\" box lights up when it's time to change note.",
+      "goal": "All three notes well placed, 2 loops at 60 bpm.",
       "tips": [
         "No need to hold the chord with your fretting hand: the band plays Am.",
         "A3 and E3 are both played with the ring finger, fret 3: only the string changes.",
         "Pluck the string with your thumb, downward, without forcing.",
-        "Say the note name as you play it: \"A… C… G\"."
+        "Say the note name on every stroke: \"A, A, A, A, C, C, C, C, G…\"."
       ]
     },
     "cumbia-06-riff~notes-am": {
       "title": "The Am notes, one per beat",
-      "description": "The same three notes, but one per beat: A, C, G, then beat 4 stays empty to get back to the start. The fretboard changes note on every beat.",
-      "goal": "A, C, G nice and even, 2 loops at 85 bpm.",
+      "description": "The three notes now follow each other within a single bar, one per beat: A, C, G, then beat 4 stays empty to get back to the start. The fretboard changes note on every beat.",
+      "goal": "A, C, G nice and even, 2 loops at 80 bpm.",
       "tips": [
         "Keep your ring finger over fret 3: it moves from the A string to the E string without lifting high.",
         "The empty beat is there to get back to the open A string.",
@@ -164,14 +164,23 @@
         "If a note slips away, go back to step 2 for a while."
       ]
     },
-    "cumbia-06-riff~notes-e7": {
-      "title": "The three E7 notes, slowly",
-      "description": "Second bar of the riff, same method: three notes over E7, one every two beats. E4 = E string fret 4 (little finger), A2 = A string fret 2 (middle finger), E0 = open E string.",
-      "goal": "All three notes without hesitating, 2 loops at 70 bpm.",
+    "cumbia-06-riff~ancrer-e7": {
+      "title": "Anchor the E7 notes",
+      "description": "Second bar of the riff, same method: four times E4 (E string, fret 4, little finger), then four times A2 (A string, fret 2, middle finger), then four times E0 (open E string), over E7.",
+      "goal": "All three notes well placed, 2 loops at 60 bpm.",
       "tips": [
         "The little finger is the weakest: place it right behind the fret, on its tip.",
-        "While you play E4, your middle finger is already waiting over fret 2.",
-        "Say the note name as you play it: \"G#… B… E\"."
+        "During the four E4s, your middle finger is already waiting over fret 2.",
+        "Say the note name on every stroke: \"G#, G#, G#, G#, B…\"."
+      ]
+    },
+    "cumbia-06-riff~notes-e7": {
+      "title": "The E7 notes, one per beat",
+      "description": "The three E7 notes within a single bar, one per beat: G#, B, E, then beat 4 empty to get back to the start.",
+      "goal": "G#, B, E nice and even, 2 loops at 80 bpm.",
+      "tips": [
+        "Keep your little finger and middle finger hovering over their frets: only your plucking hand changes strings.",
+        "The empty beat is there to put your little finger back on E4."
       ]
     },
     "cumbia-06-riff~mesure-e7": {
