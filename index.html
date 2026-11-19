@@ -95,18 +95,16 @@
           <fieldset>
             <legend data-i18n="set.ramp">⏱️ Accélération progressive</legend>
             <label class="sw"><input type="checkbox" id="optRamp"> <span data-i18n="set.rampOn">activée</span></label>
-            <div class="nums">
-              <label><span data-i18n="set.start">départ</span> <input type="number" id="tStart" min="30" max="240"></label>
-              <label><span data-i18n="set.target">cible</span> <input type="number" id="tTarget" min="30" max="240"></label>
-              <label>+ <input type="number" id="tStep" min="1" max="20"> bpm</label>
-              <label><span data-i18n="set.everyA">toutes les</span> <input type="number" id="tEvery" min="1" max="16"> <span data-i18n="set.everyB">boucles</span></label>
-            </div>
+            <label><span data-i18n="set.start">départ</span> <span class="unit"><input type="number" id="tStart" min="30" max="240"> bpm</span></label>
+            <label><span data-i18n="set.target">cible</span> <span class="unit"><input type="number" id="tTarget" min="30" max="240"> bpm</span></label>
+            <label><span data-i18n="set.stepBy">accélérer de</span> <span class="unit"><input type="number" id="tStep" min="1" max="20"> bpm</span></label>
+            <label><span data-i18n="set.everyA">toutes les</span> <span class="unit"><input type="number" id="tEvery" min="1" max="16"> <span data-i18n="set.everyB">boucles</span></span></label>
           </fieldset>
           <fieldset>
             <legend data-i18n="set.helps">🎧 Aides</legend>
             <label class="sw"><input type="checkbox" id="optCount"> <span data-i18n="set.countIn">décompte d'une mesure</span></label>
             <label class="sw"><input type="checkbox" id="optClick"> <span data-i18n="set.click">métronome</span></label>
-            <label><span data-i18n="set.guide">ukulélé guide</span>
+            <label class="stack"><span data-i18n="set.guide">ukulélé guide</span>
               <select id="optGuide">
                 <option value="on" data-i18n="set.guideOn">joue avec moi</option>
                 <option value="fade" data-i18n="set.guideFade">2 boucles puis s'efface</option>
@@ -118,7 +116,7 @@
           <fieldset>
             <legend data-i18n="set.chain">🔗 Enchaînement</legend>
             <label class="sw" data-i18n-title="title.chain"><input type="checkbox" id="optChain"> <span data-i18n="set.chainOn">enchaîner les exercices tout seul</span></label>
-            <label><span data-i18n="set.chainAfter">passer au suivant après</span>
+            <label class="stack"><span data-i18n="set.chainAfter">passer au suivant après</span>
               <select id="optChainAfter">
                 <option value="4" data-i18n="set.chain4">4 boucles</option>
                 <option value="8" data-i18n="set.chain8">8 boucles</option>

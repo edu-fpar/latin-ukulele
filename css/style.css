@@ -224,12 +224,22 @@ kbd { border: 1px solid var(--line); border-radius: 4px; padding: 0 .35em; backg
 .tabline.s-C span { color: var(--accent2); } .tabline.s-G span { color: var(--accent); }
 
 /* ---------- réglages ---------- */
-.settings { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1em; }
-fieldset { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: .7em .9em; display: flex; flex-direction: column; gap: .45em; margin: 0; }
+/* Réglages : 4 blocs en ligne s'il y a la place, sinon 2 × 2, sinon 1 colonne (jamais 3 + 1).
+   On regarde la largeur du panneau lui-même, pas celle de l'écran (la liste d'exercices en prend une partie). */
+.settingsBox { container-type: inline-size; }
+.settings { display: grid; grid-template-columns: 1fr; gap: .6em; }
+@container (min-width: 520px) { .settings { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1em; } }
+@container (min-width: 940px) { .settings { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+/* min-width: 0 : sans lui, un fieldset refuse de rétrécir sous son contenu et déborde sur le voisin */
+fieldset { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: .7em .9em; display: flex; flex-direction: column; gap: .45em; margin: 0; min-width: 0; }
 legend { padding: 0 .4em; font-weight: 600; }
 fieldset label { display: flex; align-items: center; justify-content: space-between; gap: .5em; }
 fieldset label.sw { justify-content: flex-start; }
-.nums { display: grid; grid-template-columns: 1fr 1fr; gap: .4em; font-size: .9em; }
+fieldset label.stack { flex-direction: column; align-items: stretch; gap: .2em; }
+fieldset select { min-width: 0; max-width: 100%; }
+fieldset label.stack select { width: 100%; max-width: 17em; }
+fieldset .unit { display: inline-flex; align-items: center; gap: .35em; white-space: nowrap; font-size: .92em; color: var(--muted); }
+fieldset .unit input { color: var(--text); }
 input[type=range] { flex: 1; max-width: 55%; accent-color: var(--accent); padding: 0; }
 
 .tips { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: .3em 1em .8em; }
@@ -327,7 +337,6 @@ pre { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; 
   .sec { font-size: .7em; padding: .15em .35em; }
   .sec small { display: none; }
 
-  .settings { grid-template-columns: 1fr; gap: .6em; }
   input[type=range] { max-width: 50%; }
   .tips { padding: .2em .8em .6em; font-size: .93em; }
 
