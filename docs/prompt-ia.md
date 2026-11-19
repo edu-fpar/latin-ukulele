@@ -70,6 +70,8 @@ Liste de sections dont la somme des `bars` = nombre total de mesures de la grill
 ### Variantes (optionnel)
 `variants` : quelques étapes d'approfondissement du MÊME exercice, quand le concept le mérite (pas partout). Chaque variante a un `id` court et un `title`, et ne précise que ce qui change (`chords`, `strum`, `tempo`, `options`, `mute`, `description`, `goal`, `tips`…) : le reste est hérité de l'exercice. Ordonne-les de la plus proche à la plus exigeante. Exemples : ajouter un accord, changer d'accord plus souvent, couper une percussion qui aide, `"options": { "silence": true }` (défi silence), `"guide": "fade"`, un tempo plus élevé.
 
+**Parcours par étapes** : quand l'objectif est trop gros pour être abordé d'emblée (un riff, un rythme complet), ajoute `"firstStep": "Trouver les notes"`. Le `title` annonce alors l'objectif final, le contenu de l'exercice est la première étape (nommée par `firstStep`), et les `variants` sont les étapes suivantes, la DERNIÈRE étant l'objectif complet. Chaque étape redéfinit sa `description`, son `goal` et ses `tips`.
+
 ## STYLE (seulement si tu crées un nouveau style)
 ```json
 {

@@ -70,6 +70,8 @@ A list of sections whose `bars` add up to the total number of bars in the progre
 ### Variations (optional)
 `variants`: a few steps that take the SAME exercise deeper, when the concept deserves it (not everywhere). Each variation has a short `id` and a `title`, and only states what changes (`chords`, `strum`, `tempo`, `options`, `mute`, `description`, `goal`, `tips`…): everything else is inherited from the exercise. Order them from closest to most demanding. Examples: add a chord, change chords more often, mute a helpful percussion, `"options": { "silence": true }` (silence challenge), `"guide": "fade"`, a higher tempo.
 
+**Step-by-step path**: when the goal is too big to tackle at once (a riff, a full strumming pattern), add `"firstStep": "Find the notes"`. The `title` then states the final goal, the exercise's content is the first step (named by `firstStep`), and the `variants` are the following steps, the LAST one being the full goal. Each step redefines its own `description`, `goal` and `tips`.
+
 ## STYLE (only if you create a new style)
 ```json
 {

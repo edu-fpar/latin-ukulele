@@ -72,6 +72,15 @@ function variantsOf(parent) {
     return e;
   });
 }
+/**
+ * Exercice « parcours » (champ firstStep) : le titre annonce l'objectif, le contenu de base
+ * n'en est que l'étape 1 (firstStep), et les variantes sont les étapes suivantes, jusqu'à l'objectif.
+ * Renvoie l'exercice racine du parcours, ou null.
+ */
+function stepsRoot(ex) {
+  const r = ex?.variantOf ? DB.exercises[ex.variantOf] : ex;
+  return r?.firstStep && r.variantIds?.length ? r : null;
+}
 function makeVariants(parent) {
   const vs = variantsOf(parent);
   parent.variantIds = vs.map(v => v.id);
@@ -192,13 +201,15 @@ function toggleVariants(id) {
   renderList();
 }
 
-const variantsLabel = n => n === 1 ? t('ex.variants1') : t('ex.variants', { n });
+const variantsLabel = (n, steps) => steps
+  ? (n === 1 ? t('ex.steps1') : t('ex.steps', { n }))
+  : (n === 1 ? t('ex.variants1') : t('ex.variants', { n }));
 
 function exButton(ex, variant) {
-  const p = prog(ex.id), tg = ex.tempo?.target;
+  const p = prog(ex.id), tg = ex.tempo?.target, steps = stepsRoot(ex);
   return `<button class="ex ${variant ? 'var' : ''} ${ex.id === currentId ? 'cur' : ''} ${p.mastered ? 'ok' : ''}" data-id="${esc(ex.id)}">
-    <span class="lvl" ${variant ? '' : `title="${esc(t('ex.levelTitle', { n: ex.level || 1 }))}"`}>${variant ? ex.variantNum : '●'.repeat(ex.level || 1)}</span>
-    <span class="t">${esc(ex.title)}</span>
+    <span class="lvl" ${variant ? '' : `title="${esc(t('ex.levelTitle', { n: ex.level || 1 }))}"`}>${variant ? ex.variantNum + (steps ? 1 : 0) : '●'.repeat(ex.level || 1)}</span>
+    <span class="t">${esc(ex.title)}${!variant && steps ? ` <small class="step">${esc(t('ex.stepShort', { k: 1, step: ex.firstStep }))}</small>` : ''}</span>
     <span class="meta">${variant ? '' : (ex.focus || []).map(f => DIMENSIONS.find(d => d.id === norm(f))?.icon || '').join('')}
       ${p.best ? `<b>${p.best}</b>${tg ? '/' + tg : ''} bpm` : ''} ${p.mastered ? '✅' : ''}</span>
   </button>`;
@@ -223,7 +234,7 @@ function renderList() {
         const vdone = vids.filter(v => prog(v).mastered).length;
         return `<li class="hasvar">${exButton(ex)}
           <button class="vtoggle ${open ? 'open' : ''}" data-vt="${esc(ex.id)}" aria-expanded="${open}">
-            <span class="arrow">▸</span> ${esc(variantsLabel(vids.length))}${vdone ? ` <small>${vdone}/${vids.length} ✅</small>` : ''}</button>
+            <span class="arrow">▸</span> ${esc(variantsLabel(vids.length, !!stepsRoot(ex)))}${vdone ? ` <small>${vdone}/${vids.length} ✅</small>` : ''}</button>
           ${open ? `<ul class="variants">${vids.map(v => `<li>${exButton(DB.exercises[v], true)}</li>`).join('')}</ul>` : ''}
         </li>`;
       }).join('')}</ul>`;
@@ -327,7 +338,8 @@ function selectExercise(id) {
   $('#chordNext').dataset.chord = '';
   renderHeader(); renderTempoInputs(); renderLoop(); renderLanes(0, 0); renderChords(0); renderList();
   $('#practice').classList.remove('empty');
-  $('#mTitle').textContent = ex.variantOf ? `${DB.exercises[ex.variantOf].title} · ${ex.title}` : ex.title;
+  $('#mTitle').textContent = ex.variantOf ? `${DB.exercises[ex.variantOf].title} · ${ex.title}`
+    : stepsRoot(ex) ? `${ex.title} · ${ex.firstStep}` : ex.title;
   document.body.classList.remove('drawer');
   if (window.innerWidth < 900) window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -335,7 +347,16 @@ function selectExercise(id) {
 function renderHeader() {
   const ex = C.ex, st = C.style;
   const parent = ex.variantOf && DB.exercises[ex.variantOf];
+  const steps = stepsRoot(ex), nSteps = steps ? steps.variantIds.length + 1 : 0;
   const dims = (ex.focus || []).map(f => DIMENSIONS.find(d => d.id === norm(f))).filter(Boolean);
+  // étiquette et ligne de contexte : approfondissement, ou étape d'un parcours
+  const tag = steps ? t('ex.stepTag', { k: parent ? ex.variantNum + 1 : 1, n: nSteps })
+    : parent ? t('ex.variantTag', { k: ex.variantNum, n: parent.variantIds.length })
+    : ex.variantIds?.length ? variantsLabel(ex.variantIds.length) : '';
+  const context = !steps ? (parent ? t('ex.variantOf', { title: parent.title }) : '')
+    : !parent ? t('ex.firstStep', { step: ex.firstStep })
+    : ex.variantNum + 1 === nSteps ? t('ex.lastStep', { title: parent.title })
+    : t('ex.stepOf', { title: parent.title });
   $('#exHeader').innerHTML = `
     <div class="exTitle">
       <h2>${esc(ex.title)}</h2>
@@ -343,12 +364,11 @@ function renderHeader() {
         <span class="tag style">${esc(st.name)}${st.origin ? ' · ' + esc(st.origin) : ''}</span>
         <span class="tag">${esc(t('ex.level', { n: ex.level || 1 }))}</span>
         ${dims.map(d => `<span class="tag dim">${d.icon} ${esc(d.label)}</span>`).join('')}
-        ${parent ? `<span class="tag var">${esc(t('ex.variantTag', { k: ex.variantNum, n: parent.variantIds.length }))}</span>` : ''}
-        ${!parent && ex.variantIds?.length ? `<span class="tag var">${esc(variantsLabel(ex.variantIds.length))}</span>` : ''}
+        ${tag ? `<span class="tag var">${esc(tag)}</span>` : ''}
         ${C.melody ? `<span class="tag mel">${esc(t('ex.melodyTag', { inst: instName(C.melody.inst) }))}</span>` : ''}
       </div>
     </div>
-    ${parent ? `<p class="varof">${esc(t('ex.variantOf', { title: parent.title }))}</p>` : ''}
+    ${context ? `<p class="varof">${esc(context)}</p>` : ''}
     ${ex.description ? `<p>${esc(ex.description)}</p>` : ''}
     ${ex.goal ? `<p class="goal">🎯 <b>${t('ex.goal')}</b> ${esc(ex.goal)}</p>` : ''}
     ${C.warnings.length ? `<div class="alert small">${C.warnings.map(esc).join('<br>')}</div>` : ''}`;

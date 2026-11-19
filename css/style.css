@@ -63,6 +63,7 @@ kbd { border: 1px solid var(--line); border-radius: 4px; padding: 0 .35em; backg
 .ex { width: 100%; text-align: left; display: grid; grid-template-columns: 2.6em 1fr; grid-template-rows: auto auto; column-gap: .4em; padding: .45em .6em; background: var(--panel2); }
 .ex .lvl { grid-row: span 2; color: var(--accent); font-size: .7em; letter-spacing: -1px; align-self: center; }
 .ex .t { font-weight: 500; }
+.ex .t small.step { font-weight: 400; color: var(--muted); }
 .ex .meta { font-size: .8em; color: var(--muted); }
 .ex .meta b { color: var(--yellow); }
 .ex.cur { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; }
