@@ -168,6 +168,22 @@ function noteSVG(token, small) {
   ['G', 'C', 'E', 'A'].forEach((l, k) => s += `<text x="${xs[k]}" y="112" class="sl${k === i ? ' on' : ''}">${l}</text>`);
   return s + '</svg>';
 }
+/**
+ * Mini-manche pour une case de la mesure (mode riffView: "grid") : 4 cordes, 4 cases,
+ * un seul point. Il reste en place dans sa case : c'est la surbrillance qui avance, pas le dessin.
+ */
+function noteMini(token) {
+  const m = NOTE_RE.exec(token), st = m[1].toUpperCase(), n = +m[2], i = 'GCEA'.indexOf(st);
+  const base = n > 4 ? n - 3 : 1, xs = [6, 15, 24, 33], y0 = 12, fh = 10;
+  let s = `<svg class="mini-diag" viewBox="0 0 39 64" role="img" aria-label="${esc(noteWhere(token))}">`;
+  s += base === 1 ? `<rect x="5" y="${y0 - 2}" width="29" height="2.5" class="nut"/>` : `<text x="37" y="${y0 + 7}" class="fr">${base}</text>`;
+  for (let r = 0; r <= 4; r++) s += `<line x1="6" x2="33" y1="${y0 + r * fh}" y2="${y0 + r * fh}" class="fret"/>`;
+  xs.forEach((x, k) => s += `<line x1="${x}" x2="${x}" y1="${y0}" y2="${y0 + 4 * fh}" class="str${k === i ? ' on s-' + st : ''}"/>`);
+  s += n === 0 ? `<circle cx="${xs[i]}" cy="5" r="4" class="ndot s-${st}"/>`
+    : `<circle cx="${xs[i]}" cy="${y0 + (n - base + 0.5) * fh}" r="4.6" class="ndot s-${st}"/><text x="${xs[i]}" y="${y0 + (n - base + 0.5) * fh + 2.6}" class="nnum">${n}</text>`;
+  return s + `<text x="19.5" y="62" class="tok s-${st}">${esc(st + n)}</text></svg>`;
+}
+const riffGridView = () => (C.ex.options || {}).riffView === 'grid';
 const noteName = token => t('note.names').split(',')[Engine.riffNote(token) % 12];
 function noteWhere(token) {
   const m = NOTE_RE.exec(token), s = t('note.strings').split(',')['GCEA'.indexOf(m[1].toUpperCase())];
@@ -467,8 +483,11 @@ function renderLanes(s, g) {
       cells: barOf(C.strum, s, C.spb).map(c => ({ html: STRUM_GLYPH[c] ?? esc(c), cls: 'st-' + (c === '.' ? 'rest' : c.toLowerCase()) + (c !== '.' && c === c.toLowerCase() ? ' light' : ''), title: STRUM_NAME[c] || '' })) });
   }
   if (C.riff) {
+    const grid = riffGridView();
     rows.push({ key: 'riff', name: t('grid.riff'), main: true,
-      cells: barOf(C.riff, s, C.spb).map(tk => ({ html: tk === '.' ? '' : esc(tk), cls: tk === '.' ? 'st-rest' : 'riff s-' + tk[0].toUpperCase() })) });
+      cells: barOf(C.riff, s, C.spb).map(tk => tk === '.' ? { html: '', cls: 'st-rest' }
+        : grid && NOTE_RE.test(tk) ? { html: noteMini(tk), cls: 'riff rdiag' }
+        : { html: esc(tk), cls: 'riff s-' + tk[0].toUpperCase() }) });
   }
   const band = [];
   if (C.melody) {
@@ -596,7 +615,8 @@ function nextChange(s) {
 function renderChords(s) {
   const cur = C.chordAt[s];
   // un riff est une mélodie : on montre la note à jouer, pas l'accord
-  if (C.riff && renderRiffNote(s)) return;
+  // (sauf en mode « diagrammes dans la mesure » : les notes sont dans la grille, l'accord reste en haut)
+  if (C.riff && !riffGridView() && renderRiffNote(s)) return;
   const nx = nextChange(s);
   if (cur !== ui.lastChord) {
     $('#chordNow').innerHTML = `<div class="cname">${esc(cur)}</div>${chordSVG(cur, false)}`;
@@ -638,7 +658,7 @@ function frame(now) {
     if (key !== ui.lastBar) renderLanes(ev.s, ev.g);
     highlight(ev.s, ev.g, ev.silent);
     if (ev.pos % C.sub === 0) { renderBeatDots(ev.pos); renderChords(ev.s); }
-    else if (C.riff) renderChords(ev.s); // la note change aussi entre les temps
+    else if (C.riff && !riffGridView()) renderChords(ev.s); // la note change aussi entre les temps
     $('#practice').classList.toggle('silent', !!ev.silent);
     $('#status').innerHTML = ev.silent
       ? t('status.silent')

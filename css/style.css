@@ -181,6 +181,18 @@ kbd { border: 1px solid var(--line); border-radius: 4px; padding: 0 .35em; backg
 .row.main .cells.dense .cell { font-size: 1.15em; }
 .cell.light { font-size: 1em !important; opacity: .75; }
 .cell.riff { font-size: 1em !important; }
+/* riff en mode « diagrammes dans la mesure » : un mini-manche par note, qui ne bouge pas */
+.row.main .cell.rdiag { padding: 3px 2px; min-height: 5.2em; }
+.mini-diag { display: block; width: 100%; max-width: 60px; height: auto; }
+.mini-diag .nut { fill: var(--text); }
+.mini-diag .fret { stroke: var(--muted); stroke-width: .7; }
+.mini-diag .str { stroke: var(--muted); stroke-width: .7; }
+.mini-diag .str.on { stroke-width: 1.6; }
+.mini-diag .fr { fill: var(--muted); font-size: 6px; text-anchor: middle; }
+.mini-diag .nnum { fill: #1a1210; font-size: 6px; font-weight: 800; text-anchor: middle; }
+.mini-diag .tok { font-size: 8px; font-weight: 800; text-anchor: middle; stroke: none !important; }
+.mini-diag .s-A { stroke: var(--pink); fill: var(--pink); } .mini-diag .s-E { stroke: var(--yellow); fill: var(--yellow); }
+.mini-diag .s-C { stroke: var(--accent2); fill: var(--accent2); } .mini-diag .s-G { stroke: var(--accent); fill: var(--accent); }
 .riff.s-A { color: var(--pink); } .riff.s-E { color: var(--yellow); } .riff.s-C { color: var(--accent2); } .riff.s-G { color: var(--accent); }
 .row.band .cell { min-height: 1.3em; font-size: .7em; color: transparent; }
 .row.band .cell.hit { background: #5a4334; }

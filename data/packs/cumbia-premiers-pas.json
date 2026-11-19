@@ -356,6 +356,24 @@
           ]
         },
         {
+          "id": "cumbia-06t-riff-grille",
+          "title": "🧪 Test : les notes dans la mesure",
+          "level": 2,
+          "focus": ["melodie"],
+          "style": "cumbia",
+          "description": "Essai d'affichage. Chaque note du riff a son petit manche directement dans la mesure, à sa place : rien ne saute, c'est la case allumée qui avance. En haut, on retrouve les diagrammes d'accord du groupe (Am puis E7), qui ne changent qu'à chaque mesure. Six notes, une par temps : La, Do, Sol sur Am, puis Sol#, Si, Mi sur E7.",
+          "goal": "Les six notes sans hésiter, 2 boucles à 80 bpm.",
+          "tips": [
+            "Lis la mesure en avance : le manche de la note suivante est déjà affiché à côté de la case allumée.",
+            "Le cadre « ensuite » annonce le passage à E7 : c'est là que la main gauche change de position.",
+            "Le 4e temps de chaque mesure est vide : profites-en pour placer le doigt de la mesure suivante."
+          ],
+          "chords": "Am:4 E7:4",
+          "riff": "A0 A3 E3 . | E4 A2 E0 .",
+          "tempo": { "start": 30, "target": 80, "step": 5, "everyLoops": 2 },
+          "options": { "riffView": "grid" }
+        },
+        {
           "id": "cumbia-06-riff",
           "title": "Un riff de cumbia",
           "firstStep": "Ancrer les notes de Am",

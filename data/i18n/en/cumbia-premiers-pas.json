@@ -132,6 +132,16 @@
         "To go further, turn on the \"🤫 silence challenge\" in the settings."
       ]
     },
+    "cumbia-06t-riff-grille": {
+      "title": "🧪 Test: the notes inside the bar",
+      "description": "Display trial. Each riff note has its own little fretboard right inside the bar, in its place: nothing jumps around, it's the lit-up step that moves forward. At the top, you get the band's chord diagrams back (Am then E7), which only change on each bar. Six notes, one per beat: A, C, G over Am, then G#, B, E over E7.",
+      "goal": "All six notes without hesitating, 2 loops at 80 bpm.",
+      "tips": [
+        "Read the bar ahead: the next note's fretboard is already shown next to the lit-up step.",
+        "The \"next\" box announces the move to E7: that's when your fretting hand changes position.",
+        "Beat 4 of each bar is empty: use it to place your finger for the next bar."
+      ]
+    },
     "cumbia-06-riff": {
       "title": "A cumbia riff",
       "firstStep": "Anchor the Am notes",
