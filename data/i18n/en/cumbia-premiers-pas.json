@@ -132,20 +132,10 @@
         "To go further, turn on the \"🤫 silence challenge\" in the settings."
       ]
     },
-    "cumbia-06t-riff-grille": {
-      "title": "🧪 Test: the notes inside the bar",
-      "description": "Display trial. Each riff note has its own little fretboard right inside the bar, in its place: nothing jumps around, it's the lit-up step that moves forward. At the top, you get the band's chord diagrams back (Am then E7), which only change on each bar. Six notes, one per beat: A, C, G over Am, then G#, B, E over E7.",
-      "goal": "All six notes without hesitating, 2 loops at 80 bpm.",
-      "tips": [
-        "Read the bar ahead: the next note's fretboard is already shown next to the lit-up step.",
-        "The \"next\" box announces the move to E7: that's when your fretting hand changes position.",
-        "Beat 4 of each bar is empty: use it to place your finger for the next bar."
-      ]
-    },
     "cumbia-06-riff": {
       "title": "A cumbia riff",
       "firstStep": "Anchor the Am notes",
-      "description": "The riff fits in three notes per bar. First of all, we anchor the ones of the Am bar, one at a time: four times A0 (open A string), then four times A3 (A string, fret 3), then four times E3 (E string, fret 3). One note per beat, the same one for a whole bar: you have time to look at the fretboard, place your finger and listen to the sound. The \"next\" box lights up when it's time to change note.",
+      "description": "The riff fits in three notes per bar. First of all, we anchor the ones of the Am bar, one at a time: four times A0 (open A string), then four times A3 (A string, fret 3), then four times E3 (E string, fret 3). One note per beat, the same one for a whole bar: you have time to look at the little fretboard drawn in the step, place your finger and listen to the sound. At the top, the diagram shows the chord the band is playing.",
       "goal": "All three notes well placed, 2 loops at 60 bpm.",
       "tips": [
         "No need to hold the chord with your fretting hand: the band plays Am.",
@@ -156,7 +146,7 @@
     },
     "cumbia-06-riff~notes-am": {
       "title": "The Am notes, one per beat",
-      "description": "The three notes now follow each other within a single bar, one per beat: A, C, G, then beat 4 stays empty to get back to the start. The fretboard changes note on every beat.",
+      "description": "The three notes now follow each other within a single bar, one per beat: A, C, G, then beat 4 stays empty to get back to the start. Read the bar from left to right: each step shows where to put your finger.",
       "goal": "A, C, G nice and even, 2 loops at 80 bpm.",
       "tips": [
         "Keep your ring finger over fret 3: it moves from the A string to the E string without lifting high.",
@@ -205,7 +195,7 @@
     },
     "cumbia-06-riff~enchainer": {
       "title": "Linking Am and E7, one note per beat",
-      "description": "All six notes in a row, one per beat, without the rhythm: what's new is moving from one bar to the next. Beat 4 of each bar is empty: use it to put your finger on the first note of the next bar (\"next\" box).",
+      "description": "All six notes in a row, one per beat, without the rhythm: what's new is moving from one bar to the next. Beat 4 of each bar is empty: use it to put your finger on the first note of the next bar, and watch the \"next\" box: it announces the move to E7.",
       "goal": "All six notes without hesitating, 2 loops at 80 bpm.",
       "tips": [
         "During the empty beat after the G (E3), your little finger is already heading for E4.",

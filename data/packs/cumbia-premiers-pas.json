@@ -356,31 +356,13 @@
           ]
         },
         {
-          "id": "cumbia-06t-riff-grille",
-          "title": "🧪 Test : les notes dans la mesure",
-          "level": 2,
-          "focus": ["melodie"],
-          "style": "cumbia",
-          "description": "Essai d'affichage. Chaque note du riff a son petit manche directement dans la mesure, à sa place : rien ne saute, c'est la case allumée qui avance. En haut, on retrouve les diagrammes d'accord du groupe (Am puis E7), qui ne changent qu'à chaque mesure. Six notes, une par temps : La, Do, Sol sur Am, puis Sol#, Si, Mi sur E7.",
-          "goal": "Les six notes sans hésiter, 2 boucles à 80 bpm.",
-          "tips": [
-            "Lis la mesure en avance : le manche de la note suivante est déjà affiché à côté de la case allumée.",
-            "Le cadre « ensuite » annonce le passage à E7 : c'est là que la main gauche change de position.",
-            "Le 4e temps de chaque mesure est vide : profites-en pour placer le doigt de la mesure suivante."
-          ],
-          "chords": "Am:4 E7:4",
-          "riff": "A0 A3 E3 . | E4 A2 E0 .",
-          "tempo": { "start": 30, "target": 80, "step": 5, "everyLoops": 2 },
-          "options": { "riffView": "grid" }
-        },
-        {
           "id": "cumbia-06-riff",
           "title": "Un riff de cumbia",
           "firstStep": "Ancrer les notes de Am",
           "level": 2,
           "focus": ["melodie"],
           "style": "cumbia",
-          "description": "Le riff tient en trois notes par mesure. Avant tout, on ancre celles de la mesure de Am, une par une : quatre fois A0 (corde de La à vide), puis quatre fois A3 (corde de La, case 3), puis quatre fois E3 (corde de Mi, case 3). Une note par temps, la même pendant toute une mesure : tu as le temps de regarder le manche, de placer le doigt et d'écouter le son. Le cadre « ensuite » s'allume quand il faut changer de note.",
+          "description": "Le riff tient en trois notes par mesure. Avant tout, on ancre celles de la mesure de Am, une par une : quatre fois A0 (corde de La à vide), puis quatre fois A3 (corde de La, case 3), puis quatre fois E3 (corde de Mi, case 3). Une note par temps, la même pendant toute une mesure : tu as le temps de regarder le petit manche dessiné dans la case, de placer le doigt et d'écouter le son. En haut, le diagramme montre l'accord que joue le groupe.",
           "goal": "Les trois notes bien placées, 2 boucles à 60 bpm.",
           "tips": [
             "Pas besoin de faire l'accord avec la main gauche : c'est le groupe qui joue Am.",
@@ -391,11 +373,12 @@
           "chords": "Am:12",
           "riff": "A0 A0 A0 A0 | A3 A3 A3 A3 | E3 E3 E3 E3",
           "tempo": { "start": 30, "target": 60, "step": 5, "everyLoops": 1 },
+          "options": { "riffView": "grid" },
           "variants": [
             {
               "id": "notes-am",
               "title": "Les notes de Am, une par temps",
-              "description": "Les trois notes s'enchaînent maintenant dans une seule mesure, une par temps : La, Do, Sol, puis le 4e temps reste vide pour revenir au début. Le manche change de note à chaque temps.",
+              "description": "Les trois notes s'enchaînent maintenant dans une seule mesure, une par temps : La, Do, Sol, puis le 4e temps reste vide pour revenir au début. Lis la mesure de gauche à droite : chaque case montre où poser le doigt.",
               "goal": "La, Do, Sol bien réguliers, 2 boucles à 80 bpm.",
               "tips": [
                 "Garde l'annulaire au-dessus de la case 3 : il passe de la corde de La à la corde de Mi sans se relever haut.",
@@ -465,7 +448,7 @@
             {
               "id": "enchainer",
               "title": "Enchaîner Am et E7, une note par temps",
-              "description": "Les six notes à la suite, une par temps, sans le rythme : la nouveauté, c'est le passage d'une mesure à l'autre. Le 4e temps de chaque mesure est vide : profites-en pour placer ton doigt sur la première note de la mesure suivante (cadre « ensuite »).",
+              "description": "Les six notes à la suite, une par temps, sans le rythme : la nouveauté, c'est le passage d'une mesure à l'autre. Le 4e temps de chaque mesure est vide : profites-en pour placer ton doigt sur la première note de la mesure suivante, et regarde le cadre « ensuite » : il annonce le passage à E7.",
               "goal": "Les six notes sans hésiter, 2 boucles à 80 bpm.",
               "tips": [
                 "Pendant le temps vide après le Sol (E3), l'auriculaire part déjà vers E4.",
