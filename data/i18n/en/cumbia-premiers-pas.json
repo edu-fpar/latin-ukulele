@@ -134,39 +134,69 @@
     },
     "cumbia-06-riff": {
       "title": "A cumbia riff",
-      "firstStep": "Find the notes",
-      "description": "Before playing the riff in rhythm, learn where its notes are. There are only three per bar. Over Am: A0 (open A string), A3 (A string, 3rd fret) and E3 (E string, 3rd fret). Over E7: E4, A2 and E0. One note per beat; beat 4 is there to get ready for what's next. These aren't the chord's notes: it's a little melody played on top. The turquoise rings on the chord diagram show where to put your fingers.",
-      "goal": "All six notes without hesitating, 2 loops at 80 bpm.",
+      "firstStep": "Three notes, slowly",
+      "description": "The riff fits in three notes per bar. We start with the ones of the Am bar, slowly: one note every two beats. The fretboard only shows the note to play, on its string and at its fret; the \"next\" box shows the one after. A0 = open A string, A3 = A string fret 3, E3 = E string fret 3.",
+      "goal": "All three notes without hesitating, 2 loops at 70 bpm.",
       "tips": [
-        "Read the tab in \"The whole loop\": each line is a string (A at the top), the number is the fret.",
-        "Fingering: fret 2 = middle finger, fret 3 = ring finger, fret 4 = little finger.",
-        "Say the note names as you play: \"A, C, G\" then \"G#, B, E\".",
-        "No need to hold the chord with your fretting hand: the band plays it."
+        "No need to hold the chord with your fretting hand: the band plays Am.",
+        "A3 and E3 are both played with the ring finger, fret 3: only the string changes.",
+        "Pluck the string with your thumb, downward, without forcing.",
+        "Say the note name as you play it: \"A… C… G\"."
+      ]
+    },
+    "cumbia-06-riff~notes-am": {
+      "title": "The Am notes, one per beat",
+      "description": "The same three notes, but one per beat: A, C, G, then beat 4 stays empty to get back to the start. The fretboard changes note on every beat.",
+      "goal": "A, C, G nice and even, 2 loops at 85 bpm.",
+      "tips": [
+        "Keep your ring finger over fret 3: it moves from the A string to the E string without lifting high.",
+        "The empty beat is there to get back to the open A string.",
+        "Tap your foot: one note per step."
       ]
     },
     "cumbia-06-riff~mesure-am": {
-      "title": "The Am bar",
-      "description": "The first bar of the riff, in rhythm, looped over A minor. The notes land on 1, 2, the \"&\" of 2, the \"&\" of 3 and 4. The two middle notes fall BETWEEN the beats: that's where the riff swings.",
+      "title": "The Am bar in rhythm",
+      "description": "Now the riff's rhythm, over A minor. Two extra A's are added: the notes land on 1, 2, the \"&\" of 2, the \"&\" of 3 and 4. The two middle notes fall BETWEEN the beats: that's where the riff swings.",
       "goal": "The Am bar right in time, 2 loops at 90 bpm.",
       "tips": [
         "Sing the rhythm: \"A . A-C . A G .\".",
-        "Tap your foot on the beats: the C (A3) and the second A land as your foot comes up.",
-        "If a note slips away, go back to step 1 (find the notes) for a while."
+        "Tap your foot on the beats: the C (A3) and the third A land as your foot comes up.",
+        "If a note slips away, go back to step 2 for a while."
+      ]
+    },
+    "cumbia-06-riff~notes-e7": {
+      "title": "The three E7 notes, slowly",
+      "description": "Second bar of the riff, same method: three notes over E7, one every two beats. E4 = E string fret 4 (little finger), A2 = A string fret 2 (middle finger), E0 = open E string.",
+      "goal": "All three notes without hesitating, 2 loops at 70 bpm.",
+      "tips": [
+        "The little finger is the weakest: place it right behind the fret, on its tip.",
+        "While you play E4, your middle finger is already waiting over fret 2.",
+        "Say the note name as you play it: \"G#… B… E\"."
       ]
     },
     "cumbia-06-riff~mesure-e7": {
-      "title": "The E7 bar",
-      "description": "The second bar of the riff, looped over E7. Same rhythm as the Am bar: only the notes change (E4, A2, E0). Once you're comfortable, the next step joins the two bars.",
+      "title": "The E7 bar in rhythm",
+      "description": "The E7 bar on a loop, with the riff's rhythm. It's exactly the same rhythm as the Am bar: only the notes change.",
       "goal": "The E7 bar right in time, 2 loops at 90 bpm.",
       "tips": [
-        "E4: little finger, 4th fret of the E string. A2: middle finger, 2nd fret of the A string. Keep both fingers ready.",
-        "The final E0 leads back to the start: link it with no gap.",
-        "Same rhythm as the Am bar: \"G# . G#-B . G# E .\"."
+        "Same rhythm as the Am bar: \"G# . G#-B . G# E .\".",
+        "Keep both your little finger and middle finger ready.",
+        "The final E0 leads back to the start: link it with no gap."
+      ]
+    },
+    "cumbia-06-riff~enchainer": {
+      "title": "Linking Am and E7, one note per beat",
+      "description": "All six notes in a row, one per beat, without the rhythm: what's new is moving from one bar to the next. Beat 4 of each bar is empty: use it to put your finger on the first note of the next bar (\"next\" box).",
+      "goal": "All six notes without hesitating, 2 loops at 80 bpm.",
+      "tips": [
+        "During the empty beat after the G (E3), your little finger is already heading for E4.",
+        "Read the tab in \"The whole loop\": each line is a string (A at the top), the number is the fret.",
+        "Say: \"A, C, G, (place) G#, B, E, (place)\"."
       ]
     },
     "cumbia-06-riff~complet": {
       "title": "The full riff",
-      "description": "Putting it all together: the Am bar then the E7 bar, without stopping. \"A3\" means: A string (the thinnest one, at the bottom), 3rd fret. \"E0\": open E string. The riff follows the chords: A minor, then E7.",
+      "description": "Putting it all together: the rhythm of the Am and E7 bars, and moving from one to the other without stopping. The riff follows the chords: A minor, then E7.",
       "goal": "The riff with no hesitation, 2 loops at 90 bpm.",
       "tips": [
         "Colors = strings: pink = A, yellow = E, turquoise = C, orange = G.",

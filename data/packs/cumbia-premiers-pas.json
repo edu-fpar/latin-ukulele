@@ -358,57 +358,99 @@
         {
           "id": "cumbia-06-riff",
           "title": "Un riff de cumbia",
-          "firstStep": "Trouver les notes",
+          "firstStep": "Trois notes, lentement",
           "level": 2,
           "focus": ["melodie"],
           "style": "cumbia",
-          "description": "Avant de jouer le riff en rythme, on apprend où sont ses notes. Il n'y en a que trois par mesure. Sur Am : A0 (corde de La à vide), A3 (La, case 3) et E3 (Mi, case 3). Sur E7 : E4, A2 et E0. Une note par temps, le 4e temps sert à préparer la suite. Ce ne sont pas les notes de l'accord : c'est une petite mélodie jouée par-dessus. Les anneaux turquoise sur le diagramme montrent où poser les doigts.",
-          "goal": "Les six notes sans hésiter, 2 boucles à 80 bpm.",
+          "description": "Le riff tient en trois notes par mesure. On commence par celles de la mesure de Am, lentement : une note tous les deux temps. Le manche ne montre que la note à jouer, sur sa corde et à sa case ; le cadre « ensuite » montre la suivante. A0 = corde de La à vide, A3 = corde de La case 3, E3 = corde de Mi case 3.",
+          "goal": "Les trois notes sans hésiter, 2 boucles à 70 bpm.",
           "tips": [
-            "Lis la tablature de « Toute la boucle » : chaque ligne est une corde (A en haut), le chiffre est la case.",
-            "Doigtés : case 2 = majeur, case 3 = annulaire, case 4 = auriculaire.",
-            "Dis le nom des notes en jouant : « La, Do, Sol » puis « Sol#, Si, Mi ».",
-            "Pas besoin de faire l'accord avec la main gauche : c'est le groupe qui le joue."
+            "Pas besoin de faire l'accord avec la main gauche : c'est le groupe qui joue Am.",
+            "A3 et E3 se jouent toutes les deux avec l'annulaire, case 3 : seule la corde change.",
+            "Pince la corde avec le pouce, vers le bas, sans forcer.",
+            "Dis le nom de la note en la jouant : « La… Do… Sol »."
           ],
-          "chords": "Am:4 E7:4",
-          "riff": "A0 A3 E3 . | E4 A2 E0 .",
-          "tempo": { "start": 50, "target": 80, "step": 5, "everyLoops": 2 },
+          "chords": "Am:8",
+          "riff": "A0 . A3 . | E3 . . .",
+          "tempo": { "start": 50, "target": 70, "step": 4, "everyLoops": 2 },
           "variants": [
             {
+              "id": "notes-am",
+              "title": "Les notes de Am, une par temps",
+              "description": "Les mêmes trois notes, mais une par temps : La, Do, Sol, puis le 4e temps reste vide pour revenir au début. Le manche change de note à chaque temps.",
+              "goal": "La, Do, Sol bien réguliers, 2 boucles à 85 bpm.",
+              "tips": [
+                "Garde l'annulaire au-dessus de la case 3 : il passe de la corde de La à la corde de Mi sans se relever haut.",
+                "Le temps vide sert à revenir sur la corde de La à vide.",
+                "Tape du pied : une note par pas."
+              ],
+              "chords": "Am:4",
+              "riff": "A0 A3 E3 .",
+              "tempo": { "start": 55, "target": 85 }
+            },
+            {
               "id": "mesure-am",
-              "title": "La mesure de Am",
+              "title": "La mesure de Am en rythme",
               "focus": ["melodie", "rythme"],
-              "description": "La première mesure du riff, en rythme, en boucle sur La mineur. Les notes tombent sur le 1, le 2, le « et » du 2, le « et » du 3 et le 4. Les deux notes du milieu sont ENTRE les temps : c'est là que le riff balance.",
+              "description": "Maintenant le rythme du riff, sur La mineur. On ajoute deux La : les notes tombent sur le 1, le 2, le « et » du 2, le « et » du 3 et le 4. Les deux notes du milieu sont ENTRE les temps : c'est là que le riff balance.",
               "goal": "La mesure de Am bien en place, 2 boucles à 90 bpm.",
               "tips": [
                 "Chante le rythme : « La . La-Do . La Sol . ».",
-                "Tape du pied sur les temps : le Do (A3) et le 2e La tombent quand le pied remonte.",
-                "Si une note t'échappe, reviens un moment à l'étape 1 (trouver les notes)."
+                "Tape du pied sur les temps : le Do (A3) et le 3e La tombent quand le pied remonte.",
+                "Si une note t'échappe, reviens un moment à l'étape 2."
               ],
               "chords": "Am:4",
               "riff": "A0 . A0 A3 . A0 E3 .",
               "tempo": { "start": 55, "target": 90, "step": 5 }
             },
             {
+              "id": "notes-e7",
+              "title": "Les trois notes de E7, lentement",
+              "description": "Deuxième mesure du riff, même méthode : trois notes sur Mi7, une tous les deux temps. E4 = corde de Mi case 4 (auriculaire), A2 = corde de La case 2 (majeur), E0 = corde de Mi à vide.",
+              "goal": "Les trois notes sans hésiter, 2 boucles à 70 bpm.",
+              "tips": [
+                "L'auriculaire est le doigt le plus faible : pose-le bien juste derrière la frette, sur le bout du doigt.",
+                "Pendant que tu joues E4, le majeur attend déjà au-dessus de la case 2.",
+                "Dis le nom de la note en la jouant : « Sol#… Si… Mi »."
+              ],
+              "chords": "E7:8",
+              "riff": "E4 . A2 . | E0 . . .",
+              "tempo": { "start": 50, "target": 70 }
+            },
+            {
               "id": "mesure-e7",
-              "title": "La mesure de E7",
+              "title": "La mesure de E7 en rythme",
               "focus": ["melodie", "rythme"],
-              "description": "La deuxième mesure du riff, en boucle sur Mi7. Même rythme que la mesure de Am : seules les notes changent (E4, A2, E0). Une fois à l'aise, l'étape suivante enchaîne les deux mesures.",
+              "description": "La mesure de E7 en boucle, avec le rythme du riff. C'est exactement le même rythme que la mesure de Am : seules les notes changent.",
               "goal": "La mesure de E7 bien en place, 2 boucles à 90 bpm.",
               "tips": [
-                "E4 : auriculaire, case 4 de la corde de Mi. A2 : majeur, case 2 de la corde de La. Garde les deux doigts prêts.",
-                "Le E0 final ramène vers le début : enchaîne-le sans trou.",
-                "Même rythme que la mesure de Am : « Sol# . Sol#-Si . Sol# Mi . »."
+                "Même rythme que la mesure de Am : « Sol# . Sol#-Si . Sol# Mi . ».",
+                "Garde l'auriculaire et le majeur prêts tous les deux.",
+                "Le E0 final ramène vers le début : enchaîne-le sans trou."
               ],
               "chords": "E7:4",
               "riff": "E4 . E4 A2 . E4 E0 .",
               "tempo": { "start": 55, "target": 90, "step": 5 }
             },
             {
+              "id": "enchainer",
+              "title": "Enchaîner Am et E7, une note par temps",
+              "description": "Les six notes à la suite, une par temps, sans le rythme : la nouveauté, c'est le passage d'une mesure à l'autre. Le 4e temps de chaque mesure est vide : profites-en pour placer ton doigt sur la première note de la mesure suivante (cadre « ensuite »).",
+              "goal": "Les six notes sans hésiter, 2 boucles à 80 bpm.",
+              "tips": [
+                "Pendant le temps vide après le Sol (E3), l'auriculaire part déjà vers E4.",
+                "Lis la tablature de « Toute la boucle » : chaque ligne est une corde (A en haut), le chiffre est la case.",
+                "Dis : « La, Do, Sol, (place) Sol#, Si, Mi, (place) »."
+              ],
+              "chords": "Am:4 E7:4",
+              "riff": "A0 A3 E3 . | E4 A2 E0 .",
+              "tempo": { "start": 50, "target": 80, "step": 5 }
+            },
+            {
               "id": "complet",
               "title": "Le riff complet",
               "focus": ["melodie", "rythme"],
-              "description": "On assemble tout : la mesure de Am puis celle de E7, sans s'arrêter. « A3 » veut dire : corde de La (la plus fine, en bas), case 3. « E0 » : corde de Mi à vide. Le riff suit l'accord : La mineur, puis Mi7.",
+              "description": "On assemble tout : le rythme des mesures de Am et de E7, et le passage de l'une à l'autre sans s'arrêter. Le riff suit l'accord : La mineur, puis Mi7.",
               "goal": "Le riff sans hésitation, 2 boucles à 90 bpm.",
               "tips": [
                 "Couleurs = cordes : rose = A (La), jaune = E (Mi), turquoise = C (Do), orange = G (Sol).",

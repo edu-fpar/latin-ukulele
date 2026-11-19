@@ -130,7 +130,7 @@ const prog = id => progress[id] || (progress[id] = { best: 0, loops: 0, seconds:
 const saveProgress = () => Store.set('progress', progress);
 
 /* ---------- diagrammes d'accords (SVG) ---------- */
-function chordSVG(name, small, riffNotes) {
+function chordSVG(name, small) {
   const frets = DB.chords[name];
   const w = small ? 64 : 96;
   if (!frets) return `<div class="nodiag" style="width:${w}px">?</div>`;
@@ -148,13 +148,54 @@ function chordSVG(name, small, riffNotes) {
     else if (n === 0) s += `<circle cx="${xs[i]}" cy="10" r="4" class="open"/>`;
     else s += `<circle cx="${xs[i]}" cy="${y0 + (n - base + 0.5) * fh}" r="6.5" class="dot"/>`;
   });
-  // notes du riff de la mesure (anneaux) : on voit où elles tombent par rapport à l'accord
-  (riffNotes || []).forEach(({ i, n }) => {
-    if (n === 0) s += `<circle cx="${xs[i]}" cy="10" r="5.5" class="rnote"/>`;
-    else if (n >= base && n < base + rows) s += `<circle cx="${xs[i]}" cy="${y0 + (n - base + 0.5) * fh}" r="8" class="rnote"/>`;
-  });
   ['G', 'C', 'E', 'A'].forEach((l, i) => s += `<text x="${xs[i]}" y="112" class="sl">${l}</text>`);
   return s + '</svg>';
+}
+
+/* ---------- riffs : une seule note à la fois sur le manche ---------- */
+const NOTE_RE = /^([GCEA])(\d{1,2})$/i;
+/** Diagramme d'une note de riff ("A3" = corde de La, case 3) : rien d'autre que cette note */
+function noteSVG(token, small) {
+  const m = NOTE_RE.exec(token), st = m[1].toUpperCase(), n = +m[2], i = 'GCEA'.indexOf(st);
+  const w = small ? 64 : 96, base = n > 4 ? n - 3 : 1;
+  const xs = [14, 30, 46, 62], y0 = 20, fh = 18, rows = 4;
+  let s = `<svg class="diag note" viewBox="0 0 76 116" width="${w}" role="img" aria-label="${esc(noteWhere(token))}">`;
+  s += base === 1 ? `<rect x="13" y="${y0 - 3}" width="50" height="4" class="nut"/>` : `<text x="70" y="${y0 + 12}" class="fr">${base}</text>`;
+  for (let r = 0; r <= rows; r++) s += `<line x1="14" x2="62" y1="${y0 + r * fh}" y2="${y0 + r * fh}" class="fret"/>`;
+  xs.forEach((x, k) => s += `<line x1="${x}" x2="${x}" y1="${y0}" y2="${y0 + rows * fh}" class="str${k === i ? ' on s-' + st : ''}"/>`);
+  s += n === 0 ? `<circle cx="${xs[i]}" cy="10" r="6" class="ndot s-${st}"/>`
+    : `<circle cx="${xs[i]}" cy="${y0 + (n - base + 0.5) * fh}" r="7.5" class="ndot s-${st}"/><text x="${xs[i]}" y="${y0 + (n - base + 0.5) * fh + 3.5}" class="nnum">${n}</text>`;
+  ['G', 'C', 'E', 'A'].forEach((l, k) => s += `<text x="${xs[k]}" y="112" class="sl${k === i ? ' on' : ''}">${l}</text>`);
+  return s + '</svg>';
+}
+const noteName = token => t('note.names').split(',')[Engine.riffNote(token) % 12];
+function noteWhere(token) {
+  const m = NOTE_RE.exec(token), s = t('note.strings').split(',')['GCEA'.indexOf(m[1].toUpperCase())];
+  return +m[2] === 0 ? t('note.open', { s }) : t('note.fret', { s, n: +m[2] });
+}
+/** Note jouée au pas s, sinon la prochaine ; puis celle d'après */
+function riffNotesFrom(s) {
+  const found = [];
+  for (let k = 0; k < C.loopSteps && found.length < 2; k++) {
+    const j = (s + k) % C.loopSteps, tok = cellAt(C.riff, j, C.spb);
+    if (tok && NOTE_RE.test(tok) && !(found.length && found[0].j === j)) found.push({ j, tok, k });
+  }
+  return found;
+}
+function renderRiffNote(s) {
+  const [cur, nx] = riffNotesFrom(s);
+  if (!cur) return false;
+  if (ui.lastChord !== 'n' + cur.j) {
+    $('#chordNow').innerHTML = `<div class="cname">${esc(noteName(cur.tok))} <small>${esc(cur.tok.toUpperCase())}</small></div>
+      <div class="nwhere">${esc(noteWhere(cur.tok))}</div>${noteSVG(cur.tok)}
+      <div class="rlegend">${esc(t('note.over', { chord: C.chordAt[cur.j] }))}</div>`;
+    ui.lastChord = 'n' + cur.j;
+    $('#chordNow').classList.remove('pop'); void $('#chordNow').offsetWidth; $('#chordNow').classList.add('pop');
+    const el = $('#chordNext');
+    el.classList.remove('soon'); el.dataset.chord = '';
+    el.innerHTML = nx ? `<div class="nlabel">${esc(t('chord.next'))}</div><div class="cname sm">${esc(noteName(nx.tok))} <small>${esc(nx.tok.toUpperCase())}</small></div>${noteSVG(nx.tok, true)}<div class="countdown">${esc(noteWhere(nx.tok))}</div>` : '';
+  }
+  return true;
 }
 
 /* ---------- libellés de comptage ---------- */
@@ -543,18 +584,12 @@ function nextChange(s) {
 
 function renderChords(s) {
   const cur = C.chordAt[s];
+  // un riff est une mélodie : on montre la note à jouer, pas l'accord
+  if (C.riff && renderRiffNote(s)) return;
   const nx = nextChange(s);
-  let riffNotes = null, key = cur;
-  if (C.riff) {
-    const seen = new Set();
-    riffNotes = barOf(C.riff, s, C.spb).map(tk => /^([GCEA])(\d{1,2})$/i.exec(tk)).filter(Boolean)
-      .map(m => ({ i: 'GCEA'.indexOf(m[1].toUpperCase()), n: +m[2] }))
-      .filter(r => { const k = r.i + ':' + r.n; return !seen.has(k) && seen.add(k); });
-    key += '|' + Math.floor(s / C.spb);
-  }
-  if (key !== ui.lastChord) {
-    $('#chordNow').innerHTML = `<div class="cname">${esc(cur)}</div>${chordSVG(cur, false, riffNotes)}${riffNotes ? `<div class="rlegend">${esc(t('chord.riffLegend'))}</div>` : ''}`;
-    ui.lastChord = key;
+  if (cur !== ui.lastChord) {
+    $('#chordNow').innerHTML = `<div class="cname">${esc(cur)}</div>${chordSVG(cur, false)}`;
+    ui.lastChord = cur;
     $('#chordNow').classList.remove('pop'); void $('#chordNow').offsetWidth; $('#chordNow').classList.add('pop');
   }
   const el = $('#chordNext');
@@ -592,6 +627,7 @@ function frame(now) {
     if (key !== ui.lastBar) renderLanes(ev.s, ev.g);
     highlight(ev.s, ev.g, ev.silent);
     if (ev.pos % C.sub === 0) { renderBeatDots(ev.pos); renderChords(ev.s); }
+    else if (C.riff) renderChords(ev.s); // la note change aussi entre les temps
     $('#practice').classList.toggle('silent', !!ev.silent);
     $('#status').innerHTML = ev.silent
       ? t('status.silent')

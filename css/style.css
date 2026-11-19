@@ -114,8 +114,16 @@ kbd { border: 1px solid var(--line); border-radius: 4px; padding: 0 .35em; backg
 .diag .str { stroke: var(--text); stroke-width: 1.4; }
 .diag .dot { fill: var(--accent); }
 .diag .open { fill: none; stroke: var(--text); stroke-width: 1.4; }
-.diag .rnote { fill: none; stroke: var(--accent2); stroke-width: 2.2; }
-.rlegend { font-size: .72em; color: var(--accent2); text-align: center; margin-top: .2em; }
+.rlegend { font-size: .72em; color: var(--muted); text-align: center; margin-top: .2em; }
+/* riffs : une seule note sur le manche, à la couleur de sa corde */
+.cname small { font-size: .45em; font-weight: 700; color: var(--muted); }
+.nwhere { font-size: .8em; margin-bottom: .2em; }
+.diag.note .str { stroke: var(--muted); stroke-width: 1; }
+.diag.note .str.on { stroke-width: 2.2; }
+.diag.note .s-A { stroke: var(--pink); fill: var(--pink); } .diag.note .s-E { stroke: var(--yellow); fill: var(--yellow); }
+.diag.note .s-C { stroke: var(--accent2); fill: var(--accent2); } .diag.note .s-G { stroke: var(--accent); fill: var(--accent); }
+.diag .nnum { fill: #1a1210; font-size: 10px; font-weight: 800; text-anchor: middle; }
+.diag .sl.on { fill: var(--text); font-weight: 800; }
 .diag .mute, .diag .fr, .diag .sl { fill: var(--muted); font-size: 10px; text-anchor: middle; }
 .diag .mute { font-size: 13px; }
 
