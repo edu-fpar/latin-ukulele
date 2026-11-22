@@ -6,11 +6,13 @@ Un groupe virtuel (guiro, conga, basse, clave, accordéon, palmas, cajón…) jo
 
 *English version available: the **EN** button in the top bar switches the interface and all exercises to English.*
 
+### ▶ [Jouer en ligne : edu-fpar.github.io/latin-ukulele](https://edu-fpar.github.io/latin-ukulele/)
+
 ## Lancer
 
 - **Avec UwAmp** (Apache démarré) : http://localhost/latin-ukulele/
 - **Sans UwAmp** : double-clic sur `lancer.cmd` (nécessite Node.js) → http://localhost:8642/
-- **En ligne** : c'est un site 100 % statique, il fonctionne tel quel sur GitHub Pages.
+- **En ligne** : **<https://edu-fpar.github.io/latin-ukulele/>** (site 100 % statique, sur GitHub Pages).
 
 > Ouvrir `index.html` directement par double-clic ne marche pas (le navigateur bloque la lecture des fichiers JSON).
 
