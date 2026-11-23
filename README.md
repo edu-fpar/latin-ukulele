@@ -1,5 +1,7 @@
 # Ukulele Latino — entraîneur de rythme
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24464420.svg)](https://doi.org/10.5281/zenodo.24464420)
+
 ![Interface de Ukulele Latino : accord en cours, prochain accord, tempo, grille de grattage et pistes du groupe](img/interface.png)
 
 Un groupe virtuel (guiro, conga, basse, clave, accordéon, palmas, cajón…) joue avec toi, accélère petit à petit, et t'affiche en temps réel l'accord, le prochain changement et le coup de main droite à jouer. Cumbia, son cubain, bossa nova, reggaeton, cha-cha-chá, boléro, fox-trot, swing guinguette et flamenco (rumba, tangos, sevillanas, soleá, alegrías, bulerías) : **106 exercices**, extensibles avec n'importe quelle IA.
@@ -93,7 +95,7 @@ img/                  captures d'écran
 
 **Citer cet outil** (bouton *Cite this repository* de GitHub, d'après [CITATION.cff](CITATION.cff)) :
 
-> Parlant, F. (2026). *Ukulele Latino* [Logiciel pédagogique]. https://github.com/edu-fpar/latin-ukulele
+> Parlant, F. (2026). *Ukulele Latino* [Logiciel pédagogique]. Zenodo. https://doi.org/10.5281/zenodo.24464420
 
 Vous l'utilisez en cours ? [Dites-le-moi](https://www.linkedin.com/in/francois-parlant/) : ces retours m'aident à faire connaître et améliorer l'outil.
 
@@ -105,6 +107,6 @@ Vous l'utilisez en cours ? [Dites-le-moi](https://www.linkedin.com/in/francois-p
 
 **How to cite** (GitHub's *Cite this repository* button, from [CITATION.cff](CITATION.cff)):
 
-> Parlant, F. (2026). *Ukulele Latino* [Educational software]. https://github.com/edu-fpar/latin-ukulele
+> Parlant, F. (2026). *Ukulele Latino* [Educational software]. Zenodo. https://doi.org/10.5281/zenodo.24464420
 
 Using it in class? [Let me know](https://www.linkedin.com/in/francois-parlant/): this feedback helps me improve the tool and spread the word.
