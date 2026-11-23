@@ -84,3 +84,27 @@ data/i18n/en/         traduction anglaise du contenu
 docs/prompt-ia*.md    prompt + format donné à l'IA (fr / en)
 img/                  captures d'écran
 ```
+
+## Licence et citation
+
+© 2026 François Parlant — [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr). L'usage en classe, en cours de musique et en formation est libre, en citant l'auteur ; vos adaptations se partagent sous la même licence. Voir [LICENSE](LICENSE).
+
+**Usage commercial** (école de musique, éditeur, marque blanche, exercices sur mesure) : une licence commerciale est possible sur accord. [Me contacter](https://edu-fpar.github.io/about.html).
+
+**Citer cet outil** (bouton *Cite this repository* de GitHub, d'après [CITATION.cff](CITATION.cff)) :
+
+> Parlant, F. (2026). *Ukulele Latino* [Logiciel pédagogique]. https://github.com/edu-fpar/latin-ukulele
+
+Vous l'utilisez en cours ? [Dites-le-moi](https://www.linkedin.com/in/francois-parlant/) : ces retours m'aident à faire connaître et améliorer l'outil.
+
+### License and citation
+
+© 2026 François Parlant — [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Using it in class, in music lessons or in training is free, with credit to the author; adaptations must be shared under the same license. See [LICENSE](LICENSE).
+
+**Commercial use** (music school, publisher, white label, custom exercises): a commercial license is available by agreement. [Get in touch](https://edu-fpar.github.io/about.html?lang=en).
+
+**How to cite** (GitHub's *Cite this repository* button, from [CITATION.cff](CITATION.cff)):
+
+> Parlant, F. (2026). *Ukulele Latino* [Educational software]. https://github.com/edu-fpar/latin-ukulele
+
+Using it in class? [Let me know](https://www.linkedin.com/in/francois-parlant/): this feedback helps me improve the tool and spread the word.

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this tool in teaching or research, please cite it as below."
+type: software
+title: "Ukulele Latino"
+abstract: "Browser-based rhythm trainer for ukulele: a virtual band (guiro, conga, bass, clave, accordion, cajón…) plays along and gradually speeds up while the screen shows the current chord, the next change and the strumming pattern. 106 exercises in cumbia, son cubano, bossa nova, reggaeton, cha-cha-chá, bolero, swing and flamenco, in French and English."
+authors:
+  - family-names: Parlant
+    given-names: François
+    orcid: "https://orcid.org/0009-0002-8059-6408"
+version: "1.0.0"
+date-released: "2026-11-23"
+license: CC-BY-NC-SA-4.0
+repository-code: "https://github.com/edu-fpar/latin-ukulele"
+url: "https://edu-fpar.github.io/latin-ukulele/"
+keywords:
+  - ukulele
+  - rhythm
+  - latin music
+  - music education
