@@ -1,0 +1,125 @@
+{
+  "packs": {
+    "cumbia-accompagnements": {
+      "title": "Cumbia: los acompañamientos",
+      "description": "Una misma cumbia, muchas formas de acompañarla según el país: el bum-cha mexicano, el bajo alternado, el chun-chun, la anticipación, el chucu apretado de la chicha peruana, la cumbia villera argentina y la cumbia rebajada."
+    }
+  },
+  "exercises": {
+    "cumbiacc-01-boum-tcha": {
+      "title": "Bum-cha: la cumbia norteña",
+      "description": "En el norte de México, la cumbia se toca con acordeón y bajo como una polka: el pulgar toca el bajo en 1 y 3 (bum), y rasgueas el acorde en 2 y 4 (cha). Es el acompañamiento más sencillo y más sólido.",
+      "goal": "Bum y cha bien separados, 2 vueltas a 90 bpm.",
+      "tips": [
+        "P = pulgar en las cuerdas graves (Do y Sol), como un bajo. D = el acorde entero hacia abajo.",
+        "Di “BUM cha BUM cha”: el bum es redondo, el cha corto y seco.",
+        "Escucha el bajo de la banda: tu pulgar cae al mismo tiempo que él."
+      ]
+    },
+    "cumbiacc-02-basse-alternee": {
+      "title": "El bajo alternado",
+      "description": "El mismo bum-cha, pero el pulgar alterna dos cuerdas: cuerda de Do en el 1, cuerda de Sol en el 3. El bajo “camina”, como el del bajo sexto de los grupos norteños, y el acompañamiento cobra vida.",
+      "goal": "Un bajo alternado regular sobre los 4 acordes, 2 vueltas a 92 bpm.",
+      "tips": [
+        "Toca primero solo el pulgar (C . . . G . . .), y luego añade los acordes.",
+        "El pulgar golpea una sola cuerda, el índice rasguea el resto: dos gestos distintos.",
+        "C → F → G7 → C: los acordes favoritos de la cumbia mexicana."
+      ]
+    },
+    "cumbiacc-03-tchun-tchun": {
+      "title": "El chun-chun: bajo en el tiempo, acorde en el “y”",
+      "description": "El acompañamiento de guitarra más extendido en la cumbia mexicana: el pulgar en cada tiempo, y un golpe hacia arriba en cada contratiempo, justo con el teclado. Las dos manos de la cumbia, reunidas en una sola mano derecha.",
+      "goal": "Los “arriba” bien encajados con el teclado, 2 vueltas a 95 bpm.",
+      "tips": [
+        "El pulgar baja en el tiempo, el índice sube en el “y”: un solo vaivén.",
+        "Silencia el teclado (clic en “keys”): tus U deben reemplazarlo exactamente.",
+        "El arriba suena más fuerte que el pulgar: el contratiempo es lo que hace bailar."
+      ]
+    },
+    "cumbiacc-04-chicha-chucu": {
+      "title": "Chicha: el chucu apretado",
+      "description": "En la chicha peruana, la guitarra rítmica toca un “chucu” en semicorcheas: nada en el tiempo, luego un apagado y un arriba justo después, en cada tiempo. Así el tiempo queda libre para el bajo y sale ese rebote tan especial.",
+      "goal": "El “.. chu-cu” regular, 2 vueltas a 100 bpm.",
+      "tips": [
+        "Cuenta “1 i Y a”: tocas en la Y (apagado) y en la a (arriba).",
+        "La mano se mueve en semicorcheas sin parar, pero solo toca las cuerdas dos veces por tiempo.",
+        "Empieza a 60 bpm: las semicorcheas van rápido.",
+        "Escucha los bongós: redoblan en las mismas casillas que tú."
+      ]
+    },
+    "cumbiacc-05-chicha-guitare": {
+      "title": "Chicha: la guitarra que canta",
+      "description": "La guitarra solista es la estrella de la chicha: frases cortas, en escala pentatónica menor, que bailan sobre el ritmo. Tú haces ese papel con un pequeño riff original sobre Am y G.",
+      "goal": "El riff sin dudar, 2 vueltas a 100 bpm.",
+      "tips": [
+        "A3 = cuerda de La traste 3, E0 = cuerda de Mi al aire. Todas las notas están en la escala pentatónica de La menor.",
+        "Toca las notas bien separadas, como una guitarra eléctrica con un poco de eco.",
+        "Si se te escapa una nota, mantén el ritmo y cae en la siguiente."
+      ]
+    },
+    "cumbiacc-06-anticipation": {
+      "title": "El acorde que llega antes",
+      "description": "En muchas cumbias, el acorde siguiente llega medio tiempo antes, en el último “y” del compás. Es la anticipación: empuja la música hacia adelante. Aquí, cada cambio cae en la última U del patrón.",
+      "goal": "Cambios en el último “y”, 2 vueltas a 92 bpm.",
+      "tips": [
+        "Mira el recuadro “después”: se enciende medio tiempo antes de lo habitual.",
+        "La última U del compás ya se toca con el acorde nuevo.",
+        "Piensa “por adelantado”: prepara la mano izquierda durante el tiempo 4."
+      ]
+    },
+    "cumbiacc-07-villera": {
+      "title": "Cumbia villera: bajo, chak y contratiempos",
+      "description": "La cumbia argentina lo combina todo: pulgar en 1 y 3 (con el bombo), apagado en 2 y 4 (con los timbales), y un golpe hacia arriba en cada contratiempo (con el teclado). Más rápida y más cruda que la versión mexicana.",
+      "goal": "El patrón completo, 2 vueltas a 100 bpm.",
+      "tips": [
+        "“BUM-ta CHAK-ta BUM-ta CHAK-ta”: los “ta” son los golpes hacia arriba.",
+        "El pulgar y el apagado se alternan en los tiempos; las U no cambian nunca.",
+        "Ya tocaste el chun-chun: aquí, un tiempo de cada dos, el pulgar se convierte en apagado."
+      ]
+    },
+    "cumbiacc-08-rebajada": {
+      "title": "Cumbia rebajada: tocar lento sin arrastrar",
+      "description": "En Monterrey, los sonideros inventaron la cumbia rebajada bajando la velocidad de los discos: todo se vuelve pesado e hipnótico. Tocar lento es más difícil de lo que parece: uno tiende a acelerar. Aquí el tempo se queda bajo y, un compás de cada cuatro, estás solo.",
+      "goal": "Mantener el tempo durante los silencios, 4 vueltas a 72 bpm.",
+      "tips": [
+        "Rellena los espacios en tu cabeza: cuenta las semicorcheas “1 i y a”.",
+        "Rasguea más amplio y más pesado, deja sonar los acordes.",
+        "Si vuelves antes de tiempo después del silencio, es que aceleraste: respira."
+      ]
+    },
+    "cumbiacc-09-morceau": {
+      "title": "Un tema, tres acompañamientos",
+      "description": "Como un verdadero guitarrista de baile, cambias de acompañamiento según la parte del tema: bum-cha para la intro, chun-chun para la estrofa, rasgueo completo para el estribillo. La guía se desvanece después de 2 vueltas.",
+      "goal": "Los 12 compases y los cambios de patrón, sin guía, a 95 bpm.",
+      "tips": [
+        "La barra de estructura anuncia la parte siguiente: prepara tu patrón durante el último compás.",
+        "El estribillo es el más cargado: ahí es donde el tema tiene que “subir”.",
+        "Si te pierdes en un patrón, toca D simples en los tiempos hasta la parte siguiente."
+      ],
+      "sections": [
+        {
+          "name": "Intro",
+          "bars": 4
+        },
+        {
+          "name": "Estrofa",
+          "bars": 4
+        },
+        {
+          "name": "Estribillo",
+          "bars": 4
+        }
+      ]
+    },
+    "cumbiacc-01-boum-tcha~silence": {
+      "title": "🤫 Reto del silencio",
+      "description": "El mismo ritmo, pero un compás de cada cuatro toda la banda se calla (el ukelele guía también). Sigue tú solo contando en voz alta, y cae justo en el 1 cuando vuelva la música.",
+      "goal": "Caer exactamente con la banda después de cada silencio, 2 vueltas seguidas."
+    },
+    "cumbiacc-03-tchun-tchun~silence": {
+      "title": "🤫 Reto del silencio",
+      "description": "El mismo ritmo, pero un compás de cada cuatro toda la banda se calla (el ukelele guía también). Sigue tú solo contando en voz alta, y cae justo en el 1 cuando vuelva la música.",
+      "goal": "Caer exactamente con la banda después de cada silencio, 2 vueltas seguidas."
+    }
+  }
+}

@@ -44,6 +44,20 @@
       "i18n/en/swing-guinguette.json",
       "i18n/en/flamenco-rasgueo.json",
       "i18n/en/flamenco-arpeges.json"
+    ],
+    "es": [
+      "i18n/es/styles.json",
+      "i18n/es/cumbia-premiers-pas.json",
+      "i18n/es/cumbia-on-avance.json",
+      "i18n/es/cumbia-accompagnements.json",
+      "i18n/es/cumbia-percussion.json",
+      "i18n/es/accords-latins.json",
+      "i18n/es/picking-cumbia.json",
+      "i18n/es/accompagner-melodie.json",
+      "i18n/es/voyage-latino.json",
+      "i18n/es/swing-guinguette.json",
+      "i18n/es/flamenco-rasgueo.json",
+      "i18n/es/flamenco-arpeges.json"
     ]
   }
 }

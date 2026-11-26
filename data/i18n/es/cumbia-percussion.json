@@ -1,0 +1,110 @@
+{
+  "packs": {
+    "cumbia-percussion": {
+      "title": "Cumbia: el ukelele percusionista",
+      "description": "Imita las percusiones de la banda con la mano derecha: el bombo con el pulgar, el golpe seco de la conga con un apagado, el “chaa-k-k” del güiro en semicorcheas. En cada etapa, silencias el instrumento que imitas para ocupar su lugar."
+    }
+  },
+  "exercises": {
+    "cumbiaperc-01-grosse-caisse": {
+      "title": "El pulgar es el bombo",
+      "description": "El bombo de la cumbia golpea en 1 y 3. Está silenciado: tu pulgar lo reemplaza, en las cuerdas graves. Am7 se toca sin ningún dedo de la mano izquierda: toda tu atención va a la mano derecha.",
+      "goal": "Un pulgar regular en 1 y 3, 2 vueltas a 90 bpm.",
+      "tips": [
+        "P = pulgar en las cuerdas de Do y Sol, con peso, como un pie en el pedal del bombo.",
+        "Tu pulgar cae al mismo tiempo que el bajo de la banda: escúchalo.",
+        "Haz clic en “kick” para volver a activar el bombo y comprobar que caen juntos, y luego vuelve a silenciarlo."
+      ]
+    },
+    "cumbiaperc-02-claque": {
+      "title": "El apagado es el golpe seco de la conga",
+      "description": "En 2 y 4, el conguero da un “slap”, un sonido seco y agudo. En el ukelele, es el apagado: la palma cae sobre las cuerdas a la vez que rasgueas. Todavía una sola voz: solo los golpes secos.",
+      "goal": "Los apagados justo con el slap de la conga, 2 vueltas a 90 bpm.",
+      "tips": [
+        "Busca la línea de la conga en “La banda”: el slap es la casilla que se enciende en 2 y 4.",
+        "Entre dos golpes secos, deja que la mano se balancee en el aire, a ritmo.",
+        "Di “. CHAK . CHAK” mientras tocas."
+      ]
+    },
+    "cumbiaperc-03-va-et-vient": {
+      "title": "La mano que nunca se detiene",
+      "description": "Para tocar como un percusionista, la mano derecha debe moverse en semicorcheas sin pararse nunca: abajo-arriba-abajo-arriba, cuatro gestos por tiempo. Aquí tocas todas las cuerdas, acentuando el abajo de cada tiempo. Es el motor de los ejercicios siguientes.",
+      "goal": "Dieciséis golpes bien iguales por compás, 2 vueltas a 85 bpm.",
+      "tips": [
+        "Gestos muy pequeños, desde la muñeca, con la mano muy cerca de las cuerdas.",
+        "Solo el primer golpe de cada tiempo es fuerte: “UNO-i-y-a, DOS-i-y-a”.",
+        "Las semicorcheas van rápido: quédate en 55-65 bpm mientras la mano se tense."
+      ]
+    },
+    "cumbiaperc-04-guiro": {
+      "title": "El güiro: chaa-k-k",
+      "description": "El güiro (la guacharaca) hace en cada tiempo un raspado largo y luego dos cortos. Tu mano mantiene su vaivén en semicorcheas, pero se salta la segunda casilla: un abajo fuerte, una casilla en el aire, y luego un abajo y un arriba ligeros.",
+      "goal": "El “largo-corto-corto” alineado con el güiro, 2 vueltas a 90 bpm.",
+      "tips": [
+        "La casilla vacía es un arriba que no toca las cuerdas: la mano sigue moviéndose.",
+        "Compara tu cuadrícula con la línea del güiro de la banda: son idénticas casilla por casilla.",
+        "Di “CHAA-k-k” en cada tiempo."
+      ]
+    },
+    "cumbiaperc-05-remplacer-guiro": {
+      "title": "Ocupar el lugar del güiro",
+      "description": "El mismo patrón, pero el güiro está silenciado y la guía se desvanece después de 2 vueltas: el güiro de la banda eres tú. Si te paras, se nota enseguida: la cumbia pierde su motor.",
+      "goal": "Sostener el güiro solo, sin guía, 2 vueltas a 95 bpm.",
+      "tips": [
+        "Escucha la conga y el bajo: ahora son tus referencias.",
+        "Mantén exactamente el mismo volumen de principio a fin: un güiro nunca se cansa.",
+        "Vuelve a activar el güiro (clic en “guiro”) para comprobar, y luego vuelve a silenciarlo."
+      ]
+    },
+    "cumbiaperc-06-kick-guiro": {
+      "title": "Dos voces: bombo y güiro",
+      "description": "Combinas dos instrumentos: en 1 y 3, el golpe largo del güiro se convierte en un golpe de pulgar (el bombo); en 2 y 4, sigue siendo un abajo rasgueado. Los dos golpecitos ligeros del güiro no cambian. El bombo está silenciado.",
+      "goal": "Pulgar y güiro bien encajados, 2 vueltas a 95 bpm.",
+      "tips": [
+        "El pulgar golpea más abajo, en las cuerdas graves; los dedos rasguean todas las cuerdas: dos gestos, una sola mano.",
+        "“BUM-k-k CHAA-k-k BUM-k-k CHAA-k-k”.",
+        "Si te trabas, vuelve a “El güiro: chaa-k-k” y cambia solo el tiempo 1 por P."
+      ]
+    },
+    "cumbiaperc-07-conga": {
+      "title": "La conga en el ukelele",
+      "description": "El tumbao de la conga: un golpe apagado en el tiempo, una nota abierta en el “y”, un slap en 2 y 4. En el ukelele: apagado ligero, arriba, apagado fuerte, arriba… y dos arriba rápidos al final para relanzar. La conga está silenciada: tú la reemplazas.",
+      "goal": "El tumbao completo, 2 vueltas a 95 bpm.",
+      "tips": [
+        "x = apagado ligero (“tu”), X = apagado fuerte (“CHAK”), u = golpe abierto hacia arriba (“ta”).",
+        "Di “tu-ta-CHAK-ta tu-ta-CHAK-tata”.",
+        "Los dos arriba del final son un pequeño impulso: te llevan al compás siguiente."
+      ]
+    },
+    "cumbiaperc-08-trois-voix": {
+      "title": "Tres voces: bajo, güiro y slap",
+      "description": "El patrón completo del ukelele percusionista: pulgar en 1 y 3 (bombo), apagado en 2 y 4 (slap de la conga), y los golpecitos del güiro entre medio. Bombo y güiro están silenciados: tú haces toda la base rítmica.",
+      "goal": "El patrón a tres voces, 2 vueltas a 95 bpm.",
+      "tips": [
+        "“BUM-k-k CHAK-k-k”: es el patrón del ejercicio 6, con un apagado en lugar del abajo en 2 y 4.",
+        "Los golpecitos se mantienen ligeros: son los que dan la sensación de velocidad.",
+        "Escucha lo que queda de la banda (bajo, conga): tu patrón tiene que completarlo exactamente."
+      ]
+    },
+    "cumbiaperc-09-accords": {
+      "title": "El ritmo percusivo con acordes",
+      "description": "Entra en juego la mano izquierda: el patrón a tres voces, sobre C y G7. Los apagados ayudan mucho: dejan una fracción de segundo en la que la mano izquierda puede moverse sin que se note.",
+      "goal": "El patrón sin tropiezos durante los cambios, 2 vueltas a 95 bpm.",
+      "tips": [
+        "Cambia de acorde en los dos últimos golpecitos del compás: son ligeros y lo perdonan todo.",
+        "El pulgar del tiempo 1 tiene que caer en el acorde nuevo: es lo que hace oír el cambio.",
+        "C → G7: el anular sale de la cuerda de La, y los tres dedos del G7 se apoyan juntos."
+      ]
+    },
+    "cumbiaperc-10-tempo-bal": {
+      "title": "Solo con el bajo, a tempo de baile",
+      "description": "El reto final: la secuencia andaluza (Am, G, F, E7), con bombo, güiro y conga silenciados, la guía desvaneciéndose después de 2 vueltas, y un compás de cada cuatro sin nadie. Solo quedan el bajo y tú: tu ukelele es toda la sección rítmica.",
+      "goal": "Aguantar 2 vueltas a 100 bpm, sin guía.",
+      "tips": [
+        "Durante los silencios, tu pie y tu voz (“BUM-k-k CHAK-k-k”) son el metrónomo.",
+        "Si una mano se pierde, sigue con la otra: el pulgar en 1 y 3 nunca debe faltar.",
+        "Tu récord se guarda: unos bpm más en cada sesión."
+      ]
+    }
+  }
+}

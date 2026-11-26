@@ -1,0 +1,361 @@
+{
+  "packs": {
+    "cumbia-premiers-pas": {
+      "title": "Cumbia — primeros pasos",
+      "description": "De «rasgueo en los tiempos» a «hago bailar a la gente». Cada ejercicio trabaja una sola dificultad a la vez."
+    }
+  },
+  "exercises": {
+    "cumbia-01-pulsation": {
+      "title": "Sentir el pulso",
+      "description": "Un solo acorde (C: un solo dedo, traste 3 de la cuerda de La) y un golpe hacia abajo en cada tiempo. La meta no es que suene bonito: es caer JUSTO a la vez que el bombo y el clic.",
+      "goal": "Aguantar 2 vueltas seguidas a 90 bpm sin parar.",
+      "tips": [
+        "Marca cada tiempo con el pie: tu pie es tu director de orquesta.",
+        "Cuenta en voz alta «1, 2, 3, 4». Sí, en voz alta, de verdad.",
+        "Si te pierdes, no pares: espera el próximo «1» (el punto naranja grande) y vuelve a entrar.",
+        "Apaga el ukelele guía (opción «apagado») cuando te sientas cómodo: oirás mejor si vas a tiempo."
+      ]
+    },
+    "cumbia-02-contretemps": {
+      "title": "El contratiempo, corazón de la cumbia",
+      "description": "En la cumbia, lo que hace bailar cae ENTRE los tiempos. Aquí solo tocas las «y», hacia arriba. Al principio desconcierta: es justo lo que le dará groove a tu forma de tocar.",
+      "goal": "Tocar los contratiempos 2 vueltas sin volver a caer en los tiempos, a 90 bpm.",
+      "tips": [
+        "Tu mano se mueve sin parar como un limpiaparabrisas: BAJA en vacío en los tiempos (sin tocar las cuerdas) y SUBE rasgueando en las «y».",
+        "Di «1 Y 2 Y 3 Y 4 Y» gritando las Y.",
+        "Marca los tiempos con el pie: tu pie y tu mano nunca golpean a la vez.",
+        "Escucha el güiro: su «chk-chk» te da todas las pequeñas subdivisiones."
+      ]
+    },
+    "cumbia-03-chucu": {
+      "title": "El «chucu-chucu» (apagado)",
+      "description": "Combinamos los dos ejercicios anteriores: en los tiempos, APAGAS (el canto de la mano o la palma cae sobre las cuerdas: «chk»), y en los contratiempos rasgueas hacia arriba. Resultado: el famoso sonido «chucu-chucu» de la cumbia.",
+      "goal": "Un apagado bien seco y un arriba bien claro, 2 vueltas a 95 bpm.",
+      "tips": [
+        "El apagado (✕): deja caer la mano derecha plana sobre las cuerdas, como una pequeña palmada. Casi no debe sonar ninguna nota.",
+        "También puedes apagar con la mano izquierda: solo afloja la presión de los dedos en el momento del ✕.",
+        "Mantén el mismo movimiento continuo abajo-arriba del ejercicio anterior: solo cambia la forma de tocar las cuerdas.",
+        "Baja el metrónomo y escucha la conga: juega al mismo juego de pregunta y respuesta."
+      ]
+    },
+    "cumbia-04-changement": {
+      "title": "Primer cambio: C ↔ G7",
+      "description": "Un ritmo muy sencillo (4 golpes hacia abajo) para poner toda tu atención en la mano izquierda. El secreto de un cambio a tiempo: se prepara ANTES de llegar.",
+      "goal": "Cambiar sin ningún hueco ni retraso, 2 vueltas a 85 bpm.",
+      "tips": [
+        "Mira el recuadro «después»: cuando se enciende en naranja, tus dedos ya deben estar saliendo.",
+        "En el 4.º tiempo, suelta el acorde un poco antes: mejor una cuerda al aire que un retraso en el 1.",
+        "El ritmo NUNCA se detiene para esperar a la mano izquierda. Si el acorde no está listo, rasguea igual.",
+        "Practica el cambio en vacío, sin rasguear, 10 veces seguidas antes de poner la música."
+      ]
+    },
+    "cumbia-05-rasgueo": {
+      "title": "El rasgueo de cumbia",
+      "firstStep": "El péndulo",
+      "description": "Antes del rasgueo, el movimiento que lo sostiene: la mano hace abajo-arriba sin parar nunca, dos veces por tiempo, como un péndulo. Abajo en los tiempos (más fuerte), arriba en las «y» (más suave). Un solo acorde, C, para pensar solo en la mano derecha.",
+      "goal": "Un péndulo bien regular, 2 vueltas a 100 bpm.",
+      "tips": [
+        "El movimiento sale de la muñeca, relajada, como si te sacudieras el agua de la mano.",
+        "El abajo va con firmeza, el arriba solo roza las cuerdas agudas.",
+        "Marca los tiempos con el pie: el pie y el «abajo» caen juntos.",
+        "Este péndulo ya no se detendrá en las etapas siguientes: solo algunos golpes fallarán las cuerdas a propósito."
+      ]
+    },
+    "cumbia-05-rasgueo~boum-boumta": {
+      "title": "«Bum, bum-ta»",
+      "description": "La primera mitad del rasgueo, dos veces por compás: abajo en el 1, luego abajo-arriba en el 2 y su «y». En la «y» del 1, la mano sube EN VACÍO, sin tocar las cuerdas: es el péndulo de la etapa 1 con un golpe fallado a propósito.",
+      "goal": "«Bum, bum-ta» bien a tiempo, 2 vueltas a 95 bpm.",
+      "tips": [
+        "Canta «bum (vacío) bum-ta, bum (vacío) bum-ta».",
+        "Mantén el péndulo: para la subida en vacío, solo aleja un poco la mano de las cuerdas.",
+        "Si te detienes durante el vacío, vuelve a la etapa 1 unas cuantas vueltas."
+      ]
+    },
+    "cumbia-05-rasgueo~trou-du-3": {
+      "title": "El hueco del 3",
+      "description": "El patrón completo, todavía con un solo acorde. Lo nuevo: en el 3, la mano baja EN VACÍO (el «hueco»), luego rasguea al subir en la «y» del 3, y termina con abajo-arriba en el 4. Ese hueco es lo que hace que la cumbia se balancee.",
+      "goal": "El patrón completo en C, 2 vueltas a 95 bpm.",
+      "tips": [
+        "Canta «bum, bum-ta, (nada) ta, bum-ta».",
+        "El «arriba» después del hueco suele adelantarse: espera de verdad la «y» del 3.",
+        "Compara con la etapa 2: solo cambia la segunda mitad del compás."
+      ]
+    },
+    "cumbia-05-rasgueo~silence": {
+      "title": "🤫 Sostener el patrón solo",
+      "description": "El patrón completo en C, pero un compás de cada cuatro toda la banda se calla (el ukelele guía también). Antes de añadir cambios de acorde, comprobamos que el patrón se sostiene solo.",
+      "goal": "Caer exactamente con la banda después de cada silencio, 2 vueltas seguidas.",
+      "tips": [
+        "Durante el silencio, canta el patrón en voz alta: «bum, bum-ta, (nada) ta, bum-ta».",
+        "El hueco del 3 es la trampa: sin la banda, tiendes a rellenarlo."
+      ]
+    },
+    "cumbia-05-rasgueo~demi-temps": {
+      "title": "Medio tiempo para cambiar",
+      "description": "Primer cambio de acorde: C durante dos compases, luego G7 durante dos compases. Para ayudarte, el último «arriba» del compás (la «y» del 4) pasa EN VACÍO: la mano derecha sigue con su péndulo sin tocar las cuerdas, y la mano izquierda tiene medio tiempo libre para cambiar de acorde.",
+      "goal": "El nuevo acorde listo justo en el 1, 2 vueltas a 90 bpm.",
+      "tips": [
+        "En cuanto hayas tocado el «abajo» del 4, suelta el acorde y ve hacia el siguiente.",
+        "Canta «bum, bum-ta, (nada) ta, bum (cambio)».",
+        "C → G7: practícalo primero sin música, 10 veces seguidas."
+      ]
+    },
+    "cumbia-05-rasgueo~deux-mesures": {
+      "title": "Cambiar cada 2 compases",
+      "description": "El patrón recupera su último «arriba»: el rasgueo completo, con un cambio de acorde cada dos compases. Tienes un compás entero para ver venir el cambio.",
+      "goal": "Cambiar sin romper el patrón, 2 vueltas a 95 bpm.",
+      "tips": [
+        "Cambia de acorde durante el último «arriba» del 4: si suena una cuerda al aire, no pasa nada.",
+        "La mano derecha nunca se detiene para esperar a la mano izquierda.",
+        "Si el cambio se traba, vuelve a la etapa anterior: el medio tiempo libre."
+      ]
+    },
+    "cumbia-05-rasgueo~chaque-mesure": {
+      "title": "Cambiar en cada compás, con el medio tiempo",
+      "description": "Ahora el acorde cambia en cada compás: C, G7, C, G7… El doble de cambios, así que recuperamos la ayuda del medio tiempo: la «y» del 4 pasa en vacío para que la mano izquierda pueda cambiar.",
+      "goal": "Un cambio en cada compás sin retraso en el 1, 2 vueltas a 90 bpm.",
+      "tips": [
+        "Piensa «un acorde por delante»: mientras tocas C, tus dedos ya saben dónde va G7.",
+        "Durante el medio tiempo vacío, levanta todos los dedos y coloca los del nuevo acorde en un solo gesto.",
+        "Si sigue costando, baja el tempo en vez de detener la mano derecha."
+      ]
+    },
+    "cumbia-05-rasgueo~complet": {
+      "title": "El rasgueo completo",
+      "description": "El patrón «abajo, abajo-arriba, (vacío), arriba, abajo-arriba» con un cambio en cada compás: el rasgueo comodín de las músicas latinas y caribeñas. Mezcla tiempos y contratiempos, de ahí su balanceo.",
+      "goal": "El patrón completo con los cambios, 2 vueltas a 95 bpm.",
+      "tips": [
+        "La mano siempre hace abajo-arriba-abajo-arriba en corcheas. Las casillas vacías son pasadas EN VACÍO: la mano no se detiene.",
+        "Di el patrón cantando: «bum, bum-ta, (nada), ta, bum-ta».",
+        "Empieza con el guía en «toca conmigo», luego pasa a «se apaga tras 2 vueltas».",
+        "Para ir más lejos, activa el «🤫 reto del silencio» en los ajustes."
+      ]
+    },
+    "cumbia-06-riff": {
+      "title": "Un riff de cumbia",
+      "firstStep": "Fijar las notas de Am",
+      "description": "El riff cabe en tres notas por compás. Antes que nada, fijamos las del compás de Am, una por una: cuatro veces A0 (cuerda de La al aire), luego cuatro veces A3 (cuerda de La, traste 3), luego cuatro veces E3 (cuerda de Mi, traste 3). Una nota por tiempo, la misma durante todo un compás: tienes tiempo de mirar el pequeño mástil dibujado en la casilla, colocar el dedo y escuchar el sonido. Arriba, el diagrama muestra el acorde que toca la banda.",
+      "goal": "Las tres notas bien colocadas, 2 vueltas a 60 bpm.",
+      "tips": [
+        "No hace falta hacer el acorde con la mano izquierda: es la banda la que toca Am.",
+        "A3 y E3 se tocan las dos con el anular, traste 3: solo cambia la cuerda.",
+        "Pulsa la cuerda con el pulgar, hacia abajo, sin forzar.",
+        "Di el nombre de la nota en cada golpe: «La, La, La, La, Do, Do, Do, Do, Sol…»."
+      ]
+    },
+    "cumbia-06-riff~notes-am": {
+      "title": "Las notas de Am, una por tiempo",
+      "description": "Ahora las tres notas se encadenan en un solo compás, una por tiempo: La, Do, Sol, y luego el 4.º tiempo queda vacío para volver al principio. Lee el compás de izquierda a derecha: cada casilla muestra dónde poner el dedo.",
+      "goal": "La, Do, Sol bien regulares, 2 vueltas a 80 bpm.",
+      "tips": [
+        "Mantén el anular sobre el traste 3: pasa de la cuerda de La a la cuerda de Mi sin levantarse mucho.",
+        "El tiempo vacío sirve para volver a la cuerda de La al aire.",
+        "Marca con el pie: una nota por paso."
+      ]
+    },
+    "cumbia-06-riff~mesure-am": {
+      "title": "El compás de Am con ritmo",
+      "description": "Ahora el ritmo del riff, sobre La menor. Añadimos dos La: las notas caen en el 1, el 2, la «y» del 2, la «y» del 3 y el 4. Las dos notas del medio están ENTRE los tiempos: ahí es donde el riff se balancea.",
+      "goal": "El compás de Am bien a tiempo, 2 vueltas a 90 bpm.",
+      "tips": [
+        "Canta el ritmo: «La . La-Do . La Sol .».",
+        "Marca los tiempos con el pie: el Do (A3) y el tercer La caen cuando el pie sube.",
+        "Si se te escapa una nota, vuelve un rato a la etapa 2."
+      ]
+    },
+    "cumbia-06-riff~ancrer-e7": {
+      "title": "Fijar las notas de E7",
+      "description": "Segundo compás del riff, mismo método: cuatro veces E4 (cuerda de Mi, traste 4, meñique), luego cuatro veces A2 (cuerda de La, traste 2, dedo medio), luego cuatro veces E0 (cuerda de Mi al aire), sobre Mi7.",
+      "goal": "Las tres notas bien colocadas, 2 vueltas a 60 bpm.",
+      "tips": [
+        "El meñique es el dedo más débil: colócalo justo detrás del traste, con la punta del dedo.",
+        "Durante los cuatro E4, el dedo medio ya espera sobre el traste 2.",
+        "Di el nombre de la nota en cada golpe: «Sol#, Sol#, Sol#, Sol#, Si…»."
+      ]
+    },
+    "cumbia-06-riff~notes-e7": {
+      "title": "Las notas de E7, una por tiempo",
+      "description": "Las tres notas de E7 en un solo compás, una por tiempo: Sol#, Si, Mi, y luego el 4.º tiempo vacío para volver al principio.",
+      "goal": "Sol#, Si, Mi bien regulares, 2 vueltas a 80 bpm.",
+      "tips": [
+        "Mantén el meñique y el dedo medio sobre sus trastes: solo la mano derecha cambia de cuerda.",
+        "El tiempo vacío sirve para volver a poner el meñique en E4."
+      ]
+    },
+    "cumbia-06-riff~mesure-e7": {
+      "title": "El compás de E7 con ritmo",
+      "description": "El compás de E7 en bucle, con el ritmo del riff. Es exactamente el mismo ritmo que el compás de Am: solo cambian las notas.",
+      "goal": "El compás de E7 bien a tiempo, 2 vueltas a 90 bpm.",
+      "tips": [
+        "Mismo ritmo que el compás de Am: «Sol# . Sol#-Si . Sol# Mi .».",
+        "Mantén listos el meñique y el dedo medio.",
+        "El E0 final lleva de vuelta al principio: encadénalo sin hueco."
+      ]
+    },
+    "cumbia-06-riff~enchainer": {
+      "title": "Encadenar Am y E7, una nota por tiempo",
+      "description": "Las seis notas seguidas, una por tiempo, sin el ritmo: lo nuevo es el paso de un compás al otro. El 4.º tiempo de cada compás está vacío: aprovéchalo para colocar el dedo en la primera nota del compás siguiente, y mira el recuadro «después»: anuncia el paso a E7.",
+      "goal": "Las seis notas sin dudar, 2 vueltas a 80 bpm.",
+      "tips": [
+        "Durante el tiempo vacío después del Sol (E3), el meñique ya va hacia E4.",
+        "Lee la tablatura de «Toda la vuelta»: cada línea es una cuerda (A arriba), el número es el traste.",
+        "Di: «La, Do, Sol, (coloca) Sol#, Si, Mi, (coloca)»."
+      ]
+    },
+    "cumbia-06-riff~complet": {
+      "title": "El riff completo",
+      "description": "Lo juntamos todo: el ritmo de los compases de Am y de E7, y el paso de uno a otro sin parar. El riff sigue el acorde: La menor, luego Mi7.",
+      "goal": "El riff sin dudar, 2 vueltas a 90 bpm.",
+      "tips": [
+        "Colores = cuerdas: rosa = A (La), amarillo = E (Mi), turquesa = C (Do), naranja = G (Sol).",
+        "Toca con el pulgar o el índice, siempre el mismo dedo de la mano derecha al principio.",
+        "Las notas repetidas deben ser bien iguales: eso es lo que suena a «cumbia».",
+        "¿Atascado en un compás? Haz clic en él en «Toda la vuelta» para practicarlo solo.",
+        "Cuando te sientas cómodo, apaga el guía: la banda toca Am y luego E7, y tu riff tiene que sostenerse solo."
+      ]
+    },
+    "cumbia-07-mineur": {
+      "title": "Cumbia en La menor",
+      "description": "Muchas cumbias están en tono menor. Cuatro acordes, el «chucu-chucu», y el Mi7 que siempre lleva de vuelta a La menor.",
+      "goal": "Los 4 acordes en chucu-chucu, 2 vueltas a 95 bpm.",
+      "tips": [
+        "Am → Dm: añade dos dedos; el de la cuerda de Sol se queda en su sitio.",
+        "Dm → E7: es el cambio difícil, practícalo solo primero, sin música.",
+        "Durante el apagado (✕), la mano izquierda puede relajarse: ¡aprovecha para cambiar de acorde!"
+      ]
+    },
+    "cumbia-08-silence": {
+      "title": "Sostenerlo solo: el reto del silencio",
+      "description": "Un compás de cada cuatro, todos se callan (incluso el metrónomo y la casilla iluminada). Sigue tocando y contando: cuando vuelve la banda, tienes que estar justo en el «1». Es LA prueba que revela si llevas el ritmo dentro.",
+      "goal": "Volver a caer a tiempo después de cada silencio, 4 vueltas a 100 bpm.",
+      "tips": [
+        "Durante el silencio, cuenta en voz alta y marca más fuerte con el pie.",
+        "Si llegas adelantado cuando vuelve la banda: aceleras cuando estás solo (¡muy frecuente!).",
+        "El guía se apaga tras 2 vueltas: a partir de ahí, tú eres el ukelele de la banda."
+      ]
+    },
+    "cumbia-09-vitesse": {
+      "title": "Hacia el tempo real",
+      "description": "La progresión «andaluza» Am – G – F – E7, omnipresente en la cumbia, con el rasgueo completo. Subimos hasta el tempo de una verdadera cumbia de baile.",
+      "goal": "Aguantar 2 vueltas a 110 bpm, con el guía apagado.",
+      "tips": [
+        "Usa «🐢 ¡Muy rápido!» sin vergüenza: la herramienta baja el tempo y te da más tiempo.",
+        "Cuanto más rápido, más relajada debe estar la mano derecha: el movimiento sale de la muñeca, no del brazo.",
+        "Tu récord queda guardado: vuelve mañana e irás más rápido (el cerebro consolida mientras duermes)."
+      ]
+    },
+    "cumbia-02-contretemps~essuie-glace": {
+      "title": "Remedio: el limpiaparabrisas que se oye",
+      "description": "Si el contratiempo se te escapa, haz que tu movimiento se oiga: la mano roza las cuerdas al bajar en los tiempos (muy suave) y rasguea con decisión al subir en las «y». El abajo sirve de referencia, el arriba hace la música.",
+      "goal": "Un abajo casi inaudible, un arriba bien nítido, 2 vueltas a 80 bpm.",
+      "tips": [
+        "El abajo es un simple roce: apenas una o dos cuerdas.",
+        "Piensa «suave / FUERTE / suave / FUERTE».",
+        "Cuando sea regular, baja cada vez más lejos de las cuerdas: vuelves al ejercicio de partida."
+      ]
+    },
+    "cumbia-02-contretemps~ancre": {
+      "title": "Anclado en el 1",
+      "description": "Un solo golpe hacia abajo en el 1, para saber dónde estás, y luego solo contratiempos. El 1 es tu punto de apoyo: todo el resto del compás se toca «entre medias».",
+      "goal": "Mantener el 1 bien firme y las tres «y» regulares, 2 vueltas a 85 bpm.",
+      "tips": [
+        "Di «UNO y (2) y (3) y (4) y»: solo se tocan las palabras que pronuncias.",
+        "El golpe del 1 y el arriba que le sigue forman una ida y vuelta: no te detengas después del 1.",
+        "Escucha el bombo: cae con tu golpe hacia abajo."
+      ]
+    },
+    "cumbia-02-contretemps~seul": {
+      "title": "El guía te deja solo",
+      "description": "El ukelele guía toca dos vueltas y luego se calla: ya nadie toca tus contratiempos por ti. Solo queda la banda, que toca EN los tiempos. Te toca a ti quedarte entre medias.",
+      "goal": "4 vueltas sin guía, sin volver a caer en los tiempos, a 90 bpm.",
+      "tips": [
+        "Marca con el pie: tu pie cae con el bombo, tu mano nunca.",
+        "Si te encuentras en los tiempos, deja de tocar un compás, escucha el güiro y vuelve a entrar en una «y»."
+      ]
+    },
+    "cumbia-02-contretemps~sans-guiro": {
+      "title": "Sin el güiro",
+      "description": "El güiro te daba todas las subdivisiones. Lo quitamos: solo quedan el bajo y el bombo en el 1 y el 3. Las «y» ya solo existen en tu cabeza… y en tu mano.",
+      "goal": "Contratiempos regulares sin el güiro, 2 vueltas a 90 bpm.",
+      "tips": [
+        "Tararea el «chk-chk» del güiro mientras tocas.",
+        "Haz clic en «guiro» en la banda para volver a ponerlo si hace falta, y luego quítalo otra vez."
+      ]
+    },
+    "cumbia-02-contretemps~silence": {
+      "title": "🤫 Reto del silencio",
+      "description": "Un compás de cada cuatro, todo se calla. La verdadera prueba del contratiempo: seguir tocando ENTRE unos tiempos que ya nadie marca, y caer justo cuando vuelve la banda.",
+      "goal": "Caer en la «y» correcta después de cada silencio, 2 vueltas seguidas.",
+      "tips": [
+        "Durante el silencio, cuenta más fuerte y mantén el pie en los tiempos.",
+        "Tu mano sigue con su vaivén en el aire: es ella la que mantiene el tempo."
+      ]
+    },
+    "cumbia-02-contretemps~changement": {
+      "title": "Contratiempo y cambio de acorde",
+      "description": "El contratiempo tiene un regalo escondido: en el 1, tu mano derecha pasa en vacío… es el momento ideal para cambiar de acorde. C y G7 se alternan en cada compás.",
+      "goal": "Cambiar de acorde durante el tiempo vacío, sin retrasarte en la primera «y», 2 vueltas a 85 bpm.",
+      "tips": [
+        "Cambia de acorde mientras la mano baja en vacío en el 1: tienes medio tiempo de ventaja.",
+        "Si la primera «y» del compás se te escapa, no pasa nada: entra en la siguiente."
+      ]
+    },
+    "cumbia-02-contretemps~tempo-bal": {
+      "title": "Hacia el tempo de baile",
+      "description": "Una cumbia de verdad se baila alrededor de 100 bpm o más. Cuanto más rápido, más pequeño y relajado debe ser el movimiento: trabaja la muñeca, no el brazo.",
+      "goal": "Contratiempos ligeros y regulares a 110 bpm.",
+      "tips": [
+        "Reduce la amplitud: la mano casi no se aleja de las cuerdas.",
+        "Si te tensas, pulsa «¡Muy rápido!»: te quedarás más tiempo en el tempo anterior."
+      ]
+    },
+    "cumbia-04-changement~deux-mesures": {
+      "title": "Más tiempo: 2 compases por acorde",
+      "description": "Para empezar con calma: cada acorde dura dos compases. Tienes todo el tiempo del mundo para ver venir el cambio en el recuadro «después».",
+      "goal": "Cambiar justo en el 1, 2 vueltas a 85 bpm."
+    },
+    "cumbia-04-changement~trois-accords": {
+      "title": "Un tercer acorde: F",
+      "description": "Añadimos un compás de F a la vuelta: C – F – C – G7. F se hace con dos dedos (cuerda de Sol traste 2, cuerda de Mi traste 1): prepáralo durante el compás de C.",
+      "goal": "Los tres acordes sin huecos, 2 vueltas a 80 bpm.",
+      "tips": [
+        "De C a F: suelta el dedo de C y coloca los dos dedos de F a la vez, en un solo gesto.",
+        "Practica C → F → C → G7 en vacío, sin rasguear, antes de poner la música."
+      ]
+    },
+    "cumbia-04-changement~cadence": {
+      "title": "La cadencia completa: C – F – G7 – C",
+      "description": "La secuencia de acordes más tocada de la música popular. Esta vez F y G7 se encadenan directamente: dos cambios seguidos.",
+      "goal": "Toda la cadencia sin retraso, 2 vueltas a 85 bpm.",
+      "tips": [
+        "De F a G7, el dedo de la cuerda de Mi (traste 1) no se mueve: déjalo puesto y haz girar los demás a su alrededor.",
+        "Mira un acorde por delante: cuando tocas F, piensa ya en G7."
+      ]
+    },
+    "cumbia-04-changement~main-qui-bouge": {
+      "title": "Cambiar sin detener la mano",
+      "description": "La misma cadencia, pero ahora la mano derecha hace el péndulo en corcheas (abajo fuerte, arriba suave). Nunca se detiene, ni siquiera durante el cambio: la mano izquierda tiene que seguirla.",
+      "goal": "Un péndulo continuo durante los cambios, 2 vueltas a 85 bpm.",
+      "tips": [
+        "La última «y» antes del cambio puede sonar al aire (cuerdas al aire): es normal, y apenas se oye.",
+        "Nunca frenes la mano derecha para esperar a la izquierda."
+      ]
+    },
+    "cumbia-04-changement~silence": {
+      "title": "🤫 Reto del silencio",
+      "description": "La cadencia C – F – G7 – C, y un compás de cada cuatro la banda se calla. Durante el silencio tocas solo… y justo ahí cae la vuelta a C: te toca colocarlo sin ayuda.",
+      "goal": "Caer con la banda en el acorde correcto después de cada silencio, 2 vueltas seguidas."
+    },
+    "cumbia-01-pulsation~silence": {
+      "title": "🤫 Reto del silencio",
+      "description": "El mismo ritmo, pero un compás de cada cuatro toda la banda se calla (el ukelele guía también). Sigue solo contando en voz alta, y cae justo en el 1 cuando vuelve la música.",
+      "goal": "Caer exactamente con la banda después de cada silencio, 2 vueltas seguidas."
+    },
+    "cumbia-03-chucu~silence": {
+      "title": "🤫 Reto del silencio",
+      "description": "El mismo ritmo, pero un compás de cada cuatro toda la banda se calla (el ukelele guía también). Sigue solo contando en voz alta, y cae justo en el 1 cuando vuelve la música.",
+      "goal": "Caer exactamente con la banda después de cada silencio, 2 vueltas seguidas."
+    }
+  }
+}

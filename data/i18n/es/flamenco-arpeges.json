@@ -1,0 +1,124 @@
+{
+  "packs": {
+    "flamenco-arpeges": {
+      "title": "Flamenco: arpegios y picado",
+      "description": "El flamenco con los dedos, muy poco a poco: pulgar, arpegios p-i-m, picado, alzapúa, trémolo y luego el compás de 12. Letras = cuerdas: G y C (pulgar), E (índice), A (medio)."
+    }
+  },
+  "exercises": {
+    "flamenco-a01-pouce": {
+      "title": "El pulgar flamenco",
+      "description": "Todo empieza con el pulgar. En el flamenco toca «apoyando»: pulsa la cuerda y se apoya en la cuerda siguiente. El sonido es más redondo y más fuerte. Aquí alterna la cuerda de Do (tiempos 1 y 3) y la cuerda de Sol (tiempos 2 y 4), sobre Am.",
+      "goal": "Un pulgar regular y sonoro, 2 vueltas a 95 bpm.",
+      "tips": [
+        "Apoyando en la cuerda de Do: después de pulsarla, el pulgar se apoya en la cuerda de Mi y se queda ahí.",
+        "Para la cuerda de Sol, el pulgar viene desde arriba: un movimiento pequeño, sin levantar la mano.",
+        "Los dedos (índice, medio) pueden apoyarse en las cuerdas de Mi y La para estabilizar la mano."
+      ]
+    },
+    "flamenco-a02-pim": {
+      "title": "p-i-m: el arpegio básico",
+      "description": "Los guitarristas flamencos llaman a los dedos p (pulgar), i (índice), m (medio), a (anular). El arpegio básico sube y vuelve a bajar: p en C, i en E, m en A, i en E. En corcheas regulares, sobre un solo acorde.",
+      "goal": "Ocho notas bien parejas por compás, 2 vueltas a 100 bpm.",
+      "tips": [
+        "Los dedos tiran hacia la palma sin arrancar la cuerda: el sonido debe seguir siendo redondo.",
+        "El pulgar siempre cae en un tiempo: es tu metrónomo interior.",
+        "Di «p-i-m-i» mientras tocas, y luego cámbialo por «1 y 2 y»."
+      ]
+    },
+    "flamenco-a03-pim-cadence": {
+      "title": "Arpegio sobre la cadencia andaluza",
+      "description": "El mismo arpegio p-i-m-i, sobre Am, G, F, E7. Las notas cambian solas con los acordes: el arpegio hace oír el descenso andaluz.",
+      "goal": "Un arpegio continuo durante los cambios, 2 vueltas a 100 bpm.",
+      "tips": [
+        "Pisa el acorde completo antes de pulsar: las notas deben sonar juntas.",
+        "Cambia de acorde en la última «i» del compás, la menos importante.",
+        "Escucha la nota de la cuerda de Do: baja o se queda en su lugar, y es la que guía al oído."
+      ]
+    },
+    "flamenco-a04-sevillanas-arpege": {
+      "title": "Sevillanas en arpegio",
+      "description": "El arpegio pasa a 3 tiempos: p-i-m-i-m-i, seis notas por compás. Ahora el pulgar cae una sola vez por compás, en el 1, con el redoble de las castañuelas.",
+      "goal": "El pulgar justo en cada 1, 2 vueltas a 130 bpm.",
+      "tips": [
+        "Cuenta «UNO y dos y tres y»: el pulgar va en el UNO, los dedos en todo lo demás.",
+        "Los dedos i y m se alternan como dos piernitas que caminan.",
+        "Am ↔ E7: cambia durante las dos últimas notas del compás."
+      ]
+    },
+    "flamenco-a05-picado": {
+      "title": "Picado: el descenso andaluz",
+      "description": "El picado consiste en tocar notas una por una alternando índice y medio (i-m-i-m), muy nítido, como un martillito. Tocas una línea que baja por la cadencia andaluza y termina en el trino Mi-Fa, la firma del flamenco.",
+      "goal": "Notas nítidas y parejas, 2 vueltas a 100 bpm.",
+      "tips": [
+        "Alterna siempre i-m-i-m, incluso cuando cambias de cuerda: nunca dos veces el mismo dedo.",
+        "Toca apoyando: el dedo pulsa y se apoya en la cuerda vecina.",
+        "Los trastes: A3 = cuerda de La, traste 3. Pon el dedo de la mano izquierda justo detrás de la barra metálica.",
+        "Los 3 silencios al final de cada compás te dan tiempo para preparar la frase siguiente."
+      ]
+    },
+    "flamenco-a06-alzapua": {
+      "title": "La alzapúa: el pulgar que va y viene",
+      "description": "Una técnica espectacular del flamenco: el pulgar solo lo hace todo. Una nota apoyando en la cuerda de Do, luego rasguea las cuerdas hacia abajo y después vuelve a subir rasgueándolas hacia arriba. «Do, dzing, dzang».",
+      "goal": "El ciclo nota-abajo-arriba bien regular, 2 vueltas a 95 bpm.",
+      "tips": [
+        "El pulgar se mantiene firme; es la muñeca la que gira un poco, como al girar una llave.",
+        "La nota C es fuerte, los rasgueos (minúsculas) son suaves.",
+        "Al volver hacia arriba, el pulgar solo toca 2 o 3 cuerdas: es normal.",
+        "Am → E7: la nota de la cuerda de Do pasa de Do a Re."
+      ]
+    },
+    "flamenco-a07-solea-pouce": {
+      "title": "Soleá: el pulgar en los acentos",
+      "description": "El compás de 12, con los dedos. Para empezar, solo toca el pulgar, apoyando, en los acentos 3, 6, 8, 10 y 12. Los demás tiempos los cuentas en silencio. E7 del 1 al 6, F del 7 al 9, E7 del 10 al 12.",
+      "goal": "Los 5 acentos en su lugar, 2 vueltas a 110 bpm.",
+      "tips": [
+        "Cuenta en voz alta: «uno dos TRES cuatro cinco SEIS siete OCHO nueve DIEZ once DOCE».",
+        "Siente los grupos 3 + 3 + 2 + 2 + 2.",
+        "El clic del metrónomo suena más agudo en los acentos, y los puntos con círculo te los muestran."
+      ]
+    },
+    "flamenco-a08-solea-arpege": {
+      "title": "Soleá: arpegio y pinzados",
+      "description": "Entre los acentos, un arpegio suave (c-e-a-e); en cada acento, un pinzado fuerte con los tres dedos (F = C+E+A juntas). El arpegio fluye, los pinzados dibujan el compás.",
+      "goal": "Pinzados mucho más fuertes que el arpegio, 2 vueltas a 115 bpm.",
+      "tips": [
+        "Minúsculas = suave, F mayúscula = fuerte: exagera la diferencia.",
+        "Después de un pinzado, el arpegio arranca de nuevo enseguida: sin pausa.",
+        "Si te pierdes, toca solo los pinzados (como en el ejercicio anterior) hasta el siguiente 1, y luego retoma el arpegio."
+      ]
+    },
+    "flamenco-a09-alegrias-arpege": {
+      "title": "Alegrías: el arpegio que canta",
+      "description": "Un arpegio continuo p-i-m-i en corcheas sobre el compás de las alegrías, en La mayor. Solo un pequeño acento en cada tiempo fuerte del compás (letra mayúscula). Los acordes cambian en los acentos 3 y 10, a lo largo de dos compases.",
+      "goal": "Arpegio continuo y cambios en el 3 y el 10, 2 vueltas a 130 bpm.",
+      "tips": [
+        "El acento es discreto: solo un poco más de peso en la nota, no un puñetazo.",
+        "A → E7 en el 3 del primer compás, E7 → A en el 10 del segundo.",
+        "Si el arpegio se vuelve irregular, silencia el ukelele guía y escucha solo el cajón."
+      ]
+    },
+    "flamenco-a10-tremolo": {
+      "title": "El trémolo flamenco",
+      "description": "El trémolo crea la ilusión de una nota sostenida que canta por encima del bajo: el pulgar toca un bajo y luego tres dedos repiten muy rápido la misma nota en la cuerda de La. En semicorcheas, despacio al principio.",
+      "goal": "Tres notas repetidas bien parejas, 2 vueltas a 75 bpm.",
+      "tips": [
+        "En la cuerda de La, encadena anular, medio, índice (a-m-i): tres dedos distintos para tres notas.",
+        "El pulgar alterna C y E y siempre cae en el tiempo (en Am, la cuerda de Sol está pisada en el traste 2: daría el mismo La que la melodía, así que la evitamos).",
+        "Busca la igualdad antes que la velocidad: las tres notas deben tener el mismo volumen.",
+        "Empieza muy despacio (45 bpm): es una técnica de largo aliento."
+      ]
+    },
+    "flamenco-a11-bulerias-doigts": {
+      "title": "Bulerías con los dedos",
+      "description": "El compás de bulería tocado con los dedos: pulgar suave en los tiempos débiles, pinzado fuerte en los acentos. El ukelele guía se desvanece después de 2 vueltas y el tempo sube hasta el de una verdadera fiesta. La culminación del recorrido.",
+      "goal": "Aguantar 2 vueltas a 170 bpm, sin guía.",
+      "tips": [
+        "A este tempo, el pulgar y el pinzado son casi un solo movimiento: la mano se queda en su sitio.",
+        "Cuenta solo los acentos: «TRES . . SEIS . OCHO . DIEZ . DOCE».",
+        "Si te pierdes, espera el 12 (el último pinzado) y vuelve a entrar en el 1.",
+        "Tu récord queda guardado: apunta a unos bpm más en cada sesión."
+      ]
+    }
+  }
+}

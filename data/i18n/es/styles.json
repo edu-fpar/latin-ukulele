@@ -1,0 +1,99 @@
+{
+  "styles": {
+    "cumbia": {
+      "name": "Cumbia",
+      "origin": "Colombia",
+      "description": "Nacida en la costa caribe de Colombia, la cumbia ha viajado por toda América Latina (México, Perú, Argentina…). Su motor: la guacharaca (el güiro) que hace «chaa-k-k» en cada tiempo, un bajo que alterna fundamental y quinta, y acentos en los contratiempos que hacen mover las caderas."
+    },
+    "son": {
+      "name": "Son cubano",
+      "origin": "Cuba",
+      "description": "El ancestro de la salsa. Todo se organiza alrededor de la clave, un patrón de 5 golpes en 2 compases (aquí «3-2»: tres golpes y luego dos). El bajo «tumbao» toca adelantado, en la «y» del 2 y en el 4: anticipa el acorde siguiente."
+    },
+    "bossa": {
+      "name": "Bossa nova",
+      "origin": "Brasil",
+      "description": "Nacida en Río a finales de los años 1950, la bossa nova es una samba más lenta e íntima. La guitarra cumple dos papeles a la vez: el pulgar hace el bajo en los tiempos 1 y 3, mientras los dedos pinzan los acordes desfasados, como el patrón del «rim» (el aro de la caja)."
+    },
+    "reggaeton": {
+      "name": "Reggaeton",
+      "origin": "Puerto Rico / Panamá",
+      "description": "El reggaeton se basa en el «dembow»: bombo en cada tiempo y caja en 3+3+2 («bum-chik… bum-chik»). Como es muy regular, es un estilo excelente para trabajar la precisión."
+    },
+    "chachacha": {
+      "name": "Cha-cha-chá",
+      "origin": "Cuba",
+      "description": "Inventado en La Habana en los años 1950 por Enrique Jorrín, el cha-cha-chá debe su nombre al sonido de los pies de los bailarines en «4-y-1». El güiro hace tres raspados largos y luego dos cortos («chaa, chaa, chaa, cha-cha»), y el cencerro marca cada tiempo."
+    },
+    "bolero": {
+      "name": "Bolero",
+      "origin": "Cuba / México",
+      "description": "La balada romántica de América Latina, nacida en Cuba y adoptada por los tríos mexicanos de guitarras. Tempo lento, bongós que redoblan en corcheas (el «martillo»), bajo asentado en 1 y 3: el estilo ideal para pulir tus cambios de acorde sin prisa."
+    },
+    "foxtrot": {
+      "name": "Foxtrot guinguette",
+      "origin": "Francia (bailes musette)",
+      "description": "Llegado de Estados Unidos en los años 1920, el foxtrot se convirtió en un pilar de los bailes musette y de las guinguettes a orillas del Marne, con acordeón, banjo y contrabajo. Su motor: la «pompe», bajo en 1 y 3, acorde golpeado en 2 y 4 («bum-chak»). Tocado rápido, es uno de los ritmos más contagiosos que existen."
+    },
+    "swing": {
+      "name": "Swing",
+      "origin": "Estados Unidos / Francia (jazz manouche)",
+      "description": "En el swing, las corcheas no son iguales: la primera es larga y la segunda corta («du-ba, du-ba»). Ese balanceo es lo que define el jazz de los años 30, y el jazz manouche de Django Reinhardt, rey de las guinguettes. El contrabajo «camina» en cada tiempo y el platillo hace «ding, ding-a-ding»."
+    },
+    "rumba": {
+      "name": "Rumba flamenca",
+      "origin": "España (Cataluña, Andalucía)",
+      "description": "Nacida del encuentro entre el flamenco y la rumba cubana, la rumba flamenca es el ritmo más festivo del flamenco (el de los Gipsy Kings). El cajón da el grave en 1 y 3 y el golpe seco en 2 y 4, las palmas tocan «a contratiempo», y la guitarra alterna rasgueos y golpes apagados."
+    },
+    "tangos": {
+      "name": "Tangos flamencos",
+      "origin": "Andalucía (Cádiz, Triana)",
+      "description": "Nada que ver con el tango argentino: los tangos flamencos son un compás binario de 4 tiempos, enérgico y bailable. Su seña distintiva: las palmas callan en el tiempo 1 y tocan el 2, el 3 y el 4. La guitarra es la que «llena» ese primer tiempo. La rumba es su prima más ligera."
+    },
+    "sevillanas": {
+      "name": "Sevillanas",
+      "origin": "Sevilla (Andalucía)",
+      "description": "El baile popular de la Feria de Sevilla, que todo el mundo baila en pareja. Un ritmo vivo de 3 tiempos, con un acento fuerte en el 1. Las castañuelas hacen un redoble («carretilla») en el 1 y luego dos golpes secos, y las palmas marcan cada tiempo."
+    },
+    "solea": {
+      "name": "Soleá",
+      "origin": "Andalucía (Triana, Utrera, Jerez)",
+      "description": "La «madre» del flamenco, grave y profunda. Su compás tiene 12 tiempos, acentuados en 3, 6, 8, 10 y 12: se siente como dos grupos de 3 (1-2-3, 4-5-6) seguidos de tres grupos de 2 (7-8, 9-10, 11-12). Los flamencos suelen contar a partir del 12; aquí empezamos desde el 1 para hacerlo sencillo."
+    },
+    "alegrias": {
+      "name": "Alegrías",
+      "origin": "Cádiz (Andalucía)",
+      "description": "El mismo compás de 12 tiempos que la soleá, pero en mayor, más rápido y luminoso: el cante de la alegría, nacido en el puerto de Cádiz. Las palmas tocan en todos los contratiempos («a contratiempo») y la guitarra cambia de acorde en los acentos 3 y 10."
+    },
+    "bulerias": {
+      "name": "Bulerías",
+      "origin": "Jerez de la Frontera (Andalucía)",
+      "description": "El compás de 12 tocado muy rápido, con humor y virtuosismo: el ritmo de las fiestas gitanas de Jerez. Los acentos siguen en 3, 6, 8, 10 y 12, pero las palmas y el cajón juegan alrededor con contratiempos. Para seguirlo, hay que sentir los acentos en lugar de contar todos los tiempos."
+    },
+    "cumbia-mexicana": {
+      "name": "Cumbia mexicana",
+      "origin": "México (Monterrey, Ciudad de México)",
+      "description": "Llegada de Colombia en los años 1950, la cumbia se convirtió en México en la música de los bailes populares: la cumbia norteña con acordeón y la cumbia sonidera de los sonideros. Más pausada que la original, se apoya en el güiro, un bajo que alterna fundamental y quinta, y un teclado que pica los contratiempos."
+    },
+    "cumbia-peruana": {
+      "name": "Chicha (cumbia peruana)",
+      "origin": "Perú (Lima, Amazonía)",
+      "description": "En el Perú de los años 1960-70, la cumbia se encuentra con el rock psicodélico y las melodías andinas: así nace la chicha. La guitarra eléctrica canta la melodía, una segunda guitarra hace un «chucu» apretado en semicorcheas, y los timbales y bongós redoblan por encima del güiro."
+    },
+    "cumbia-villera": {
+      "name": "Cumbia villera",
+      "origin": "Argentina (conurbano de Buenos Aires)",
+      "description": "Nacida a finales de los años 1990 en los barrios populares («villas») de Buenos Aires, la cumbia villera es más rápida y más cruda: güiro, bombo en 1 y 3, timbales que restallan y un teclado que marca todos los contratiempos."
+    },
+    "foxtrot-bal": {
+      "name": "Foxtrot de baile (cuatro tiempos)",
+      "origin": "Francia / Estados Unidos",
+      "description": "El foxtrot tal como se tocaba para hacer bailar: el contrabajo camina en los cuatro tiempos, el bombo empuja cada tiempo y el piano golpea el 2 y el 4. Entre 180 y 220 bpm es una locomotora: el ukelele (o el banjo) tiene que tocar ajustado, corto y sin aflojar nunca."
+    },
+    "charleston": {
+      "name": "Charleston",
+      "origin": "Estados Unidos (años 1920)",
+      "description": "El baile desenfrenado de los años 20: toda la orquesta golpea a la vez en el 1 y justo antes del 3 («¡Charles-ton!»), y luego deja un hueco. Tempo muy vivo, 200 bpm o más. Para el ukelele es un ejercicio de precisión: golpes cortos, apagados enseguida, y síncopas sin miedo."
+    }
+  }
+}

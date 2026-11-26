@@ -6,7 +6,8 @@
 
 Un groupe virtuel (guiro, conga, basse, clave, accordéon, palmas, cajón…) joue avec toi, accélère petit à petit, et t'affiche en temps réel l'accord, le prochain changement et le coup de main droite à jouer. Cumbia, son cubain, bossa nova, reggaeton, cha-cha-chá, boléro, fox-trot, swing guinguette et flamenco (rumba, tangos, sevillanas, soleá, alegrías, bulerías) : **106 exercices**, extensibles avec n'importe quelle IA.
 
-*English version available: the **EN** button in the top bar switches the interface and all exercises to English.*
+*English version available: the language menu (**FR / EN / ES**) in the top bar switches the interface and all exercises to English.*  
+*Versión en español: el menú de idioma de la barra superior (**ES**) cambia la interfaz y todos los ejercicios al español.*
 
 ### ▶ [Jouer en ligne : edu-fpar.github.io/latin-ukulele](https://edu-fpar.github.io/latin-ukulele/)
 
@@ -66,15 +67,15 @@ La spécification complète est dans [docs/prompt-ia.md](docs/prompt-ia.md) ([En
 ## Traductions
 
 - **Interface** : `js/i18n.js` (un dictionnaire par langue).
-- **Contenu** : les fichiers de `data/` sont en français ; `data/i18n/en/` contient pour chaque fichier un calque qui remplace, par id, les titres, descriptions, objectifs, conseils, noms de sections et de styles. Les rythmes, accords et tempos ne sont écrits qu'une fois.
-- **Ajouter une langue** : copier le bloc `en` de `js/i18n.js`, créer `data/i18n/<langue>/` (une IA traduit très bien ces fichiers) et les déclarer dans `data/manifest.json` → `"i18n"`.
+- **Contenu** : les fichiers de `data/` sont en français ; `data/i18n/en/` et `data/i18n/es/` contiennent pour chaque fichier un calque qui remplace, par id, les titres, descriptions, objectifs, conseils, noms de sections et de styles. Les rythmes, accords et tempos ne sont écrits qu'une fois.
+- **Ajouter une langue** : ajouter la langue dans `LANGS` et copier le bloc `en` de `js/i18n.js`, créer `data/i18n/<langue>/` (une IA traduit très bien ces fichiers) et les déclarer dans `data/manifest.json` → `"i18n"`.
 
 ## Organisation
 
 ```
 index.html            page (+ balises Open Graph)
 css/style.css         apparence (bureau + vue mobile)
-js/i18n.js            textes de l'interface fr / en
+js/i18n.js            textes de l'interface fr / en / es
 js/engine.js          synthèse audio (ukulélé Karplus-Strong, percussions, basse, mélodies)
 js/player.js          compilation d'un exercice + horloge précise (Web Audio)
 js/app.js             interface, progression, import IA
@@ -83,7 +84,8 @@ data/chords.json      dictionnaire d'accords (cases G C E A)
 data/styles/          un style = des pistes de percussions/basse
 data/packs/           parcours d'exercices
 data/i18n/en/         traduction anglaise du contenu
-docs/prompt-ia*.md    prompt + format donné à l'IA (fr / en)
+data/i18n/es/         traduction espagnole du contenu
+docs/prompt-ia*.md    prompt + format donné à l'IA (fr / en / es)
 img/                  captures d'écran
 ```
 

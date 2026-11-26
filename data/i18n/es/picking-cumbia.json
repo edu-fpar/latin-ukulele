@@ -1,0 +1,126 @@
+{
+  "packs": {
+    "picking-cumbia": {
+      "title": "Cumbia con fingerpicking",
+      "description": "Tocar con los dedos, cuerda por cuerda: el pulgar hace el bajo como el bajo de la cumbia, y los dedos hacen el “chucu” en los contratiempos. Letras = cuerdas: G (Sol, pulgar), C (Do, pulgar), E (Mi, índice), A (La, medio)."
+    }
+  },
+  "exercises": {
+    "picking-01-quatre-doigts": {
+      "title": "Una cuerda, un dedo",
+      "description": "El acorde Am7 se toca… sin ningún dedo (todas las cuerdas al aire): toda tu atención va a la mano derecha. Pulsas las 4 cuerdas una tras otra, en corcheas regulares: G, C, E, A, y vuelta a empezar.",
+      "goal": "Ocho notas bien iguales por compás, 2 vueltas a 85 bpm.",
+      "tips": [
+        "Reparto de los dedos: pulgar para Sol y Do, índice para Mi, medio para La. Mantenlo en todos los ejercicios de este recorrido.",
+        "El pulgar pulsa hacia abajo, los dedos tiran hacia arriba, hacia la palma. La mano no se mueve, solo trabajan los dedos.",
+        "Apoya el meñique o la base de la palma en la tapa del ukelele para estabilizar la mano.",
+        "Escucha el güiro: cada nota debe caer en uno de sus “chk”."
+      ]
+    },
+    "picking-02-pouce-basse": {
+      "title": "El pulgar hace el bajo",
+      "description": "En la cumbia, el bajo alterna dos notas. Tu pulgar hace lo mismo: cuerda de Do en los tiempos 1 y 3, cuerda de Sol en los tiempos 2 y 4. Solo negras, para que la mano izquierda pueda cambiar de acorde con calma.",
+      "goal": "Un pulgar regular durante los cambios, 2 vueltas a 90 bpm.",
+      "tips": [
+        "El pulgar se mantiene un poco firme y hace movimientos pequeños: “cae” sobre la cuerda siguiente.",
+        "Escucha el bajo de la banda: tu pulgar conversa con él.",
+        "Prepara el G7 durante el 4.º tiempo del C: tu mano izquierda solo tiene el pulgar como referencia."
+      ]
+    },
+    "picking-03-contretemps": {
+      "title": "Pulgar en el tiempo, dedo en el “y”",
+      "description": "El chucu-chucu de la cumbia, pero con los dedos: el pulgar toca suave el bajo en los tiempos, y el dedo medio chasquea la cuerda de La en cada contratiempo. Es el acento del “y” lo que hace bailar.",
+      "goal": "Contratiempos mucho más fuertes que el bajo, 2 vueltas a 95 bpm.",
+      "tips": [
+        "Minúscula = suave, mayúscula = fuerte. El pulgar acaricia, el medio pulsa con decisión.",
+        "Di “bum CHA bum CHA”: el CHA es el dedo medio.",
+        "Am → E7: mantén el pulgar en movimiento aunque la mano izquierda no esté lista."
+      ]
+    },
+    "picking-04-pinces": {
+      "title": "Bajo y pinzados: la cumbia con los dedos",
+      "description": "La misma idea, pero más llena: en los contratiempos, tres dedos pinzan juntos las cuerdas C, E y A (F = pinzado). El pulgar alterna C y G en los tiempos. Es el acompañamiento con los dedos más útil en la cumbia.",
+      "goal": "Bajo y pinzados bien separados, 2 vueltas a 95 bpm.",
+      "tips": [
+        "Para el pinzado: pulgar en Do, índice en Mi, medio en La, y aprietas como para agarrar una pizca de sal. Luego el pulgar salta a Sol para el tiempo siguiente.",
+        "El pinzado debe ser seco y corto, como el chucu apagado.",
+        "Silencia la conga: oirás mejor si tus pinzados caen justo en medio de los tiempos."
+      ]
+    },
+    "picking-05-arpege": {
+      "title": "El arpegio que sigue a los acordes",
+      "description": "Un arpegio de “ida y vuelta” (C, E, A, E) sobre una secuencia de 4 acordes. Las notas cambian solas cuando cambias de acorde: así es como el arpegio cuenta la armonía.",
+      "goal": "Un arpegio continuo durante los cambios, 2 vueltas a 90 bpm.",
+      "tips": [
+        "Pulgar en Do, índice en Mi, medio en La, y otra vez índice en Mi.",
+        "Pon todo el acorde antes de empezar, no solo la nota que vas a pulsar: el arpegio tiene que resonar.",
+        "C → Am → F → G7: la secuencia de los “años 50”, muy presente también en las cumbias mexicanas."
+      ]
+    },
+    "picking-06-pouce-alterne": {
+      "title": "Pulgar alternado y dedos en los contratiempos",
+      "description": "El pulgar alterna C y G en los tiempos (como en “El pulgar hace el bajo”), y los dedos responden en los contratiempos, alternando A y E. Dos voces que encajan: es el comienzo de la independencia de los dedos.",
+      "goal": "Las dos voces sin tropiezos, 2 vueltas a 95 bpm.",
+      "tips": [
+        "Toca primero el pulgar solo (C . G . C . G .), luego solo los dedos (. A . E . A . E), y después júntalos.",
+        "No mires tu mano derecha: tiene que encontrar las cuerdas al tacto.",
+        "Si te trabas, baja el tempo con “🐢 ¡Muy rápido!” en vez de pararte."
+      ]
+    },
+    "picking-07-pince-exterieur": {
+      "title": "El pinzado pulgar-medio",
+      "description": "El pulgar (cuerda de Sol) y el medio (cuerda de La) pinzan juntos las dos cuerdas exteriores: es un sonido abierto, típico de las guitarras requinto. Luego el índice y el pulgar completan con notas sueltas en Mi y Do.",
+      "goal": "Pinzados bien sincronizados, 2 vueltas a 95 bpm.",
+      "tips": [
+        "En “G+A”, las dos notas deben salir exactamente a la vez: un solo sonido, no dos.",
+        "El patrón: pinzado, Mi, Do, Mi. Di “CHONG, ti, to, ti”.",
+        "Am → F → G → E7: la secuencia andaluza, el corazón de la cumbia."
+      ]
+    },
+    "picking-08-guiro": {
+      "title": "Imitar el güiro en semicorcheas",
+      "description": "El güiro de la cumbia hace “chaa-k-k” en cada tiempo: una larga, dos cortas. Tu picking toma exactamente ese ritmo: pulgar en el tiempo, y luego índice y medio muy rápido (E, A). La cuadrícula pasa a 16 casillas.",
+      "goal": "El “largo-corto-corto” bien regular, 2 vueltas a 90 bpm.",
+      "tips": [
+        "Busca la línea del güiro en “La banda”: tu patrón se alinea con ella casilla por casilla.",
+        "Las dos notas rápidas (E, A) se tocan como un pequeño redoble de dedos, casi un solo gesto.",
+        "Empieza a 55 bpm si hace falta: las semicorcheas van rápido."
+      ]
+    },
+    "picking-09-sous-la-gaita": {
+      "title": "Arpegio suave bajo la gaita",
+      "description": "El fingerpicking es el mejor acompañamiento para una melodía: deja espacio. La flauta gaita toca la melodía y tú arpegias suavemente por debajo (minúsculas = suave). La guía se desvanece después de 2 vueltas.",
+      "goal": "Un arpegio suave y regular bajo la melodía, 2 vueltas a 90 bpm.",
+      "tips": [
+        "Toca claramente más suave que la flauta: si ya no la oyes, es que tocas demasiado fuerte.",
+        "Cuando la flauta sostiene una nota larga, es tu arpegio el que hace avanzar el tema: no frenes.",
+        "Tararea la melodía mientras tocas: te ayuda a sentir los cambios de acorde."
+      ]
+    },
+    "picking-10-silence": {
+      "title": "Sostener el arpegio solo",
+      "description": "El reto del silencio, versión dedos: un compás de cada cuatro, la banda se calla y tu picking tiene que seguir exactamente al mismo tempo. Cuando tocas con los dedos, es fácil frenar: este ejercicio lo deja al descubierto.",
+      "goal": "Volver a caer a tiempo después de cada silencio, 4 vueltas a 100 bpm.",
+      "tips": [
+        "Durante el silencio, sigue marcando con el pie: ese es tu metrónomo.",
+        "Si vuelves tarde, es que frenas cuando estás solo: piensa “hacia adelante” durante el silencio.",
+        "El patrón es el de “Bajo y pinzados”: repásalo si todavía no te sientes cómodo."
+      ]
+    },
+    "picking-11-tempo-bal": {
+      "title": "El picking a tempo de baile",
+      "description": "El patrón “güiro” en semicorcheas, sobre la secuencia andaluza y con el pulgar alternado C / G. Subimos hasta el tempo de una cumbia de verdad, sin guía después de 2 vueltas. Es la culminación del recorrido.",
+      "goal": "Aguantar 2 vueltas a 105 bpm, sin guía.",
+      "tips": [
+        "Cuanto más rápido, más cerca de las cuerdas deben quedarse los dedos: gestos diminutos.",
+        "El pulgar es tu ancla: aunque se escape una nota aguda, el bajo nunca debe faltar.",
+        "Tu récord se guarda: apunta a unos bpm más en cada sesión."
+      ]
+    },
+    "picking-03-contretemps~silence": {
+      "title": "🤫 Reto del silencio",
+      "description": "El mismo ritmo, pero un compás de cada cuatro toda la banda se calla (el ukelele guía también). Sigue tú solo contando en voz alta, y cae justo en el 1 cuando vuelva la música.",
+      "goal": "Caer exactamente con la banda después de cada silencio, 2 vueltas seguidas."
+    }
+  }
+}

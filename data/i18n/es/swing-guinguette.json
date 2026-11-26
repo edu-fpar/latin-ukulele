@@ -1,0 +1,184 @@
+{
+  "packs": {
+    "swing-guinguette": {
+      "title": "Swing guinguette y síncopas",
+      "description": "La pompe del fox-trot, el balanceo del swing y las síncopas que el jazz comparte con la música latina (tresillo, charleston). Desde un “bum-chak” tranquilo hasta el fox-trot de baile a cuatro tiempos y el Charleston a 200 bpm."
+    }
+  },
+  "exercises": {
+    "swing-01-pompe": {
+      "title": "La pompe: bum-chak",
+      "description": "El gesto básico de toda la música musette: el pulgar toca el bajo en 1 y 3 (“bum”), y un golpe hacia abajo en todo el acorde en 2 y 4 (“chak”). Los dos acordes más fáciles, C y G7, para que te concentres en ese vaivén.",
+      "goal": "Un bum-chak bien regular, 2 vueltas a 110 bpm.",
+      "tips": [
+        "“P” = pulgar en la cuerda de Do (y un poco de Sol). “↓” = todo el acorde, hacia abajo.",
+        "El bum es suave y redondo, el chak es más seco y más fuerte: es el que hace bailar.",
+        "Escucha la caja: golpea exactamente con tus “chak”."
+      ]
+    },
+    "swing-02-backbeat": {
+      "title": "El 2 y el 4: ahí pasa todo",
+      "description": "En el swing, igual que en la música latina, los tiempos fuertes no son los que crees: la gente aplaude en el 2 y el 4. Aquí, golpes suaves en 1 y 3, y un apagado bien seco en 2 y 4. Y un acorde de regalo: C6, todo al aire, el color típico de la guinguette.",
+      "goal": "Los apagados justo con la caja, 2 vueltas a 120 bpm.",
+      "tips": [
+        "C6 se toca sin ningún dedo: las 4 cuerdas al aire. Tu mano izquierda descansa.",
+        "Aplaude en 2 y 4 antes de tocar, escuchando la caja.",
+        "Es la misma idea que el chucu-chucu de la cumbia, pero el apagado cae en 2 y 4 en lugar de en cada tiempo."
+      ]
+    },
+    "swing-03-ternaire": {
+      "title": "Sentir el swing: du-ba, du-ba",
+      "description": "Rasgueo continuo abajo-arriba en corcheas… pero “swingueadas”: el abajo es largo, el arriba es corto y llega tarde. No está escrito en la cuadrícula, se escucha: oye la guía y el platillo, e imita ese balanceo.",
+      "goal": "Un balanceo natural, 2 vueltas a 120 bpm.",
+      "tips": [
+        "Canta “du-ba du-ba” o “ti-ke ti-ke”, alargando el primer sonido.",
+        "Piensa en el galope de un caballo, o en 3 corcheas de tresillo de las que solo tocas la 1.ª y la 3.ª.",
+        "Silencia el contrabajo y la caja: el platillo (hihat) solo muestra muy bien el swing."
+      ]
+    },
+    "swing-04-anatole": {
+      "title": "La secuencia swing: C6 – A7 – D7 – G7",
+      "description": "Una cadena de séptimas que da vueltas: cada acorde tira hacia el siguiente (A7 hacia D7, D7 hacia G7, G7 hacia C). Es la secuencia de acordes de cientos de temas de guinguette y de jazz. Con la pompe, para que la mano derecha vaya en automático.",
+      "goal": "Los 4 acordes sin huecos, 2 vueltas a 115 bpm.",
+      "tips": [
+        "A7: un dedo (cuerda de Do, traste 1). D7: tres dedos en el traste 2 y uno en el traste 3. G7: el triángulo.",
+        "Cambia de acorde en el “bum” (tiempo 1): durante el “chak” del 4, la mano izquierda ya puede salir.",
+        "Volverás a encontrar este ciclo A7 – D7 – G7 – C en la música cubana: la misma secuencia viaja por todas partes."
+      ]
+    },
+    "swing-05-tresillo": {
+      "title": "El tresillo: 3 + 3 + 2",
+      "description": "Tres golpes por compás, separados por 3, 3 y luego 2 corcheas. Este ritmo venido de África está en todas partes: habanera y son cubano, reguetón (¡el dembow!), pero también ragtime y swing. Es LA síncopa que tienes que tener en la mano, vayas hacia Cuba o hacia la guinguette.",
+      "goal": "El 3 + 3 + 2 bien colocado, 2 vueltas a 100 bpm.",
+      "tips": [
+        "Cuenta las corcheas “1 2 3 1 2 3 1 2” y toca en cada “1”.",
+        "El 2.º golpe cae en el “y” del 2: entre dos tiempos. Marca los tiempos con el pie para sentirlo.",
+        "Escucha la clave: en el 1.er compás (el lado “3”), toca exactamente el tresillo contigo."
+      ]
+    },
+    "swing-06-charleston": {
+      "title": "El Charleston: el 1 y el “y” del 2",
+      "description": "Solo dos golpes: en el 1, y justo antes del 3. Es el ritmo del baile Charleston de los años 20, ¡y en realidad es el comienzo del tresillo! El silencio de la 2.ª mitad del compás es tan importante como los golpes: no lo rellenes.",
+      "goal": "Dos golpes limpios y un silencio de verdad, 2 vueltas a 130 bpm.",
+      "tips": [
+        "Haz golpes cortos: apaga justo después aflojando la mano izquierda.",
+        "Durante el silencio, cuenta “3, 4” en tu cabeza y sigue moviendo la mano sin tocar las cuerdas.",
+        "Compara con el ejercicio del tresillo: mismo comienzo, pero paras después del 2.º golpe."
+      ]
+    },
+    "swing-07-diminue": {
+      "title": "El acorde disminuido de paso",
+      "description": "Entre C y Dm7, un acorde que “rechina” hace la transición: C#dim. Este pequeño acorde de paso es el sello sonoro del musette y del jazz manouche. Buena noticia: C#dim se hace con solo dos dedos.",
+      "goal": "Los 4 acordes encadenados, 2 vueltas a 120 bpm.",
+      "tips": [
+        "C#dim: traste 1 en las cuerdas de Do y de La. Dm7: un dedo más y desplazas.",
+        "Escucha el bajo: C, C#, D… sube un semitono cada vez, y eso es lo que le da impulso.",
+        "Dm7 → G7: dos dedos se quedan en su sitio (cuerda de Do traste 2, cuerda de Mi traste 1)."
+      ]
+    },
+    "swing-08-accordeon": {
+      "title": "Fox-trot con acordeón",
+      "description": "El acordeón toca una melodía de baile original de 8 compases, en dos partes. Tú haces la pompe por debajo, como el banjo de una orquesta de guinguette. Se reutilizan las dos secuencias anteriores: la secuencia swing y luego el disminuido de paso.",
+      "goal": "Aguantar los 8 compases bajo el acordeón, 2 vueltas a 130 bpm.",
+      "tips": [
+        "Mira la barra de estructura: en la parte B, el C#dim llega ya en el 2.º compás.",
+        "El acordeón es la estrella: tu pompe debe ser regular y discreta, como un motor.",
+        "Al final de la parte B, el acordeón sube hacia el Re agudo: es la señal para volver a la parte A."
+      ],
+      "sections": [
+        {
+          "name": "Parte A",
+          "bars": 4
+        },
+        {
+          "name": "Parte B",
+          "bars": 4
+        }
+      ]
+    },
+    "swing-09-pompe-manouche": {
+      "title": "La pompe manouche",
+      "description": "La versión jazz manouche de la pompe: un golpe hacia abajo en cada tiempo, pero el 2 y el 4 son apagados y secos, precedidos de un golpecito hacia arriba (swingueado, o sea muy pegado al tiempo). En menor, como los valses y swings de Django.",
+      "goal": "Una pompe apretada y contundente, 2 vueltas a 150 bpm.",
+      "tips": [
+        "El pequeño “↑” ligero es casi un roce: prepara el golpe seco del 2 y del 4.",
+        "El 1 y el 3 suenan un poco, el 2 y el 4 son muy cortos: afloja la mano izquierda justo después.",
+        "Sube el tempo poco a poco: ¡la pompe manouche se toca a menudo entre 150 y 250 bpm!"
+      ]
+    },
+    "swing-10-fox-a-fond": {
+      "title": "Fox-trot a tope",
+      "description": "El final: la pompe con un golpe hacia arriba extra después de cada “chak” (bum-chak-a, bum-chak-a), sobre la secuencia swing con Dm7. Empiezas tranquilo y subes hasta el tempo de un fox-trot de baile endiablado. La guía se desvanece: ahora el banjo de la orquesta eres tú.",
+      "goal": "Aguantar 2 vueltas a 160 bpm sin tensarte.",
+      "tips": [
+        "Cuanto más rápido, más sueltos deben estar el pulgar y la muñeca: es un rebote, no un golpe.",
+        "Si se vuelve un lío, “🐢 ¡Muy rápido!”: mejor 140 limpio que 160 de cualquier manera.",
+        "Tu récord se guarda: en cada sesión, intenta ganar 5 bpm."
+      ]
+    },
+    "swing-11-quatre-temps": {
+      "title": "La pompe a cuatro tiempos",
+      "description": "El verdadero motor de una orquesta de baile: un golpe hacia abajo en CADA tiempo, con el 2 y el 4 más fuertes. Y la secuencia swing va el doble de rápido: un acorde cada dos tiempos. Con el contrabajo caminando y la batería empujando, ya no tiene nada de balada lenta.",
+      "goal": "Cuatro golpes y dos acordes por compás, 2 vueltas a 180 bpm.",
+      "tips": [
+        "Golpes cortos: afloja la mano izquierda justo después de cada golpe, como un banjo.",
+        "El 1 y el 3 son ligeros: aprovéchalos para cambiar de acorde. El 2 y el 4 tienen que sonar secos.",
+        "A7 → Dm7: el dedo de la cuerda de Do se desliza del traste 1 al traste 2. Dm7 → G7: dos dedos se quedan en su sitio (Do traste 2, Mi traste 1).",
+        "¿Atascado en un cambio? Haz clic en el compás en “Toda la vuelta” para repetirlo solo."
+      ]
+    },
+    "swing-12-charleston-cycle": {
+      "title": "Charleston: el ciclo de séptimas",
+      "description": "El Charleston a su tempo real, sobre el ciclo E7 → A7 → D7 → G7 → C: cada acorde tira hacia el siguiente. Dos golpes secos con toda la orquesta (el 1 y el “y” del 2), un hueco, y luego un golpecito hacia arriba en el “y” del 4… que YA toca el acorde siguiente. Esa anticipación es el sello del jazz: lanza cada compás.",
+      "goal": "Los golpes justo con la orquesta y la anticipación en cada acorde, 2 vueltas a 190 bpm.",
+      "tips": [
+        "El último golpe (↑ en el “y” del 4) pertenece al compás siguiente: cambia de acorde durante el hueco, justo antes.",
+        "Después de cada golpe, afloja la mano izquierda: el Charleston se toca corto, casi apagado.",
+        "Recita el ciclo en voz alta: “Mi, La, Re, Sol, Do”.",
+        "E7 → A7: solo se queda un dedo, traste 1 de la cuerda de Do. A7 → D7: haz cejilla en el traste 2 y añade el traste 3 en la cuerda de La."
+      ]
+    },
+    "swing-13-trompette": {
+      "title": "Charleston: la trompeta manda",
+      "description": "La trompeta toca una línea rápida en corcheas, con los golpes del Charleston. Tú haces la pompe apretada de las orquestas de 1925: bum (1), chak-a (2 y su “y”), en cada medio compás. Parte A sobre la secuencia swing, parte B con el disminuido de paso. Tu pompe tiene que mantenerse firme mientras la trompeta revolotea por encima.",
+      "goal": "Aguantar los 8 compases bajo la trompeta, 2 vueltas a 190 bpm, sin guía.",
+      "tips": [
+        "“✕” es un chak apagado y seco; el pequeño “↑” que sigue lo relanza enseguida.",
+        "No sigas las notas de la trompeta: sigue la batería. La trompeta toca ALREDEDOR del tiempo.",
+        "En la parte B, el C#dim llega ya en el 2.º compás, y luego Dm7: el bajo sube C, C#, D.",
+        "Silencia la trompeta (clic en su nombre) si te distrae, y luego vuelve a activarla."
+      ],
+      "sections": [
+        {
+          "name": "Parte A",
+          "bars": 4
+        },
+        {
+          "name": "Parte B",
+          "bars": 4
+        }
+      ]
+    },
+    "swing-14-banjo": {
+      "title": "El redoble del banjo",
+      "description": "El banjo de las orquestas de baile nunca se detiene: abajo-arriba sin parar, el 2 y el 4 secos, y dos acordes por compás. Primero la vuelta C6 – A7 – Dm7 – G7, luego el ciclo E7 – A7 – D7 – G7. El gran final del recorrido, a la velocidad de un baile endiablado.",
+      "goal": "Aguantar 2 vueltas a 200 bpm sin tensarte, sin guía.",
+      "tips": [
+        "El movimiento sale de la muñeca, el antebrazo se queda casi quieto: a 200 bpm es un temblor.",
+        "Los “arriba” son ligeros: solo las dos o tres cuerdas más agudas.",
+        "Cambia de acorde en el 1 y el 3 (los tiempos ligeros), nunca en el 2 o el 4.",
+        "Si se emborrona, “🐢 ¡Muy rápido!”: un redoble limpio a 170 vale más que uno borroso a 200."
+      ]
+    },
+    "swing-01-pompe~silence": {
+      "title": "🤫 Reto del silencio",
+      "description": "El mismo ritmo, pero un compás de cada cuatro toda la banda se calla (el ukelele guía también). Sigue tú solo contando en voz alta, y cae justo en el 1 cuando vuelva la música.",
+      "goal": "Caer exactamente con la banda después de cada silencio, 2 vueltas seguidas."
+    },
+    "swing-03-ternaire~silence": {
+      "title": "🤫 Reto del silencio",
+      "description": "El mismo ritmo, pero un compás de cada cuatro toda la banda se calla (el ukelele guía también). Sigue tú solo contando en voz alta, y cae justo en el 1 cuando vuelva la música.",
+      "goal": "Caer exactamente con la banda después de cada silencio, 2 vueltas seguidas."
+    }
+  }
+}

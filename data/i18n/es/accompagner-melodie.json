@@ -1,0 +1,71 @@
+{
+  "packs": {
+    "accompagner-melodie": {
+      "title": "Acompañar una melodía",
+      "description": "Otro músico (flauta, acordeón, trompeta) toca la melodía: tu papel en el ukelele es sostenerla. Mantenerte regular, cambiar de acorde con él y saber siempre dónde estás en el tema."
+    }
+  },
+  "exercises": {
+    "melodie-01-gaita": {
+      "title": "Escuchar la gaita",
+      "description": "La gaita es la flauta de los orígenes de la cumbia. Toca una frase de 4 compases mientras tú haces golpes simples en los tiempos. Escucha cómo la melodía “anuncia” el Mi7 y luego vuelve a posarse en La menor.",
+      "goal": "Cambiar de acorde a la vez que la frase, 2 vueltas a 90 bpm.",
+      "tips": [
+        "Primera vuelta: no toques, solo escucha la flauta y mira la línea 🎼 en “La banda”.",
+        "Cuando la flauta baja hacia el Sol# (G#4), es el sonido del Mi7: tu mano izquierda ya tiene que estar ahí.",
+        "Toca más suave que la flauta: un buen acompañante se hace oír sin tapar la melodía.",
+        "Tararea la melodía mientras tocas: es la mejor manera de no perderte."
+      ]
+    },
+    "melodie-02-bolero": {
+      "title": "Bolero: tocar suave bajo una melodía lenta",
+      "description": "Una melodía de trompeta, lenta, con notas largas sostenidas. El peligro: cuando la melodía sostiene una nota, uno tiende a frenar con ella. Tu mano derecha, en cambio, no cambia: es la que hace avanzar el tema.",
+      "goal": "Mantenerte regular durante las notas sostenidas, 2 vueltas a 80 bpm.",
+      "tips": [
+        "Los “–” en la línea de la melodía son notas sostenidas: mientras duran, eres tú quien mantiene vivo el ritmo.",
+        "Baja el volumen de la guía y luego quítala: solo tu ukelele acompaña a la trompeta.",
+        "En el G7, la trompeta baja hacia el Si (B4): eso “llama” la vuelta al C."
+      ]
+    },
+    "melodie-03-couplet-refrain": {
+      "title": "Estrofa y estribillo con acordeón",
+      "description": "Un pequeño tema de verdad, de 8 compases: una estrofa en La menor, y luego un estribillo que se ilumina en Do mayor antes de volver. Encima de la cuadrícula, la barra de estructura te dice dónde estás y lo que viene. El acordeón es el sonido de la cumbia mexicana y del vallenato.",
+      "goal": "Pasar de la estrofa al estribillo sin perderte, 2 vueltas a 95 bpm.",
+      "tips": [
+        "Mira la barra “Estrofa / Estribillo”: cuando anuncie el estribillo para el compás siguiente, prepárate para tocar un poco más fuerte.",
+        "La estrofa baja hacia el La grave, el estribillo sube hacia los agudos: solo de oído sabes dónde estás, sin mirar.",
+        "El E7 del final del estribillo lleva de vuelta a la estrofa: es el mismo cambio E7 → Am de siempre."
+      ],
+      "sections": [
+        { "name": "Estrofa", "bars": 4 },
+        { "name": "Estribillo", "bars": 4 }
+      ]
+    },
+    "melodie-04-son-anticipation": {
+      "title": "Son: la trompeta que entra antes",
+      "description": "En la música cubana, la melodía “anticipa”: ataca la nota del acorde siguiente en el “y” del 4, medio tiempo antes, y luego la sostiene por encima de la barra de compás. Desconcierta: tu mano derecha tiene que seguir con tu patrón, y tu cambio de acorde se queda en el 1.",
+      "goal": "No cambiar de acorde antes de tiempo con la trompeta, 2 vueltas a 100 bpm.",
+      "tips": [
+        "Busca la última casilla de cada compás en la línea 🎼: la nota empieza ahí y se prolonga (–) en el compás siguiente.",
+        "Tú siempre cambias de acorde en el 1. Solo la melodía va adelantada.",
+        "Escucha cómo “tira” del tema hacia adelante: eso es lo que se llama el swing cubano."
+      ]
+    },
+    "melodie-05-morceau-complet": {
+      "title": "El tema completo: intro, estrofa, estribillo",
+      "description": "Diez compases, como en un baile de verdad: 2 compases de intro en los que instalas el groove tú solo con la banda, y luego entra el acordeón para la estrofa y el estribillo. La guía se desvanece: eres el ukelele de la orquesta.",
+      "goal": "Aguantar todo el tema, sin guía, 2 vueltas a 105 bpm.",
+      "tips": [
+        "Durante la intro, eres tú quien marca el tono: toca con decisión, el acordeón se acoplará a ti.",
+        "Al final de la intro, el acordeón toca dos notas de entrada (Mi, Re): la estrofa empieza justo después.",
+        "Si te pierdes, mira la barra de estructura y engánchate al próximo comienzo de sección.",
+        "Para ponerlo más difícil: activa el reto del silencio. La melodía también se calla: tienes que encontrar tu lugar en el tema."
+      ],
+      "sections": [
+        { "name": "Intro", "bars": 2 },
+        { "name": "Estrofa", "bars": 4 },
+        { "name": "Estribillo", "bars": 4 }
+      ]
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "packs": {
+    "voyage-latino": {
+      "title": "Viaje latino",
+      "description": "Más allá de la cumbia: otras maneras de hacer que un ukelele tenga groove."
+    }
+  },
+  "exercises": {
+    "reggaeton-01-dembow": {
+      "title": "Reggaeton: rasguear con la caja",
+      "description": "Aquí la cuadrícula va en semicorcheas (16 casillas). Rasgueas exactamente al mismo tiempo que la caja del dembow: 3 + 3 + 2. Acordes: la secuencia «vi – IV – I – V» de mil éxitos.",
+      "goal": "Ir pegado a la caja, 2 vueltas a 95 bpm.",
+      "tips": [
+        "Busca en «La banda» la línea snare: esos son tus golpes.",
+        "Cuenta «1 e y a, 2 e y a…»: tus golpes caen en la «a» del 1 y en la «y» del 2, y luego igual en el 3 y el 4.",
+        "Empieza silenciando todas las pistas menos kick y snare."
+      ]
+    },
+    "son-01-clave": {
+      "title": "Son cubano: tocar con la clave",
+      "description": "La clave (las claves de madera, un sonido agudo «toc») toca un patrón de 2 compases que toda la orquesta respeta. Tú mantienes un patrón regular con un apagado en 2 y 4: escucha cómo tu toque y la clave encajan.",
+      "goal": "Que la clave no te desestabilice, 2 vueltas a 100 bpm.",
+      "tips": [
+        "Primero silencia todo menos la clave y escúchala 4 vueltas contando: «1 . . 2-y . 4 | . 2 3 .».",
+        "El bajo toca «adelantado» (en la «y» del 2 y en el 4): no lo sigas, sigue el clic.",
+        "Acordes I – IV – V: C, F, G7. El F se hace con dos dedos."
+      ]
+    },
+    "bossa-01-pouce-doigts": {
+      "title": "Bossa nova: pulgar y dedos",
+      "description": "Aquí no hay rasgueo: el pulgar (P) pulsa la cuerda de Do en los tiempos 1 y 3 como un bajo, y los dedos (F) pinzan juntas las cuerdas de Do, Mi y La (C-E-A), desfasados. Los acordes son fáciles (¡Am7 = todas al aire!) para que te concentres en la coordinación.",
+      "goal": "Pulgar regular, dedos desfasados, 2 vueltas a 90 bpm.",
+      "tips": [
+        "Practica primero el pulgar solo en 1 y 3, y luego añade los dedos.",
+        "El patrón de los dedos se parece al del «rim» en la banda: escúchalo.",
+        "Toca suave: la bossa se susurra."
+      ]
+    },
+    "chachacha-01-4-et-1": {
+      "title": "Cha-cha-chá: el «4-y-1»",
+      "description": "Todo el cha-cha-chá cabe en tres golpes: el 4, la «y» del 4 y el 1 siguiente. Es el «cha-cha-chá» que gritan los bailarines. Aquí tocas los tiempos y añades ese pequeño golpe hacia arriba justo antes del 1.",
+      "goal": "Un «4-y-1» bien ajustado, 2 vueltas a 100 bpm.",
+      "tips": [
+        "Di «1, 2, 3, cha-cha»: el «cha-cha» cae en 4-y, y luego vuelve el 1.",
+        "Escucha el güiro: sus dos raspados cortos son exactamente tu «4-y».",
+        "No te apresures en la «y»: está justo en el medio, como los demás contratiempos."
+      ]
+    },
+    "chachacha-02-mineur": {
+      "title": "Cha-cha-chá en menor con apagado",
+      "description": "Vamos a enriquecerlo: un apagado en el 2 (como la caja de una orquesta) y luego el «cha-cha-chá» en 4-y-1. Con una secuencia de acordes en La menor, muy típica de los cha-cha-chás de orquesta.",
+      "goal": "Patrón y cambios sin huecos, 2 vueltas a 105 bpm.",
+      "tips": [
+        "El patrón: abajo, apagado, abajo, abajo-arriba. Practícalo solo sobre Am antes de empezar la secuencia.",
+        "Aprovecha el apagado del 2 para relajar la mano derecha.",
+        "Dm → E7 sigue siendo el cambio difícil: prepáralo desde el tiempo 3 del compás de Dm."
+      ]
+    },
+    "reggaeton-01-dembow~silence": {
+      "title": "🤫 Reto del silencio",
+      "description": "El mismo ritmo, pero un compás de cada cuatro toda la banda se calla (el ukelele guía también). Sigue solo contando en voz alta, y cae justo en el 1 cuando vuelva la música.",
+      "goal": "Volver a entrar exactamente con la banda después de cada silencio, 2 vueltas seguidas."
+    },
+    "chachacha-01-4-et-1~silence": {
+      "title": "🤫 Reto del silencio",
+      "description": "El mismo ritmo, pero un compás de cada cuatro toda la banda se calla (el ukelele guía también). Sigue solo contando en voz alta, y cae justo en el 1 cuando vuelva la música.",
+      "goal": "Volver a entrar exactamente con la banda después de cada silencio, 2 vueltas seguidas."
+    }
+  }
+}

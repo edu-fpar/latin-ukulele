@@ -725,8 +725,10 @@ function bindControls() {
   $('#drawerClose').onclick = () => document.body.classList.remove('drawer');
   $('#backdrop').onclick = () => document.body.classList.remove('drawer');
   $('#exHeader').onclick = e => { if (e.target.closest('p')) $('#exHeader').classList.toggle('full'); };
-  $('#langBtn').textContent = LANG === 'fr' ? 'EN' : 'FR';
-  $('#langBtn').onclick = () => { saveProgress(); setLang(LANG === 'fr' ? 'en' : 'fr'); };
+  const langSel = $('#langSel');
+  for (const [code, name] of Object.entries(LANGS)) { const o = new Option(code.toUpperCase(), code); o.title = name; langSel.add(o); }
+  langSel.value = LANG;
+  langSel.onchange = () => { saveProgress(); setLang(langSel.value); };
   if (isMobile()) $('#settingsBox').open = false;
   $('#status').textContent = readyText();
 

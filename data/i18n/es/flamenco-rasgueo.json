@@ -1,0 +1,175 @@
+{
+  "packs": {
+    "flamenco-rasgueo": {
+      "title": "Flamenco: rasgueo",
+      "description": "La mano derecha flamenca, paso a paso: de la rumba a las bulerías, pasando por los tangos, las sevillanas y el compás de 12 de la soleá. Nuevo símbolo: ⇊ = rasgueado (los dedos se abren uno tras otro)."
+    }
+  },
+  "exercises": {
+    "flamenco-r01-rumba-noires": {
+      "title": "Rumba: cuatro tiempos bien firmes",
+      "description": "Tu primer encuentro con la banda flamenca: cajón, palmas y bajo. Solo rasgueas los cuatro tiempos sobre un único acorde (Am), para acostumbrarte a las palmas que tocan a contratiempo, entre tus golpes.",
+      "goal": "Cuatro golpes regulares por compás, 2 vueltas a 95 bpm.",
+      "tips": [
+        "Marca cada tiempo con el pie: tu rasgueo cae junto con el pie, las palmas caen en medio.",
+        "Escucha el grave del cajón en 1 y 3: es tu referencia más segura.",
+        "Rasguea con el índice abriéndose hacia abajo (la uña toca las cuerdas): ya es un gesto flamenco."
+      ]
+    },
+    "flamenco-r02-golpe": {
+      "title": "El golpe apagado en 2 y 4",
+      "description": "En la rumba, la guitarra imita al cajón: un rasgueo en 1 y 3, y un golpe apagado y percusivo en 2 y 4, junto con el golpe seco del cajón. Ese «chak» es lo que da toda la energía.",
+      "goal": "Tus ✕ justo con el golpe seco del cajón, 2 vueltas a 100 bpm.",
+      "tips": [
+        "Para apagar: deja caer la palma (el canto de la mano) sobre las cuerdas al mismo tiempo que rasgueas. Se oye «chak», sin notas.",
+        "Di «bum CHAK bum CHAK» mientras tocas.",
+        "Silencia las palmas (clic en «palmas») para oír solo el cajón, y luego vuelve a activarlas."
+      ]
+    },
+    "flamenco-r03-rumba-base": {
+      "title": "El ritmo de la rumba",
+      "description": "El patrón de rumba más famoso: abajo, apagado-arriba, arriba, apagado-arriba. La mano va y viene sin parar en corcheas y solo toca las cuerdas en algunas casillas. Siempre sobre Am, para concentrarte en la mano derecha.",
+      "goal": "El patrón sin detener la mano, 2 vueltas a 100 bpm.",
+      "tips": [
+        "La mano nunca se detiene: abajo en los tiempos, arriba en las «y», aunque no toque las cuerdas.",
+        "Di «BUM . CHAK-a . a CHAK-a»: las «a» son los golpes hacia arriba.",
+        "Los ✕ caen en 2 y 4, como en el ejercicio anterior: no pierdas esa referencia.",
+        "Si te trabas, tócalo primero sin los ✕ (cámbialos por un abajo normal)."
+      ]
+    },
+    "flamenco-r04-rumba-cadence": {
+      "title": "Rumba sobre la cadencia andaluza",
+      "description": "La cadencia andaluza (Am, G, F, E7) es la secuencia de acordes que «suena a flamenco» al instante: baja hasta un E7 lleno de tensión. El mismo patrón de rumba, pero un acorde por compás.",
+      "goal": "Cambios a tiempo sin romper el patrón, 2 vueltas a 100 bpm.",
+      "tips": [
+        "Cambia de acorde durante el último «arriba» del compás: es un golpe ligero y perdona las pequeñas imprecisiones.",
+        "Am → G → F → E7: el bajo desciende La, Sol, Fa, Mi. Escúchalo y cántalo.",
+        "Prepara el E7 (1202) con tiempo: deja el índice en el traste 1 de la cuerda de Sol."
+      ]
+    },
+    "flamenco-r05-tangos-premier-temps": {
+      "title": "Tangos: la guitarra llena el 1",
+      "description": "En los tangos, las palmas callan en el tiempo 1 y tocan el 2, el 3 y el 4. Tu guitarra toca fuerte en el 1 y más suave en los demás tiempos: te repartes el trabajo con las palmas.",
+      "goal": "Un 1 bien fuerte en el silencio de las palmas, 2 vueltas a 100 bpm.",
+      "tips": [
+        "Mayúscula = fuerte, minúscula = suave: un solo golpe grande por compás, en el 1.",
+        "Escucha el «hueco» de las palmas: tu 1 tiene que caer justo ahí.",
+        "Cuenta «UNO dos tres cuatro» en voz alta, casi gritando el UNO."
+      ]
+    },
+    "flamenco-r06-rasgueado": {
+      "title": "El rasgueado en abanico",
+      "description": "El gesto rey del flamenco: en lugar de un solo golpe hacia abajo, los dedos se abren uno tras otro (meñique, anular, medio, índice) para hacer un «trrrra». Aquí reemplaza el golpe grande del 1 de los tangos.",
+      "goal": "Un rasgueado limpio que termina justo en el tiempo, 2 vueltas a 100 bpm.",
+      "tips": [
+        "Cierra el puño suavemente, con el pulgar apoyado en la cuerda de Sol. Luego abre los dedos uno a uno, empezando por el meñique, como un abanico.",
+        "Practícalo primero sin la banda, despacio: cuatro «clics» bien separados, y luego cada vez más juntos.",
+        "El último dedo (el índice) es el más fuerte: es el que cae en el tiempo.",
+        "El movimiento sale de los dedos, no de la muñeca: la mano queda casi quieta."
+      ]
+    },
+    "flamenco-r07-tangos-golpe": {
+      "title": "Tangos: rasgueado y golpe",
+      "description": "Un verdadero acompañamiento de tangos: rasgueado en el 1, pequeños golpes abajo-arriba y un golpe apagado (el «golpe») en el 3, con el golpe seco del cajón. Sobre la cadencia andaluza que ya conoces.",
+      "goal": "El patrón completo sobre los 4 acordes, 2 vueltas a 105 bpm.",
+      "tips": [
+        "Divídelo: «TRRRA . ti-ta CHAK . ti-ta».",
+        "En la guitarra, el golpe flamenco se hace tocando la tapa con el anular; en el ukelele, un apagado con la palma funciona muy bien.",
+        "Si el rasgueado te retrasa, cámbialo por un simple golpe hacia abajo (D) mientras asientas el patrón."
+      ]
+    },
+    "flamenco-r08-tangos-por-arriba": {
+      "title": "Tangos «por arriba»: Mi, Fa, Sol, Fa",
+      "description": "El flamenco adora el modo de Mi (modo frigio): el acorde de reposo es E (aquí E7), y el Fa justo encima le da ese color arábigo-andaluz tan típico. El mismo patrón que antes, nueva secuencia de acordes, y el ukelele guía se desvanece después de 2 vueltas.",
+      "goal": "La secuencia de memoria, sin guía, 2 vueltas a 110 bpm.",
+      "tips": [
+        "E7 → F: solo cambian de lugar los dedos, mantén la mano cerca del mástil.",
+        "Escucha el semitono Mi → Fa en el bajo: es EL sonido del flamenco.",
+        "La secuencia vuelve a E7 en cada vuelta: es la «casa», siempre se regresa a ella."
+      ]
+    },
+    "flamenco-r09-sevillanas-trois": {
+      "title": "Sevillanas: contar en 3",
+      "description": "Cambio de compás: las sevillanas van en 3 tiempos. Tres golpes hacia abajo por compás, el primero más fuerte, y un acorde por compás. Las castañuelas hacen un redoble en el 1: es tu referencia.",
+      "goal": "El 1 bien marcado, 2 vueltas a 130 bpm.",
+      "tips": [
+        "Cuenta «UNO dos tres, UNO dos tres»: como un vals, pero con más energía.",
+        "El redoble de las castañuelas siempre anuncia el 1.",
+        "Am ↔ E7: solo el índice se queda más o menos en el mismo lugar; practica este cambio sin rasguear antes de empezar."
+      ]
+    },
+    "flamenco-r10-sevillanas-rasgueado": {
+      "title": "Sevillanas: el rasgueado en el 1",
+      "description": "El rasgueado llega al 1 de las sevillanas, seguido de un abajo en el 2 y un abajo-arriba en el 3. La secuencia dura 8 compases, como una frase del baile: dos veces Am-E7, y luego la cadencia andaluza.",
+      "goal": "Los 8 compases sin parar, 2 vueltas a 135 bpm.",
+      "tips": [
+        "«TRRRA . ta . ta-ti»: el rasgueado ocupa todo el 1.",
+        "El pequeño arriba al final del compás es el momento ideal para cambiar de acorde.",
+        "A dos tercios de la secuencia llegan G y luego F: mira el recuadro «después» para que no te tomen por sorpresa."
+      ]
+    },
+    "flamenco-r11-solea-accents": {
+      "title": "Soleá: solo los acentos",
+      "description": "¡El compás de 12 tiempos! Para descubrirlo, solo rasgueas en los acentos: 3, 6, 8, 10 y 12 (los puntos con círculo). Entre medio, cuentas en silencio. El acorde pasa a F en el tiempo 7 y vuelve a E7 en el tiempo 10.",
+      "goal": "Los 5 acentos en su lugar, 2 vueltas a 110 bpm.",
+      "tips": [
+        "Cuenta en voz alta: «uno dos TRES cuatro cinco SEIS siete OCHO nueve DIEZ once DOCE».",
+        "Siente los grupos: 1-2-3, 4-5-6, luego 7-8, 9-10, 11-12. Dos grupos de tres, tres grupos de dos.",
+        "El cambio a F llega en el 7, un tiempo en el que no tocas: aprovéchalo.",
+        "El clic del metrónomo suena más agudo en los acentos."
+      ]
+    },
+    "flamenco-r12-solea-tous-les-temps": {
+      "title": "Soleá: todos los tiempos, acentos fuertes",
+      "description": "Ahora tocas los 12 tiempos: golpes suaves en los tiempos débiles, golpes fuertes en los acentos. La diferencia de volumen es lo que dibuja el compás: si todo suena igual, la soleá desaparece.",
+      "goal": "Una diferencia real entre fuerte y suave, 2 vueltas a 115 bpm.",
+      "tips": [
+        "Golpes suaves: solo el índice, muy cerca de las cuerdas. Golpes fuertes: todos los dedos, con un poco más de impulso.",
+        "No más rápido en los acentos: solo más fuerte.",
+        "Escucha las palmas sonoras (agudas): tocan exactamente en tus acentos."
+      ]
+    },
+    "flamenco-r13-solea-rasgueados": {
+      "title": "Soleá: rasgueados en los acentos",
+      "description": "Los acentos 3, 6 y 10 se vuelven rasgueados, el 8 sigue siendo un golpe limpio y el 12 termina con un golpe (apagado) que cierra el compás. Así suena un acompañamiento de soleá.",
+      "goal": "El compás completo sin perder el hilo, 2 vueltas a 120 bpm.",
+      "tips": [
+        "El rasgueado tiene que terminar EN el acento: empieza el movimiento un poquito antes.",
+        "El golpe del 12 cierra la frase, como un punto al final de una oración.",
+        "Si te pierdes, tranquilo: espera el siguiente 1 contando y vuelve a entrar.",
+        "Usa «🐢 ¡Muy rápido!» en cuanto los rasgueados se vuelvan confusos."
+      ]
+    },
+    "flamenco-r14-alegrias": {
+      "title": "Alegrías: el compás en mayor",
+      "description": "El mismo compás de 12, pero en La mayor y más alegre. A lo largo de dos compases: A en 1-2 y luego E7 desde el acento 3; el compás siguiente se queda en E7 y vuelve a A en el acento 10. Los acordes cambian en los acentos: es la regla del flamenco.",
+      "goal": "Los dos cambios justo en el 3 y en el 10, 2 vueltas a 130 bpm.",
+      "tips": [
+        "Primero ubica los dos cambios sin rasguear: solo la mano izquierda, contando.",
+        "A (2100) → E7 (1202): el índice se desliza de la cuerda de Do a la cuerda de Sol.",
+        "Las palmas tocan a contratiempo: no te dejes arrastrar, tu pie sigue en los tiempos."
+      ]
+    },
+    "flamenco-r15-bulerias": {
+      "title": "Bulerías: el compás que vuela",
+      "description": "El patrón de la soleá (rasgueados en 3, 6, 10, golpe en 12) al tempo de la bulería. A esta velocidad ya no se cuentan los 12 tiempos: se sienten los acentos. El ukelele guía se desvanece después de 2 vueltas. Es la culminación del recorrido.",
+      "goal": "Aguantar 2 vueltas a 170 bpm, sin guía.",
+      "tips": [
+        "Rápido = movimientos pequeños: los dedos se quedan muy cerca de las cuerdas.",
+        "Cuenta solo los acentos: «TRES . . SEIS . OCHO . DIEZ . DOCE».",
+        "Las palmas y el cajón juegan alrededor de los acentos: escúchalos como una conversación, no como un metrónomo.",
+        "Tu récord queda guardado: unos bpm más en cada sesión."
+      ]
+    },
+    "flamenco-r03-rumba-base~silence": {
+      "title": "🤫 Reto del silencio",
+      "description": "El mismo ritmo, pero un compás de cada cuatro toda la banda se calla (el ukelele guía también). Sigue solo contando en voz alta, y cae justo en el 1 cuando vuelva la música.",
+      "goal": "Volver a entrar exactamente con la banda después de cada silencio, 2 vueltas seguidas."
+    },
+    "flamenco-r09-sevillanas-trois~silence": {
+      "title": "🤫 Reto del silencio",
+      "description": "El mismo ritmo, pero un compás de cada cuatro toda la banda se calla (el ukelele guía también). Sigue solo contando en voz alta, y cae justo en el 1 cuando vuelva la música.",
+      "goal": "Volver a entrar exactamente con la banda después de cada silencio, 2 vueltas seguidas."
+    }
+  }
+}

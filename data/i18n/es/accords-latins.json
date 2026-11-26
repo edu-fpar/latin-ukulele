@@ -1,0 +1,60 @@
+{
+  "packs": {
+    "accords-latins": {
+      "title": "Mano izquierda: los acordes latinos",
+      "description": "Cambios de acorde cada vez más ricos, siempre con un ritmo sencillo para que toda tu atención vaya a la mano izquierda."
+    }
+  },
+  "exercises": {
+    "accords-01-am-f": {
+      "title": "Am ↔ F: solo un dedo que añadir",
+      "description": "El cambio más fácil que existe: Am se hace con un dedo (cuerda de Sol, traste 2), F conserva ese dedo y añade otro (cuerda de Mi, traste 1). Perfecto para aprender a NO levantar los dedos sin necesidad.",
+      "goal": "Cambiar sin levantar nunca el dedo de la cuerda de Sol, 2 vueltas a 80 bpm.",
+      "tips": [
+        "El dedo de la cuerda de Sol se queda pegado: es tu «pivote».",
+        "Coloca el 2.º dedo durante el 4.º tiempo, no después del 1.",
+        "El bolero es lento: aprovecha para dejar sonar cada acorde hasta el final."
+      ]
+    },
+    "accords-02-bolero": {
+      "title": "Bolero: C – Am – F – G7",
+      "description": "La secuencia de acordes de mil canciones románticas, con el ritmo lento del bolero. El patrón «abajo, abajo-arriba, abajo, abajo-arriba» es suave y regular: deja respirar los acordes.",
+      "goal": "Los 4 acordes encadenados sin huecos, 2 vueltas a 80 bpm.",
+      "tips": [
+        "C → Am: un dedo se va, otro llega. Am → F: se añade un dedo. F → G7: la forma se desplaza.",
+        "Toca más suave que para la cumbia: el bolero se canta al oído.",
+        "Escucha los bongós que redoblan en corcheas: te dan la velocidad de tu mano derecha."
+      ]
+    },
+    "accords-03-demi-mesure": {
+      "title": "Dos acordes por compás",
+      "description": "La misma secuencia, pero el doble de apretada: un acorde cada dos tiempos. El ritmo se simplifica (un golpe por tiempo) para que la mano izquierda tenga tiempo de seguir.",
+      "goal": "Los 4 cambios por compás, 2 vueltas a 85 bpm.",
+      "tips": [
+        "Solo tienes 2 tiempos por acorde: el cambio empieza ya en el 2.º tiempo.",
+        "Mantén los dedos cerca de las cuerdas: cuanto menos se alejan, más rápido eres.",
+        "Vuelve a «Bolero: C – Am – F – G7» si un cambio se te resiste."
+      ]
+    },
+    "accords-04-cycle-septiemes": {
+      "title": "El ciclo de séptimas: A7 – D7 – G7 – C",
+      "description": "Cada acorde de séptima «llama» al siguiente, hasta el C que lo resuelve todo. Es el encadenamiento rey de la música cubana (y del jazz). Escucha la tensión de cada séptima y el alivio del C.",
+      "goal": "El ciclo completo, 2 vueltas a 95 bpm.",
+      "tips": [
+        "A7: un solo dedo (cuerda de Do, traste 1). D7: una cejilla o tres dedos en el traste 2. G7: la forma de triángulo. C: un dedo.",
+        "D7 → G7: el dedo de la cuerda de Do (traste 2) se queda en su sitio, es tu punto de apoyo.",
+        "Escucha: cada séptima suena «en suspenso», y el C final lo deja todo en reposo. Cuando lo oyes, sabes dónde estás sin mirar la pantalla."
+      ]
+    },
+    "accords-05-bossa-251": {
+      "title": "Acordes jazzeros en bossa: Dm7 – G7 – Cmaj7",
+      "description": "El famoso «II – V – I» con un sonido tan brasileño, con el juego de pulgar y dedos de la bossa. Las formas están cerca unas de otras: la mano se desliza más que salta.",
+      "goal": "Pulgar regular y acordes que suenan, 2 vueltas a 85 bpm.",
+      "tips": [
+        "Dm7 → G7: dos dedos se quedan en su sitio (cuerda de Do traste 2, cuerda de Mi traste 1); solo se mueven los de las cuerdas de Sol y La.",
+        "Cmaj7: un solo dedo (cuerda de La, traste 2): saboréalo durante 2 compases.",
+        "Repasa primero «Bossa nova: pulgar y dedos» si el patrón todavía no te sale solo."
+      ]
+    }
+  }
+}

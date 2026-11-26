@@ -1,0 +1,60 @@
+{
+  "packs": {
+    "cumbia-on-avance": {
+      "title": "Cumbia — seguimos avanzando",
+      "description": "¿Ya tienes las bases? Trabajamos los matices, los cambios rápidos, la melodía y tocar «sin red»."
+    }
+  },
+  "exercises": {
+    "cumbia-10-nuances": {
+      "title": "Los matices: abajo suave, arriba fuerte",
+      "description": "El mismo movimiento continuo abajo-arriba, pero los golpes hacia abajo son suaves (flechas pequeñas) y los golpes hacia arriba, en los contratiempos, van con decisión. Ese contraste hace sonar tu cumbia, incluso sin cambiar de patrón.",
+      "goal": "Un verdadero contraste fuerte/suave, 2 vueltas a 100 bpm.",
+      "tips": [
+        "Hacia abajo: roza solo 2 cuerdas, con la punta de la uña. Hacia arriba: todas las cuerdas, con más velocidad.",
+        "Exagera el contraste al principio, ya lo afinarás después.",
+        "Escucha al guía: las flechas pequeñas suenan casi como un soplo."
+      ]
+    },
+    "cumbia-11-majeur": {
+      "title": "Cumbia en Do: C – F – G7",
+      "description": "Los tres acordes más útiles del ukelele (I – IV – V), en chucu-chucu. Añadimos el F: solo dos dedos, y comparte con Am el dedo en la cuerda de Sol.",
+      "goal": "Los tres acordes en chucu-chucu, 2 vueltas a 95 bpm.",
+      "tips": [
+        "C → F: levanta el dedo de la cuerda de La y coloca dos dedos (cuerdas de Sol y Mi). Practícalo solo, sin música, 10 veces.",
+        "Cambia de acorde durante el apagado (✕): las cuerdas no suenan, nadie oye el desplazamiento.",
+        "Durante el compás de G7, mira ya adónde irá tu mano para el C."
+      ]
+    },
+    "cumbia-12-demi-mesure": {
+      "title": "Cambiar cada 2 tiempos",
+      "description": "Am y E7 se alternan cada dos tiempos en el primer compás, y luego te quedas en Am. Los cambios llegan el doble de rápido: es la etapa que separa «me sé los acordes» de «toco canciones».",
+      "goal": "Ningún cambio con retraso, 2 vueltas a 90 bpm.",
+      "tips": [
+        "Am → E7: el dedo de la cuerda de Sol retrocede un traste (2 → 1) y se añaden dos dedos en el traste 2 (cuerdas de Do y La). Visualiza este movimiento antes de tocar.",
+        "Si se atasca, pon el tempo inicial en 50: la velocidad ya llegará.",
+        "Deja de mirar tu mano izquierda: mira el recuadro «después» en la pantalla."
+      ]
+    },
+    "cumbia-13-melodie": {
+      "title": "Una melodía sobre Am – G – F – E7",
+      "description": "Una pequeña melodía original de 4 compases que sigue la secuencia andaluza. Cada compás repite el mismo ritmo («ta . ta-ta . ta-ta .») pero con las notas del acorde del momento: oyes cómo la melodía «dibuja» la armonía.",
+      "goal": "Los 4 compases encadenados, 2 vueltas a 90 bpm.",
+      "tips": [
+        "Aprende un compás a la vez, con el guía activado, silenciando el resto de la banda si hace falta.",
+        "El ritmo es idéntico en los 4 compases: una vez que lo tienes en la mano, solo cambian los trastes.",
+        "Recuerda: rosa = cuerda de La, amarillo = Mi, turquesa = Do."
+      ]
+    },
+    "cumbia-14-sans-filet": {
+      "title": "Sin red: ni guía ni metrónomo",
+      "description": "El ukelele guía y el clic están apagados. Solo queda la banda, como en un baile de verdad: te toca encajar con el güiro y el bajo. Es la situación real de tocar en vivo.",
+      "goal": "Aguantar 4 vueltas a tiempo a 105 bpm, escuchando solo a la banda.",
+      "tips": [
+        "El güiro es tu mejor amigo: su raspado largo siempre cae en el tiempo.",
+        "El bajo toca en el 1 y el 3: si lo oyes «antes» que tú, te estás quedando atrás.",
+        "Para complicarlo: activa el reto del silencio."
+      ]
+    }
+  }
+}
